@@ -1,5 +1,31 @@
+import { Flex } from "antd";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 export default function ServicesMenu() {
-  return <div></div>
+  return (
+    <div className="services-menu">
+      <div className="title">Послуги</div>
+      <Flex className="links-menu-wrapper">
+        <Flex vertical={true} align="flex-start">
+          <Link to={""}>рестрація компаній</Link>
+          <Link to={""}>відкриття банківських рахунків</Link>
+          <Link to={""}>відкриття мерчант рахунків</Link>
+        </Flex>
+        <Flex vertical={true} align="flex-start">
+          <Link to={""}>реєстрація товарних знаків</Link>
+          <Link to={""}>криптоконсалтинг</Link>
+          <Link to={""}>відкриття фінансових ліцензій</Link>
+        </Flex>
+        <Flex vertical={true} align="flex-start">
+          <Link to={""}>Консультаційні послуги</Link>
+          <Link to={""}>Ціни</Link>
+          <Link to={""}>Питання відповідь</Link>
+        </Flex>
+        <Flex vertical={true} align="flex-start">
+          <Link to={""}>Юрисдикції</Link>
+        </Flex>
+      </Flex>
+    </div>
+  );
 }

@@ -1,6 +1,6 @@
 .icon-component {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 24px;
   width: 24px;
 
@@ -12,5 +12,17 @@
 
   &.envelop {
     background-image: url(../../assets/images/envelope.png);
+  }
+
+  &.language {
+    background-image: url(../../assets/images/langIcon.png);
+  }
+
+  &.drop {
+    background-image: url(../../assets/images/drpoArrow.png);
+  }
+
+  &.dropdown {
+    background-image: url(../../assets/images/dropDomnArrow.png);
   }
 }

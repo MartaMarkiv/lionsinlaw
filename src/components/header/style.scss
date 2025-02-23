@@ -1,0 +1,51 @@
+.header {
+  font-family: "Roboto-bold";
+  font-size: 18px;
+  color: #000000;
+  width: 100%;
+
+  a {
+    @extend .header;
+
+    &.email-wrapper {
+      display: flex;
+      align-items: center;
+
+      .icon-component {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .menu-item {
+    background: none;
+    @extend .header;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .icon-component {
+      height: 7px;
+      width: 14px;
+      transition: all ease-in 0.2s;
+    }
+
+    &:hover {
+      color: #000000 !important;
+      background: none !important;
+
+      .icon-component {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .header-menu-wrapper {
+    & > span,
+    & > a,
+    & > .ant-btn {
+      margin-left: 40px;
+      cursor: pointer;
+    }
+  }
+}

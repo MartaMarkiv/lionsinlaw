@@ -1,0 +1,43 @@
+@use "../../variables";
+
+.ant-popover-inner {
+  padding: 0 !important;
+}
+
+.services-menu {
+  .title {
+    font-family: "Lato";
+    font-size: 48px;
+    color: #000000;
+    border-bottom: 1px solid variables.$border-color;
+  }
+
+  .links-menu-wrapper,
+  .title {
+    padding: 20px 54px;
+  }
+
+  .links-menu-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    div {
+      margin-right: 80px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-family: "Raleway-bold";
+      font-size: 18px;
+      color: variables.$black-color;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
