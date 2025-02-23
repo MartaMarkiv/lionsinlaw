@@ -1,0 +1,16 @@
+.icon-component {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+
+  &.logo {
+    background-image: url(../../assets/images/lionsInLawLogo.png);
+    width: 84px;
+    height: 84px;
+  }
+
+  &.envelop {
+    background-image: url(../../assets/images/envelope.png);
+  }
+}
