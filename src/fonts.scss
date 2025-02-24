@@ -19,6 +19,11 @@
 }
 
 @font-face {
+  font-family: "DM-Sans-bold";
+  src: url(./assets/fonts/DMSans-Bold.ttf);
+}
+
+@font-face {
   font-family: "DM-Sans-medium";
   src: url(./assets/fonts/DMSans-Medium.ttf);
 }
@@ -94,6 +99,16 @@
 }
 
 @font-face {
+  font-family: "Manrope-light";
+  src: url(./assets/fonts/Manrope-Light.ttf);
+}
+
+@font-face {
+  font-family: "Manrope-semi";
+  src: url(./assets/fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
   font-family: "Mulish";
   src: url(./assets/fonts/Mulish-Regular.ttf);
 }
@@ -131,4 +146,9 @@
 @font-face {
   font-family: "Raleway-medium";
   src: url(./assets/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Inter-semi";
+  src: url(./assets/fonts/Inter_18pt-SemiBold.ttf);
 }

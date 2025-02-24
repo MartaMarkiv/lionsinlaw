@@ -1,0 +1,24 @@
+@use "../../variables";
+
+.block-element {
+  color: #000000;
+  border: 1px solid variables.$dark-border-color;
+  padding: 50px 20px;
+  min-height: 250px;
+
+  &.dark-bg {
+    color: #ffffff;
+    background-color: variables.$dark-red;
+  }
+
+  .title {
+    font-family: "Lato-bold";
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-family: "Raleway";
+    font-size: 18px;
+  }
+}

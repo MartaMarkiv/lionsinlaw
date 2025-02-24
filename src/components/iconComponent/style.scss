@@ -25,4 +25,60 @@
   &.dropdown {
     background-image: url(../../assets/images/dropDomnArrow.png);
   }
+
+  &.global-existing {
+    background-image: url(../../assets/images/global_Icon.png);
+  }
+
+  &.efficiency {
+    background-image: url(../../assets/images/passport.png);
+  }
+
+  &.individual {
+    background-image: url(../../assets/images/individualIcon.png);
+  }
+
+  &.expansion {
+    background-image: url(../../assets/images/expansion.png);
+  }
+
+  &.actives {
+    background-image: url(../../assets/images/saveActives.png);
+  }
+
+  &.optimization {
+    background-image: url(../../assets/images/optimizationTaxes.png);
+  }
+
+  &.global-traiding {
+    background-image: url(../../assets/images/globalTraiding.png);
+  }
+
+  &.more-light {
+    background-image: url(../../assets/images/detailsArrow.png);
+  }
+
+  &.more-dark {
+    background-image: url(../../assets/images/detailsArrowWhite.png);
+  }
+
+  &.crypto-license-img {
+    background-image: url(../../assets/images/cryptoLicens.png);
+  }
+
+  &.taxes-plan-img {
+    background-image: url(../../assets/images/taxesPlan.png);
+  }
+
+  &.ok {
+    background-image: url(../../assets/images/okIcon.png);
+  }
+
+  &.fail {
+    background-image: url(../../assets/images/croseIcon.png);
+  }
+
+  &.wavy-arrow {
+    background-image: url(../../assets/images/arrowCurving.png);
+  }
 }

@@ -1,8 +1,17 @@
 @use "../../variables";
 
+.contact-us-link {
+  color: #ffffff;
+  background-color: variables.$button-bg;
+  font-family: "Lora-semi";
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 18px 100px;
+}
+
 .main-section {
   height: calc(100vh - 127px);
-  padding: 0 70px;
 
   .main-background {
     background-image: url(../../assets/images/mainPageImage.png);
@@ -14,6 +23,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: -1;
   }
 
   .global {
@@ -47,16 +57,6 @@
       color: variables.$red-color;
     }
 
-    .contact-us {
-      color: #ffffff;
-      background-color: variables.$button-bg;
-      font-family: "Lora-semi";
-      font-size: 24px;
-      display: inline-block;
-      border-radius: 16px;
-      padding: 18px 100px;
-    }
-
     &.registration {
       padding-top: 30px;
 
@@ -86,6 +86,359 @@
     .quality-name {
       font-family: "Raleway-semi";
       font-size: 24px;
+    }
+  }
+}
+
+.our-services {
+  margin-top: 120px;
+
+  &>.title {
+    font-family: "Lato";
+    font-size: 42px;
+  }
+
+  &>.description {
+    font-family: "FiraSans";
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 25px !important;
+  }
+
+  &>.title,
+  &>.description {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .our-services-wrapper {
+    margin-top: 70px;
+
+    .our-services-item {
+      font-family: "FiraSans";
+      width: 25%;
+
+      .icon-component {
+        width: 72px;
+        height: 72px;
+      }
+
+      .title {
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+        color: variables.$light-grey;
+      }
+    }
+  }
+}
+
+.choose-us {
+  margin-top: 120px;
+
+  >.title {
+    font-family: "Lato-bold";
+    font-size: 42px;
+    max-width: 55%;
+    margin-left: 15%;
+    margin-bottom: 60px;
+
+    .selected {
+      color: variables.$red-color;
+    }
+  }
+  .image-wrapper {
+    min-width: 55%;
+    width: 55%;
+    margin-right: 90px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .advantages-wrapper {
+    padding-right: 20px;
+    .description {
+      font-family: "DM-Sans";
+      font-size: 22px;
+      line-height: 120%;
+      margin-bottom: 36px;
+
+      &::first-letter {
+        font-family: "DM-Sans-bold";
+      }
+    }
+
+    .advantages-item {
+      margin-bottom: 22px;
+      padding-right: 50px;
+
+      .icon-component {
+        width: 74px;
+        min-width: 74px;
+        height: 74px;
+        margin-right: 10px;
+      }
+
+      .title {
+        font-family: "DM-Sans-bold";
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+
+      .advantages-item-description {
+        font-family: "DM-Sans";
+        font-size: 18px;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+.services-list,
+.main-section,
+.our-functions {
+  padding: 0 70px;
+}
+
+.services-list {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+
+  .image-container {
+    grid-area: 1 / 3 / 3 / 5;
+
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .grid-item-2 {
+    font-family: "Raleway";
+    font-size: 22px;
+    grid-area: 3 / 1 / 3 / 3;
+    padding-top: 70px;
+
+    .item-2-title {
+      font-family: "Lato-bold";
+      font-size: 28px;
+      margin-bottom: 32px;
+
+      .selected {
+        color: variables.$dark-red;
+      }
+    }
+  }
+
+  .services-list-title {
+    font-family: "Lato-bold";
+    font-size: 42px;
+    color: variables.$dark-red;
+    text-transform: uppercase;
+  }
+}
+
+.law-business {
+  background-image: url(../../assets/images/lawRectangle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  margin-top: 120px;
+  padding: 70px;
+  position: relative;
+
+  >div {
+    z-index: 2;
+  }
+
+  .business-gradient {
+    background-color: #1d1311;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .title {
+    font-family: "Roboto-bold";
+    font-size: 40px;
+    color: #ffffff;
+
+    .selected {
+      font-family: "Lato-bold";
+      font-size: 77px;
+      color: variables.$dark-red;
+    }
+  }
+
+  .description {
+    font-family: "Raleway";
+    font-size: 16px;
+    color: #ffffff;
+    margin: 40px 0;
+  }
+
+  .business-types {
+    margin-top: 60px;
+
+    .business-item {
+      font-family: "Roboto";
+      font-size: 16px;
+      color: #ffffff;
+      width: 47%;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      padding: 16px;
+
+      .title {
+        font-family: "Roboto-medium";
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .icon-component {
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.our-functions {
+  margin-top: 120px;
+
+  .our-functions-header {
+    font-family: "DM-Sans";
+    font-size: 16px;
+    color: variables.$grey;
+    text-align: center;
+
+    .plann-switcher {
+      margin: 0 24px;
+      &.ant-switch-checked {
+        background-color: variables.$extra-dark-grey;
+      }
+    }
+
+    .discount-wrapper {
+      margin: 20px 0;
+      .icon-component {
+        width: 92px;
+        height: 46px;
+        margin-left: 20%;
+        transform: rotate(20deg);
+      }
+    }
+  }
+  .title {
+    font-family: "DM-Sans-bold";
+    font-size: 42px;
+    color: #000000;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
+
+  .tarrif-plan-types {
+    .tarrif-plan-item {
+      font-size: 16px;
+      border-radius: 12px;
+      padding: 40px 24px;
+
+      &.dark {
+        background-color: variables.$dark-red;
+        color: #ffffff;
+        margin: 0 10px;
+
+        .price,
+        .price-wrapper,
+        .description,
+        .title {
+          color: #ffffff !important;
+        }
+      }
+
+      .title {
+        font-family: "Manrope-bold";
+        font-size: 22px;
+      }
+
+      .description {
+        font-family: "Manrope";
+        color: variables.$grey-secondary;
+        margin-top: 11px;
+        margin-bottom: 20px;
+      }
+
+      .price-wrapper {
+        font-family: "Manrope-light";
+        color: variables.$extra-dark-grey;
+
+        .price {
+          font-family: "Manrope-semi";
+          font-size: 56px;
+          color: variables.$grey;
+        }
+      }
+
+      .start-plan-btn {
+        font-family: "Manrope-semi";
+        border: 1px solid variables.$color-button;
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-bottom: 40px;
+
+        &.light {
+          background-color: #FFF3F1;
+        }
+
+        &.dark {
+          background-color: #ffffff;
+        }
+      }
+
+      .plan-option-item {
+        font-family: "Manrope-medium";
+        margin-bottom: 12px;
+
+        .icon-wrapper {
+          background-color: #FFF3F1;
+          margin-right: 15px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+
+          &.dark {
+            background-color: variables.$primary-blue;
+          }
+
+          .icon-component {
+            width: 12px;
+            height: 9px;
+
+            &.fail {
+              width: 9px;
+            }
+          }
+        }
+      }
     }
   }
 }

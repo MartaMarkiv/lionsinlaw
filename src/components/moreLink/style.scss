@@ -1,0 +1,35 @@
+@use "../../variables";
+
+.more-link {
+  font-family: "Inter-semi";
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
+  span {
+    text-decoration: underline;
+  }
+
+  &.light {
+    color: variables.$more-bg;
+
+    &:hover {
+      color: variables.$more-bg;
+    }
+  }
+
+  &.dark {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .icon-component {
+    margin-left: 10px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+}
