@@ -8,6 +8,7 @@ import lionsInLawTeam from "../../assets/images/team.png";
 import BlockElement from "../../components/blockElement/BlockElement";
 import config from "../../config";
 import { Button } from "react-scroll";
+import ContactPhones from "../../components/contactPhones/ContactPhones";
 
 export default function Main() {
   return (
@@ -295,6 +296,7 @@ export default function Main() {
           </div>
         </Flex>
       </div>
+      <ContactPhones />
     </>
   );
 }
