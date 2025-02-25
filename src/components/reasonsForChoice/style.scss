@@ -1,0 +1,57 @@
+@use "../../variables";
+
+.choice-reasons-wrapper {
+  font-family: "FiraSans";
+  padding: 0 110px;
+  margin: 120px 0;
+
+  >.title {
+    font-family: "Lato";
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  >.description {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  >.title,
+  >.description {
+    text-align: center;
+  }
+
+  .reasons-list {
+    margin-top: 80px;
+
+    .reason-item {
+      width: 32%;
+
+      .title {
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+      .description {
+        font-size: 16px;
+        color: #626262;
+      }
+
+      .individual-choise {
+        width: 94px;
+        height: 100px;
+      }
+
+      .komplex {
+        width: 110px;
+        height: 100px;
+      }
+
+      .expert {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

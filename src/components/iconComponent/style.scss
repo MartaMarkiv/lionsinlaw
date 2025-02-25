@@ -151,4 +151,16 @@
     width: 21px;
     height: 17px;
   }
+
+  &.individual-choise {
+    background-image: url(../../assets/images/check-list.png);
+  }
+
+  &.komplex {
+    background-image: url(../../assets/images/people-businessmen.png);
+  }
+
+  &.expert {
+    background-image: url(../../assets/images/approved-business.png);
+  }
 }

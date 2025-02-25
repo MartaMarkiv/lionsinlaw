@@ -2,6 +2,7 @@ import "./style.scss";
 import { Flex, Select } from "antd";
 import FlagsContainer from "../../components/flagsContainer/FlagsContainer";
 import config from "../../config";
+import ReasonsForChoice from "../../components/reasonsForChoice/ReasonsForChoice";
 
 export default function Jurisdictions() {
   return <>
@@ -27,5 +28,6 @@ export default function Jurisdictions() {
         }
       </Select>
     </div>
+    <ReasonsForChoice />
   </>
 }
