@@ -11,7 +11,7 @@
     padding: 0 27px;
     position: relative;
 
-    >div {
+    > div {
       width: 50%;
     }
 
@@ -92,9 +92,11 @@
       }
     }
 
-    input, textarea, .ant-select-selector {
+    input,
+    textarea,
+    .ant-select-selector {
       font-size: 14px;
-      border: 1px solid #CCCCCC;
+      border: 1px solid #cccccc;
       padding: 12px;
 
       &:focus {
@@ -108,15 +110,43 @@
       }
     }
 
+    input[type="file"] {
+      padding: 0;
+      border: none;
+    }
+
+    .submit-button {
+      font-family: "Lora-medium";
+      font-size: 24px;
+      background-color: variables.$dark-red;
+      width: 100%;
+      padding: 13px;
+      height: auto;
+
+      &:hover {
+        background-color: variables.$dark-red;
+      }
+    }
+
     .ant-select {
+      height: auto;
       .ant-select-selector {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 8px;
       }
 
       &:hover .ant-select-selector {
         border: 1px solid #cccccc !important;
       }
+    }
+
+    .file-form-item {
+      margin-bottom: 10px;
+    }
+
+    .file-remark {
+      font-family: "Roboto";
+      font-size: 14px;
+      margin-bottom: 20px;
     }
 
     .ant-select-focused {
@@ -126,6 +156,24 @@
 
       &:focus-within .ant-select-selector {
         border-color: #cccccc !important;
+      }
+    }
+
+    .checkbox-form-item {
+      .ant-checkbox-inner {
+        border: 1px solid variables.$dark-red;
+      }
+
+      .ant-checkbox-checked {
+        &:hover {
+          .ant-checkbox-inner {
+            border: 1px solid variables.$dark-red;
+            background: none;
+          }
+        }
+        .ant-checkbox-inner::after {
+          border-color: variables.$dark-red;
+        }
       }
     }
   }
