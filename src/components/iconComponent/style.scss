@@ -121,4 +121,34 @@
   &.viber {
     background-image: url(../../assets/images/viberIcon.png);
   }
+
+  &.facebook {
+    background-image: url(../../assets/images/facebookIcon.png);
+    width: 9px;
+    height: 17px;
+  }
+
+  &.twitter {
+    background-image: url(../../assets/images/twitterIcon.png);
+    width: 19px;
+    height: 15px;
+  }
+
+  &.instagram {
+    background-image: url(../../assets/images/instaIcon.png);
+    height: 20px;
+    width: 20px;
+  }
+
+  &.linkedin {
+    background-image: url(../../assets/images/linkedinIcon.png);
+    height: 18px;
+    width: 18px;
+  }
+
+  &.telegram {
+    background-image: url(../../assets/images/telegramIcon.png);
+    width: 21px;
+    height: 17px;
+  }
 }

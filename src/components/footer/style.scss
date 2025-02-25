@@ -1,0 +1,137 @@
+@use "../../variables";
+
+.footer {
+  margin-top: 64px;
+  margin-bottom: 70px;
+  border-bottom: 1px solid variables.$light-border-color;
+
+  .logo-wrapper {
+    font-family: "Lora-bold";
+    font-size: 45px;
+    color: variables.$red-color;
+    border-bottom: 1px solid variables.$light-border-color;
+
+    .icon-component {
+      margin-right: 50px;
+    }
+  }
+
+  .logo-wrapper,
+  .footer-links-contacts {
+    padding: 20px 80px;
+  }
+
+  .footer-links-contacts {
+    font-size: 18px;
+    color: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    >div {
+      width: 50%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page-links,
+    .services-footer {
+      font-family: "Raleway-semi";
+      padding: 0 33px;
+      padding-top: 50px;
+
+      p {
+        font-family: "Raleway-bold";
+      }
+
+      a {
+        line-height: 26px;
+      }
+
+      p,
+      a {
+        margin-bottom: 10px;
+      }
+    }
+
+    .services-footer {
+      p {
+        color: variables.$red-color;
+      }
+      a {
+        text-transform: capitalize;
+      }
+    }
+
+    .page-links {      
+      p {
+        color: #202127;
+      }
+    }
+
+    .contacts-form {
+      border-left: 1px solid variables.$light-border-color;
+      padding-top: 30px;
+      padding-bottom: 36px;
+
+      >div {
+        width: 60%;
+      }
+
+      .title {
+        font-family: "Lato-semi";
+        font-size: 22px;
+        line-height: 150%;
+        margin-bottom: 20px;
+      }
+
+      .secondary-title {
+        font-family: "Raleway-semi";
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-family: "Mulish";
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+
+      .send-email-form {
+        padding: 10px 0;
+        border-bottom: 1px solid #70869A;
+        margin-bottom: 20px;
+
+        input {
+          font-family: "Mulish";
+          font-size: 16px;
+          color: #617281;
+          height: 54px;
+          border: none;
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+
+        button {
+          font-family: "Lora-medium";
+          font-size: 18px;
+          background-color: variables.$button-bg;
+          color: #ffffff;
+          height: 50px;
+          padding: 0 50px;
+        }
+      }
+
+      .social-wrapper {
+        width: 38px;
+        height: 38px;
+        border: 1px solid #DFC3C1;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+    }
+  }
+}
