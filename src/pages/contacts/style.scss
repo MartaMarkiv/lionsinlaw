@@ -115,6 +115,29 @@
       border: none;
     }
 
+    .phone-number-item {
+      .form-control {
+        font-family: "Inter-medium-24";
+        font-size: 14px;
+        height: auto;
+        padding: 10px;
+        padding-left: 60px;
+        width: 100%;
+      }
+
+      .flag-dropdown {
+        background-color: #ffffff;
+        width: 56px;
+
+        .selected-flag {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 0;
+        }
+      }
+    }
+
     .submit-button {
       font-family: "Lora-medium";
       font-size: 24px;

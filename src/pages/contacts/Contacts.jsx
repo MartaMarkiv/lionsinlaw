@@ -1,11 +1,22 @@
+import { useState } from "react";
+
 import { Flex, Form, Input, Select, Checkbox, Button } from "antd";
 import "./style.scss";
 const { TextArea } = Input;
 import config from "../../config";
 import Icon from "../../components/iconComponent/Icon";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 export default function Contacts() {
+  const [phone, setPhone] = useState("")
   const [form] = Form.useForm();
+
+  const changePhoneNumber = (value, country) => {
+    console.log(value);
+    console.log(country);
+    setPhone(value);
+  }
   return (
     <>
       <Flex align="center" justify="center" className="contacts-header-wrapper">
@@ -109,8 +120,16 @@ export default function Contacts() {
               justify="space-between"
               className="form-item-wrapper"
             >
-              <Form.Item label="Тема" name="country">
-                <Input />
+              <Form.Item label="Номер телефону" required={true} name="phoneNumber" className="phone-number-item">
+                <PhoneInput
+                  country={'us'}
+                  placeholder="Номер телефону"
+                  value={phone}
+                  onChange={changePhoneNumber}
+                />
+              </Form.Item>
+              <Form.Item label="Країна" name="country">
+                <Input placeholder="Країна"/>
               </Form.Item>
             </Flex>
             <Form.Item label="Повідомлення" required={true}>
