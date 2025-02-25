@@ -15,7 +15,7 @@
 }
 
 .main-section {
-  height: calc(100vh - 127px);
+  height: calc(100vh - 177px);
 
   .main-background {
     background-image: url(../../assets/images/mainPageImage.png);
@@ -31,7 +31,8 @@
   }
 
   .global {
-    padding: 100px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
 
     & > div {
       width: 100%;
@@ -62,8 +63,6 @@
     }
 
     &.registration {
-      padding-top: 30px;
-
       .description {
         margin-top: 20px;
       }

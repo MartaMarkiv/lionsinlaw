@@ -2,10 +2,13 @@
   font-family: "Roboto-bold";
   font-size: 18px;
   color: #000000;
-  width: 100%;
+  padding: 0 70px;
+  margin-bottom: 50px;
 
   a {
-    @extend .header;
+    font-family: "Roboto-bold";
+    font-size: 18px;
+    color: #000000;
 
     &.email-wrapper {
       display: flex;
@@ -18,8 +21,9 @@
   }
 
   .menu-item {
+    font-family: "Roboto-bold";
+    font-size: 18px;
     background: none;
-    @extend .header;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
