@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MAIN_ROUTE } from "./routes";
+import { MAIN_ROUTE, CONTACTS_ROUTE } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
+import Contacts from "../pages/contacts/Contacts";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: MAIN_ROUTE,
         element: <Main />,
+      },
+      {
+        path: CONTACTS_ROUTE,
+        element: <Contacts />,
       },
     ],
   },

@@ -8,6 +8,10 @@
   display: inline-block;
   border-radius: 16px;
   padding: 18px 100px;
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .main-section {
@@ -93,20 +97,20 @@
 .our-services {
   margin-top: 120px;
 
-  &>.title {
+  & > .title {
     font-family: "Lato";
     font-size: 42px;
   }
 
-  &>.description {
+  & > .description {
     font-family: "FiraSans";
     font-size: 20px;
     line-height: 150%;
     margin-top: 25px !important;
   }
 
-  &>.title,
-  &>.description {
+  & > .title,
+  & > .description {
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -141,7 +145,7 @@
 .choose-us {
   margin-top: 120px;
 
-  >.title {
+  > .title {
     font-family: "Lato-bold";
     font-size: 42px;
     max-width: 55%;
@@ -255,7 +259,7 @@
   padding: 70px;
   position: relative;
 
-  >div {
+  > div {
     z-index: 2;
   }
 
@@ -406,7 +410,7 @@
         margin-bottom: 40px;
 
         &.light {
-          background-color: #FFF3F1;
+          background-color: #fff3f1;
         }
 
         &.dark {
@@ -419,7 +423,7 @@
         margin-bottom: 12px;
 
         .icon-wrapper {
-          background-color: #FFF3F1;
+          background-color: #fff3f1;
           margin-right: 15px;
           width: 32px;
           height: 32px;
