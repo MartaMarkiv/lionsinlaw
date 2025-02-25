@@ -35,6 +35,10 @@
       text-transform: capitalize;
       margin-bottom: 20px;
 
+      &:hover {
+        color: variables.$black-color;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }

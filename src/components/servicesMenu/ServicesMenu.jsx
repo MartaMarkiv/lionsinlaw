@@ -1,5 +1,6 @@
 import { Flex } from "antd";
 import { Link } from "react-router-dom";
+import { JURISDICTIONS_ROUTE } from "../../routes/routes";
 import "./style.scss";
 
 export default function ServicesMenu() {
@@ -23,7 +24,7 @@ export default function ServicesMenu() {
           <Link to={""}>Питання відповідь</Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
-          <Link to={""}>Юрисдикції</Link>
+          <Link to={`${JURISDICTIONS_ROUTE}/europe`}>Юрисдикції</Link>
         </Flex>
       </Flex>
     </div>
