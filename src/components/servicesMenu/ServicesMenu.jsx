@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 import { Link } from "react-router-dom";
-import { JURISDICTIONS_ROUTE } from "../../routes/routes";
+import { BANK_ACCOUNT_ROUTE, JURISDICTIONS_ROUTE } from "../../routes/routes";
 import "./style.scss";
 
 export default function ServicesMenu() {
@@ -10,7 +10,7 @@ export default function ServicesMenu() {
       <Flex className="links-menu-wrapper">
         <Flex vertical={true} align="flex-start">
           <Link to={""}>рестрація компаній</Link>
-          <Link to={""}>відкриття банківських рахунків</Link>
+          <Link to={BANK_ACCOUNT_ROUTE}>відкриття банківських рахунків</Link>
           <Link to={""}>відкриття мерчант рахунків</Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
