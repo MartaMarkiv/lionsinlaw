@@ -5,6 +5,7 @@ import {
   JURISDICTIONS_ROUTE,
   BANK_ACCOUNT_ROUTE,
   CRYPTO_LICENSE_ROUTE,
+  FINANCIAL_LICENSE_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -12,6 +13,7 @@ import Contacts from "../pages/contacts/Contacts";
 import Jurisdictions from "../pages/jurisdictions/Jurisdictions";
 import BankAccounts from "../pages/bankAccounts/BankAccounts";
 import CryptoLicense from "../pages/cryptoLicense/CryptoLicense";
+import FinancialLicense from "../pages/financialLicense/FinancialLicense";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,10 @@ const router = createBrowserRouter([
         path: CRYPTO_LICENSE_ROUTE,
         element: <CryptoLicense />,
       },
+      {
+        path: FINANCIAL_LICENSE_ROUTE,
+        element: <FinancialLicense />
+      }
     ],
   },
 ]);

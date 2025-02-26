@@ -1,6 +1,8 @@
 import { Flex } from "antd";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
+import Faq from "../../components/faq/Faq";
+import ContactPhones from "../../components/contactPhones/ContactPhones";
 
 export default function CryptoLicense() {
   return (
@@ -43,6 +45,8 @@ export default function CryptoLicense() {
           </Flex>
         </Flex>
       </div>
+      <Faq />
+      <ContactPhones />
     </>
   );
 }

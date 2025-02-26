@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 import { Link } from "react-router-dom";
-import { BANK_ACCOUNT_ROUTE, CRYPTO_LICENSE_ROUTE, JURISDICTIONS_ROUTE } from "../../routes/routes";
+import { BANK_ACCOUNT_ROUTE, CRYPTO_LICENSE_ROUTE, FINANCIAL_LICENSE_ROUTE, JURISDICTIONS_ROUTE } from "../../routes/routes";
 import "./style.scss";
 
 export default function ServicesMenu() {
@@ -16,7 +16,7 @@ export default function ServicesMenu() {
         <Flex vertical={true} align="flex-start">
           <Link to={""}>реєстрація товарних знаків</Link>
           <Link to={CRYPTO_LICENSE_ROUTE}>криптоконсалтинг</Link>
-          <Link to={""}>відкриття фінансових ліцензій</Link>
+          <Link to={FINANCIAL_LICENSE_ROUTE}>відкриття фінансових ліцензій</Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
           <Link to={""}>Консультаційні послуги</Link>

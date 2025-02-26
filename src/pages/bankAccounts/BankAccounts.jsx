@@ -9,7 +9,7 @@ export default function BankAccounts() {
   return (
     <>
       <div className="bank-account-header">
-        <p className="title">
+        <div className="title">
           <span className="selected-text">LionsInLaw</span> Ваш надійний партнер
           у створенні міжнародної компанії
           <p className="description">
@@ -20,7 +20,7 @@ export default function BankAccounts() {
             linkLabel="Зв'язатися з нами"
             linkValue={CONTACTS_ROUTE}
           />
-        </p>
+        </div>
       </div>
       <div className="copmany-experts">
         <p className="title">
