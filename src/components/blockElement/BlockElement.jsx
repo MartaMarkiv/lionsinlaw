@@ -7,7 +7,7 @@ export default function BlockElement({
   description,
   linkValue,
   isDark = false,
-  blockClass = ""
+  blockClass = "",
 }) {
   return (
     <Flex
@@ -19,7 +19,7 @@ export default function BlockElement({
       <div className="title">{title}</div>
       <div className="description">
         <span>{description}</span>
-        <div className="description-bg"/>
+        <div className="description-bg" />
       </div>
       <MoreLink linkValue={linkValue} theme={isDark ? "dark" : "light"} />
     </Flex>

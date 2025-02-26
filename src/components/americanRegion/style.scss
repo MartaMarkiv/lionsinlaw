@@ -1,0 +1,83 @@
+@use "../../variables";
+
+.american-region-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+
+  .england {
+    background-image: url(../../assets/images/england.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .curacao,
+  .canada,
+  .usa {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position-y: 95%;
+    justify-content: flex-start;
+
+    .description {
+      margin-top: 10px;
+    }
+  }
+
+  .curacao,
+  .beliz,
+  .canada,
+  .usa {
+    .more-link {
+      display: none;
+    }
+  }
+
+  .curacao {
+    grid-column-start: 2;
+  }
+
+  .image-wrapper {
+    position: relative;
+    grid-column-end: span 2;
+
+    .american-region {
+      background-image: url(../../assets/images/americanRegion.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left center;
+      position: absolute;
+      background-color: variables.$dark-red;
+      border-radius: 50%;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 70%;
+      height: calc(100% + 150px);
+    }
+  }
+
+  .beliz {
+    justify-content: flex-start;
+
+    .description {
+      margin-top: 15%;
+    }
+  }
+
+  .usa {
+    background-image: url(../../assets/images/usaWhiteHouse.png);
+    background-size: 90%;
+  }
+
+  .curacao {
+    background-image: url(../../assets/images/curacaoImage.png);
+    background-size: 95%;
+  }
+
+  .canada {
+    background-image: url(../../assets/images/canadaCelebration.png);
+    background-size: 90%;
+  }
+}

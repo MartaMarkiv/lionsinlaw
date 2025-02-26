@@ -1,0 +1,46 @@
+import "./style.scss";
+import BlockElement from "../blockElement/BlockElement";
+
+export default function AmericanRegion() {
+  return (
+    <div className="american-region-wrapper">
+      <BlockElement
+        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+        linkValue={""}
+        title="Офшорна компанія в USA"
+        isDark={false}
+        blockClass="usa"
+      />
+      <BlockElement
+        description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у Панамі, що забезпечує глобальні перспективи та фінансові переваги."
+        linkValue={""}
+        title="Офшорна компанія в Панамі"
+        isDark={true}
+      />
+      <div className="image-wrapper">
+        <div className="american-region"></div>
+      </div>
+      <BlockElement
+        description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція."
+        linkValue={""}
+        title="ОФШОРНА КОМПАНІЯ Кюрасао"
+        isDark={false}
+        blockClass="curacao"
+      />
+      <BlockElement
+        description="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."
+        linkValue={""}
+        title="Офшорна компанія в БЕЛІЗ"
+        isDark={true}
+        blockClass="beliz"
+      />
+      <BlockElement
+        description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у КАНАДІ що забезпечує глобальні перспективи та фінансові переваги."
+        linkValue={""}
+        title="ОФШОРНА КОМПАНІЯ В КанадІ"
+        isDark={false}
+        blockClass="canada"
+      />
+    </div>
+  );
+}

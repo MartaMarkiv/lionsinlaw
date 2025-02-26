@@ -110,15 +110,15 @@ export default {
   jurisdictionsRegions: [
     {
       value: "europe",
-      label: "Європейський регіон"
+      label: "Європейський регіон",
     },
     {
       value: "america",
-      label: "Американський регіон"
+      label: "Американський регіон",
     },
     {
       value: "asia",
-      label: "Азійській регіон"
+      label: "Азійській регіон",
     },
-  ]
+  ],
 };
