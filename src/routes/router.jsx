@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Contacts />,
       },
       {
-        path: `${JURISDICTIONS_ROUTE}/:region`,
+        path: JURISDICTIONS_ROUTE,
         element: <Jurisdictions />,
       },
     ],

@@ -24,7 +24,7 @@ export default function ServicesMenu() {
           <Link to={""}>Питання відповідь</Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
-          <Link to={`${JURISDICTIONS_ROUTE}/europe`}>Юрисдикції</Link>
+          <Link to={JURISDICTIONS_ROUTE}>Юрисдикції</Link>
         </Flex>
       </Flex>
     </div>

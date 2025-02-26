@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./style.scss";
 import { Flex, Select } from "antd";
 import FlagsContainer from "../../components/flagsContainer/FlagsContainer";
@@ -10,6 +11,23 @@ import AmericanRegion from "../../components/americanRegion/AmericanRegion";
 import AsianRegion from "../../components/asianRegion/AsianRegion";
 
 export default function Jurisdictions() {
+
+  const [region, setRegion] = useState(null);
+
+  const changeRegion = (value) => {
+    setRegion(value);
+  }
+
+  const getRegionComponent = () => {
+    switch (region) {
+      case "europe":
+        return <EuropeanRegion />
+      case "asia":
+        return <AsianRegion />
+      case "america":
+        return <AmericanRegion />
+    }
+  }
   return (
     <>
       <div className="jurisdictions-header-banner-wrapper">
@@ -38,7 +56,7 @@ export default function Jurisdictions() {
         на кожному етапі.
       </p>
       <div className="select-region-wrapper">
-        <Select placeholder="Виберіть Регіон" popupClassName="regions-list">
+        <Select placeholder="Виберіть Регіон" popupClassName="regions-list" onChange={changeRegion} value={region}>
           {config.jurisdictionsRegions.map((item, index) => (
             <Select.Option key={`${item.value}:${index}`} value={item.value}>
               {item.label}
@@ -47,9 +65,9 @@ export default function Jurisdictions() {
         </Select>
       </div>
       <div className="regions-wrapper">
-        {/* <EuropeanRegion /> */}
-        {/* <AmericanRegion /> */}
-        <AsianRegion />
+        {
+          getRegionComponent()
+        }
       </div>
       <ReasonsForChoice />
       <GetConsultation />
