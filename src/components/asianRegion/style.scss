@@ -1,0 +1,33 @@
+.asian-region-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+
+  .block-element {
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-position: center bottom;
+    background-position-y: calc(100% - 10px);
+    justify-content: flex-start;
+
+    .title {
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 10px;
+    }
+
+    .more-link {
+      display: none;
+    }
+
+    &.seychelles {
+      background-image: url(../../assets/images/SeychellesCastle.png);
+    }
+
+    &.mauritius {
+      background-image: url(../../assets/images/MauritiusCastle.png);
+    }
+  }
+}

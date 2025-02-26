@@ -7,6 +7,7 @@ import GetConsultation from "../../components/getConsultation/GetConsultation";
 import Faq from "../../components/faq/Faq";
 import EuropeanRegion from "../../components/europeanRegion/EuropeanRegion";
 import AmericanRegion from "../../components/americanRegion/AmericanRegion";
+import AsianRegion from "../../components/asianRegion/AsianRegion";
 
 export default function Jurisdictions() {
   return (
@@ -47,7 +48,8 @@ export default function Jurisdictions() {
       </div>
       <div className="regions-wrapper">
         {/* <EuropeanRegion /> */}
-        <AmericanRegion />
+        {/* <AmericanRegion /> */}
+        <AsianRegion />
       </div>
       <ReasonsForChoice />
       <GetConsultation />
