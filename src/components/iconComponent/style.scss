@@ -163,4 +163,16 @@
   &.expert {
     background-image: url(../../assets/images/approved-business.png);
   }
+
+  &.plus {
+    background-image: url(../../assets/images/plusIcon.png);
+    width: 31px;
+    height: 31px;
+  }
+
+  &.minus {
+    background-image: url(../../assets/images/minusIcon.png);
+    width: 25px;
+    height: 6px;
+  }
 }

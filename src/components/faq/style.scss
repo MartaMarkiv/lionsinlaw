@@ -1,0 +1,43 @@
+@use "../../variables";
+
+.faq-wrapper {
+  font-family: "Poppins";
+  padding: 0 70px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+  .title {
+    font-family: "Poppins-bold";
+    font-size: 52px;
+    margin-left: 30px;
+  }
+
+  .description {
+    color: #52525B;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .faq-list {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #E4E4E7;
+    margin-top: 70px;
+
+    .ant-collapse-content {
+      border-top: none;
+    }
+
+    .ant-collapse-header {
+      font-family: "Poppins-semi";
+      font-size: 18px;
+    }
+
+    .ant-collapse-content-box {
+      font-family: "Poppins";
+      font-size: 16px;
+      color: #52525B;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use "../../variables";
+
+.get-consultation-wrapper {
+  padding: 0 70px;
+  
+  .banner-wrapper {
+    color: #ffffff;
+    background-image: url(../../assets/images/consultingImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    position: relative;
+    padding: 70px 30px;
+
+    .title {
+      font-family: "Roboto-bold";
+      font-size: 40px;
+      width: 70%;
+      line-height: 150%;
+
+      .selected-text {
+        font-family: "Lato-bold";
+        font-size: 77px;
+        color: variables.$red-color;
+      }
+    }
+
+    .description {
+      font-family: "Raleway-bold";
+      font-size: 22px;
+      margin: 40px 0;
+    }
+
+    .banner-gradient {
+      background-color: #1d1311;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    a {
+      font-family: "Lora-medium";
+      font-size: 24px;
+      background-color: variables.$dark-red;
+      display: inline-block;
+      color: #ffffff;
+      padding: 18px 100px;
+      border-radius: 16px;
+      margin-bottom: 100px;
+    }
+  }
+}
