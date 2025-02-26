@@ -1,0 +1,132 @@
+.european-region-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+
+  .block-element {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .title,
+    .description {
+      font-family: "Inter-medium-24";
+      line-height: 120%;
+    }
+  }
+
+  .england {
+    background-image: url(../../assets/images/england.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .england,
+  .spain,
+  .ireland,
+  .poland,
+  .usa,
+  .czech {
+    .more-link {
+      display: none;
+    }
+  }
+
+  .spain {
+    background-image: url(../../assets/images/spainCastle.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 95%;
+    grid-column-start: 4;
+    grid-row-end: span 2;
+    justify-content: flex-start;
+
+    .description {
+      margin-top: 40%;
+    }
+  }
+
+  .ireland {
+    background-image: url(../../assets/images/iralend.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 95%;
+    justify-content: flex-start;
+
+    .description {
+      margin-top: 10px;
+    }
+  }
+
+  .men-island {
+    background-image: url(../../assets/images/menIsland.png);
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position-x: calc(100% - 20px);
+    background-position-y: calc(100% - 20px);
+    grid-column-start: 2;
+    grid-column-end: span 2;
+
+    .description {
+      width: 50%;
+    }
+  }
+
+  .usa,
+  .czech {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    grid-column-end: span 2;
+
+    .description {
+      width: 50%;
+      padding: 10px;
+
+      .description-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .usa {
+    background-image: url(../../assets/images/usaWhiteHouse.png);
+
+    .description {
+      .description-bg {
+        background-color: #D9D9D9;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .czech {
+    background-image: url(../../assets/images/czechCastle.png);
+
+    .description {
+      .description-bg {
+        background-color: #8D8585;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .poland {
+    background-image: url(../../assets/images/polandCastle.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center bottom;
+    background-position-y: 90%;
+    justify-content: flex-start;
+
+    .description {
+      margin-top: 15px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import config from "../../config";
 import ReasonsForChoice from "../../components/reasonsForChoice/ReasonsForChoice";
 import GetConsultation from "../../components/getConsultation/GetConsultation";
 import Faq from "../../components/faq/Faq";
+import EuropeanRegion from "../../components/europeanRegion/EuropeanRegion";
 
 export default function Jurisdictions() {
   return <>
@@ -30,6 +31,8 @@ export default function Jurisdictions() {
         }
       </Select>
     </div>
+    <div className="regions-wrapper">
+    <EuropeanRegion /></div>
     <ReasonsForChoice />
     <GetConsultation />
     <Faq />
