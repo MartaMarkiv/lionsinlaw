@@ -1,0 +1,54 @@
+@use "../../variables";
+
+.financial-license-page-wrapper {
+  padding: 0 70px;
+
+  .banner-wrapper {
+    font-family: "Lora-bold";
+    margin-bottom: 135px;
+
+    .sub-description {
+      font-size: 30px;
+      width: 40%;
+      align-self: flex-end;
+    }
+
+    .title {
+      color: variables.$red-color;
+      font-size: 200px;
+    }
+
+    .financical-info {
+      background-color: variables.$dark-red;
+      border-radius: 50px;
+      padding: 130px 60px;
+      position: relative;
+      margin-top: 15px;
+
+      .image-wrapper {
+        background-image: url(../../assets/images/highTech-science.png);
+        background-size: contain;
+        position: absolute;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 0;
+        width: 45%;
+        height: calc(100% + 60px);
+      }
+    }
+
+    .description {
+      color: #ffffff;
+      font-size: 45px;
+      line-height: 150%;
+      width: 57%;
+    }
+  }
+
+  .license-block-wrapper {
+    margin-bottom: 150px;
+  }
+  .faq-wrapper {
+    padding: 0;
+  }
+}

@@ -18,7 +18,12 @@ export default function LicenseBlock({
       <div className="image-wrapper">
         <img src={imgInst} alt="LionsInLaw license" />
       </div>
-      <Flex align="flex-start" justify="space-between" vertical={true} className="license-block-info">
+      <Flex
+        align="flex-start"
+        justify="space-between"
+        vertical={true}
+        className="license-block-info"
+      >
         <p className="title">{title}</p>
         <p className="description">{description}</p>
         <LinkComponent linkLabel="Детально" linkValue={linkRef} />
