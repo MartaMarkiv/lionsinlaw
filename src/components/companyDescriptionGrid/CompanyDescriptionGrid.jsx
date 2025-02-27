@@ -2,7 +2,17 @@ import { Flex } from "antd";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 
-export default function CompanyDescriptionGrid({taxesDescr, imageRef, title, company="", subDescr, financialDescr, riskDescr, businessDescr, businessImage}) {
+export default function CompanyDescriptionGrid({
+  taxesDescr,
+  imageRef,
+  title,
+  company = "",
+  subDescr,
+  financialDescr,
+  riskDescr,
+  businessDescr,
+  businessImage,
+}) {
   <section className="company-description-grid">
     <div className="taxes-wrapper">
       <Flex className="cell-header" align="center">
@@ -51,7 +61,7 @@ export default function CompanyDescriptionGrid({taxesDescr, imageRef, title, com
       <p>{riskDescr}</p>
     </div>
     <div className="image-wrapper">
-      <img src={businessImage} alt="Business"/>
+      <img src={businessImage} alt="Business" />
     </div>
-  </section>
+  </section>;
 }

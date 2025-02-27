@@ -48,8 +48,8 @@ const router = createBrowserRouter([
       },
       {
         path: ISLA_MAN_COMPANY_ROUTE,
-        element: <ManIslandCompany />
-      }
+        element: <ManIslandCompany />,
+      },
     ],
   },
 ]);
