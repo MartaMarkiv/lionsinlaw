@@ -1,0 +1,79 @@
+@use "../../variables";
+
+.crypto-license-page-wrapper {
+  padding: 0 70px;
+  margin-bottom: 120px;
+
+  .crypto-license-header {
+    font-family: "Lora-bold";
+    font-size: 24px;
+    margin-bottom: 135px;
+
+    > .title {
+      font-size: 200px;
+      color: variables.$red-color;
+      position: relative;
+
+      .monet-wrapper {
+        background-image: url(../../assets/images/cryptoMonet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -50px;
+        left: 70%;
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .count {
+      font-size: 69px;
+    }
+
+    .description-block {
+      width: 30%;
+      text-align: center;
+
+      .cont-wrapper {
+        width: 60%;
+        margin-bottom: 40px;
+      }
+    }
+
+    .license-description {
+      color: #ffffff;
+      background-color: variables.$dark-red;
+      padding: 27px 45px;
+      margin-top: 20px;
+      padding-right: 0;
+      border-radius: 50px;
+
+      .title {
+        font-family: "Lato-bold";
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .crypto-license-item {
+        font-size: 18px;
+        padding: 10px 0;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 12px;
+
+        .icon-component {
+          width: 34px;
+          height: 34px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .license-block-wrapper {
+    margin-bottom: 150px;
+  }
+
+  .faq-wrapper {
+    padding: 0;
+  }
+}

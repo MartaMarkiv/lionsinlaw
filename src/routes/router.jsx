@@ -42,8 +42,8 @@ const router = createBrowserRouter([
       },
       {
         path: FINANCIAL_LICENSE_ROUTE,
-        element: <FinancialLicense />
-      }
+        element: <FinancialLicense />,
+      },
     ],
   },
 ]);

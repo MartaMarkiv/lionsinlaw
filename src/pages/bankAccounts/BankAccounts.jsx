@@ -13,7 +13,11 @@ import bankBuilding from "../../assets/images/bankKolons.png";
 export default function BankAccounts() {
   return (
     <div className="create-bank-account-page">
-      <Flex align="start" justify="space-between" className="bank-account-header">
+      <Flex
+        align="start"
+        justify="space-between"
+        className="bank-account-header"
+      >
         <div className="title">
           <span className="selected-text">LionsInLaw</span> Ваш надійний партнер
           у створенні міжнародної компанії
@@ -27,12 +31,16 @@ export default function BankAccounts() {
           />
         </div>
         <div className="create-bank-banner">
-          <img src={bankAccountBanner} alt="Create bank account"/>
+          <img src={bankAccountBanner} alt="Create bank account" />
         </div>
       </Flex>
       <div className="copmany-experts">
         <p className="title">
-          LionsInLaw - <span className="uppercase"> Експерти зі створення міжнародних компаній</span>
+          LionsInLaw -{" "}
+          <span className="uppercase">
+            {" "}
+            Експерти зі створення міжнародних компаній
+          </span>
         </p>
         <p className="description">
           Ми спеціалізуємося на сприянні створенню міжнародних компаній та
@@ -43,7 +51,11 @@ export default function BankAccounts() {
           доступ до основних фінансових послуг без зайвих затримок і ускладнень.
         </p>
         <Flex align="start" justify="space-between">
-          <Flex align="center" justify="space-around" className="experts-types-wrapper">
+          <Flex
+            align="center"
+            justify="space-around"
+            className="experts-types-wrapper"
+          >
             <Flex vertical={true} align="center" className="experts-type-item">
               <Icon name="agreement" />
               <p>Досвід створення міжнародної компанії</p>
@@ -54,25 +66,35 @@ export default function BankAccounts() {
             </Flex>
           </Flex>
           <p className="sub-description">
-            Відкриття банківського рахунку з <span className="selected-text"> Lionsinlaw</span> стає простим завдяки нашій глобальній мережі банківських партнерів
+            Відкриття банківського рахунку з{" "}
+            <span className="selected-text"> Lionsinlaw</span> стає простим
+            завдяки нашій глобальній мережі банківських партнерів
           </p>
         </Flex>
         <div className="experts-image">
           <img src={lawMember} alt="LionsInLaw member" />
         </div>
-        <img src={lawLady} alt="Law lady" className="law-lady-image"/>
+        <img src={lawLady} alt="Law lady" className="law-lady-image" />
       </div>
       <div className="international-business">
-        <Flex className="international-business-title" align="center" vertical={true}>
+        <Flex
+          className="international-business-title"
+          align="center"
+          vertical={true}
+        >
           <span>Започаткуйте свій міжнародний бізнес з </span>
           <div>
-          <span className="selected-text">LionsInLaw : </span>
-          <span>надійна підтримка стартапів та </span>
+            <span className="selected-text">LionsInLaw : </span>
+            <span>надійна підтримка стартапів та </span>
           </div>
-          
+
           <span>корпорацій у глобальному зростанні.</span>
         </Flex>
-        <Flex className="startaps-wrapper" justify="space-between" align="start">
+        <Flex
+          className="startaps-wrapper"
+          justify="space-between"
+          align="start"
+        >
           <p>
             Від стартапів до корпорацій - ми підтримуємо ваші глобальні амбіції
             з експертними послугами зі створення компанії та відкриття
@@ -92,12 +114,14 @@ export default function BankAccounts() {
             />
           </Flex>
         </Flex>
-        <img src={bankBuilding} alt="Bank building" className="bank-building"/>
+        <img src={bankBuilding} alt="Bank building" className="bank-building" />
       </div>
       <div className="why-lionsinlaw-wrapper">
         <Flex align="start" justify="space-between" className="why-lionsinlaw">
           <div>
-            <p className="title">Чому обирають <span className="selected-text">Lionsinlaw</span>?</p>
+            <p className="title">
+              Чому обирають <span className="selected-text">Lionsinlaw</span>?
+            </p>
             <p className="description">
               Професійні консультації та глобальне охоплення для вашого успіху з
               <span className="selected-text"> LionsInLaw</span>
@@ -111,8 +135,16 @@ export default function BankAccounts() {
             </p>
           </div>
         </Flex>
-        <Flex align="flex-start" justify="space-between" className="expert-guidance-wrapper">
-          <Flex vertical={true}  align="flex-end" className="selected-block expert-guidance">
+        <Flex
+          align="flex-start"
+          justify="space-between"
+          className="expert-guidance-wrapper"
+        >
+          <Flex
+            vertical={true}
+            align="flex-end"
+            className="selected-block expert-guidance"
+          >
             <p className="title">Експертне керівництво</p>
             <p className="description">
               Наша команда складається з юридичних і фінансових експертів, які
@@ -140,15 +172,15 @@ export default function BankAccounts() {
       </div>
       <div className="ask-bank-account-wrapper">
         <div>
-        <p className="title">
-          Забезпечте свої глобальні амбіції з Lionsinlaw - вашим надійним
-          партнером у міжнародних бізнес-рішеннях
-        </p>
-        <p className="description">
-          Замовлення банківського рахунку: Простіше, швидше, надійніше з нашою
-          експертною підтримкою.
-        </p>
-        <LinkComponent linkLabel="Замовити" linkValue={CONTACTS_ROUTE} />
+          <p className="title">
+            Забезпечте свої глобальні амбіції з Lionsinlaw - вашим надійним
+            партнером у міжнародних бізнес-рішеннях
+          </p>
+          <p className="description">
+            Замовлення банківського рахунку: Простіше, швидше, надійніше з нашою
+            експертною підтримкою.
+          </p>
+          <LinkComponent linkLabel="Замовити" linkValue={CONTACTS_ROUTE} />
         </div>
       </div>
       <ContactPhones />
