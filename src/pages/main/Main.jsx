@@ -9,7 +9,6 @@ import BlockElement from "../../components/blockElement/BlockElement";
 import config from "../../config";
 import { Button } from "react-scroll";
 import ContactPhones from "../../components/contactPhones/ContactPhones";
-import Footer from "../../components/footer/Footer";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function Main() {

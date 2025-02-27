@@ -175,4 +175,12 @@
     width: 25px;
     height: 6px;
   }
+
+  &.bank-account {
+    background-image: url(../../assets/images/house-with-card.png);
+  }
+
+  &.agreement {
+    background-image: url(../../assets/images/agreement-icon.png);
+  }
 }
