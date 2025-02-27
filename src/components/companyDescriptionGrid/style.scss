@@ -1,0 +1,6 @@
+@use "../../variables";
+
+.company-description-grid {
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: auto;
+}
