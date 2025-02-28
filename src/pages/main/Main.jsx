@@ -1,4 +1,4 @@
-import { Flex, Switch } from "antd";
+import { Flex, Switch, Button } from "antd";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import FlagsContainer from "../../components/flagsContainer/FlagsContainer";
@@ -7,7 +7,6 @@ import chooseUsImg from "../../assets/images/chooseLionsInLaw.png";
 import lionsInLawTeam from "../../assets/images/team.png";
 import BlockElement from "../../components/blockElement/BlockElement";
 import config from "../../config";
-import { Button } from "react-scroll";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function Main() {
@@ -305,7 +304,7 @@ export default function Main() {
               <span>/ Місяць</span>
             </Flex>
             <div>
-              <Button className="start-plan-btn light">Почни зараз</Button>
+              <Button className="start-plan-btn light">Починай зараз</Button>
             </div>
             {config.tariffPlanOptions.free.map((item, index) => (
               <Flex
@@ -331,7 +330,7 @@ export default function Main() {
               <span>/ Місяць</span>
             </Flex>
             <div>
-              <Button className="start-plan-btn dark">Почни зараз</Button>
+              <Button className="start-plan-btn dark">Починай зараз</Button>
             </div>
             {config.tariffPlanOptions.prof.map((item, index) => (
               <Flex
@@ -361,7 +360,7 @@ export default function Main() {
               <span>/ Місяць</span>
             </Flex>
             <div>
-              <Button className="start-plan-btn light">Почни зараз</Button>
+              <Button className="start-plan-btn light">Починай зараз</Button>
             </div>
             {config.tariffPlanOptions.enterprise.map((item, index) => (
               <Flex

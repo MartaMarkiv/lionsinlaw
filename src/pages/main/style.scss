@@ -415,6 +415,10 @@
         &.dark {
           background-color: #ffffff;
         }
+
+        &:hover {
+          color: #000000;
+        }
       }
 
       .plan-option-item {
