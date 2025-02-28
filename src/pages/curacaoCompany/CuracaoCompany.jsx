@@ -11,9 +11,13 @@ export default function CuracaoCompany() {
   return (
     <section className="curacao-company-wrapper">
       <section className="curacao-company-header">
-        <p className="title">Перетворіть мрію на реальність: відкрийте офшорну компанію з LionsInLaw у Кюракао!</p>
+        <p className="title">
+          Перетворіть мрію на реальність: відкрийте офшорну компанію з
+          LionsInLaw у Кюракао!
+        </p>
         <p className="description">
-          Експертиза, яка змінює ваш бізнес у глобальний успіх. Довіртеся професіоналам в LionsInLaw
+          Експертиза, яка змінює ваш бізнес у глобальний успіх. Довіртеся
+          професіоналам в LionsInLaw
         </p>
       </section>
       <CompanySubDescriptionBlock

@@ -13,6 +13,7 @@ import {
   CURACAO_COMPANY_ROUTE,
   GIBRALTAR_COMPANY_ROUTE,
   POLAND_COMPANY_ROUTE,
+  ENGLAND_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -28,6 +29,7 @@ import UsaCompany from "../pages/usaCompany/UsaCompany";
 import CuracaoCompany from "../pages/curacaoCompany/CuracaoCompany";
 import GibraltarCompany from "../pages/gibraltarCompany/GibraltarCompany";
 import PolandCompany from "../pages/polandCompany/PolandCompany";
+import EnglandCompany from "../pages/englandCompany/EnglandCompany";
 
 const router = createBrowserRouter([
   {
@@ -76,16 +78,20 @@ const router = createBrowserRouter([
       },
       {
         path: CURACAO_COMPANY_ROUTE,
-        element: <CuracaoCompany />
+        element: <CuracaoCompany />,
       },
       {
         path: GIBRALTAR_COMPANY_ROUTE,
-        element: <GibraltarCompany />
+        element: <GibraltarCompany />,
       },
       {
         path: POLAND_COMPANY_ROUTE,
-        element: <PolandCompany />
-      }
+        element: <PolandCompany />,
+      },
+      {
+        path: ENGLAND_COMPANY_ROUTE,
+        element: <EnglandCompany />,
+      },
     ],
   },
 ]);

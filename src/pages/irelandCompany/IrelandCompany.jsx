@@ -14,10 +14,11 @@ export default function IrelandCompany() {
   return (
     <section className="ireland-company-wrapper">
       <section className="ireland-company-header">
-        <Flex style={{position: "relative"}}>
+        <Flex style={{ position: "relative" }}>
           <Flex vertical={true} className="title-wrapper">
             <p className="sub-title">
-              <span className="seelcted-text">Започаткуйте</span> свою офшорну компанію в Ірландії з{" "}
+              <span className="seelcted-text">Започаткуйте</span> свою офшорну
+              компанію в Ірландії з{" "}
             </p>
             <p className="title">LionsInLaw</p>
             <p className="description">
@@ -31,12 +32,20 @@ export default function IrelandCompany() {
           <div className="mountain-banner">
             <img src={irelandMountain} alt="Ireland's Mountain" />
           </div>
-          <Flex vertical={true} justify="center" className="tariff-info-wrapper">
+          <Flex
+            vertical={true}
+            justify="center"
+            className="tariff-info-wrapper"
+          >
             <p className="description">
               Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
               <span className="selected-text"> LionsInLaw</span>
             </p>
-            <Flex align="center" justify="space-between" className="show-rariff">
+            <Flex
+              align="center"
+              justify="space-between"
+              className="show-rariff"
+            >
               <span>Тарифи</span>
               <Button icon={<Icon name="tariff" />} />
             </Flex>

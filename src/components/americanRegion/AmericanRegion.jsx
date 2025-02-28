@@ -26,14 +26,14 @@ export default function AmericanRegion() {
         <div className="american-region"></div>
       </div>
       <Link to={CURACAO_COMPANY_ROUTE} className="curacao-link">
-      <BlockElement
-        description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція."
-        linkValue={""}
-        title="ОФШОРНА КОМПАНІЯ Кюрасао"
-        isDark={false}
-        hasLink={false}
-        blockClass="curacao"
-      />
+        <BlockElement
+          description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція."
+          linkValue={""}
+          title="ОФШОРНА КОМПАНІЯ Кюрасао"
+          isDark={false}
+          hasLink={false}
+          blockClass="curacao"
+        />
       </Link>
       <BlockElement
         description="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."

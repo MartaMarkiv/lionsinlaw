@@ -11,7 +11,9 @@ export default function PolandCompany() {
   return (
     <section className="poland-company-wrapper">
       <section className="poland-company-header">
-        <p className="title">Розпочніть вашу офшорну подорож з LionsInLaw в Польщі!</p>
+        <p className="title">
+          Розпочніть вашу офшорну подорож з LionsInLaw в Польщі!
+        </p>
         <p className="description">
           Офшорні Можливості Без Меж: Реєстрація Компанії з Надійним Партнером
         </p>

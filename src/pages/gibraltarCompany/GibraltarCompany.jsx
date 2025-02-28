@@ -11,13 +11,18 @@ import { Flex } from "antd";
 export default function GibraltarCompany() {
   return (
     <section className="gibraltar-company-wrapper">
-      <Flex vertical={true} align="flex-end" className="gibraltar-company-header">
+      <Flex
+        vertical={true}
+        align="flex-end"
+        className="gibraltar-company-header"
+      >
         <p className="title">
           <span>Заснуйте ваш бізнес у Гібралтарі разом із </span>
           <span className="selected-text">LionsInLaw</span>
         </p>
         <p className="description">
-          професійна допомога у відкритті офшорних компаній, банківських рахунків та юридичних консультаціях у Гібралтар
+          професійна допомога у відкритті офшорних компаній, банківських
+          рахунків та юридичних консультаціях у Гібралтар
         </p>
       </Flex>
       <CompanySubDescriptionBlock

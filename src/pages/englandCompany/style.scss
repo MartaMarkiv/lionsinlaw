@@ -1,0 +1,63 @@
+@use "../../variables";
+
+.england-company-wrapper {
+  padding: 0 70px;
+
+  .england-company-header {
+    font-family: "Lato-bold";
+    background-image: url(../../assets/images/englandBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    padding: 88px 52px;
+    padding-bottom: 145px;
+
+    .title-wrapper {
+      width: 60%;
+    }
+
+    .title {
+      font-size: 60px;
+      margin-bottom: 45px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      font-size: 32px;
+      width: 70%;
+    }
+  }
+}
+
+.england-consulting {
+  background-color: #2a1615;
+  background-image: url(../../assets/images/englandSecondaryBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 142px 0;
+  margin-top: 250px;
+
+  > div {
+    color: #ffffff;
+    width: 60%;
+
+    .title {
+      font-family: "Roboto-bold";
+      font-size: 30px;
+      text-transform: uppercase;
+
+      .selected-text {
+        font-family: "Lato-bold";
+        font-size: 57px;
+        color: variables.$red-color;
+        text-transform: none;
+      }
+    }
+
+    .description {
+      font-family: "Raleway-bold";
+      font-size: 16px;
+      margin: 40px 0;
+    }
+  }
+}
