@@ -1,8 +1,14 @@
 @use "../../variables";
 
 .company-sub-description-block {
-  >div {
+  margin: 150px 0;
+
+  > div {
     width: 45%;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .title {
@@ -13,5 +19,6 @@
   .description {
     font-family: "Lora";
     font-size: 24px;
+    text-transform: capitalize;
   }
 }

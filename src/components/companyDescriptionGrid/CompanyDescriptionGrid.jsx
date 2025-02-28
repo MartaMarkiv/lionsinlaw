@@ -13,27 +13,27 @@ export default function CompanyDescriptionGrid({
   businessDescr,
   businessImage,
 }) {
-  <section className="company-description-grid">
-    <div className="taxes-wrapper">
+  return <section className="company-description-grid">
+    <Flex vertical={true} className="taxes-wrapper">
       <Flex className="cell-header" align="center">
         <div className="icon-wrapper">
-          <Icon name="" />
+          <Icon name="bank-dollar" />
         </div>
         <span>Оподаткування</span>
       </Flex>
       <p>{taxesDescr}</p>
-    </div>
-    <div className="image-wrapper">
+    </Flex>
+    <div className="image-wrapper image-taxes">
       <img src={imageRef} alt="Company's taxes" />
     </div>
-    <Flex vertical={true} className="grid-main-col">
+    <Flex vertical={true} align="flex-end" className="grid-main-col">
       <p className="title">{title}</p>
       {company !== "" && <p className="company-name">{company}</p>}
     </Flex>
     <Flex align="center" justify="center" className="sub-description">
       <p>{subDescr}</p>
     </Flex>
-    <div className="dark-cell">
+    <Flex vertical={true}  className="dark-cell financial-block">
       <Flex className="cell-header" align="center">
         <div className="icon-wrapper">
           <Icon name="libra" />
@@ -41,8 +41,8 @@ export default function CompanyDescriptionGrid({
         <span>Регулювання фінансового сектору</span>
       </Flex>
       <p>{financialDescr}</p>
-    </div>
-    <div className="risk-wrapper">
+    </Flex>
+    <Flex vertical={true} className="risk-wrapper">
       <Flex className="cell-header" align="center">
         <div className="icon-wrapper">
           <Icon name="attention" />
@@ -50,16 +50,16 @@ export default function CompanyDescriptionGrid({
         <span>Ризики і обмеження.</span>
       </Flex>
       <p>{riskDescr}</p>
-    </div>
-    <div className="dark-cell">
+    </Flex>
+    <Flex vertical={true} className="dark-cell business-block">
       <Flex className="cell-header" align="center">
         <div className="icon-wrapper">
           <Icon name="business" />
         </div>
         <span>Преференції для бізнесу</span>
       </Flex>
-      <p>{riskDescr}</p>
-    </div>
+      <p>{businessDescr}</p>
+    </Flex>
     <div className="image-wrapper">
       <img src={businessImage} alt="Business" />
     </div>
