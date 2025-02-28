@@ -3,6 +3,7 @@ import { Flex, Button, Popover } from "antd";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 import ServicesMenu from "../servicesMenu/ServicesMenu";
+import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
             </Button>
           </Popover>
           <Link to={""}>Блог</Link>
-          <Link to={""}>Контакти</Link>
+          <Link to={CONTACTS_ROUTE}>Контакти</Link>
           <a href="mailto:info@Lionsinlaw.com" className="email-wrapper">
             <Icon name="envelop" />
             <span>info@Lionsinlaw.com</span>

@@ -2,6 +2,7 @@ import { Button, Flex, Input } from "antd";
 import Icon from "../iconComponent/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
+import { BANK_ACCOUNT_ROUTE, CONTACTS_ROUTE, CRYPTO_LICENSE_ROUTE, FINANCIAL_LICENSE_ROUTE } from "../../routes/routes";
 
 export default function Footer() {
   return (
@@ -18,16 +19,16 @@ export default function Footer() {
             <Link>Блог</Link>
             <Link>Статті</Link>
             <Link>Питання та відповіді</Link>
-            <Link>Контакти</Link>
+            <Link to={CONTACTS_ROUTE}>Контакти</Link>
           </Flex>
           <Flex vertical={true} className="services-footer">
             <p>Послуги</p>
             <Link>Реєстрація Компаній</Link>
-            <Link>відкриття банківських рахунків</Link>
+            <Link to={BANK_ACCOUNT_ROUTE}>відкриття банківських рахунків</Link>
             <Link>відкриття мерчант рахунків</Link>
             <Link>реєстрація товарних знаків</Link>
-            <Link>криптоконсалтинг</Link>
-            <Link>відкриття фінансових ліцензій</Link>
+            <Link to={CRYPTO_LICENSE_ROUTE}>криптоконсалтинг</Link>
+            <Link to={FINANCIAL_LICENSE_ROUTE}>відкриття фінансових ліцензій</Link>
           </Flex>
         </Flex>
         <Flex className="contacts-form" justify="flex-end">
