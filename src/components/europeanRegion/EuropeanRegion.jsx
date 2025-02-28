@@ -1,6 +1,6 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
-import { IRELAND_COMPANY_ROUTE, ISLA_MAN_COMPANY_ROUTE } from "../../routes/routes";
+import { IRELAND_COMPANY_ROUTE, ISLA_MAN_COMPANY_ROUTE, SCOTLAND_COMPANY_ROUTE } from "../../routes/routes";
 
 export default function EuropeanRegion() {
   return (
@@ -41,7 +41,7 @@ export default function EuropeanRegion() {
       />
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
-        linkValue={""}
+        linkValue={SCOTLAND_COMPANY_ROUTE}
         title="Офшорна компанія в Шотландії"
         isDark={true}
       />

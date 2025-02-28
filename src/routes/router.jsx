@@ -8,6 +8,7 @@ import {
   FINANCIAL_LICENSE_ROUTE,
   ISLA_MAN_COMPANY_ROUTE,
   IRELAND_COMPANY_ROUTE,
+  SCOTLAND_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -18,6 +19,7 @@ import CryptoLicense from "../pages/cryptoLicense/CryptoLicense";
 import FinancialLicense from "../pages/financialLicense/FinancialLicense";
 import ManIslandCompany from "../pages/manIslandCompany/ManIslandCompany";
 import IrelandCompany from "../pages/irelandCompany/IrelandCompany";
+import ScotlandCompany from "../pages/scotlandCompany/ScotlandCompany";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: IRELAND_COMPANY_ROUTE,
         element: <IrelandCompany />
+      },
+      {
+        path: SCOTLAND_COMPANY_ROUTE,
+        element: <ScotlandCompany />
       }
     ],
   },
