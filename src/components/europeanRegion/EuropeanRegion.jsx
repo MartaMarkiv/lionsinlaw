@@ -4,6 +4,7 @@ import {
   GIBRALTAR_COMPANY_ROUTE,
   IRELAND_COMPANY_ROUTE,
   ISLA_MAN_COMPANY_ROUTE,
+  POLAND_COMPANY_ROUTE,
   SCOTLAND_COMPANY_ROUTE,
   USA_COMPANY_ROUTE,
 } from "../../routes/routes";
@@ -65,6 +66,7 @@ export default function EuropeanRegion() {
         blockClass="usa"
       />
       </Link>
+      <Link to={POLAND_COMPANY_ROUTE}>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}
@@ -72,6 +74,7 @@ export default function EuropeanRegion() {
         isDark={true}
         blockClass="poland"
       />
+      </Link>
       <Link className="czech-link">
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
