@@ -1,7 +1,6 @@
 import { Flex } from "antd";
 import "./style.scss";
 import Faq from "../../components/faq/Faq";
-import ContactPhones from "../../components/contactPhones/ContactPhones";
 import LicenseBlock from "../../components/licenseBlock/LicenseBlock";
 import paymentLicense from "../../assets/images/paymentLicense.png";
 import bankLicense from "../../assets/images/bankLicense.png";
@@ -53,7 +52,6 @@ export default function FinancialLicense() {
         />
         <Faq />
       </div>
-      <ContactPhones />
     </>
   );
 }

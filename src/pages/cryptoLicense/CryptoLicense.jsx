@@ -2,7 +2,6 @@ import { Flex } from "antd";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
 import Faq from "../../components/faq/Faq";
-import ContactPhones from "../../components/contactPhones/ContactPhones";
 import libraMonet from "../../assets/images/libraMonet.png";
 import cryptoLibrary from "../../assets/images/cryptoLibrary.png";
 import cryptoLicense from "../../assets/images/cryptiLicense.png";
@@ -90,7 +89,6 @@ export default function CryptoLicense() {
         />
         <Faq />
       </div>
-      <ContactPhones />
     </>
   );
 }

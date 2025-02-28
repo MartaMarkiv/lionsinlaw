@@ -3,7 +3,6 @@ import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
-import ContactPhones from "../../components/contactPhones/ContactPhones";
 import bankAccountBanner from "../../assets/images/openBankBanner.png";
 import lawMember from "../../assets/images/lawMember.png";
 import lawLady from "../../assets/images/lawLady2.png";
@@ -183,7 +182,6 @@ export default function BankAccounts() {
           <LinkComponent linkLabel="Замовити" linkValue={CONTACTS_ROUTE} />
         </div>
       </div>
-      <ContactPhones />
     </div>
   );
 }

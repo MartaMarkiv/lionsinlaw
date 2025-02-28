@@ -1,6 +1,13 @@
 import { Flex } from "antd";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
+import irelandNature from "../../assets/images/iralendNature.png";
+import iralendTaxes from "../../assets/images/iralendTaxes.png";
+import irelandBusiness from "../../assets/images/men-in-green.png";
+import CompanySubDescriptionBlock from "../../components/companySubDescriptionBlock/CompanySubDescriptionBlock";
+import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
+import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
+import Faq from "../../components/faq/Faq";
 
 export default function IrelandCompany() {
   return <section className="ireland-company-wrapper">
@@ -26,5 +33,24 @@ export default function IrelandCompany() {
         </div>
       </Flex>
     </section>
+    <CompanySubDescriptionBlock
+      title={<p className="title"><span className="selected-text"> Ірландія:</span> Сильна правова підтримка для вашої офшорної компанії </p>}
+      description="Ірландія - суверенна держава в Західній Європі, яка є членом Європейського Союзу і має суміш правових традицій, включаючи загальне право та елементи європейського права"
+      imageRef={irelandNature}
+    />
+    <CompanyDescriptionGrid
+      businessDescr="Ірландія має розвинені фінансові ринки та сприятливі умови для міжнародних інвестицій."
+      businessImage={irelandBusiness}
+      financialDescr="Фінансовий сектор Ірландії регулюється Центральним банком Ірландії та є частиною європейської системи фінансового нагляду"
+      imageRef={iralendTaxes}
+      riskDescr="Ірландія дотримується міжнародних стандартів у сфері фінансової та фіскальної прозорості, а також має правила щодо залучення іноземних інвестицій"
+      subDescr="Відкрийте нові горизонти для вашого бізнесу з вигодами ірландської юрисдикції"
+      taxesDescr="Податкова система Ірландії приваблива для бізнесу, з низькими
+ставками корпоративного податку та рядом податкових пільг для технологічних компаній."
+      title="основні переваги та практичні Аспекти реєстрації компанії"
+      company="ірландії"
+    />
+    <ConsultingOffshoreComp />
+    <Faq />
   </section>
 }
