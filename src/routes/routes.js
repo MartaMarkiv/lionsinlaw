@@ -8,3 +8,4 @@ export const ISLA_MAN_COMPANY_ROUTE = "/isla-of-man-company";
 export const SPAIN_COMPANY_ROUTE = "/spain-company";
 export const USA_COMPANY_ROUTE = "/usa-company";
 export const POLAND_COMPANY_ROUTE = "/poland-company";
+export const IRELAND_COMPANY_ROUTE = "/ireland-company";
