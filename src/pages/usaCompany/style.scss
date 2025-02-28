@@ -1,0 +1,36 @@
+@use "../../variables";
+
+.usa-company-wrapper {
+  padding: 0 70px;
+
+  .usa-company-header {
+    font-family: "Roboto";
+    color: #ffffff;
+    position: relative;
+    background-color: variables.$red-color;
+    padding: 88px 52px;
+    padding-bottom: 210px;
+
+    .title {
+      font-size: 55px;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+
+    .description {
+      font-size: 32px;
+      width: 55%;
+    }
+
+    .usa-banner {
+      background-image: url(../../assets/images/usaBanner.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 40%;
+      height: calc(100% + 80px);
+    }
+  }
+}

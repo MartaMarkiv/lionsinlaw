@@ -5,6 +5,7 @@ import {
   ISLA_MAN_COMPANY_ROUTE,
   SCOTLAND_COMPANY_ROUTE,
 } from "../../routes/routes";
+import { Link } from "react-router-dom";
 
 export default function EuropeanRegion() {
   return (
@@ -36,13 +37,16 @@ export default function EuropeanRegion() {
         isDark={false}
         blockClass="men-island"
       />
-      <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
-        linkValue={IRELAND_COMPANY_ROUTE}
-        title="Офшорна компанія в Ірландії"
-        isDark={false}
-        blockClass="ireland"
-      />
+      <Link to={IRELAND_COMPANY_ROUTE}>
+        <BlockElement
+          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          linkValue={IRELAND_COMPANY_ROUTE}
+          hasLink={false}
+          title="Офшорна компанія в Ірландії"
+          isDark={false}
+          blockClass="ireland"
+        />
+      </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={SCOTLAND_COMPANY_ROUTE}

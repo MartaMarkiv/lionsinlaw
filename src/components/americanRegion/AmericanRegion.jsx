@@ -1,16 +1,21 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
+import { Link } from "react-router-dom";
+import { USA_COMPANY_ROUTE } from "../../routes/routes";
 
 export default function AmericanRegion() {
   return (
     <div className="american-region-wrapper">
-      <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
-        linkValue={""}
-        title="Офшорна компанія в USA"
-        isDark={false}
-        blockClass="usa"
-      />
+      <Link to={USA_COMPANY_ROUTE}>
+        <BlockElement
+          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          linkValue={""}
+          title="Офшорна компанія в USA"
+          isDark={false}
+          hasLink={false}
+          blockClass="usa"
+        />
+      </Link>
       <BlockElement
         description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у Панамі, що забезпечує глобальні перспективи та фінансові переваги."
         linkValue={""}
