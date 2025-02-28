@@ -1,8 +1,9 @@
-import { Flex } from "antd";
+import { Button, Flex } from "antd";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
 import irelandNature from "../../assets/images/iralendNature.png";
 import iralendTaxes from "../../assets/images/iralendTaxes.png";
+import irelandMountain from "../../assets/images/irelandMountain.png";
 import irelandBusiness from "../../assets/images/men-in-green.png";
 import CompanySubDescriptionBlock from "../../components/companySubDescriptionBlock/CompanySubDescriptionBlock";
 import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
@@ -13,10 +14,10 @@ export default function IrelandCompany() {
   return (
     <section className="ireland-company-wrapper">
       <section className="ireland-company-header">
-        <Flex>
-          <Flex vertical={true}>
+        <Flex style={{position: "relative"}}>
+          <Flex vertical={true} className="title-wrapper">
             <p className="sub-title">
-              Започаткуйте свою офшорну компанію в Ірландії з{" "}
+              <span className="seelcted-text">Започаткуйте</span> свою офшорну компанію в Ірландії з{" "}
             </p>
             <p className="title">LionsInLaw</p>
             <p className="description">
@@ -27,17 +28,19 @@ export default function IrelandCompany() {
           <div className="secondary-banner"></div>
         </Flex>
         <Flex>
-          <div className="mountain-banner"></div>
-          <div>
+          <div className="mountain-banner">
+            <img src={irelandMountain} alt="Ireland's Mountain" />
+          </div>
+          <Flex vertical={true} justify="center" className="tariff-info-wrapper">
             <p className="description">
               Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
               <span className="selected-text"> LionsInLaw</span>
             </p>
-            <Flex align="center" justify="space-between">
+            <Flex align="center" justify="space-between" className="show-rariff">
               <span>Тарифи</span>
-              <Icon name="tariff" />
+              <Button icon={<Icon name="tariff" />} />
             </Flex>
-          </div>
+          </Flex>
         </Flex>
       </section>
       <CompanySubDescriptionBlock

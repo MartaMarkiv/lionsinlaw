@@ -1,5 +1,82 @@
+@use "../../variables";
+
 .ireland-company-wrapper {
   padding: 0 70px;
+
+  .ireland-company-header {
+    font-family: "Lora-bold";
+
+    .title-wrapper,
+    .mountain-banner {
+      width: 55%;
+      min-width: 55%;
+    }
+
+    .title-wrapper {
+      padding-bottom: 80px;
+
+      .sub-title {
+        font-family: "Lato-bold";
+        font-size: 54px;
+        text-transform: uppercase;
+
+        .selected-text {
+          font-family: "Roboto-bold";
+        }
+      }
+
+      .title {
+        font-size: 105px;
+        color: variables.$dark-red;
+        align-self: flex-end;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding-right: 50px;
+      }
+
+      .description {
+        font-size: 32px;
+        padding-right: 10%;
+      }
+    }
+
+    .secondary-banner {
+      background-image: url(../../assets/images/iralendBanner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 45%;
+      height: calc(100% + 180px);
+      position: absolute;
+      bottom: 0;
+      right: -20px;
+      z-index: -1;
+    }
+
+    .mountain-banner {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .tariff-info-wrapper {
+      padding-left: 47px;
+
+      .description {
+        font-size: 32px;
+
+        .selected-text {
+          color: variables.$dark-red;
+        }
+      }
+
+      .show-rariff {
+        font-size: 24px;
+        margin-top: 50px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid variables.$dark-red;
+      }
+    }
+  }
 
   .faq-wrapper {
     padding: 0;
