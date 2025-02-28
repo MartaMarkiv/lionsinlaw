@@ -10,3 +10,4 @@ export const USA_COMPANY_ROUTE = "/usa-company";
 export const POLAND_COMPANY_ROUTE = "/poland-company";
 export const IRELAND_COMPANY_ROUTE = "/ireland-company";
 export const SCOTLAND_COMPANY_ROUTE = "/scotland-company";
+export const CURACAO_COMPANY_ROUTE = "/curacao-company";

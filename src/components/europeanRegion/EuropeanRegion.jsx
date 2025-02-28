@@ -4,6 +4,7 @@ import {
   IRELAND_COMPANY_ROUTE,
   ISLA_MAN_COMPANY_ROUTE,
   SCOTLAND_COMPANY_ROUTE,
+  USA_COMPANY_ROUTE,
 } from "../../routes/routes";
 import { Link } from "react-router-dom";
 
@@ -53,13 +54,16 @@ export default function EuropeanRegion() {
         title="Офшорна компанія в Шотландії"
         isDark={true}
       />
+      <Link to={USA_COMPANY_ROUTE} className="usa-link">
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}
+        hasLink={false}
         title="Офшорна компанія в USA"
         isDark={false}
         blockClass="usa"
       />
+      </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}
@@ -67,13 +71,16 @@ export default function EuropeanRegion() {
         isDark={true}
         blockClass="poland"
       />
+      <Link className="czech-link">
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}
         title="Офшорна компанія в ЧЕХІЇ"
         isDark={false}
+        hasLink={false}
         blockClass="czech"
       />
+        </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}

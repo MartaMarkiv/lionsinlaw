@@ -1,7 +1,7 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
 import { Link } from "react-router-dom";
-import { USA_COMPANY_ROUTE } from "../../routes/routes";
+import { CURACAO_COMPANY_ROUTE, USA_COMPANY_ROUTE } from "../../routes/routes";
 
 export default function AmericanRegion() {
   return (
@@ -25,13 +25,16 @@ export default function AmericanRegion() {
       <div className="image-wrapper">
         <div className="american-region"></div>
       </div>
+      <Link to={CURACAO_COMPANY_ROUTE} className="curacao-link">
       <BlockElement
         description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція."
         linkValue={""}
         title="ОФШОРНА КОМПАНІЯ Кюрасао"
         isDark={false}
+        hasLink={false}
         blockClass="curacao"
       />
+      </Link>
       <BlockElement
         description="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."
         linkValue={""}

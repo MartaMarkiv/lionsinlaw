@@ -1,0 +1,33 @@
+@use "../../variables";
+
+.curacao-company-wrapper {
+  padding: 0 70px;
+
+  .curacao-company-header {
+    font-family: "Roboto";
+    color: #ffffff;
+    background-color: #0A0007;
+    background-image: url(../../assets/images/curacapBanner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    padding: 37px 72px;
+    padding-bottom: 112px;
+
+    .title {
+      font-size: 42px;
+      text-transform: uppercase;
+      margin-bottom: 91px;
+      width: 55%;
+    }
+
+    .description {
+      font-size: 32px;
+      width: 50%;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 0;
+  }
+}

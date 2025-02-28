@@ -68,7 +68,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    grid-column-end: span 2;
 
     .description {
       width: 50%;
@@ -82,6 +81,11 @@
         left: 0;
       }
     }
+  }
+
+  .usa-link,
+  .czech-link {
+    grid-column-end: span 2;
   }
 
   .usa {
