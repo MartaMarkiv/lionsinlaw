@@ -56,12 +56,12 @@ const router = createBrowserRouter([
       },
       {
         path: IRELAND_COMPANY_ROUTE,
-        element: <IrelandCompany />
+        element: <IrelandCompany />,
       },
       {
         path: SCOTLAND_COMPANY_ROUTE,
-        element: <ScotlandCompany />
-      }
+        element: <ScotlandCompany />,
+      },
     ],
   },
 ]);
