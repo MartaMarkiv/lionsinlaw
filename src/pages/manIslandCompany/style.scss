@@ -1,0 +1,70 @@
+@use "../../variables";
+
+.isle-man-company {
+  padding: 0 70px;
+
+  .banner-wrapper {
+    position: relative;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    // height: calc(100vh - 120px);
+
+    .man-company-wrapper {
+      font-family: "Lora-bold";
+      width: 40%;
+
+      .sub-title {
+        font-size: 54px;
+      }
+
+      .company-name {
+        font-size: 65px;
+        text-transform: capitalize;
+        align-self: flex-end;
+        margin-top: 30px;
+      }
+
+      .description {
+        font-size: 24px;
+        margin-top: 100px;
+        width: 70%;
+      }
+    }
+
+    .company-sub-header {
+
+      .title {
+        font-family: "Lora-bold";
+        font-size: 105px;
+        color: variables.$dark-red;
+      }
+
+      >div {
+        font-family: "Raleway-semi";
+        text-align: right;
+      }
+
+      .count {
+        font-size: 91px;
+      }
+
+      .count-label {
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+    }
+
+    .vector-wrapper,
+    .man-team-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../../assets/images/manIselBanner.png);
+      height: calc(100% + 190px);
+      width: 39%;
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(58%);
+    }
+  }
+}
