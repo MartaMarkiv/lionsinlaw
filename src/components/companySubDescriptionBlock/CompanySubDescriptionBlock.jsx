@@ -8,7 +8,7 @@ export default function CompanySubDescriptionBlock({
 }) {
   return (
     <Flex className="company-sub-description-block" justify="space-between">
-      <Flex vertical={true} justify="space-between">
+      <Flex vertical={true}>
         {title}
         <p className="description">{description}</p>
       </Flex>

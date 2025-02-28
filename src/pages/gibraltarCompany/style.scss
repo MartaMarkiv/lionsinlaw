@@ -1,0 +1,47 @@
+@use "../../variables";
+
+.gibraltar-company-wrapper {
+  padding: 0 70px;
+
+  .gibraltar-company-header {
+    font-family: "Lora-bold";
+    background-image: url(../../assets/images/GibraltarBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 74px;
+    padding-bottom: 37px;
+
+    .title {
+      font-family: "Roboto";
+      text-transform: uppercase;
+      font-size: 52px;
+
+      .selected-text {
+        font-family: "Lora-bold";
+        font-size: 105px;
+        color: variables.$dark-red;
+        margin-top: 20px;
+        display: inline-block;
+        text-transform: none;
+      }
+    }
+
+    .description {
+      font-size: 32px;
+      text-transform: capitalize;
+      margin-top: 119px;
+      padding-right: 50px;
+      box-sizing: border-box;
+    }
+
+    .title,
+    .description {
+      width: 60%;
+      min-width: 60%;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 0;
+  }
+}
