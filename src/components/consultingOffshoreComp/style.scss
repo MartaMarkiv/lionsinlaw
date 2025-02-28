@@ -1,0 +1,76 @@
+@use "../../variables";
+
+.consulting-offshore-comp-wrapper {
+  margin-top: 120px;
+
+  .header-block {
+    font-family: "Roboto-bold";
+    font-size: 62px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  .time-block {
+    font-family: "Roboto-bold";
+    font-size: 50px;
+    border: 1px solid #db1414;
+    padding: 24px;
+
+    > div {
+      font-size: 67px;
+      margin-top: 50px;
+    }
+
+    .hours-value {
+      font-family: "Roboto";
+    }
+
+    .day-value {
+      display: inline-block;
+      color: variables.$dark-red;
+      padding-top: 30px;
+    }
+  }
+
+  .tariff-wrapper {
+    font-family: "Manrope-light";
+    font-size: 30px;
+    background-color: variables.$dark-red;
+    color: #ffffff;
+    padding: 40px 73px;
+    margin: 0 30px;
+
+    .count {
+      font-family: "Manrope-semi";
+      font-size: 104px;
+    }
+
+    .tariff-items-wrapper {
+      margin-top: 50px;
+    }
+
+    .tariff-item {
+      margin-bottom: 23px;
+
+      .icon-component {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .register-company-wrapper {
+    .title {
+      font-family: "Lora-bold";
+      font-size: 105px;
+      color: variables.$dark-red;
+    }
+
+    .description {
+      font-family: "Raleway-bold";
+      font-size: 33px;
+    }
+  }
+}

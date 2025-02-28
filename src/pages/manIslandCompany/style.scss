@@ -7,7 +7,6 @@
     position: relative;
     padding-bottom: 150px;
     padding-top: 50px;
-    // height: calc(100vh - 120px);
 
     .man-company-wrapper {
       font-family: "Lora-bold";
@@ -65,5 +64,9 @@
       right: 50%;
       transform: translateX(58%);
     }
+  }
+
+  .faq-wrapper {
+    padding: 0;
   }
 }

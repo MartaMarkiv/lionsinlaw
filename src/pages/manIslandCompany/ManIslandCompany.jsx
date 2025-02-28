@@ -5,6 +5,8 @@ import manIslandNature from "../../assets/images/men-island.png";
 import manIslandPeople from "../../assets/images/men-island-people.png";
 import manEarth from "../../assets/images/men-earth.png";
 import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
+import Faq from "../../components/faq/Faq";
+import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 
 export default function ManIslandCompany() {
   return (
@@ -54,6 +56,8 @@ export default function ManIslandCompany() {
         title="Переваги та Виклики Відкриття Офшорної Компанії на"
         company="Острові Мен"
       />
+      <ConsultingOffshoreComp />
+      <Faq />
     </div>
   );
 }
