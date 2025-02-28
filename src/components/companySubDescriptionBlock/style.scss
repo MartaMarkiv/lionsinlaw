@@ -14,6 +14,10 @@
   .title {
     font-family: "Lora-bold";
     font-size: 42px;
+
+    .selected-text {
+      color: variables.$red-color;
+    }
   }
 
   .description {

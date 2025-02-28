@@ -1,6 +1,13 @@
+@use "../../variables";
+
 .scotland-company-page {
+  padding: 0 70px;
+
   .scotland-header {
     font-family: "Roboto-bold";
+    position: relative;
+    padding-bottom: 84px;
+    padding-top: 112px;
 
     >div {
       width: 45%;
@@ -14,21 +21,35 @@
       font-size: 40px;
     }
 
-    .title, .sub-title, .country-name {
+    .title, .sub-title {
       text-transform: uppercase;
     }
 
-    .name, .country-name {
+    .name {
       font-family: "Lora-bold";
       font-size: 105px;
-    }
-
-    .name {
       color: variables.$dark-red;
+      margin-top: 53px;
+      margin-bottom: 63px;
+      align-self: flex-end;
     }
 
     .description {
       font-size: 32px;
+      text-transform: capitalize;
+    }
+
+    .scotland-image {
+      background-image: url(../../assets/images/scotlandBanner1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: 100%;
+      width: 60%;
+      height: calc(100% + 180px);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 }
