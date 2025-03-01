@@ -15,6 +15,7 @@ import {
   POLAND_COMPANY_ROUTE,
   ENGLAND_COMPANY_ROUTE,
   SPAIN_COMPANY_ROUTE,
+  BELIZE_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -32,6 +33,7 @@ import GibraltarCompany from "../pages/gibraltarCompany/GibraltarCompany";
 import PolandCompany from "../pages/polandCompany/PolandCompany";
 import EnglandCompany from "../pages/englandCompany/EnglandCompany";
 import SpainCompany from "../pages/spainCompany/SpainCompany";
+import BelizeCompany from "../pages/belizeCompany/BelizeCompany";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +100,10 @@ const router = createBrowserRouter([
         path: SPAIN_COMPANY_ROUTE,
         element: <SpainCompany />,
       },
+      {
+        path: BELIZE_COMPANY_ROUTE,
+        element: <BelizeCompany />
+      }
     ],
   },
 ]);

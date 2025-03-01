@@ -1,0 +1,68 @@
+@use "../../variables";
+
+.belize-company-page-wrapper {
+  padding: 0 70px;
+
+  .belize-company-header {
+    font-family: "Lato-bold";
+    background-image: url(../../assets/images/belizBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 70px 10px;
+
+    .header-wrapper {
+      width: 65%;
+    }
+
+    .title {
+      font-size: 70px;
+      text-transform: uppercase;
+      line-height: 150%;
+
+      &.second {
+        color: variables.$dark-red;
+        align-self: flex-end;
+      }
+
+      .selected-text {
+        font-size: 105px;
+        text-transform: none;
+      }
+    }
+
+    .description {
+      font-size: 32px;
+      margin-top: 49px;
+      line-height: 150%;
+      width: 65%;
+      align-self: flex-end;
+      padding-right: 40px;
+    }
+  }
+
+  .consulting-offshore-comp-wrapper {
+    margin-top: 200px;
+  }
+
+  .faq-wrapper {
+    padding: 0;
+  }
+
+  .secondary-description-grid .description-col {
+    .title {
+      .selected-text {
+        align-self: center;
+      }
+
+      .company-name {
+        align-self: flex-end;
+        line-height: 150%;
+      }
+    }
+
+    .description {
+      margin-top: 40px;
+    }
+  }
+}

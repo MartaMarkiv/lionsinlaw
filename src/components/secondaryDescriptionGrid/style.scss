@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 30px;
+
+    >div {
+      border-radius: 4px;
+    }
   }
 
   .grid-container,
@@ -29,8 +33,14 @@
       line-height: 150%;
 
 
-      .selected-text {
+      .selected-text,
+      .company-name {
         color: variables.$dark-red;
+      }
+
+      .company-name {
+        font-size: 98px;
+        text-transform: none;
       }
     }
 

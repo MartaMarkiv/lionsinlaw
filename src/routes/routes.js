@@ -13,3 +13,4 @@ export const SCOTLAND_COMPANY_ROUTE = "/scotland-company";
 export const CURACAO_COMPANY_ROUTE = "/curacao-company";
 export const GIBRALTAR_COMPANY_ROUTE = "/gibraltar-company";
 export const ENGLAND_COMPANY_ROUTE = "/england-company";
+export const BELIZE_COMPANY_ROUTE = "/belize-company";
