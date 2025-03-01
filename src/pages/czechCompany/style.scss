@@ -1,36 +1,35 @@
 @use "../../variables";
 
-.panama-company-page-wrapper {
+.czech-company-page-wrapper {
   padding: 0 70px;
 
-  .panama-company-header {
-    background-image: url(../../assets/images/panamaBanner.png);
+  .czech-company-header {
+    background-image: url(../../assets/images/CzechBanner.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: calc(100vh - 50px);
-
-    .header-wrapper {
-      width: 65%;
-      margin-top: 7%;
-    }
+    height: calc(100vh - 20px);
+    padding-left: 37px;
 
     .title {
+      font-size: 55px;
       font-family: "Lato-bold";
-      color: variables.$red-color;
+      color: #ffffff;
       font-size: 55px;
       text-transform: uppercase;
       line-height: 150%;
+      width: 65%;
+      margin-bottom: 54px;
     }
 
     .description {
       font-family: "Raleway-bold";
       font-size: 24px;
       color: #ffffff;
-      margin-top: 139px;
       line-height: 150%;
-      width: 65%;
-      padding-left: 15%;
+      width: 55%;
+      padding-right: 10%;
+      box-sizing: border-box;
     }
 
     .tariff-block {

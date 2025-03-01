@@ -10,27 +10,46 @@ import Icon from "../../components/iconComponent/Icon";
 export default function PanamaCompany() {
   return (
     <section className="panama-company-page-wrapper">
-      <Flex vertical={true} justify="space-between" align="flex-end" className="panama-company-header">
+      <Flex
+        vertical={true}
+        justify="space-between"
+        align="flex-end"
+        className="panama-company-header"
+      >
         <Flex vertical={true} align="flex-start" className="header-wrapper">
           <p className="title">
-          Розпочніть нову пригоду з офшорною компанією в Панамі
+            Розпочніть нову пригоду з офшорною компанією в Панамі
           </p>
           <p className="description">
-            Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у Панамі, що забезпечує глобальні перспективи та фінансові переваги
+            Відкрийте нові можливості разом з LionsInLaw: швидка та надійна
+            реєстрація компаній у Панамі, що забезпечує глобальні перспективи та
+            фінансові переваги
           </p>
         </Flex>
         <div className="tariff-block">
-          <p>Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з <span className="selected-text">LionsInLaw</span></p>
-          <Flex className="tariff-select" justify="space-between" align="center">
+          <p>
+            Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
+            <span className="selected-text">LionsInLaw</span>
+          </p>
+          <Flex
+            className="tariff-select"
+            justify="space-between"
+            align="center"
+          >
             <span>Тарифи</span>
-            <Button icon={<Icon name="tariff"/>}/>
+            <Button icon={<Icon name="tariff" />} />
           </Flex>
         </div>
       </Flex>
       <CompanySubDescriptionBlock
         description="Панама, центральноамериканська країна з привабливою офшорною юрисдикцією, має унікальну правову систему, яка поєднує елементи цивільного та романського права з елементами загального права. Ця комбінація робить Панаму привабливим місцем для ведення бізнесу та реєстрації офшорних компаній"
         imageRef={panamaNature}
-        title={<p className="title">Панама: Ваш ключ до успіху в привабливій офшорній юрисдикції Центральної Америки</p>}
+        title={
+          <p className="title">
+            Панама: Ваш ключ до успіху в привабливій офшорній юрисдикції
+            Центральної Америки
+          </p>
+        }
         hasShadow={true}
       />
       <SecondaryDescriptionGrid
@@ -44,7 +63,10 @@ export default function PanamaCompany() {
         taxesDescr="Офшорна компанія в Панамі може скористатися низькими податковими
 ставками та конфіденційністю."
         title={
-          <p className="title">Переваги Офшорної Компанії <span className="selected-text">в Панамі з LionsInLaw</span></p>
+          <p className="title">
+            Переваги Офшорної Компанії{" "}
+            <span className="selected-text">в Панамі з LionsInLaw</span>
+          </p>
         }
       />
       <ConsultingOffshoreComp />

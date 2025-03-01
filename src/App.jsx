@@ -8,13 +8,14 @@ import { ENGLAND_COMPANY_ROUTE, CONTACTS_ROUTE } from "./routes/routes";
 function App() {
   const location = useLocation();
 
-  const showPhonesBlock = [ENGLAND_COMPANY_ROUTE, CONTACTS_ROUTE].indexOf(location.pathname) < 0;
+  const showPhonesBlock =
+    [ENGLAND_COMPANY_ROUTE, CONTACTS_ROUTE].indexOf(location.pathname) < 0;
   return (
     <>
       <Header />
       <main>
         <Outlet />
-        { showPhonesBlock && <ContactPhones />}
+        {showPhonesBlock && <ContactPhones />}
       </main>
       <Footer />
     </>

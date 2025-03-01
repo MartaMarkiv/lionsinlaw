@@ -17,6 +17,7 @@ import {
   SPAIN_COMPANY_ROUTE,
   BELIZE_COMPANY_ROUTE,
   PANAMA_COMPANY_ROUTE,
+  CZECH_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -36,6 +37,7 @@ import EnglandCompany from "../pages/englandCompany/EnglandCompany";
 import SpainCompany from "../pages/spainCompany/SpainCompany";
 import BelizeCompany from "../pages/belizeCompany/BelizeCompany";
 import PanamaCompany from "../pages/panamaCompany/PanamaCompany";
+import CzechCompany from "../pages/czechCompany/CzechCompany";
 
 const router = createBrowserRouter([
   {
@@ -104,12 +106,16 @@ const router = createBrowserRouter([
       },
       {
         path: BELIZE_COMPANY_ROUTE,
-        element: <BelizeCompany />
+        element: <BelizeCompany />,
       },
       {
         path: PANAMA_COMPANY_ROUTE,
-        element: <PanamaCompany />
-      }
+        element: <PanamaCompany />,
+      },
+      {
+        path: CZECH_COMPANY_ROUTE,
+        element: <CzechCompany />,
+      },
     ],
   },
 ]);

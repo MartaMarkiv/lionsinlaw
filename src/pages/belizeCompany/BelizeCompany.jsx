@@ -11,10 +11,10 @@ export default function BelizeCompany() {
     <section className="belize-company-page-wrapper">
       <Flex align="center" justify="flex-end" className="belize-company-header">
         <Flex vertical={true} align="flex-start" className="header-wrapper">
-          <p className="title">
-            Перетніть межі: Відкрийте офшорну компанію в 
+          <p className="title">Перетніть межі: Відкрийте офшорну компанію в</p>
+          <p className="title second">
+            Беліз з <span className="selected-text">LionsInLaw</span>
           </p>
-          <p className="title second">Беліз з <span className="selected-text">LionsInLaw</span></p>
           <p className="description">
             Юридична захищеність та глобальні можливості для вашого бізнесу
           </p>
@@ -23,7 +23,12 @@ export default function BelizeCompany() {
       <CompanySubDescriptionBlock
         description="Беліз, країна в Центральній Америці, відома своєю привабливою офшорною юрисдикцією. Тут поєднується суміш правових традицій, включаючи вплив англійського загального права та місцевих законів."
         imageRef={belizNature}
-        title={<p className="title">Беліз: Ваша Глобальна Офшорна Юрисдикція з Перевагами Англійського та Локального Права</p>}
+        title={
+          <p className="title">
+            Беліз: Ваша Глобальна Офшорна Юрисдикція з Перевагами Англійського
+            та Локального Права
+          </p>
+        }
         hasShadow={true}
       />
       <SecondaryDescriptionGrid

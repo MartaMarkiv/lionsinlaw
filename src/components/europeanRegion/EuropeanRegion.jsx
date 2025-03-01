@@ -1,6 +1,7 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
 import {
+  CZECH_COMPANY_ROUTE,
   ENGLAND_COMPANY_ROUTE,
   GIBRALTAR_COMPANY_ROUTE,
   IRELAND_COMPANY_ROUTE,
@@ -83,7 +84,7 @@ export default function EuropeanRegion() {
           blockClass="poland"
         />
       </Link>
-      <Link className="czech-link">
+      <Link className="czech-link" to={CZECH_COMPANY_ROUTE}>
         <BlockElement
           description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
           linkValue={""}
