@@ -32,14 +32,14 @@ export default function EuropeanRegion() {
         isDark={false}
       />
       <Link className="spain-link" to={SPAIN_COMPANY_ROUTE}>
-      <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
-        linkValue={""}
-        title="Офшорна компанія в ІСПАНІї"
-        isDark={true}
-        hasLink={false}
-        blockClass="spain"
-      />
+        <BlockElement
+          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          linkValue={""}
+          title="Офшорна компанія в ІСПАНІї"
+          isDark={true}
+          hasLink={false}
+          blockClass="spain"
+        />
       </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."

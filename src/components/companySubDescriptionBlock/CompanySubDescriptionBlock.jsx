@@ -5,7 +5,7 @@ export default function CompanySubDescriptionBlock({
   title,
   description,
   imageRef,
-  hasShadow = true
+  hasShadow = true,
 }) {
   return (
     <Flex className="company-sub-description-block" justify="space-between">
@@ -15,7 +15,7 @@ export default function CompanySubDescriptionBlock({
       </Flex>
       <div className={`image-wrapper ${hasShadow && "has-shadow"}`}>
         <img src={imageRef} alt="Company view" />
-        { hasShadow && <div className="shadow-block"/>}
+        {hasShadow && <div className="shadow-block" />}
       </div>
     </Flex>
   );

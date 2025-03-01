@@ -96,8 +96,8 @@ const router = createBrowserRouter([
       },
       {
         path: SPAIN_COMPANY_ROUTE,
-        element: <SpainCompany />
-      }
+        element: <SpainCompany />,
+      },
     ],
   },
 ]);

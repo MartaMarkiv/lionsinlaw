@@ -14,7 +14,7 @@ export default function CompanyDescriptionGrid({
   businessImage,
 }) {
   return (
-    <section className="company-description-grid">
+    <section className="company-description-grid grid-wrapper">
       <Flex vertical={true} className="taxes-wrapper">
         <Flex className="cell-header" align="center">
           <div className="icon-wrapper">
