@@ -7,6 +7,7 @@ import {
   ISLA_MAN_COMPANY_ROUTE,
   POLAND_COMPANY_ROUTE,
   SCOTLAND_COMPANY_ROUTE,
+  SPAIN_COMPANY_ROUTE,
   USA_COMPANY_ROUTE,
 } from "../../routes/routes";
 import { Link } from "react-router-dom";
@@ -30,13 +31,16 @@ export default function EuropeanRegion() {
         title="Офшорна компанія в Гібралтарі"
         isDark={false}
       />
+      <Link className="spain-link" to={SPAIN_COMPANY_ROUTE}>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={""}
         title="Офшорна компанія в ІСПАНІї"
         isDark={true}
+        hasLink={false}
         blockClass="spain"
       />
+      </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
         linkValue={ISLA_MAN_COMPANY_ROUTE}

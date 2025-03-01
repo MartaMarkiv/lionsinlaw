@@ -20,6 +20,25 @@
     }
   }
 
+  .image-wrapper {
+    position: relative;
+
+    &.has-shadow {
+      padding-right: 30px;
+      padding-bottom: 30px;
+    }
+
+    .shadow-block {
+      background-color: variables.$red-color;
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
   .description {
     font-family: "Lora";
     font-size: 24px;

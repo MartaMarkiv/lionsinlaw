@@ -1,0 +1,40 @@
+.spain-company-page-wrapper {
+  padding: 0 70px;
+
+  .spain-company-header {
+    font-family: "Inter-bold";
+    background-image: url(../../assets/images/spainBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 106px 80px;
+
+    .header-wrapper {
+      width: 70%;
+    }
+
+    .title {
+      font-size: 55px;
+      text-transform: uppercase
+    }
+
+    .description {
+      font-size: 32px;
+      margin-top: 67px;
+      width: 80%;
+    }
+
+    .header-image {
+      background-image: url(../../assets/images/businessman-holding-folder.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 25%;
+      height: calc(100% + 80px);
+      position: absolute;
+      left: 30px;
+      bottom: 0;
+    }
+
+  }
+}

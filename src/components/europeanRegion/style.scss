@@ -21,15 +21,21 @@
     }
   }
 
+  .spain-link {
+    grid-column-start: 4;
+    grid-row-end: span 2;
+  }
+
+
   .spain {
     background-image: url(../../assets/images/spainCastle.png);
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
     background-position-y: 95%;
-    grid-column-start: 4;
-    grid-row-end: span 2;
     justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
 
     .description {
       margin-top: 40%;
