@@ -5,6 +5,10 @@
   padding: 0 70px;
   margin-bottom: 50px;
 
+  &.delete-mg {
+    margin-bottom: 0;
+  }
+
   a {
     font-family: "Roboto-bold";
     font-size: 18px;

@@ -1,7 +1,7 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
 import { Link } from "react-router-dom";
-import { BELIZE_COMPANY_ROUTE, CURACAO_COMPANY_ROUTE, USA_COMPANY_ROUTE } from "../../routes/routes";
+import { BELIZE_COMPANY_ROUTE, CURACAO_COMPANY_ROUTE, PANAMA_COMPANY_ROUTE, USA_COMPANY_ROUTE } from "../../routes/routes";
 
 export default function AmericanRegion() {
   return (
@@ -18,7 +18,7 @@ export default function AmericanRegion() {
       </Link>
       <BlockElement
         description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у Панамі, що забезпечує глобальні перспективи та фінансові переваги."
-        linkValue={""}
+        linkValue={PANAMA_COMPANY_ROUTE}
         title="Офшорна компанія в Панамі"
         isDark={true}
       />

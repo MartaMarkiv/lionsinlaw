@@ -3,11 +3,16 @@ import { Flex, Button, Popover } from "antd";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 import ServicesMenu from "../servicesMenu/ServicesMenu";
-import { CONTACTS_ROUTE } from "../../routes/routes";
+import { CONTACTS_ROUTE, PANAMA_COMPANY_ROUTE } from "../../routes/routes";
 
 export default function Header() {
+  const location = useLocation();
+
+  console.log(location);
+
+  const deleteMargin = [PANAMA_COMPANY_ROUTE].indexOf(location.pathname) >= 0;
   return (
-    <header className="header">
+    <header className={`header ${deleteMargin && "delete-mg"}`}>
       <Flex align="center" justify="space-between">
         <Icon name="logo" />
         <Flex align="center" className="header-menu-wrapper">
