@@ -45,6 +45,32 @@
     }
   }
 
+  .risk-management-wrapper {
+    background-image: url(../../assets/images/lionsinlawRiskManagement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 82px;
+    padding-bottom: 125px;
+    padding-left: 64px;
+
+    .wrapper {
+      color: #ffffff;
+
+      .title {
+        font-family: "Lora-medium";
+        font-size: 45px;
+      }
+
+      .description {
+        font-family: "Lora-bold";
+        font-size: 24px;
+        width: 50%;
+        margin-top: 46px;
+        margin-bottom: 76px;
+      }
+    }
+  }
+
   .license-block-wrapper {
     margin-bottom: 150px;
   }

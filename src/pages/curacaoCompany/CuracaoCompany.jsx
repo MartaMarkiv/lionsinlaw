@@ -6,6 +6,7 @@ import CompanySubDescriptionBlock from "../../components/companySubDescriptionBl
 import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import Faq from "../../components/faq/Faq";
+import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function CuracaoCompany() {
   return (
@@ -47,7 +48,9 @@ export default function CuracaoCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
             компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
-      />
+      >
+        <CountryTarrifList />
+      </ConsultingOffshoreComp>
       <Faq />
     </section>
   );

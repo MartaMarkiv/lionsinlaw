@@ -7,6 +7,7 @@ import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/Comp
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import Faq from "../../components/faq/Faq";
 import { Flex } from "antd";
+import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function GibraltarCompany() {
   return (
@@ -52,7 +53,9 @@ Services Commission, що забезпечує стабільність та п�
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
-      />
+      >
+        <CountryTarrifList />
+      </ConsultingOffshoreComp>
       <Faq />
     </section>
   );

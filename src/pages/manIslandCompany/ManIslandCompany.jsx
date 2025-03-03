@@ -7,6 +7,7 @@ import manEarth from "../../assets/images/men-earth.png";
 import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
 import Faq from "../../components/faq/Faq";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
+import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function ManIslandCompany() {
   return (
@@ -61,7 +62,9 @@ export default function ManIslandCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
-      />
+      >
+        <CountryTarrifList />
+      </ConsultingOffshoreComp>
       <Faq />
     </div>
   );

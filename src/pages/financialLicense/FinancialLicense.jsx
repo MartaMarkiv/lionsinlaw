@@ -7,6 +7,9 @@ import bankLicense from "../../assets/images/bankLicense.png";
 import brokerLicense from "../../assets/images/brokerLicense.png";
 import activesLicense from "../../assets/images/activesLicense.png";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
+import Icon from "../../components/iconComponent/Icon";
+import LinkComponent from "../../components/linkComponent/LinkComponent";
+import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function FinancialLicense() {
   return (
@@ -51,11 +54,35 @@ export default function FinancialLicense() {
           title="Ліцензії на брокерську діяльність і торгівлю."
           isRevert={true}
         />
+        <div className="risk-management-wrapper">
+          <div className="wrapper">
+            <p className="title">Управління Ризиками з Lionsinlaw</p>
+            <p className="description">Зменшення регуляторних ризиків має першорядне значення. Lionsinlaw гарантує, що заявки клієнтів на ліцензії ретельно підготовлені та відповідають місцевим нормативним стандартам, мінімізуючи затримки та відмови.</p>
+            <LinkComponent linkLabel="Зв'язатися з нами" linkValue={CONTACTS_ROUTE}/>
+          </div>
+        </div>
         <ConsultingOffshoreComp
           title="Довіртеся надійному партеру для Експертизи у Фінансовому Ліцензуванні"
           description="Партнерство для отримання довіреної експертизи у сфері фінансового ліцензування та дотримання нормативних вимог в Англії, Маврикії, Канаді та США.*"
           linkLabel="Долучитися"
-        />
+          showPrice={false}
+        >
+          <Flex align="center" className="tariff-item">
+            <Icon name="ok-rounded-white" />
+            <p>Фінансове Ліцензування:</p>
+          </Flex>
+          <Flex className="tariff-item">
+            <Icon name="ok-rounded-white" />
+            <p>Юрисдикційна Спеціалізація</p>
+          </Flex>
+          <Flex className="tariff-item">
+            <Icon name="ok-rounded-white" />
+            <p>
+              Розробка індивідуальних стратегій для досягнення бізнес-цілей і
+              відповідності регуляторним вимогам.
+            </p>
+          </Flex>
+        </ConsultingOffshoreComp>
         <Faq />
       </div>
     </>

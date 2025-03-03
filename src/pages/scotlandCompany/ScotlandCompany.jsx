@@ -7,6 +7,7 @@ import CompanySubDescriptionBlock from "../../components/companySubDescriptionBl
 import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/CompanyDescriptionGrid";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import Faq from "../../components/faq/Faq";
+import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function ScotlandCompany() {
   return (
@@ -56,7 +57,9 @@ Conduct Authority (FCA) та іншими місцевими органами р
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
-      />
+      >
+        <CountryTarrifList />
+      </ConsultingOffshoreComp>
       <Faq />
     </section>
   );

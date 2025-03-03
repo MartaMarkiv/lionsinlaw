@@ -148,7 +148,22 @@ export default function TrademarkRegistration() {
         isTrademark={true}
         description="Незалежно від вашого бізнесу, ми забезпечимо ефективний захист ваших торгових марок. Зв’яжіться з нами, щоб дізнатися більше про наші послуги в Європі, Канаді та США"
         linkLabel="Звязатися з нами"
-      />
+      >
+        <Flex align="center" className="tariff-item">
+          <Icon name="ok-rounded-white" />
+          <p>
+            <span className="selected-text">Для Стартапів:</span> Захистіть свій
+            новий бренд з самого початку.
+          </p>
+        </Flex>
+        <Flex className="tariff-item">
+          <Icon name="ok-rounded-white" />
+          <p>
+            <span className="selected-text">Для Корпорацій:</span> Розширте
+            охоплення та захистіть свою продукцію на нових ринках.
+          </p>
+        </Flex>
+      </ConsultingOffshoreComp>
       <div className="brand-security-wrapper">
         <p className="title">
           Захистіть Свій Бренд з{" "}

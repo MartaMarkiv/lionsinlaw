@@ -5,9 +5,10 @@ import LinkComponent from "../linkComponent/LinkComponent";
 
 export default function ConsultingOffshoreComp({
   title,
-  isTrademark = false,
   description,
   linkLabel,
+  showPrice = true,
+  children,
 }) {
   return (
     <div className="consulting-offshore-comp-wrapper">
@@ -28,49 +29,13 @@ export default function ConsultingOffshoreComp({
           </Flex>
         </div>
         <Flex vertical={true} className="tariff-wrapper">
-          <Flex align="center">
-            <span className="count">$0</span>
-            <span>/ Місяць</span>
-          </Flex>
-          <div className="tariff-items-wrapper">
-            {isTrademark ? (
-              <>
-                <Flex align="center" className="tariff-item">
-                  <Icon name="ok-rounded-white" />
-                  <p>
-                    <span className="selected-text">Для Стартапів:</span>{" "}
-                    Захистіть свій новий бренд з самого початку.
-                  </p>
-                </Flex>
-                <Flex className="tariff-item">
-                  <Icon name="ok-rounded-white" />
-                  <p>
-                    <span className="selected-text">Для Корпорацій:</span>{" "}
-                    Розширте охоплення та захистіть свою продукцію на нових
-                    ринках.
-                  </p>
-                </Flex>
-              </>
-            ) : (
-              <>
-                <Flex align="center" className="tariff-item">
-                  <Icon name="ok-rounded-white" />
-                  <p>Виконаня протягом 2 дня</p>
-                </Flex>
-                <Flex className="tariff-item">
-                  <Icon name="ok-rounded-white" />
-                  <p>100 % успішність</p>
-                </Flex>
-                <Flex className="tariff-item">
-                  <Icon name="ok-rounded-white" />
-                  <p>
-                    Швидко, легко та з max конфіденційністю через захищені
-                    системи
-                  </p>
-                </Flex>
-              </>
-            )}
-          </div>
+          {showPrice && (
+            <Flex align="center">
+              <span className="count">$0</span>
+              <span>/ Місяць</span>
+            </Flex>
+          )}
+          <div className="tariff-items-wrapper">{children}</div>
         </Flex>
         <Flex
           vertical={true}
