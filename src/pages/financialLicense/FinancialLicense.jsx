@@ -10,6 +10,7 @@ import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/Cons
 import Icon from "../../components/iconComponent/Icon";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { CONTACTS_ROUTE } from "../../routes/routes";
+import LicenseLionsInLawChoose from "../../components/licenseLionsInLawChoose/LicenseLionsInLawChoose";
 
 export default function FinancialLicense() {
   return (
@@ -54,11 +55,23 @@ export default function FinancialLicense() {
           title="Ліцензії на брокерську діяльність і торгівлю."
           isRevert={true}
         />
+        <LicenseLionsInLawChoose
+          description="Професійний Підхід та Ефективні Рішення для Ліцензування у Ключових Юрисдикціях"
+          blockType="financial"
+        />
         <div className="risk-management-wrapper">
           <div className="wrapper">
             <p className="title">Управління Ризиками з Lionsinlaw</p>
-            <p className="description">Зменшення регуляторних ризиків має першорядне значення. Lionsinlaw гарантує, що заявки клієнтів на ліцензії ретельно підготовлені та відповідають місцевим нормативним стандартам, мінімізуючи затримки та відмови.</p>
-            <LinkComponent linkLabel="Зв'язатися з нами" linkValue={CONTACTS_ROUTE}/>
+            <p className="description">
+              Зменшення регуляторних ризиків має першорядне значення. Lionsinlaw
+              гарантує, що заявки клієнтів на ліцензії ретельно підготовлені та
+              відповідають місцевим нормативним стандартам, мінімізуючи затримки
+              та відмови.
+            </p>
+            <LinkComponent
+              linkLabel="Зв'язатися з нами"
+              linkValue={CONTACTS_ROUTE}
+            />
           </div>
         </div>
         <ConsultingOffshoreComp

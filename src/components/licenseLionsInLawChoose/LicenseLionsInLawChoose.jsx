@@ -9,13 +9,13 @@ export default function LicenseLionsInLawChoose({
   return (
     <div className="license-choose-wrapper">
       <Flex vertical={true} align="flex-end">
-        <p className="title in-end">
+        <p className="main-title in-end">
           Чому Обрати <span className="selected-text">LinonsInLaw</span>
         </p>
-        <p className="title centered">
+        <p className="main-title centered">
           {blockType === "crypto"
-            ? "для Фінансового Ліцензування?"
-            : "для Ліцензування Криптовалюти?"}
+            ? "для Ліцензування Криптовалюти?"
+            : "для Фінансового Ліцензування?"}
         </p>
       </Flex>
       <p className="description">{description}</p>
