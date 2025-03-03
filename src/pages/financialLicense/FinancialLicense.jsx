@@ -6,6 +6,7 @@ import paymentLicense from "../../assets/images/paymentLicense.png";
 import bankLicense from "../../assets/images/bankLicense.png";
 import brokerLicense from "../../assets/images/brokerLicense.png";
 import activesLicense from "../../assets/images/activesLicense.png";
+import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 
 export default function FinancialLicense() {
   return (
@@ -49,6 +50,11 @@ export default function FinancialLicense() {
           linkRef={"/"}
           title="Ліцензії на брокерську діяльність і торгівлю."
           isRevert={true}
+        />
+        <ConsultingOffshoreComp
+          title="Довіртеся надійному партеру для Експертизи у Фінансовому Ліцензуванні"
+          description="Партнерство для отримання довіреної експертизи у сфері фінансового ліцензування та дотримання нормативних вимог в Англії, Маврикії, Канаді та США.*"
+          linkLabel="Долучитися"
         />
         <Faq />
       </div>

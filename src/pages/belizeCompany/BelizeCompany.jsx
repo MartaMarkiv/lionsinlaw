@@ -49,7 +49,12 @@ export default function BelizeCompany() {
           </Flex>
         }
       />
-      <ConsultingOffshoreComp />
+      <ConsultingOffshoreComp
+        title="Отримайте експертну консультацію щодо створення офшорної компанії"
+        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
+      компанії від наших експертів"
+        linkLabel="Зареєструвати компанію"
+      />
       <Faq />
     </section>
   );

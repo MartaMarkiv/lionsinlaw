@@ -7,13 +7,16 @@
     position: relative;
     padding-bottom: 57px;
 
+    .title-wrapper {
+      width: 50%;
+    }
+
     .banner-image {
-      width: 56%;
+      width: 53%;
       position: absolute;
       z-index: -1;
       bottom: 0;
-      right: 50%;
-      transform: translateX(50%);
+      right: -30px;
 
       img {
         max-width: 100%;
@@ -24,113 +27,34 @@
       width: 50%;
     }
 
-    .title-wrapper {
-      padding-top: 70px;
-      .title {
-        font-family: "Lora-bold";
-        font-size: 140px;
-        color: variables.$red-color;
-      }
-
-      .link {
-        padding: 15px 35px;
-      }
-
-      .description {
-        font-family: "Raleway-bold";
-        font-size: 32px;
-        text-transform: uppercase;
-        margin-top: 90px;
-        margin-bottom: 80px;
-        width: 70%;
-      }
-
-      .partners-wrapper {
-        margin-top: 140px;
-        width: 60%;
-
-        .partners-title {
-          font-family: "Roboto-bold";
-          font-size: 27px;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-        }
-
-        .icon-component {
-          width: 150px;
-          height: 55px;
-          min-width: 150px;
-        }
-      }
+    .title {
+      font-family: "Lora-bold";
+      font-size: 105px;
+      color: variables.$red-color;
+      align-self: center;
     }
 
-    .info-wrapper {
-      font-family: "Roboto-bold";
-      width: 35%;
+    .link {
+      padding: 15px 35px;
+    }
 
-      .sub-description {
-        font-size: 24px;
-      }
+    .description {
+      font-family: "Lato-bold";
+      font-size: 34px;
+      text-transform: uppercase;
+      margin-top: 90px;
+    }
 
-      .time-info-wrapper {
-        width: 50%;
-
-        .time-wrapper {
-          font-family: "Lato-bold";
-
-          .count {
-            font-size: 56px;
-          }
-
-          .month {
-            font-size: 38px;
-            color: #858585;
-            align-self: flex-end;
-          }
-        }
-        p {
-          font-family: "Roboto-bold";
-          font-size: 22px;
-          text-transform: capitalize;
-          margin-top: 25px;
-        }
-      }
-
-      .clients-wapper {
-        padding: 20px;
-        box-shadow: 0px 22px 26px 0px rgba(155, 155, 155, 25%);
-        border-radius: 15px;
-        border: 1px solid #cdcdcd;
-        margin-bottom: 40px;
-
-        .image-wrapper {
-          margin-right: 10px;
-          img {
-            max-width: 100%;
-          }
-        }
-
-        .icon-component {
-          margin-right: 10px;
-          width: 25px;
-          height: 25px;
-        }
-
-        p {
-          font-family: "Inter";
-          font-size: 18px;
-        }
-
-        .count {
-          font-family: "Inter-bold";
-          font-size: 30px;
-        }
-      }
+    .sub-description {
+      font-family: "Lato-bold";
+      font-size: 24px;
+      margin: 70px 0;
     }
   }
 
-  .merchant-experiance {
+  .spec-solutions {
     margin-top: 120px;
+    padding-bottom: 80px;
 
     > div {
       width: 50%;
@@ -151,25 +75,13 @@
         font-size: 42px;
       }
 
-      .experiance-info-wrapper .description {
-        margin-top: 70px;
-      }
+      .description {
+        font-family: "Lora";
+        font-size: 24px;
 
-      .experiance-item {
-        width: 45%;
-
-        .title {
-          font-size: 24px;
-          margin: 37px 0;
-        }
-
-        .icon-component {
-          width: 102px;
-          height: 84px;
-        }
-
-        .description {
-          font-size: 18px;
+        .selected-text {
+          font-family: "Lora-bold";
+          color: variables.$dark-red;
         }
       }
     }
@@ -201,14 +113,13 @@
       background-repeat: no-repeat;
       background-size: 70%;
       grid-row-end: span 2;
-      padding: 125px;
+      padding: 40px;
 
       .contact-wrapper {
         background-color: #fffbfb;
         padding: 30px 15px;
         box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 25%);
         border-radius: 24px;
-        width: 45%;
         padding-top: 66px;
 
         .contact-wrapper-header {

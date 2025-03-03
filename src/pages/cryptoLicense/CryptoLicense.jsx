@@ -8,7 +8,11 @@ import cryptoLicense from "../../assets/images/cryptiLicense.png";
 import cryptoWallet from "../../assets/images/cryptoWallet.png";
 import amlKyc from "../../assets/images/aml-kys.png";
 import icoSto from "../../assets/images/iso-sto.png";
+import libraBtcMonet from "../../assets/images/libraBtcMonet.png";
 import LicenseBlock from "../../components/licenseBlock/LicenseBlock";
+import LicenseLionsInLawChoose from "../../components/licenseLionsInLawChoose/LicenseLionsInLawChoose";
+import LinkComponent from "../../components/linkComponent/LinkComponent";
+import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function CryptoLicense() {
   return (
@@ -87,6 +91,62 @@ export default function CryptoLicense() {
           title="Відповідність AML/KYC:"
           isRevert={true}
         />
+        <LicenseLionsInLawChoose description="Навігація в нормативному ландшафті, що оточує криптовалюти та технологію блокчейн, потребує спеціальних знань і досвіду. Lionsinlaw надає експертне керівництво та підтримку, щоб допомогти клієнтам отримати необхідні ліцензії для діяльності, пов’язаної з криптовалютою" />
+        <div className="business-support-wrapper">
+          <p className="title">
+            <span className="selected-text">LionsInLaw:</span>
+            Підтримка Вашого Криптовалютного Бізнесу
+          </p>
+          <Flex className="business-support-wrapper-info">
+            <Flex className="info-wrapper">
+              <Flex vertical={true} justify="space-between">
+                <Flex align="center">
+                  <Icon name="logo" />
+                  <span className="red-logo">LionsInLaw</span>
+                </Flex>
+                <p className="description">
+                  Незалежно від того, запускаєте ви криптобіржу, послугу гаманця
+                  чи продаж токенів, Lionsinlaw забезпечить ваш бізнес
+                  експертними рішеннями з ліцензування. Зв’яжіться з нами
+                  сьогодні, щоб обговорити, як ми допоможемо вам подолати
+                  регуляторні складності та досягти успіху в динамічному світі
+                  блокчейн-технологій
+                </p>
+              </Flex>
+              <div className="image-wrapper">
+                <img src={libraBtcMonet} alt="Business support LionsInLaw" />
+              </div>
+            </Flex>
+            <Flex
+              vertical={true}
+              className="contact-us-info-wrapper"
+              justify="center"
+              align="flex-start"
+            >
+              <p className="count">1005+</p>
+              <p className="count-label">які довіряют нам</p>
+              <p className="countact-us">
+                Зв’яжіться з Нами для Успіху у Світi Блокчейн-Технологій
+              </p>
+              <LinkComponent
+                linkLabel="Зв'язатися з нами"
+                linkValue={CONTACTS_ROUTE}
+              />
+            </Flex>
+          </Flex>
+        </div>
+        <div className="crypto-partner-wrapper">
+          <div className="wrapper">
+            <p className="title">
+              Надійне Партнерство для Ліцензування Криптовалют і Нормативної
+              Відповідності
+            </p>
+            <LinkComponent
+              linkLabel="Зв'язатися з нами"
+              linkValue={CONTACTS_ROUTE}
+            />
+          </div>
+        </div>
         <Faq />
       </div>
     </>

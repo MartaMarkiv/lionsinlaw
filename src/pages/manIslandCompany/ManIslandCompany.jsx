@@ -56,7 +56,12 @@ export default function ManIslandCompany() {
         title="Переваги та Виклики Відкриття Офшорної Компанії на"
         company="Острові Мен"
       />
-      <ConsultingOffshoreComp />
+      <ConsultingOffshoreComp
+        title="Отримайте експертну консультацію щодо створення офшорної компанії"
+        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
+      компанії від наших експертів"
+        linkLabel="Зареєструвати компанію"
+      />
       <Faq />
     </div>
   );

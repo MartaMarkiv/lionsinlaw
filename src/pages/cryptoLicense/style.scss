@@ -73,6 +73,113 @@
     margin-bottom: 150px;
   }
 
+  .business-support-wrapper {
+    margin: 120px 0;
+
+    .title {
+      font-family: "Raleway-bold";
+      font-size: 42px;
+      margin-bottom: 49px;
+
+      .selected-text {
+        font-family: "Lora-bold";
+        font-size: 85px;
+        color: variables.$red-color;
+      }
+    }
+
+    .business-support-wrapper-info {
+      background-color: #e42020;
+      border: 1px solid #e42020;
+      border-radius: 30px;
+
+      .info-wrapper {
+        background-color: #ffffff;
+        border-radius: 30px 0 80px 30px;
+        padding: 32px 25px;
+        width: 63%;
+        min-width: 63%;
+
+        .red-logo {
+          font-family: "Lora-bold";
+          color: variables.$red-color;
+          font-size: 41px;
+          margin-left: 10px;
+        }
+
+        .description {
+          font-family: "Inter";
+          font-size: 24px;
+        }
+
+        .image-wrapper {
+          width: 25%;
+          min-width: 25%;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .contact-us-info-wrapper {
+        color: #ffffff;
+        padding: 60px 90px;
+        box-sizing: border-box;
+
+        .count {
+          font-family: "Inter-semi";
+          font-size: 38px;
+        }
+
+        .count-label {
+          font-family: "Inter";
+          font-size: 18px;
+          margin: 20px 0;
+        }
+
+        .countact-us {
+          font-family: "Lora-medium";
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+
+        .link {
+          background-color: #ffffff;
+          color: #000000;
+          padding: 15px 49px;
+        }
+      }
+    }
+  }
+
+  .crypto-partner-wrapper {
+    color: #ffffff;
+    background-image: url(../../assets/images/cryptoPartner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 65px;
+    padding-bottom: 83px;
+
+    .wrapper {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    .title {
+      font-family: "Lora-bold";
+      font-size: 45px;
+      line-height: 150%;
+      margin-bottom: 125px;
+    }
+
+    .link {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 30px 170px;
+    }
+  }
+
   .faq-wrapper {
     padding: 0;
   }

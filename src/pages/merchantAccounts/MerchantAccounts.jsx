@@ -2,110 +2,57 @@ import { Flex } from "antd";
 import "./style.scss";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import Icon from "../../components/iconComponent/Icon";
-import clientsGroup from "../../assets/images/clientsGroup.png";
+import lionRectangles from "../../assets/images/lionRectangles.png";
 import bannerImage from "../../assets/images/traidingMarkBanner.png";
-import traidingMarkExp from "../../assets/images/traidingMarkExp.png";
+import library from "../../assets/images/library.png";
 import DescriptionBlock from "../../components/descriptionBlock/DescriptionBlock";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function MerchantAccounts() {
   return (
     <section className="merchant-accounts-page">
-      <Flex justify="space-between" className="merchant-accounts-header">
-        <div className="title-wrapper">
+      <Flex
+        justify="space-between"
+        vertical={true}
+        className="merchant-accounts-header"
+      >
+        <Flex vertical={true} className="title-wrapper" align="flex-start">
           <p className="title">LionsInLaw</p>
           <p className="description">
-            Ваш Партнер у Міжнародному Бізнесі та Реєстрації Торгових Марок
+            Створення міжнародних компаній та рішення для торгових рахунків
+          </p>
+          <p className="sub-description">
+            Ми сприяємо створенню міжнародних компаній та надаємо безперебійні
+            рішення для відкриття торгових рахунків по всьому світу
           </p>
           <LinkComponent
-            linkLabel="Зареєструвати торгову  марку"
-            linkValue="/"
+            linkLabel="Зв'язатися з нами"
+            linkValue={CONTACTS_ROUTE}
           />
-          <div className="partners-wrapper">
-            <p className="partners-title">довірені партнери</p>
-            <Flex align="center" justify="space-between">
-              <Icon name="hitech" />
-              <Icon name="devwise" />
-              <Icon name="invert" />
-            </Flex>
-          </div>
-        </div>
-        <Flex
-          className="info-wrapper"
-          vertical={true}
-          align="flex-end"
-          justify="space-between"
-        >
-          <p className="sub-description">
-            Експертні Рішення для Створення Компаній та Реєстрації Торгових
-            Марок у Європі, Канаді та США
-          </p>
-          <div className="time-info-wrapper">
-            <Flex align="flex-start" className="time-wrapper" vertical={true}>
-              <span className="count">1.45 K</span>
-              <span className="month">/ місяць</span>
-            </Flex>
-            <p>Реєстрації Торгових Марок у Європі, Канаді та США</p>
-          </div>
-          <Flex className="clients-wapper" align="center">
-            <div className="image-wrapper">
-              <img src={clientsGroup} alt="Clients" />
-            </div>
-            <div>
-              <Flex align="center">
-                <Icon name="smile" />
-                <span className="count">100+</span>
-              </Flex>
-              <p>Задоволених клієнтів</p>
-            </div>
-          </Flex>
         </Flex>
         <div className="banner-image">
-          <img src={bannerImage} alt="Merchant banner" />
+          <img src={lionRectangles} alt="LawInLions lion symbol" />
         </div>
       </Flex>
-      <Flex className="merchant-experiance">
+      <Flex className="spec-solutions">
         <Flex vertical={true} justify="space-between" className="info-wrapper">
-          <div className="experiance-info-wrapper">
-            <p className="title">Досвід у Реєстрації Торгових Марок</p>
-            <p className="description">
-              Захист ваших прав інтелектуальної власності має вирішальне
-              значення на сучасному глобальному ринку. Lionsinlaw пропонує
-              експертне керівництво та комплексні послуги для швидкої та
-              ефективної реєстрації торгових марок у Європі, Канаді та США
-            </p>
-          </div>
-          <Flex justify="space-between">
-            <Flex
-              vertical={true}
-              justify="space-between"
-              align="center"
-              className="experiance-item"
-            >
-              <Icon name="global-security" />
-              <p className="title">Глобальний захист</p>
-              <p className="description">
-                Захист ваших прав інтелектуальної власності має вирішальне
-                значення на сучасному конкурентному глобальному ринку.
-              </p>
-            </Flex>
-            <Flex
-              vertical={true}
-              justify="space-between"
-              align="center"
-              className="experiance-item"
-            >
-              <Icon name="effective-registration" />
-              <p className="title">Ефективна Реєстрація</p>
-              <p className="description">
-                Lionsinlaw пропонує експертне керівництво та комплексні послуги
-                для швидкої реєстрації торгових марок у Європі, Канаді та США.
-              </p>
-            </Flex>
-          </Flex>
+          <p className="title">
+            Спеціалізовані рішення для облікових записів продавців
+          </p>
+          <p className="description">
+            Навігація в складних процесах обробки платежів і відкриття
+            облікового запису продавця за кордоном може бути складною.{" "}
+            <span className="selected-text">Lionsinlaw</span> спрощує цей
+            процес, пропонуючи індивідуальні рішення для облікових записів
+            торговців, які відповідають конкретним потребам вашого бізнесу.
+            Незалежно від того, чи працюєте ви в електронній комерції, фінтех чи
+            інших галузях, які потребують можливостей онлайн-платежів, наша
+            команда експертів гарантує вам доступ до надійних і сумісних
+            торгових послуг
+          </p>
         </Flex>
         <div className="image-wrapper">
-          <img src={traidingMarkExp} alt="Law blocks" />
+          <img src={library} alt="Library" />
         </div>
       </Flex>
       <div className="choose-merchant-account">

@@ -6,6 +6,7 @@ import ServicesMenu from "../servicesMenu/ServicesMenu";
 import {
   CONTACTS_ROUTE,
   CZECH_COMPANY_ROUTE,
+  MERCHANT_ACCOUNTS_ROUTE,
   PANAMA_COMPANY_ROUTE,
 } from "../../routes/routes";
 
@@ -14,9 +15,17 @@ export default function Header() {
 
   const deleteMargin =
     [PANAMA_COMPANY_ROUTE, CZECH_COMPANY_ROUTE].indexOf(location.pathname) >= 0;
+
+  const isRevert = location.pathname === MERCHANT_ACCOUNTS_ROUTE;
   return (
-    <header className={`header ${deleteMargin && "delete-mg"}`}>
-      <Flex align="center" justify="space-between">
+    <header
+      className={`header ${deleteMargin && "delete-mg"} ${isRevert && "revert"}`}
+    >
+      <Flex
+        align="center"
+        justify="space-between"
+        className={isRevert && "left-align-header"}
+      >
         <Icon name="logo" />
         <Flex align="center" className="header-menu-wrapper">
           <Popover content={<ServicesMenu />}>

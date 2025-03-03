@@ -3,12 +3,15 @@ import "./style.scss";
 import Icon from "../iconComponent/Icon";
 import LinkComponent from "../linkComponent/LinkComponent";
 
-export default function ConsultingOffshoreComp() {
+export default function ConsultingOffshoreComp({
+  title,
+  isTrademark = false,
+  description,
+  linkLabel,
+}) {
   return (
     <div className="consulting-offshore-comp-wrapper">
-      <p className="header-block">
-        Отримайте експертну консультацію щодо створення офшорної компанії
-      </p>
+      <p className="header-block">{title}</p>
       <Flex justify="space-between">
         <div>
           <Flex
@@ -30,20 +33,43 @@ export default function ConsultingOffshoreComp() {
             <span>/ Місяць</span>
           </Flex>
           <div className="tariff-items-wrapper">
-            <Flex align="center" className="tariff-item">
-              <Icon name="ok-rounded-white" />
-              <p>Виконаня протягом 2 дня</p>
-            </Flex>
-            <Flex className="tariff-item">
-              <Icon name="ok-rounded-white" />
-              <p>100 % успішність</p>
-            </Flex>
-            <Flex className="tariff-item">
-              <Icon name="ok-rounded-white" />
-              <p>
-                Швидко, легко та з max конфіденційністю через захищені системи
-              </p>
-            </Flex>
+            {isTrademark ? (
+              <>
+                <Flex align="center" className="tariff-item">
+                  <Icon name="ok-rounded-white" />
+                  <p>
+                    <span className="selected-text">Для Стартапів:</span>{" "}
+                    Захистіть свій новий бренд з самого початку.
+                  </p>
+                </Flex>
+                <Flex className="tariff-item">
+                  <Icon name="ok-rounded-white" />
+                  <p>
+                    <span className="selected-text">Для Корпорацій:</span>{" "}
+                    Розширте охоплення та захистіть свою продукцію на нових
+                    ринках.
+                  </p>
+                </Flex>
+              </>
+            ) : (
+              <>
+                <Flex align="center" className="tariff-item">
+                  <Icon name="ok-rounded-white" />
+                  <p>Виконаня протягом 2 дня</p>
+                </Flex>
+                <Flex className="tariff-item">
+                  <Icon name="ok-rounded-white" />
+                  <p>100 % успішність</p>
+                </Flex>
+                <Flex className="tariff-item">
+                  <Icon name="ok-rounded-white" />
+                  <p>
+                    Швидко, легко та з max конфіденційністю через захищені
+                    системи
+                  </p>
+                </Flex>
+              </>
+            )}
           </div>
         </Flex>
         <Flex
@@ -53,11 +79,8 @@ export default function ConsultingOffshoreComp() {
           className="register-company-wrapper"
         >
           <p className="title">LionsInLaw</p>
-          <p className="description">
-            Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-            компанії від наших експертів
-          </p>
-          <LinkComponent linkLabel="Зареєструвати компанію" linkValue={"/"} />
+          <p className="description">{description}</p>
+          <LinkComponent linkLabel={linkLabel} linkValue={"/"} />
         </Flex>
       </Flex>
     </div>

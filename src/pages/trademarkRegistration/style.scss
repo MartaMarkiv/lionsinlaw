@@ -214,6 +214,51 @@
     }
   }
 
+  .brand-security-wrapper {
+    margin-top: 120px;
+
+    .title {
+      font-family: "Roboto-bold";
+      font-size: 62px;
+      text-transform: uppercase;
+
+      .selected-text {
+        font-family: "Lora-bold";
+        font-size: 114px;
+        color: variables.$dark-red;
+        text-transform: none;
+      }
+    }
+
+    .description {
+      font-family: "Lora-bold";
+      font-size: 32px;
+      text-transform: capitalize;
+    }
+
+    .link {
+      padding: 15px 49px;
+    }
+
+    .brand-security-wrapper-info > div {
+      width: 50%;
+      box-sizing: border-box;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .info-description {
+      padding-top: 75px;
+      padding-bottom: 45px;
+    }
+
+    .image-wrapper {
+      padding-left: 60px;
+    }
+  }
+
   .faq-wrapper {
     padding: 0;
   }

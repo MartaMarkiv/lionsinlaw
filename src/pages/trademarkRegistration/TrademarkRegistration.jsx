@@ -5,9 +5,12 @@ import Icon from "../../components/iconComponent/Icon";
 import clientsGroup from "../../assets/images/clientsGroup.png";
 import bannerImage from "../../assets/images/traidingMarkBanner.png";
 import traidingMarkExp from "../../assets/images/traidingMarkExp.png";
+import members from "../../assets/images/Members.png";
 import lawSignet from "../../assets/images/lawSignet.png";
 import DescriptionBlock from "../../components/descriptionBlock/DescriptionBlock";
 import Faq from "../../components/faq/Faq";
+import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
+import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function TrademarkRegistration() {
   return (
@@ -137,8 +140,41 @@ export default function TrademarkRegistration() {
           title="Ефективність і відповідність"
         />
         <div className="image-wrapper-block">
-          <img src={lawSignet} alt="Law signet"/>
+          <img src={lawSignet} alt="Law signet" />
         </div>
+      </div>
+      <ConsultingOffshoreComp
+        title="Підтримка Вашого Бренду з :"
+        isTrademark={true}
+        description="Незалежно від вашого бізнесу, ми забезпечимо ефективний захист ваших торгових марок. Зв’яжіться з нами, щоб дізнатися більше про наші послуги в Європі, Канаді та США"
+        linkLabel="Звязатися з нами"
+      />
+      <div className="brand-security-wrapper">
+        <p className="title">
+          Захистіть Свій Бренд з{" "}
+          <span className="selected-text">LionsInLaw</span>
+        </p>
+        <Flex className="brand-security-wrapper-info">
+          <Flex
+            vertical={true}
+            justify="space-between"
+            className="info-description"
+            align="flex-start"
+          >
+            <p className="description">
+              Ми ваш надійний партнер у міжнародній реєстрації торгових марок.
+              Довірте нам захист вашої інтелектуальної власності на глобальному
+              рівні.
+            </p>
+            <LinkComponent
+              linkLabel="Зв'язатися з нами"
+              linkValue={CONTACTS_ROUTE}
+            />
+          </Flex>
+          <div className="image-wrapper">
+            <img src={members} alt="Brand security clients" />
+          </div>
+        </Flex>
       </div>
       <Faq />
     </section>

@@ -1,0 +1,47 @@
+@use "../../variables";
+
+.license-choose-wrapper {
+  font-family: "Lato-bold";
+  font-size: 24px;
+
+  .title {
+    font-size: 42px;
+
+    .selected-text {
+      font-family: "Lora-bold";
+      font-size: 70px;
+      color: variables.$red-color;
+    }
+
+    &.in-end {
+      margin-right: 20%;
+    }
+
+    &.centered {
+      align-self: center;
+    }
+  }
+
+  > .description {
+    font-family: "Raleway";
+    font-size: 24px;
+    text-align: center;
+    margin: 65px auto;
+    width: 60%;
+  }
+
+  .license-advantages-item {
+    width: 30%;
+    text-align: center;
+
+    .title {
+      font-size: 42px;
+      margin: 29px 0;
+    }
+
+    .icon-component {
+      width: 224px;
+      height: 182px;
+    }
+  }
+}
