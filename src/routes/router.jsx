@@ -19,6 +19,7 @@ import {
   PANAMA_COMPANY_ROUTE,
   CZECH_COMPANY_ROUTE,
   MERCHANT_ACCOUNTS_ROUTE,
+  TRADEMARK_REGISTRATION_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -40,6 +41,7 @@ import BelizeCompany from "../pages/belizeCompany/BelizeCompany";
 import PanamaCompany from "../pages/panamaCompany/PanamaCompany";
 import CzechCompany from "../pages/czechCompany/CzechCompany";
 import MerchantAccounts from "../pages/merchantAccounts/MerchantAccounts";
+import TrademarkRegistration from "../pages/trademarkRegistration/TrademarkRegistration";
 
 const router = createBrowserRouter([
   {
@@ -121,6 +123,10 @@ const router = createBrowserRouter([
       {
         path: MERCHANT_ACCOUNTS_ROUTE,
         element: <MerchantAccounts />,
+      },
+      {
+        path: TRADEMARK_REGISTRATION_ROUTE,
+        element: <TrademarkRegistration />,
       },
     ],
   },

@@ -1,9 +1,9 @@
 @use "../../variables";
 
-.merchant-accounts-page {
+.trademark-registration-page {
   padding: 0 70px;
 
-  .merchant-accounts-header {
+  .trademark-registration-header {
     position: relative;
     padding-bottom: 57px;
 
@@ -129,7 +129,7 @@
     }
   }
 
-  .merchant-experiance {
+  .trademark-experiance {
     margin-top: 120px;
 
     > div {
@@ -175,93 +175,46 @@
     }
   }
 
-  .choose-merchant-account {
+  .choose-trademarks {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-rows: 0.7fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
     margin: 120px 0;
 
-    .title-block {
+    .description-block {
       .title {
-        font-family: "Lato-semi";
-        font-size: 42px;
-        text-transform: uppercase;
-        color: variables.$dark-red;
+        text-align: center;
       }
     }
 
-    .title-block,
-    .phone-block-wrapper {
+    .image-wrapper-block,
+    .title-block {
       grid-column-end: span 2;
     }
 
-    .phone-block-wrapper {
-      background-image: url(../../assets/images/phone-circle-block.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 70%;
-      grid-row-end: span 2;
-      padding: 125px;
-
-      .contact-wrapper {
-        background-color: #fffbfb;
-        padding: 30px 15px;
-        box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 25%);
-        border-radius: 24px;
-        width: 45%;
-        padding-top: 66px;
-
-        .contact-wrapper-header {
-          font-family: "Lato-bold";
-          font-size: 20px;
-          margin-bottom: 46px;
-        }
-
-        .icon-component {
-          width: 53px;
-          height: 53px;
-          margin-right: 10px;
-        }
-
-        .link {
-          padding: 15px 40px;
-          text-align: center;
-        }
-      }
-    }
-
-    .experiance-block {
-      grid-column-start: 2;
-    }
-  }
-
-  .empowerment-wrapper {
-    padding: 70px 68px;
-    background-image: url(../../assets/images/libraImage.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    > div {
-      color: #ffffff;
-      width: 50%;
+    .title-block {
+      font-family: "Lato-semi";
 
       .title {
-        font-family: "Lora-medium";
         font-size: 42px;
         text-transform: uppercase;
-        line-height: 150%;
+        color: variables.$dark-red;
+        margin: 30px 0;
       }
 
       .description {
-        font-family: "Lora-bold";
-        font-size: 24px;
-        line-height: 150%;
-        margin: 68px 0;
-      }
-
-      .link {
-        padding: 15px 49px;
+        font-size: 32px;
       }
     }
+
+    .image-wrapper-block {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .faq-wrapper {
+    padding: 0;
   }
 }

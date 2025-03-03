@@ -6,13 +6,14 @@ export default function DescriptionBlock({
   title,
   description,
   isDark = false,
+  blockClass = "",
 }) {
   return (
     <Flex
       vertical={true}
       justify="space-between"
       align="start"
-      className={`description-block ${isDark ? "dark-bg" : ""}`}
+      className={`description-block ${isDark ? "dark-bg" : ""} ${blockClass}`}
     >
       <div className="title">{title}</div>
       <div className="description">

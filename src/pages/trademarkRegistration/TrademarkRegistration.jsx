@@ -1,17 +1,18 @@
-import { Flex } from "antd";
 import "./style.scss";
+import { Flex } from "antd";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import Icon from "../../components/iconComponent/Icon";
 import clientsGroup from "../../assets/images/clientsGroup.png";
 import bannerImage from "../../assets/images/traidingMarkBanner.png";
 import traidingMarkExp from "../../assets/images/traidingMarkExp.png";
+import lawSignet from "../../assets/images/lawSignet.png";
 import DescriptionBlock from "../../components/descriptionBlock/DescriptionBlock";
-import { CONTACTS_ROUTE } from "../../routes/routes";
+import Faq from "../../components/faq/Faq";
 
-export default function MerchantAccounts() {
+export default function TrademarkRegistration() {
   return (
-    <section className="merchant-accounts-page">
-      <Flex justify="space-between" className="merchant-accounts-header">
+    <section className="trademark-registration-page">
+      <Flex justify="space-between" className="trademark-registration-header">
         <div className="title-wrapper">
           <p className="title">LionsInLaw</p>
           <p className="description">
@@ -61,10 +62,10 @@ export default function MerchantAccounts() {
           </Flex>
         </Flex>
         <div className="banner-image">
-          <img src={bannerImage} alt="Merchant banner" />
+          <img src={bannerImage} alt="Trademark banner" />
         </div>
       </Flex>
-      <Flex className="merchant-experiance">
+      <Flex className="trademark-experiance">
         <Flex vertical={true} justify="space-between" className="info-wrapper">
           <div className="experiance-info-wrapper">
             <p className="title">Досвід у Реєстрації Торгових Марок</p>
@@ -108,68 +109,38 @@ export default function MerchantAccounts() {
           <img src={traidingMarkExp} alt="Law blocks" />
         </div>
       </Flex>
-      <div className="choose-merchant-account">
+      <div className="choose-trademarks">
         <div className="title-block">
           <p className="title">
-            Чому варто вибрати Lionsinlaw для потреб свого торгового облікового
-            запису?
+            чому Обрати Lionsinlaw для Реєстрації Торгової Марки?
+          </p>
+          <p className="description">
+            Експертний Підхід до Захисту Вашого Бренду
           </p>
         </div>
-        <Flex
-          className="phone-block-wrapper"
-          align="flex-end"
-          justify="flex-end"
-        >
-          <Flex className="contact-wrapper" vertical={true}>
-            <Flex className="contact-wrapper-header" align="center">
-              <Icon name="agree-hands" />
-              <span>Експертні консультації для вашого бізнесу</span>
-            </Flex>
-            <LinkComponent
-              linkLabel="Зв'язатися з нами"
-              linkValue={CONTACTS_ROUTE}
-            />
-          </Flex>
-        </Flex>
         <DescriptionBlock
-          description="Ми використовуємо нашу розгалужену мережу банківських партнерів і платіжних систем по всьому світу, щоб полегшити ефективне та безпечне відкриття торгових рахунків відповідно до вашої бізнес-моделі"
-          title="Глобальна мережа:"
+          description="Наша команда складається з кваліфікованих юридичних професіоналів із великим досвідом у законодавстві про торговельні марки в багатьох юрисдикціях."
+          title="Юридична експертиза:"
         />
         <DescriptionBlock
-          description="Забезпечення відповідності місцевим і міжнародним нормам має першочергове значення. Lionsinlaw гарантує, що налаштування вашого торгового облікового запису відповідають усім нормативним стандартам, забезпечуючи душевний спокій і безпеку для ваших транзакцій."
-          title="Відповідність і безпека"
+          description="Lionsinlaw надає безперебійні послуги з реєстрації торгових марок на ключових ринках, включаючи Європу, Канаду та США, забезпечуючи захист вашого бренду за кордоном."
+          title="Глобальне покриття:"
           isDark={true}
         />
         <DescriptionBlock
-          description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція"
-          title="Знання та досвід"
-          blockClass="experiance-block"
-        />
-        <DescriptionBlock
-          description="Ми віримо в надання персоналізованого обслуговування, яке відповідає вашим унікальним бізнес-потребам. Наша команда професіоналів прагне супроводжувати вас на кожному етапі процесу відкриття торгового рахунку."
+          description="Ми розуміємо важливість персоналізованого обслуговування та тісно співпрацюємо з кожним клієнтом, щоб адаптувати наші послуги з реєстрації торгових марок відповідно до їхніх конкретних потреб і цілей."
           title="Індивідуальне обслуговування:"
           isDark={true}
         />
         <DescriptionBlock
-          description="Завдяки впровадженню передових технологій, Lionsinlaw забезпечує максимальну ефективність і зручність у керуванні вашим торговим обліковим записом. Наші інноваційні рішення дозволяють автоматизувати процеси, мінімізувати ручну роботу та підвищити точність обробки транзакцій."
-          title="Передові технології"
+          description="Ми спрощуємо процес реєстрації, обробляємо всі документи та листування з місцевими органами влади, щоб забезпечити дотримання місцевих законів і правил щодо торговельних марок."
+          title="Ефективність і відповідність"
         />
-      </div>
-      <div className="empowerment-wrapper">
-        <div>
-          <p className="title">
-            Розширення можливостей вашого бізнесу з Lionsinlaw
-          </p>
-          <p className="description">
-            Вибирайте комплексні рішення для торгових завдань та експертну
-            підтримку для доопрацювання ваших глобальних бізнес-цілей.
-          </p>
-          <LinkComponent
-            linkLabel="Зв'язатися з нами"
-            linkValue={CONTACTS_ROUTE}
-          />
+        <div className="image-wrapper-block">
+          <img src={lawSignet} alt="Law signet"/>
         </div>
       </div>
+      <Faq />
     </section>
   );
 }
