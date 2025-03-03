@@ -213,4 +213,28 @@
     width: 45px;
     height: 35px;
   }
+
+  &.hitech {
+    background-image: url(../../assets/images/hitech.png);
+  }
+
+  &.devwise {
+    background-image: url(../../assets/images/devWise.png);
+  }
+
+  &.invert {
+    background-image: url(../../assets/images/invert.png);
+  }
+
+  &.smile {
+    background-image: url(../../assets/images/smile.png);
+  }
+
+  &.effective-registration {
+    background-image: url(../../assets/images/effectiveRegistration.png);
+  }
+
+  &.global-security {
+    background-image: url(../../assets/images/globalNetwork.png);
+  }
 }

@@ -26,7 +26,7 @@ export default function Header() {
           </Popover>
           <Link to={""}>Блог</Link>
           <Link to={CONTACTS_ROUTE}>Контакти</Link>
-          <a href="mailto:info@Lionsinlaw.com" className="email-wrapper">
+          <a href="mailto: info@lionsinlaw.com" className="email-wrapper">
             <Icon name="envelop" />
             <span>info@Lionsinlaw.com</span>
           </a>

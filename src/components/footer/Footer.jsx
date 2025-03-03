@@ -58,21 +58,18 @@ export default function Footer() {
             </Flex>
             <p className="secondary-title">Слідкуйте в соц. мережах</p>
             <Flex align="center">
-              <Flex className="social-wrapper" align="center" justify="center">
+              <Link
+                to="https://facebook.com/lionsinlawpro"
+                className="social-wrapper"
+              >
                 <Icon name="facebook" />
-              </Flex>
-              <Flex className="social-wrapper" align="center" justify="center">
+              </Link>
+              <Link to="https://x.com/lionsinlaw" className="social-wrapper">
                 <Icon name="twitter" />
-              </Flex>
-              <Flex className="social-wrapper" align="center" justify="center">
-                <Icon name="instagram" />
-              </Flex>
-              <Flex className="social-wrapper" align="center" justify="center">
-                <Icon name="linkedin" />
-              </Flex>
-              <Flex className="social-wrapper" align="center" justify="center">
+              </Link>
+              <Link to="https://t.me/lionsinlaw" className="social-wrapper">
                 <Icon name="telegram" />
-              </Flex>
+              </Link>
             </Flex>
           </div>
         </Flex>

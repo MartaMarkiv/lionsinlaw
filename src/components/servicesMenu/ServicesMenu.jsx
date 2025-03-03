@@ -5,6 +5,7 @@ import {
   CRYPTO_LICENSE_ROUTE,
   FINANCIAL_LICENSE_ROUTE,
   JURISDICTIONS_ROUTE,
+  MERCHANT_ACCOUNTS_ROUTE,
 } from "../../routes/routes";
 import "./style.scss";
 
@@ -16,7 +17,7 @@ export default function ServicesMenu() {
         <Flex vertical={true} align="flex-start">
           <Link to={""}>рестрація компаній</Link>
           <Link to={BANK_ACCOUNT_ROUTE}>відкриття банківських рахунків</Link>
-          <Link to={""}>відкриття мерчант рахунків</Link>
+          <Link to={MERCHANT_ACCOUNTS_ROUTE}>відкриття мерчант рахунків</Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
           <Link to={""}>реєстрація товарних знаків</Link>
