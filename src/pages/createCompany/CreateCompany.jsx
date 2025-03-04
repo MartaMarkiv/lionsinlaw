@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./style.scss";
 import config from "../../config";
-import { Steps, Flex, Input, Form, Select } from "antd";
+import { Steps, Flex, Input, Form, Select, Button } from "antd";
+import ReactFlagsSelect from "react-flags-select";
+import Icon from "../../components/iconComponent/Icon";
 
 const items = [
   {
@@ -22,7 +24,7 @@ const items = [
 const typeRegistrationOptions = [
   {
     value: "type1",
-    label: "Type 1",
+    label: "Компанія з обмеженою віповідальністю",
   },
   {
     value: "type2",
@@ -35,6 +37,21 @@ const typeRegistrationOptions = [
   {
     value: "type4",
     label: "Type 4",
+  },
+];
+
+const traidingOptions = [
+  {
+    value: "jurisdiction",
+    label: "Юрисдикція",
+  },
+  {
+    value: "jurisdiction 2",
+    label: "Юрисдикція 2",
+  },
+  {
+    value: "jurisdiction 3",
+    label: "Юрисдикція 3",
   },
 ];
 
@@ -57,23 +74,104 @@ const directorsOptions = [
   },
 ];
 
+const recomendedServicesOptions = [
+  { value: "consultation", label: "Консультаційні послуги" },
+  { value: "consultation2", label: "Консультаційні послуги 2" },
+  { value: "consultation 3", label: "Консультаційні послуги 3" },
+];
+
 export default function CreateCompany() {
   const { country } = useParams();
 
+  //1 Step
   const [countryName, setCountryName] = useState("");
   const [currentStep, setCurrentStep] = useState(0);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [bankCountry, setBankCountry] = useState("");
+  const [jurisdictionCountry, setjJrisdictionCountry] = useState("");
+  const [serviceType, setServiceType] = useState("");
+  const [registrationType, setRegistrationType] = useState("");
+  const [directorsCount, setDirectorsCount] = useState(1);
+  const [processingTime, setProcessingTime] = useState(1);
+
+  //2 Step
+  const [userName, setUserName] = useState("");
+  const [secondaryName, setSecondaryName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [nationality, setNationality] = useState("");
+  const [city, setCity] = useState("");
+  const [region, setRegion] = useState("");
+  const [address, setAddress] = useState("");
+  const [postalCode, setPostalCode] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [commnet, setComment] = useState("");
+
+
+  const changeComment = (event) => {
+    setComment(event.target.value);
+  }
+
+  const changeUserName = (event) => {
+    setUserName(event.target.value);
+  };
+
+  const changeEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const changeAddress = (event) => {
+    setAddress(event.target.value);
+  };
+
+  const changePostalCode = (event) => {
+    setPostalCode(event.target.value);
+  };
+
+  const changePhoneNumber = (event) => {
+    setPhoneNumber(event.target.value);
+  };
+
+  const changeSecondaryName = (event) => {
+    setSecondaryName(event.target.value);
+  };
+  const changeSurname = (event) => {
+    setSurname(event.target.value);
+  };
+  const changeBirthday = (event) => {
+    setBirthday(event.target.value);
+  };
+  const changeNationality = (value) => {
+    setNationality(value);
+  };
+
+  const changeServiceType = (event) => {
+    setServiceType(event.target.value);
+  };
 
   useEffect(() => {
     const countryLabel = config.countriesList[country];
-    console.log("country label:  ", countryLabel);
     if (countryLabel) {
       setCountryName(countryLabel);
     }
   }, []);
 
+  const changeProcessingTime = (value) => {
+    setProcessingTime(value);
+  };
+
   const changeStep = (value) => {
     console.log("onChange:", value);
     setCurrentStep(value);
+  };
+
+  const changeRegistrationType = (value) => {
+    setRegistrationType(value);
+  };
+
+  const changDirectorsCount = (value) => {
+    setRegistrationType(value);
   };
 
   return (
@@ -86,7 +184,7 @@ export default function CreateCompany() {
           Проста та ефективна процедура через онлайн-систему Companies House
         </p>
       </div>
-      <Flex className="create-company-forms">
+      <Flex className="create-company-forms" justify="space-between">
         <div>
           <p className="title">ЗАПОВНЮЙ ФОРМУ РЕЄСТРАЦІЇ</p>
           <div className="step-label">
@@ -99,38 +197,306 @@ export default function CreateCompany() {
             items={items}
             onChange={changeStep}
           />
-          <div>
-            <p className="title">Налаштування системи</p>
-            <Form
-              className="form-wrapper"
-              layout="vertical"
-              name="settingsSystem"
-            >
-              <Form.Item
-                label="Тип обслуговування"
-                rules={[
-                  {
-                    required: true,
-                  },
-                ]}
-                name="serviceType"
-              >
-                <Input type="text" placeholder="Тип обслуговування" />
-              </Form.Item>
-              <Form.Item label="Тип реєстрації" name="registrationType">
-                <Select options={typeRegistrationOptions} />
-              </Form.Item>
-              <Form.Item label="Кількість дирекрорів" name="directorsNumber">
-                <Select options={directorsOptions} />
-              </Form.Item>
-              <p className="input-label">Юрисдикція компанії</p>
-            </Form>
-          </div>
+          {currentStep === 0 && (
+            <div>
+              <p className="title">Налаштування системи</p>
+              <Form layout="vertical" name="settingsSystem">
+                <div className="form-wrapper main-form-wrapper border-top">
+                  <Form.Item
+                    label="Тип обслуговування"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                    name="serviceType"
+                  >
+                    <Input
+                      type="text"
+                      className="full-input"
+                      placeholder="Тип обслуговування"
+                      onChange={changeServiceType}
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Юрисдикція компанії"
+                    name="companyCountry"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <ReactFlagsSelect
+                      className="country-select"
+                      selected={selectedCountry}
+                      onSelect={(code) => setSelectedCountry(code)}
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Тип реєстрації"
+                    name="registrationType"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Select
+                      options={typeRegistrationOptions}
+                      onChange={changeRegistrationType}
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Кількість директорів"
+                    name="directorsNumber"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Select
+                      options={directorsOptions}
+                      onChange={changDirectorsCount}
+                    />
+                  </Form.Item>
+                </div>
+                <div className="form-wrapper main-form-wrapper border-top">
+                  <Form.Item
+                    label="Консультаційні послуги"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                    name="recomendedService"
+                  >
+                    <Select options={recomendedServicesOptions} />
+                  </Form.Item>
+                  <Form.Item
+                    name="consultationPrice"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      type="number"
+                      className="full-input"
+                      placeholder="0.00 USD"
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Країна банку"
+                    name="bankCountry"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <ReactFlagsSelect
+                      selected={bankCountry}
+                      className="country-select"
+                      onSelect={(code) => setBankCountry(code)}
+                    />
+                  </Form.Item>
+                </div>
+                <div className="form-wrapper main-form-wrapper border-top">
+                  <Form.Item
+                    name="traidingSelect"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Select options={traidingOptions} />
+                  </Form.Item>
+                  <Form.Item
+                    name="traidingPrice"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      type="number"
+                      className="full-input"
+                      placeholder="0.00 USD"
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Юрисдикція компанії"
+                    name="jurisdictionCountry"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <ReactFlagsSelect
+                      selected={jurisdictionCountry}
+                      className="country-select"
+                      onSelect={(code) => setjJrisdictionCountry(code)}
+                    />
+                  </Form.Item>
+                </div>
+              </Form>
+            </div>
+          )}
+          {currentStep === 1 && (
+            <div>
+              <p className="title">Персональні дані</p>
+              <Form layout="vertical" name="personalData">
+                <div className="form-wrapper main-form-wrapper border-top">
+                  <Flex className="sub-title-wrapper" justify="space-between">
+                    <span>Контактна Інформація</span>
+                    <Icon name="ok-red" />
+                  </Flex>
+                  <Flex justify="space-between" className="form-values-divider">
+                    <Form.Item  label="Ім'я власника" name="userNameValue" rules={[
+                      {
+                        required: true,
+                      },
+                    ]}>
+                      <Input className="full-input" placeholder="Іван" onChange={changeUserName}/>
+                    </Form.Item>
+                    <Form.Item  label="Прізвище" name="surnameValue" rules={[
+                      {
+                        required: true,
+                      },
+                    ]}>
+                      <Input className="full-input" placeholder="Харитонов" onChange={changeSurname}/>
+                    </Form.Item>
+                  </Flex>
+                  <Flex justify="space-between" className="form-values-divider">
+                    <Form.Item  label="По батькові" name="secondaryNameValue" rules={[
+                      {
+                        required: true,
+                      },
+                    ]}>
+                      <Input className="full-input" placeholder="Платонович" onChange={changeSecondaryName}/>
+                    </Form.Item>
+                    <Form.Item  label="Дата народження" name="birthdayValue" rules={[
+                      {
+                        required: true,
+                      },
+                    ]}>
+                      <Input type="date" className="full-input" onChange={changeBirthday}/>
+                    </Form.Item>
+                  </Flex>
+                  <Form.Item
+                    label="Громадянство"
+                    name="nationality"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <ReactFlagsSelect
+                      className="country-select"
+                      selected={nationality}
+                      onSelect={changeNationality}
+                    />
+                  </Form.Item>
+                </div>
+              </Form>
+            </div>
+          )}
         </div>
+
         <div>
-          <div className="form-wrapper">
-            <p>Деталі заказу</p>
+          {currentStep === 0 && (
+            <>
+            <div className="form-wrapper secondary-form-wrapper">
+              <p className="title border-top">Деталі замовлення</p>
+              <Flex vertical={true}>
+                <p className="form-label">Тип обслуговування</p>
+                <p className="form-value">{serviceType}</p>
+              </Flex>
+              <Flex vertical={true}>
+                <p className="form-label">Юрисдикція компанії</p>
+                <p className="form-value">{jurisdictionCountry}</p>
+              </Flex>
+              <Flex vertical={true}>
+                <p className="form-label">Тип реєстрації</p>
+                <p className="form-item-description">{registrationType}</p>
+                <p className="form-value">0.00 USD</p>
+              </Flex>
+              <Flex vertical={true}>
+                <p className="form-label">Кількість директорів</p>
+                <p className="form-value">{directorsCount}</p>
+              </Flex>
+              <Flex vertical={true}>
+                <p className="form-label">Кількість акціонерів</p>
+                <p className="form-value">1</p>
+              </Flex>
+              <Flex vertical={true}>
+                <Flex
+                  className="form-label"
+                  justify="space-between"
+                  align="center"
+                >
+                  <span>Час обробки</span>
+                  <Button icon={<Icon name="ask-red" />} />
+                </Flex>
+                <p className="form-value">Виберіть</p>
+                <Select
+                  options={directorsOptions}
+                  onChange={changeProcessingTime}
+                />
+              </Flex>
+            </div>
+            <div className="form-wrapper secondary-form-wrapper">
+            <p className="title border-top">Промокод</p>
+            <Flex className="promocode-wrapper">
+              <Input placeholder="Введіть промокод" />
+              <Button>Застосувати</Button>
+            </Flex>
           </div>
+          </>
+          )}
+          {currentStep === 1 && (
+            <>
+            <Form layout="vertical" name="personalDataInfo" className="form-wrapper secondary-form-wrapper border-top">
+              <p className="title">Деталі даних</p>
+              <Form.Item  label="Вулиця, будинок, квартира" name="addressValue" rules={[
+                {
+                  required: true,
+                },
+              ]}>
+                <Input className="full-input" placeholder="Вул Пушкінська б.32 кв. 1" onChange={changeAddress}/>
+              </Form.Item>
+              <Form.Item  label="Поштовий індекс" name="postalCodeValue" rules={[
+                {
+                  required: true,
+                },
+              ]}>
+                <Input className="full-input" placeholder="62116" onChange={changePostalCode}/>
+              </Form.Item>
+              <Form.Item  label="Електронна адрера" name="emailValue" rules={[
+                {
+                  required: true,
+                },
+              ]}>
+                <Input className="full-input" placeholder="kvitca1433@gmail.com" onChange={changeEmail}/>
+              </Form.Item>
+            </Form>
+            <div className="form-wrapper secondary-form-wrapper">
+            <p className="title border-top">Коменртар</p>
+            <Flex className="promocode-wrapper">
+              <Input placeholder="Введіть коментар" onChange={changeComment}/>
+              <Button>Застосувати</Button>
+            </Flex>
+            </div>
+            </>
+          )}
+          <Button className="next-step-button">Далі</Button>
         </div>
       </Flex>
     </section>

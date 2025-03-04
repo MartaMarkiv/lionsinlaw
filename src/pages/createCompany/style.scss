@@ -10,6 +10,7 @@
     font-family: "Lato-bold";
     color: #ffffff;
     padding: 68px 54px;
+    margin-bottom: 100px;
 
     .title {
       font-size: 61px;
@@ -22,6 +23,245 @@
       margin-top: 23px;
       margin-bottom: 200px;
       width: 45%;
+    }
+  }
+
+  .create-company-forms {
+    > div {
+      width: 48%;
+    }
+
+    .title {
+      font-family: "Lato-bold";
+      font-size: 42px;
+    }
+
+    .step-label {
+      color: #a1a1a1;
+      font-size: 32px;
+      margin: 70px 0;
+    }
+
+    .steps-wrapper {
+      .ant-steps-item {
+        .ant-steps-item-content {
+          display: none;
+        }
+
+        &.ant-steps-item-finish {
+          .ant-steps-item-icon {
+            background-color: #a1a1a1;
+
+            .ant-steps-icon {
+              color: #000000;
+            }
+          }
+          > .ant-steps-item-container {
+            > .ant-steps-item-tail::after {
+              background-color: #a1a1a1;
+            }
+
+            &:hover {
+              .ant-steps-item-icon .ant-steps-icon {
+                color: #000000;
+              }
+            }
+          }
+        }
+
+        .ant-steps-item-tail {
+          top: 20px;
+          margin-inline-start: 18px;
+
+          &::after {
+            background-color: #a1a1a1;
+          }
+        }
+
+        .ant-steps-item-icon {
+          border: none;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-inline-start: 0;
+
+          .ant-steps-icon {
+            font-family: "Roboto-medium";
+            font-size: 24px;
+          }
+        }
+
+        &.ant-steps-item-active {
+          .ant-steps-item-container:hover {
+            .ant-steps-item-icon .ant-steps-icon {
+              color: #ffffff;
+            }
+          }
+
+          .ant-steps-item-icon {
+            background-color: variables.$dark-red;
+            color: #ffffff;
+          }
+        }
+
+        &.ant-steps-item-wait {
+          .ant-steps-item-container:hover {
+            .ant-steps-item-icon .ant-steps-icon {
+              color: #000000;
+            }
+          }
+          .ant-steps-item-icon {
+            background-color: #a1a1a1;
+            .ant-steps-icon {
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+
+    .main-form-wrapper {
+      font-family: "Lato";
+      font-size: 24px;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 25%);
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    
+
+    .border-top {
+      border-top: 5px solid variables.$red-form-color;
+    }
+
+    .secondary-form-wrapper {
+      font-family: "Lato";
+      font-size: 24px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+      padding: 40px 20px;
+      box-sizing: border-box;
+      position: relative;
+
+      .title,
+      .form-value {
+        color: variables.$red-form-color;
+      }
+
+      .form-value {
+        align-self: flex-end;
+      }
+
+      .form-item-description {
+        color: #434343;
+      }
+    }
+
+    .promocode-wrapper {
+      border: 1px solid #a1a1a1;
+      margin-top: 45px;
+
+      input {
+        border: none;
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+
+      input,
+      button {
+        font-size: 24px;
+        padding: 16px 18px;
+      }
+
+      button {
+        background-color: #d32525;
+        color: #ffffff;
+        border-radius: 0;
+        height: auto;
+
+        &:hover {
+          background-color: #d32525;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .next-step-button {
+      background-color: variables.$button-bg;
+      font-size: 24px;
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 16px;
+      width: 100%;
+      height: auto;
+      margin-top: 119px;
+
+      &:hover {
+        background-color: variables.$button-bg;
+        color: #ffffff;
+      }
+    }
+
+    .form-label,
+    .ant-form-item-label {
+      font-family: "Lora-bold";
+      font-size: 24px;
+
+      label {
+        font-size: 24px;
+      }
+    }
+
+    .form-label {
+      margin-bottom: 10px;
+      button {
+        height: auto;
+      }
+      .icon-component {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    .full-input {
+      font-family: "Lora";
+      padding: 16px 18px;
+      border: 1px solid variables.$light-grey;
+      border-radius: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        font-family: "Lora";
+        font-size: 24px;
+        color: #000000;
+      }
+    }
+
+    .sub-title-wrapper {
+      font-family: "Lora-bold";
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #a1a1a1;
+      margin-bottom: 30px;
+
+      .icon-component {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .country-select button {
+      @extend .full-input;
+    }
+    .form-values-divider {
+      >div {
+        width: 47%;
+      }
     }
   }
 }

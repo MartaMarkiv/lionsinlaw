@@ -33,11 +33,6 @@ export default function ServicesMenu() {
           </Link>
         </Flex>
         <Flex vertical={true} align="flex-start">
-          <Link to={""}>Консультаційні послуги</Link>
-          <Link to={""}>Ціни</Link>
-          <Link to={""}>Питання відповідь</Link>
-        </Flex>
-        <Flex vertical={true} align="flex-start">
           <Link to={JURISDICTIONS_ROUTE}>Юрисдикції</Link>
         </Flex>
       </Flex>
