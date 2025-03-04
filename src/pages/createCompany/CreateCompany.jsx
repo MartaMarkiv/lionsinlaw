@@ -106,12 +106,11 @@ export default function CreateCompany() {
   const [postalCode, setPostalCode] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [commnet, setComment] = useState("");
-
+  const [comment, setComment] = useState("");
 
   const changeComment = (event) => {
     setComment(event.target.value);
-  }
+  };
 
   const changeUserName = (event) => {
     setUserName(event.target.value);
@@ -171,7 +170,7 @@ export default function CreateCompany() {
   };
 
   const changDirectorsCount = (value) => {
-    setRegistrationType(value);
+    setDirectorsCount(value);
   };
 
   return (
@@ -358,35 +357,67 @@ export default function CreateCompany() {
                     <Icon name="ok-red" />
                   </Flex>
                   <Flex justify="space-between" className="form-values-divider">
-                    <Form.Item  label="Ім'я власника" name="userNameValue" rules={[
-                      {
-                        required: true,
-                      },
-                    ]}>
-                      <Input className="full-input" placeholder="Іван" onChange={changeUserName}/>
+                    <Form.Item
+                      label="Ім'я власника"
+                      name="userNameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Іван"
+                        onChange={changeUserName}
+                      />
                     </Form.Item>
-                    <Form.Item  label="Прізвище" name="surnameValue" rules={[
-                      {
-                        required: true,
-                      },
-                    ]}>
-                      <Input className="full-input" placeholder="Харитонов" onChange={changeSurname}/>
+                    <Form.Item
+                      label="Прізвище"
+                      name="surnameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Харитонов"
+                        onChange={changeSurname}
+                      />
                     </Form.Item>
                   </Flex>
                   <Flex justify="space-between" className="form-values-divider">
-                    <Form.Item  label="По батькові" name="secondaryNameValue" rules={[
-                      {
-                        required: true,
-                      },
-                    ]}>
-                      <Input className="full-input" placeholder="Платонович" onChange={changeSecondaryName}/>
+                    <Form.Item
+                      label="По батькові"
+                      name="secondaryNameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Платонович"
+                        onChange={changeSecondaryName}
+                      />
                     </Form.Item>
-                    <Form.Item  label="Дата народження" name="birthdayValue" rules={[
-                      {
-                        required: true,
-                      },
-                    ]}>
-                      <Input type="date" className="full-input" onChange={changeBirthday}/>
+                    <Form.Item
+                      label="Дата народження"
+                      name="birthdayValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        type="date"
+                        className="full-input"
+                        onChange={changeBirthday}
+                      />
                     </Form.Item>
                   </Flex>
                   <Form.Item
@@ -411,89 +442,120 @@ export default function CreateCompany() {
         </div>
 
         <div>
-          {currentStep === 0 && (
+          {currentStep === 0 || currentStep === 2 && (
             <>
-            <div className="form-wrapper secondary-form-wrapper">
-              <p className="title border-top">Деталі замовлення</p>
-              <Flex vertical={true}>
-                <p className="form-label">Тип обслуговування</p>
-                <p className="form-value">{serviceType}</p>
-              </Flex>
-              <Flex vertical={true}>
-                <p className="form-label">Юрисдикція компанії</p>
-                <p className="form-value">{jurisdictionCountry}</p>
-              </Flex>
-              <Flex vertical={true}>
-                <p className="form-label">Тип реєстрації</p>
-                <p className="form-item-description">{registrationType}</p>
-                <p className="form-value">0.00 USD</p>
-              </Flex>
-              <Flex vertical={true}>
-                <p className="form-label">Кількість директорів</p>
-                <p className="form-value">{directorsCount}</p>
-              </Flex>
-              <Flex vertical={true}>
-                <p className="form-label">Кількість акціонерів</p>
-                <p className="form-value">1</p>
-              </Flex>
-              <Flex vertical={true}>
-                <Flex
-                  className="form-label"
-                  justify="space-between"
-                  align="center"
-                >
-                  <span>Час обробки</span>
-                  <Button icon={<Icon name="ask-red" />} />
+              <div className="form-wrapper secondary-form-wrapper">
+                <p className="title border-top">Деталі замовлення</p>
+                <Flex vertical={true}>
+                  <p className="form-label">Тип обслуговування</p>
+                  <p className="form-value">{serviceType}</p>
                 </Flex>
-                <p className="form-value">Виберіть</p>
-                <Select
-                  options={directorsOptions}
-                  onChange={changeProcessingTime}
-                />
-              </Flex>
-            </div>
-            <div className="form-wrapper secondary-form-wrapper">
-            <p className="title border-top">Промокод</p>
-            <Flex className="promocode-wrapper">
-              <Input placeholder="Введіть промокод" />
-              <Button>Застосувати</Button>
-            </Flex>
-          </div>
-          </>
+                <Flex vertical={true}>
+                  <p className="form-label">Юрисдикція компанії</p>
+                  <p className="form-value">{jurisdictionCountry}</p>
+                </Flex>
+                <Flex vertical={true}>
+                  <p className="form-label">Тип реєстрації</p>
+                  <p className="form-item-description">{registrationType}</p>
+                  <p className="form-value">0.00 USD</p>
+                </Flex>
+                <Flex vertical={true}>
+                  <p className="form-label">Кількість директорів</p>
+                  <p className="form-value">{directorsCount}</p>
+                </Flex>
+                <Flex vertical={true}>
+                  <p className="form-label">Кількість акціонерів</p>
+                  <p className="form-value">1</p>
+                </Flex>
+                <Flex vertical={true}>
+                  <Flex
+                    className="form-label"
+                    justify="space-between"
+                    align="center"
+                  >
+                    <span>Час обробки</span>
+                    <Button icon={<Icon name="ask-red" />} />
+                  </Flex>
+                  <p className="form-value">Виберіть</p>
+                  <Select
+                    options={directorsOptions}
+                    onChange={changeProcessingTime}
+                  />
+                </Flex>
+              </div>
+              <div className="form-wrapper secondary-form-wrapper">
+                <p className="title border-top">Промокод</p>
+                <Flex className="promocode-wrapper">
+                  <Input placeholder="Введіть промокод" />
+                  <Button>Застосувати</Button>
+                </Flex>
+              </div>
+            </>
           )}
           {currentStep === 1 && (
             <>
-            <Form layout="vertical" name="personalDataInfo" className="form-wrapper secondary-form-wrapper border-top">
-              <p className="title">Деталі даних</p>
-              <Form.Item  label="Вулиця, будинок, квартира" name="addressValue" rules={[
-                {
-                  required: true,
-                },
-              ]}>
-                <Input className="full-input" placeholder="Вул Пушкінська б.32 кв. 1" onChange={changeAddress}/>
-              </Form.Item>
-              <Form.Item  label="Поштовий індекс" name="postalCodeValue" rules={[
-                {
-                  required: true,
-                },
-              ]}>
-                <Input className="full-input" placeholder="62116" onChange={changePostalCode}/>
-              </Form.Item>
-              <Form.Item  label="Електронна адрера" name="emailValue" rules={[
-                {
-                  required: true,
-                },
-              ]}>
-                <Input className="full-input" placeholder="kvitca1433@gmail.com" onChange={changeEmail}/>
-              </Form.Item>
-            </Form>
-            <div className="form-wrapper secondary-form-wrapper">
-            <p className="title border-top">Коменртар</p>
-            <Flex className="promocode-wrapper">
-              <Input placeholder="Введіть коментар" onChange={changeComment}/>
-              <Button>Застосувати</Button>
-            </Flex>
-            </div>
+              <Form
+                layout="vertical"
+                name="personalDataInfo"
+                className="form-wrapper secondary-form-wrapper border-top"
+              >
+                <p className="title">Деталі даних</p>
+                <Form.Item
+                  label="Вулиця, будинок, квартира"
+                  name="addressValue"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <Input
+                    className="full-input"
+                    placeholder="Вул Пушкінська б.32 кв. 1"
+                    onChange={changeAddress}
+                  />
+                </Form.Item>
+                <Form.Item
+                  label="Поштовий індекс"
+                  name="postalCodeValue"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <Input
+                    className="full-input"
+                    placeholder="62116"
+                    onChange={changePostalCode}
+                  />
+                </Form.Item>
+                <Form.Item
+                  label="Електронна адрера"
+                  name="emailValue"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <Input
+                    className="full-input"
+                    placeholder="kvitca1433@gmail.com"
+                    onChange={changeEmail}
+                  />
+                </Form.Item>
+              </Form>
+              <div className="form-wrapper secondary-form-wrapper">
+                <p className="title border-top">Коменртар</p>
+                <Flex className="promocode-wrapper">
+                  <Input
+                    placeholder="Введіть коментар"
+                    onChange={changeComment}
+                  />
+                  <Button>Застосувати</Button>
+                </Flex>
+              </div>
             </>
           )}
           <Button className="next-step-button">Далі</Button>

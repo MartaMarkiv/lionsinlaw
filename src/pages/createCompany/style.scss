@@ -129,7 +129,6 @@
       padding: 40px 20px;
       box-sizing: border-box;
     }
-    
 
     .border-top {
       border-top: 5px solid variables.$red-form-color;
@@ -259,7 +258,7 @@
       @extend .full-input;
     }
     .form-values-divider {
-      >div {
+      > div {
         width: 47%;
       }
     }
