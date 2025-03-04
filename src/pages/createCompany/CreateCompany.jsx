@@ -88,7 +88,7 @@ export default function CreateCompany() {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedCountry, setSelectedCountry] = useState("");
   const [bankCountry, setBankCountry] = useState("");
-  const [jurisdictionCountry, setjJrisdictionCountry] = useState("");
+  const [jurisdictionCountry, setJurisdictionCountry] = useState("");
   const [serviceType, setServiceType] = useState("");
   const [registrationType, setRegistrationType] = useState("");
   const [directorsCount, setDirectorsCount] = useState(1);
@@ -149,6 +149,10 @@ export default function CreateCompany() {
     setServiceType(event.target.value);
   };
 
+  const changeJurisdictionCountry = (value) => {
+    setJurisdictionCountry(value);
+  };
+
   useEffect(() => {
     const countryLabel = config.countriesList[country];
     if (countryLabel) {
@@ -161,12 +165,11 @@ export default function CreateCompany() {
   };
 
   const changeStep = (value) => {
-    console.log("onChange:", value);
     setCurrentStep(value);
   };
 
-  const changeRegistrationType = (value) => {
-    setRegistrationType(value);
+  const changeRegistrationType = (_value, label) => {
+    setRegistrationType(label);
   };
 
   const changDirectorsCount = (value) => {
@@ -258,6 +261,7 @@ export default function CreateCompany() {
                     <Select
                       options={directorsOptions}
                       onChange={changDirectorsCount}
+                      value={directorsCount}
                     />
                   </Form.Item>
                 </div>
@@ -340,7 +344,7 @@ export default function CreateCompany() {
                     <ReactFlagsSelect
                       selected={jurisdictionCountry}
                       className="country-select"
-                      onSelect={(code) => setjJrisdictionCountry(code)}
+                      onChange={changeJurisdictionCountry}
                     />
                   </Form.Item>
                 </div>
@@ -442,7 +446,7 @@ export default function CreateCompany() {
         </div>
 
         <div>
-          {currentStep === 0 || currentStep === 2 && (
+          {(currentStep === 0 || currentStep === 2) && (
             <>
               <div className="form-wrapper secondary-form-wrapper">
                 <p className="title border-top">Деталі замовлення</p>
@@ -456,7 +460,9 @@ export default function CreateCompany() {
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Тип реєстрації</p>
-                  <p className="form-item-description">{registrationType}</p>
+                  <p className="form-item-description">
+                    {registrationType?.label}
+                  </p>
                   <p className="form-value">0.00 USD</p>
                 </Flex>
                 <Flex vertical={true}>
@@ -480,6 +486,7 @@ export default function CreateCompany() {
                   <Select
                     options={directorsOptions}
                     onChange={changeProcessingTime}
+                    value={processingTime}
                   />
                 </Flex>
               </div>
