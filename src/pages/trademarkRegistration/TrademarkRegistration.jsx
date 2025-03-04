@@ -145,7 +145,7 @@ export default function TrademarkRegistration() {
       </div>
       <ConsultingOffshoreComp
         title="Підтримка Вашого Бренду з :"
-        isTrademark={true}
+        showPrice={false}
         description="Незалежно від вашого бізнесу, ми забезпечимо ефективний захист ваших торгових марок. Зв’яжіться з нами, щоб дізнатися більше про наші послуги в Європі, Канаді та США"
         linkLabel="Звязатися з нами"
       >

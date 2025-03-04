@@ -1,0 +1,27 @@
+@use "../../variables";
+
+.create-company-page {
+  padding: 0 70px;
+
+  .create-company-page-header {
+    background-image: url(../../assets/images/companyRegistration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato-bold";
+    color: #ffffff;
+    padding: 68px 54px;
+
+    .title {
+      font-size: 61px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      font-size: 28px;
+      line-height: 150%;
+      margin-top: 23px;
+      margin-bottom: 200px;
+      width: 45%;
+    }
+  }
+}

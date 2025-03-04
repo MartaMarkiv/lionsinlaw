@@ -121,4 +121,18 @@ export default {
       label: "Азійській регіон",
     },
   ],
+  countriesList: {
+    england: "Англії",
+    usa: "США",
+    belize: "Белізі",
+    ireland: "Ірландії",
+    scotland: "Шотландії",
+    panama: "Панамі",
+    kuracao: "Англії",
+    spain: "Іспанії",
+    poland: "Польщі",
+    gibraltar: "Гібралтарі",
+    isleOfMan: "Острові Мен",
+    czechia: "Чехії",
+  },
 };
