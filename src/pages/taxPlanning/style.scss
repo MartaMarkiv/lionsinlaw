@@ -73,13 +73,13 @@
     margin: 120px 0;
     text-align: center;
 
-    >.title {
+    > .title {
       font-family: "Lato-bold";
       font-size: 42px;
       text-transform: uppercase;
     }
 
-    >.description {
+    > .description {
       font-size: 20px;
       margin-top: 45px;
       margin-bottom: 77px;
@@ -167,24 +167,72 @@
       }
     }
   }
+}
 
-  .grow-business {
-    font-family: "Raleway";
-    background-color: #850A0A;
-    background-image: url(../../assets/images/sityScheme.png);
-    background-repeat: no-repeat;
-    color: #ffffff;
-    margin-top: 200px;
-    padding: 68px 0 45px 88px;
+.grow-business {
+  font-family: "Raleway";
+  background-color: #850a0a;
+  background-image: url(../../assets/images/sityScheme.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #ffffff;
+  margin-top: 200px;
+  padding: 68px 0 45px 88px;
 
-    .title {
-      font-size: 42px;
-      text-transform: uppercase;
+  .title {
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-size: 24px;
+    width: 45%;
+  }
+
+  .items-wrapper {
+    width: 40%;
+    margin-top: 57px;
+
+    > div {
+      .icon-component {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        text-align: center;
+      }
     }
+  }
+}
 
-    .description {
-      font-size: 24px;
-      width: 45%;
-    }
+.partnering-block {
+  text-align: center;
+  margin-top: 153px;
+
+  .title {
+    font-family: "Lato-bold";
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-family: "Roboto-bold";
+    font-size: 24px;
+    color: #52525b;
+    width: 45%;
+    margin-top: 147px;
+    margin-bottom: 48px;
+  }
+
+  .link {
+    padding: 15px 24px;
+    margin-bottom: 100px;
+  }
+
+  img {
+    max-width: 100%;
   }
 }

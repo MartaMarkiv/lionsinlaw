@@ -138,8 +138,8 @@ const router = createBrowserRouter([
       },
       {
         path: TAX_PLANNING_ROUTE,
-        element: <TaxPlanning />
-      }
+        element: <TaxPlanning />,
+      },
     ],
   },
 ]);
