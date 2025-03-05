@@ -10,6 +10,7 @@ import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/Comp
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import Faq from "../../components/faq/Faq";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
+import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function IrelandCompany() {
   return (
@@ -80,6 +81,7 @@ export default function IrelandCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
+        linkRoute={`${COMPANY_REGISTRATION_ROUTE}/ireland`}
       >
         <CountryTarrifList />
       </ConsultingOffshoreComp>

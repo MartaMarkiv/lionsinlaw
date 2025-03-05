@@ -128,7 +128,7 @@ export default {
     ireland: "Ірландії",
     scotland: "Шотландії",
     panama: "Панамі",
-    kuracao: "Англії",
+    kuracao: "Кюракао",
     spain: "Іспанії",
     poland: "Польщі",
     gibraltar: "Гібралтарі",

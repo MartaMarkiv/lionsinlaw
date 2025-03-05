@@ -8,6 +8,7 @@ import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/Comp
 import Faq from "../../components/faq/Faq";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
+import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ManIslandCompany() {
   return (
@@ -62,6 +63,7 @@ export default function ManIslandCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
+        linkRoute={`${COMPANY_REGISTRATION_ROUTE}/isleOfMan`}
       >
         <CountryTarrifList />
       </ConsultingOffshoreComp>

@@ -6,6 +6,7 @@ import ServicesMenu from "../servicesMenu/ServicesMenu";
 import {
   CONTACTS_ROUTE,
   CZECH_COMPANY_ROUTE,
+  MAIN_ROUTE,
   MERCHANT_ACCOUNTS_ROUTE,
   PANAMA_COMPANY_ROUTE,
 } from "../../routes/routes";
@@ -26,7 +27,9 @@ export default function Header() {
         justify="space-between"
         className={isRevert && "left-align-header"}
       >
-        <Icon name="logo" />
+        <Link to={MAIN_ROUTE}>
+          <Icon name="logo" />
+        </Link>
         <Flex align="center" className="header-menu-wrapper">
           <Popover content={<ServicesMenu />}>
             <Button className="menu-item" icon={<Icon name="drop" />}>

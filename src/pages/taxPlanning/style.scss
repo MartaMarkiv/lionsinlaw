@@ -1,0 +1,190 @@
+@use "../../variables";
+
+.tax-planning-page {
+  padding: 0 70px;
+
+  .tax-planning-page-header {
+    background-image: url(../../assets/images/taxesPlanBanner.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    font-family: "Lora-bold";
+    padding-bottom: 98px;
+
+    .info-part {
+      width: 80%;
+    }
+
+    .secondary-description {
+      font-size: 24px;
+      align-self: flex-end;
+      width: 20%;
+    }
+
+    .title {
+      font-size: 160px;
+      color: variables.$red-color;
+      line-height: 150%;
+    }
+
+    .description {
+      font-size: 50px;
+      line-height: 150%;
+      margin-top: 75px;
+      margin-bottom: 88px;
+      width: 70%;
+    }
+  }
+
+  .more-block {
+    .info-block {
+      width: 70%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-family: "Lato-bold";
+      font-size: 42px;
+      text-transform: uppercase;
+      margin-bottom: 80px;
+
+      .red-text {
+        color: variables.$dark-red;
+      }
+    }
+
+    .description {
+      font-family: "FiraSans";
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .image-wrapper {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .taxes-planning-why-block {
+    font-family: "FiraSans";
+    padding: 0 5%;
+    margin: 120px 0;
+    text-align: center;
+
+    >.title {
+      font-family: "Lato-bold";
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    >.description {
+      font-size: 20px;
+      margin-top: 45px;
+      margin-bottom: 77px;
+    }
+
+    .item-block {
+      width: 30%;
+
+      .icon-component {
+        width: 70px;
+        height: 70px;
+      }
+
+      .title {
+        font-size: 26px;
+        margin-top: 23px;
+        margin-bottom: 40px;
+      }
+
+      .description {
+        font-size: 16px;
+        color: #626262;
+        text-align: left;
+      }
+    }
+  }
+
+  .tax-planning-grid {
+    .image-wrapper-block {
+      width: 48%;
+
+      .main-title {
+        font-family: "Lora-bold";
+        font-size: 42px;
+        text-transform: uppercase;
+
+        .red-text {
+          color: variables.$dark-red;
+        }
+      }
+
+      .description {
+        font-family: "Lora-medium";
+        font-size: 24px;
+        margin: 87px 0 78px 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      gap: 30px;
+      width: 50%;
+
+      .cell-header {
+        .icon-component {
+          width: 90px;
+          height: 90px;
+          min-width: 90px;
+          margin-right: 10px;
+        }
+      }
+
+      > div {
+        border-radius: 4px;
+        padding: 20px;
+        border: 1px solid variables.$dark-red;
+
+        p {
+          font-family: "Raleway";
+          font-size: 24px;
+          margin-top: 30px;
+        }
+      }
+
+      .transaction-block,
+      .reporting-wrapper {
+        position: relative;
+        top: 80px;
+      }
+    }
+  }
+
+  .grow-business {
+    font-family: "Raleway";
+    background-color: #850A0A;
+    background-image: url(../../assets/images/sityScheme.png);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin-top: 200px;
+    padding: 68px 0 45px 88px;
+
+    .title {
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      font-size: 24px;
+      width: 45%;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import CompanySubDescriptionBlock from "../../components/companySubDescriptionBl
 import SecondaryDescriptionGrid from "../../components/secondaryDescriptionGrid/SecondaryDescriptionGrid";
 import Icon from "../../components/iconComponent/Icon";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
+import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CzechCompany() {
   return (
@@ -66,6 +67,7 @@ export default function CzechCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
+        linkRoute={`${COMPANY_REGISTRATION_ROUTE}/czechia`}
       >
         <CountryTarrifList />
       </ConsultingOffshoreComp>

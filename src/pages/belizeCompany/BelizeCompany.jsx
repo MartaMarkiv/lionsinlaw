@@ -6,6 +6,7 @@ import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/Cons
 import CompanySubDescriptionBlock from "../../components/companySubDescriptionBlock/CompanySubDescriptionBlock";
 import SecondaryDescriptionGrid from "../../components/secondaryDescriptionGrid/SecondaryDescriptionGrid";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
+import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function BelizeCompany() {
   return (
@@ -55,6 +56,7 @@ export default function BelizeCompany() {
         description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
       компанії від наших експертів"
         linkLabel="Зареєструвати компанію"
+        linkRoute={`${COMPANY_REGISTRATION_ROUTE}/belize`}
       >
         <CountryTarrifList />
       </ConsultingOffshoreComp>

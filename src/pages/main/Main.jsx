@@ -7,7 +7,14 @@ import chooseUsImg from "../../assets/images/chooseLionsInLaw.png";
 import lionsInLawTeam from "../../assets/images/team.png";
 import BlockElement from "../../components/blockElement/BlockElement";
 import config from "../../config";
-import { CONTACTS_ROUTE } from "../../routes/routes";
+import {
+  BANK_ACCOUNT_ROUTE,
+  COMPANY_REGISTRATION_ROUTE,
+  CONTACTS_ROUTE,
+  CRYPTO_LICENSE_ROUTE,
+  JURISDICTIONS_ROUTE,
+  TAX_PLANNING_ROUTE,
+} from "../../routes/routes";
 
 export default function Main() {
   return (
@@ -186,7 +193,7 @@ export default function Main() {
         <div className="services-list-title">послуги</div>
         <BlockElement
           description="Ми забезпечуємо безперебійну реєстрацію компаній у різних юрисдикціях по всьому світу, забезпечуючи відповідність і ефективність відповідно до потреб вашого бізнесу"
-          linkValue={""}
+          linkValue={`${COMPANY_REGISTRATION_ROUTE}/default`}
           title="Реєстрація компаній"
           isDark={false}
         />
@@ -201,7 +208,7 @@ export default function Main() {
         />
         <BlockElement
           description="Отримайте доступ до нашої розгалуженої мережі, щоб відкривати корпоративні банківські рахунки по всьому світу, оптимізуючи свої фінансові операції та полегшуючи міжнародні транзакції."
-          linkValue={""}
+          linkValue={BANK_ACCOUNT_ROUTE}
           title="Відкриття банківських рахунків"
           isDark={true}
         />
@@ -227,7 +234,7 @@ export default function Main() {
         />
         <BlockElement
           description="Ми надаємо професійну консультацію та підтримку на кожному етапі процесу вибору юрисдикції та реєстраційної служби, забезпечуючи відповідність місцевим законодавчим вимогам."
-          linkValue={""}
+          linkValue={JURISDICTIONS_ROUTE}
           title="Юрисдикції для Реєстрації Компанії"
           isDark={false}
         />
@@ -253,20 +260,20 @@ export default function Main() {
             justify="space-between"
             className="business-types"
           >
-            <Flex className="business-item">
+            <Link to={TAX_PLANNING_ROUTE} className="business-item">
               <Icon name="taxes-plan-img" />
               <div>
                 <p className="title">Податкове Планування</p>
                 <p>Мінімізація податків та максимізація ефективності</p>
               </div>
-            </Flex>
-            <Flex className="business-item">
+            </Link>
+            <Link to={CRYPTO_LICENSE_ROUTE} className="business-item">
               <Icon name="crypto-license-img" />
               <div>
                 <p className="title">Крипто-ліцензії</p>
                 <p>Регулювання криптовалют та дотримання нормативів</p>
               </div>
-            </Flex>
+            </Link>
           </Flex>
         </div>
       </div>

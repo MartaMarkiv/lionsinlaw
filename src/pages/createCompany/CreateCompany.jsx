@@ -806,14 +806,16 @@ export default function CreateCompany() {
           )}
         </div>
       </Flex>
-      <Flex align="center" justify="center" className="finish-payment-block">
-        <div>
-          <img src={finishPayment} alt="Finish payment" />
-          <p>Автоматична Оплата Послуги</p>
-          <p>Успішно Оплачено</p>
-          <Button>Підтвердити</Button>
-        </div>
-      </Flex>
+      {currentStep === 3 && (
+        <Flex align="center" justify="center" className="finish-payment-block">
+          <div>
+            <img src={finishPayment} alt="Finish payment" />
+            <p>Автоматична Оплата Послуги</p>
+            <p>Успішно Оплачено</p>
+            <Button>Підтвердити</Button>
+          </div>
+        </Flex>
+      )}
       <Faq />
     </section>
   );

@@ -21,6 +21,7 @@ import {
   MERCHANT_ACCOUNTS_ROUTE,
   TRADEMARK_REGISTRATION_ROUTE,
   COMPANY_REGISTRATION_ROUTE,
+  TAX_PLANNING_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -44,6 +45,7 @@ import CzechCompany from "../pages/czechCompany/CzechCompany";
 import MerchantAccounts from "../pages/merchantAccounts/MerchantAccounts";
 import TrademarkRegistration from "../pages/trademarkRegistration/TrademarkRegistration";
 import CreateCompany from "../pages/createCompany/CreateCompany";
+import TaxPlanning from "../pages/taxPlanning/TaxPlanning";
 
 const router = createBrowserRouter([
   {
@@ -134,6 +136,10 @@ const router = createBrowserRouter([
         path: `${COMPANY_REGISTRATION_ROUTE}/:country`,
         element: <CreateCompany />,
       },
+      {
+        path: TAX_PLANNING_ROUTE,
+        element: <TaxPlanning />
+      }
     ],
   },
 ]);

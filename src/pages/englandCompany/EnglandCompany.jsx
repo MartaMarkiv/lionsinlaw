@@ -7,6 +7,7 @@ import CompanyDescriptionGrid from "../../components/companyDescriptionGrid/Comp
 import Faq from "../../components/faq/Faq";
 import { Flex } from "antd";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
+import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function EnglandCompany() {
   return (
@@ -54,7 +55,10 @@ export default function EnglandCompany() {
             Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
             компанії від наших експертів
           </p>
-          <LinkComponent linkLabel="Зареєструвати компанію" linkValue={"/"} />
+          <LinkComponent
+            linkLabel="Зареєструвати компанію"
+            linkValue={`${COMPANY_REGISTRATION_ROUTE}/england`}
+          />
         </div>
       </Flex>
       <Faq />

@@ -148,6 +148,7 @@ export default function TrademarkRegistration() {
         showPrice={false}
         description="Незалежно від вашого бізнесу, ми забезпечимо ефективний захист ваших торгових марок. Зв’яжіться з нами, щоб дізнатися більше про наші послуги в Європі, Канаді та США"
         linkLabel="Звязатися з нами"
+        linkRoute={CONTACTS_ROUTE}
       >
         <Flex align="center" className="tariff-item">
           <Icon name="ok-rounded-white" />

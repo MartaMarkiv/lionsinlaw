@@ -7,6 +7,7 @@ export default function ConsultingOffshoreComp({
   title,
   description,
   linkLabel,
+  linkRoute = "/",
   showPrice = true,
   children,
 }) {
@@ -45,7 +46,7 @@ export default function ConsultingOffshoreComp({
         >
           <p className="title">LionsInLaw</p>
           <p className="description">{description}</p>
-          <LinkComponent linkLabel={linkLabel} linkValue={"/"} />
+          <LinkComponent linkLabel={linkLabel} linkValue={linkRoute} />
         </Flex>
       </Flex>
     </div>
