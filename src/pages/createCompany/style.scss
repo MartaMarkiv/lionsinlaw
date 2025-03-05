@@ -211,14 +211,14 @@
 
         .ant-checkbox-checked {
           .ant-checkbox-inner {
-            background-color: #F44D42;
+            background-color: #f44d42;
           }
         }
 
         .ant-checkbox-inner {
           width: 18px;
           height: 18px;
-          border: 1px solid #F44D42;
+          border: 1px solid #f44d42;
         }
       }
 
@@ -336,7 +336,6 @@
       }
 
       .ant-checkbox-wrapper {
-        
         &:hover {
           .ant-checkbox-checked .ant-checkbox-inner {
             background-color: variables.$dark-red;
@@ -486,7 +485,7 @@
   }
 
   .finish-payment-block {
-    >div {
+    > div {
       font-family: "Lora-medium";
       font-size: 48px;
       text-align: center;

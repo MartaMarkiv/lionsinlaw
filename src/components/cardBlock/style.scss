@@ -1,10 +1,10 @@
 .card-block-wrapper {
   padding: 15px;
-  border: 1px solid #B81515;
+  border: 1px solid #b81515;
 
   .card-block-header {
     margin-bottom: 30px;
-    
+
     .icon-component {
       width: 29px;
       height: 29px;
@@ -19,16 +19,15 @@
   .description {
     font-family: "Roboto";
     font-size: 14px;
-    color: #71717A;
+    color: #71717a;
   }
 
   .card-block-info-wrapper {
-    >div {
+    > div {
       width: 25%;
     }
-    >div:first-child {
+    > div:first-child {
       width: 40%;
     }
   }
-
 }

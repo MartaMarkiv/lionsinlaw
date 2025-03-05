@@ -123,7 +123,7 @@ export default function CreateCompany() {
 
   const changeIssuerBankCountry = (value) => {
     setIssuerBankCountry(value);
-  }
+  };
 
   const changeComment = (event) => {
     setComment(event.target.value);
@@ -458,79 +458,79 @@ export default function CreateCompany() {
             <Form layout="vertical" name="personalData">
               <div className="main-form-wrapper border-top padding-top-delete personal-data">
                 <div className="border-bottom-block">
-                <p className="title left-align">Персональні дані</p>
-                <Flex
-                  className="sub-title-wrapper"
-                  justify="space-between"
-                  align="center"
-                >
-                  <span>Контактна Інформація</span>
-                  <Icon name="ok-red" />
-                </Flex>
-                <Flex justify="space-between" className="form-values-divider">
-                  <Form.Item
-                    label="Ім'я власника"
-                    name="userNameValue"
-                    rules={[
-                      {
-                        required: true,
-                      },
-                    ]}
+                  <p className="title left-align">Персональні дані</p>
+                  <Flex
+                    className="sub-title-wrapper"
+                    justify="space-between"
+                    align="center"
                   >
-                    <Input
-                      className="full-input"
-                      placeholder="Іван"
-                      onChange={changeUserName}
-                    />
-                  </Form.Item>
-                  <Form.Item
-                    label="Прізвище"
-                    name="surnameValue"
-                    rules={[
-                      {
-                        required: true,
-                      },
-                    ]}
-                  >
-                    <Input
-                      className="full-input"
-                      placeholder="Харитонов"
-                      onChange={changeSurname}
-                    />
-                  </Form.Item>
-                </Flex>
-                <Flex justify="space-between" className="form-values-divider">
-                  <Form.Item
-                    label="По батькові"
-                    name="secondaryNameValue"
-                    rules={[
-                      {
-                        required: true,
-                      },
-                    ]}
-                  >
-                    <Input
-                      className="full-input"
-                      placeholder="Платонович"
-                      onChange={changeSecondaryName}
-                    />
-                  </Form.Item>
-                  <Form.Item
-                    label="Дата народження"
-                    name="birthdayValue"
-                    rules={[
-                      {
-                        required: true,
-                      },
-                    ]}
-                  >
-                    <Input
-                      type="date"
-                      className="full-input"
-                      onChange={changeBirthday}
-                    />
-                  </Form.Item>
-                </Flex>
+                    <span>Контактна Інформація</span>
+                    <Icon name="ok-red" />
+                  </Flex>
+                  <Flex justify="space-between" className="form-values-divider">
+                    <Form.Item
+                      label="Ім'я власника"
+                      name="userNameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Іван"
+                        onChange={changeUserName}
+                      />
+                    </Form.Item>
+                    <Form.Item
+                      label="Прізвище"
+                      name="surnameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Харитонов"
+                        onChange={changeSurname}
+                      />
+                    </Form.Item>
+                  </Flex>
+                  <Flex justify="space-between" className="form-values-divider">
+                    <Form.Item
+                      label="По батькові"
+                      name="secondaryNameValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        className="full-input"
+                        placeholder="Платонович"
+                        onChange={changeSecondaryName}
+                      />
+                    </Form.Item>
+                    <Form.Item
+                      label="Дата народження"
+                      name="birthdayValue"
+                      rules={[
+                        {
+                          required: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        type="date"
+                        className="full-input"
+                        onChange={changeBirthday}
+                      />
+                    </Form.Item>
+                  </Flex>
                 </div>
                 <Form.Item
                   label="Громадянство"
@@ -548,7 +548,7 @@ export default function CreateCompany() {
                     onSelect={changeNationality}
                   />
                 </Form.Item>
-                <CardBlock typeBlock="idCard"/>
+                <CardBlock typeBlock="idCard" />
                 <Form.Item name="officeServices">
                   <Flex
                     className="checkbox-wrapper"
@@ -592,29 +592,30 @@ export default function CreateCompany() {
             </Form>
           )}
 
-          { currentStep === 2 &&  <Form layout="vertical" name="bankDetails">
-                <div className="main-form-wrapper border-top padding-top-delete">
-                  <p className="title left-align">банківські реквізити</p>
-                  <CardBlock typeBlock="creditCard"/>
-                  <Form.Item
-                    label="Країна банку емітенту"
-                    name="issuerBankCountry"
-                    rules={[
-                      {
-                        required: true,
-                      },
-                    ]}
-                  >
-                    <ReactFlagsSelect
-                      className="country-select"
-                      selected={issuerBankCountry}
-                      placeholder="Виберіть країну"
-                      onSelect={changeIssuerBankCountry}
-                    />
-                  </Form.Item>
-                </div>
-              </Form>
-              }
+          {currentStep === 2 && (
+            <Form layout="vertical" name="bankDetails">
+              <div className="main-form-wrapper border-top padding-top-delete">
+                <p className="title left-align">банківські реквізити</p>
+                <CardBlock typeBlock="creditCard" />
+                <Form.Item
+                  label="Країна банку емітенту"
+                  name="issuerBankCountry"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <ReactFlagsSelect
+                    className="country-select"
+                    selected={issuerBankCountry}
+                    placeholder="Виберіть країну"
+                    onSelect={changeIssuerBankCountry}
+                  />
+                </Form.Item>
+              </div>
+            </Form>
+          )}
         </div>
 
         <div>
@@ -780,10 +781,10 @@ export default function CreateCompany() {
                     onChange={changeEmail}
                   />
                 </Form.Item>
-                <Form.Item
-                  name="consentValue"
-                >
-                  <Checkbox className="consent-checkbox">Згода на обробку персональних даних</Checkbox>
+                <Form.Item name="consentValue">
+                  <Checkbox className="consent-checkbox">
+                    Згода на обробку персональних даних
+                  </Checkbox>
                 </Form.Item>
               </Form>
               <div className="secondary-form-wrapper">
@@ -798,17 +799,16 @@ export default function CreateCompany() {
               </div>
             </>
           )}
-          {
-            currentStep !== 3 &&
+          {currentStep !== 3 && (
             <Button className="next-step-button" onClick={goToNextStep}>
               Далі
             </Button>
-            }
+          )}
         </div>
       </Flex>
       <Flex align="center" justify="center" className="finish-payment-block">
         <div>
-          <img src={finishPayment} alt="Finish payment"/>
+          <img src={finishPayment} alt="Finish payment" />
           <p>Автоматична Оплата Послуги</p>
           <p>Успішно Оплачено</p>
           <Button>Підтвердити</Button>
