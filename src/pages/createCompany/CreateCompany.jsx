@@ -5,8 +5,10 @@ import config from "../../config";
 import { Steps, Flex, Input, Form, Select, Button, Checkbox } from "antd";
 import ReactFlagsSelect from "react-flags-select";
 import Icon from "../../components/iconComponent/Icon";
+import finishPayment from "../../assets/images/finishPayment.png";
 import Faq from "../../components/faq/Faq";
 import PhoneInput from "react-phone-input-2";
+import CardBlock from "../../components/cardBlock/CardBlock";
 
 const items = [
   {
@@ -546,6 +548,7 @@ export default function CreateCompany() {
                     onSelect={changeNationality}
                   />
                 </Form.Item>
+                <CardBlock typeBlock="idCard"/>
                 <Form.Item name="officeServices">
                   <Flex
                     className="checkbox-wrapper"
@@ -592,6 +595,7 @@ export default function CreateCompany() {
           { currentStep === 2 &&  <Form layout="vertical" name="bankDetails">
                 <div className="main-form-wrapper border-top padding-top-delete">
                   <p className="title left-align">банківські реквізити</p>
+                  <CardBlock typeBlock="creditCard"/>
                   <Form.Item
                     label="Країна банку емітенту"
                     name="issuerBankCountry"
@@ -794,9 +798,20 @@ export default function CreateCompany() {
               </div>
             </>
           )}
-          <Button className="next-step-button" onClick={goToNextStep}>
-            Далі
-          </Button>
+          {
+            currentStep !== 3 &&
+            <Button className="next-step-button" onClick={goToNextStep}>
+              Далі
+            </Button>
+            }
+        </div>
+      </Flex>
+      <Flex align="center" justify="center" className="finish-payment-block">
+        <div>
+          <img src={finishPayment} alt="Finish payment"/>
+          <p>Автоматична Оплата Послуги</p>
+          <p>Успішно Оплачено</p>
+          <Button>Підтвердити</Button>
         </div>
       </Flex>
       <Faq />
