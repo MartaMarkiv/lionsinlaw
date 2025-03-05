@@ -89,10 +89,14 @@ export default function CreateCompany() {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [bankCountry, setBankCountry] = useState("");
   const [jurisdictionCountry, setJurisdictionCountry] = useState("");
+  const [traidingJurisdiction, setTraidingJurisdiction] = useState(traidingOptions[0]);
   const [serviceType, setServiceType] = useState("");
   const [registrationType, setRegistrationType] = useState("");
   const [directorsCount, setDirectorsCount] = useState(1);
   const [processingTime, setProcessingTime] = useState(1);
+  const [recomendedService, setRecomendedService] = useState(
+    recomendedServicesOptions[0]
+  );
 
   //2 Step
   const [userName, setUserName] = useState("");
@@ -172,6 +176,14 @@ export default function CreateCompany() {
     setRegistrationType(label);
   };
 
+  const changeRecomendedService = (_value, label) => {
+    setRecomendedService(label);
+  };
+
+  const changeTraidingJurisdiction = (_value, label) => {
+    setTraidingJurisdiction(label);
+  };
+
   const changDirectorsCount = (value) => {
     setDirectorsCount(value);
   };
@@ -203,7 +215,7 @@ export default function CreateCompany() {
             <div>
               <p className="title">Налаштування системи</p>
               <Form layout="vertical" name="settingsSystem">
-                <div className="form-wrapper main-form-wrapper border-top">
+                <div className="form-wrapper main-form-wrapper border-top settings-part">
                   <Form.Item
                     label="Тип обслуговування"
                     rules={[
@@ -265,9 +277,9 @@ export default function CreateCompany() {
                     />
                   </Form.Item>
                 </div>
-                <div className="form-wrapper main-form-wrapper border-top">
+                <div className="form-wrapper main-form-wrapper border-top recomendation-part">
+                  <p className="title">Рекомендувати послуги</p>
                   <Form.Item
-                    label="Консультаційні послуги"
                     rules={[
                       {
                         required: true,
@@ -275,7 +287,15 @@ export default function CreateCompany() {
                     ]}
                     name="recomendedService"
                   >
-                    <Select options={recomendedServicesOptions} />
+                    <Flex align="center" justify="space-between" className="select-wrapper">
+                    <Select
+                      options={recomendedServicesOptions}
+                      className="border-bottom-input"
+                      onChange={changeRecomendedService}
+                      value={recomendedService}
+                    />
+                    <Icon name="ok-red" />
+                    </Flex>
                   </Form.Item>
                   <Form.Item
                     name="consultationPrice"
@@ -287,7 +307,7 @@ export default function CreateCompany() {
                   >
                     <Input
                       type="number"
-                      className="full-input"
+                      className="full-input border-bottom red-input"
                       placeholder="0.00 USD"
                     />
                   </Form.Item>
@@ -307,7 +327,8 @@ export default function CreateCompany() {
                     />
                   </Form.Item>
                 </div>
-                <div className="form-wrapper main-form-wrapper border-top">
+                <div className="form-wrapper main-form-wrapper border-top padding-top-delete">
+                  <p className="title">Реєстрація торгових знаків</p>
                   <Form.Item
                     name="traidingSelect"
                     rules={[
@@ -316,7 +337,11 @@ export default function CreateCompany() {
                       },
                     ]}
                   >
-                    <Select options={traidingOptions} />
+                    <Flex align="center" justify="space-between" className="select-wrapper">
+
+                    <Select options={traidingOptions} onChange={changeTraidingJurisdiction} value={traidingJurisdiction}/>
+                    <Icon name="ok-red" />
+                    </Flex>
                   </Form.Item>
                   <Form.Item
                     name="traidingPrice"
@@ -328,7 +353,7 @@ export default function CreateCompany() {
                   >
                     <Input
                       type="number"
-                      className="full-input"
+                      className="full-input red-input border-bottom"
                       placeholder="0.00 USD"
                     />
                   </Form.Item>
@@ -448,30 +473,30 @@ export default function CreateCompany() {
         <div>
           {(currentStep === 0 || currentStep === 2) && (
             <>
-              <div className="form-wrapper secondary-form-wrapper">
+              <div className="form-wrapper secondary-form-wrapper order-details">
                 <p className="title border-top">Деталі замовлення</p>
                 <Flex vertical={true}>
                   <p className="form-label">Тип обслуговування</p>
-                  <p className="form-value">{serviceType}</p>
+                  <p className="form-value border-bottom-block">{serviceType}</p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Юрисдикція компанії</p>
-                  <p className="form-value">{jurisdictionCountry}</p>
+                  <p className="form-value border-bottom-block">{jurisdictionCountry}</p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Тип реєстрації</p>
                   <p className="form-item-description">
                     {registrationType?.label}
                   </p>
-                  <p className="form-value">0.00 USD</p>
+                  <p className="form-value border-bottom-block">0.00 USD</p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Кількість директорів</p>
-                  <p className="form-value">{directorsCount}</p>
+                  <p className="form-value border-bottom-block">{directorsCount}</p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Кількість акціонерів</p>
-                  <p className="form-value">1</p>
+                  <p className="form-value border-bottom-block">1</p>
                 </Flex>
                 <Flex vertical={true}>
                   <Flex
@@ -482,9 +507,10 @@ export default function CreateCompany() {
                     <span>Час обробки</span>
                     <Button icon={<Icon name="ask-red" />} />
                   </Flex>
-                  <p className="form-value">Виберіть</p>
+                  <p className="red-text" style={{marginBottom: 10}}>Виберіть</p>
                   <Select
                     options={directorsOptions}
+                    className="border-bottom-input right-alignet"
                     onChange={changeProcessingTime}
                     value={processingTime}
                   />
