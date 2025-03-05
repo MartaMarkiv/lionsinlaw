@@ -6,6 +6,7 @@ import { Steps, Flex, Input, Form, Select, Button, Checkbox } from "antd";
 import ReactFlagsSelect from "react-flags-select";
 import Icon from "../../components/iconComponent/Icon";
 import Faq from "../../components/faq/Faq";
+import PhoneInput from "react-phone-input-2";
 
 const items = [
   {
@@ -131,12 +132,22 @@ export default function CreateCompany() {
     setAddress(event.target.value);
   };
 
+  const changeRegion = (event) => {
+    setRegion(event.target.value);
+  };
+
+  const changeCity = (event) => {
+    setCity(event.target.value);
+  };
+
   const changePostalCode = (event) => {
     setPostalCode(event.target.value);
   };
 
-  const changePhoneNumber = (event) => {
-    setPhoneNumber(event.target.value);
+  const changePhoneNumber = (value, country) => {
+    console.log(value);
+    console.log(country);
+    setPhoneNumber(value);
   };
 
   const changeSecondaryName = (event) => {
@@ -222,7 +233,7 @@ export default function CreateCompany() {
             <div>
               <p className="title">Налаштування системи</p>
               <Form layout="vertical" name="settingsSystem">
-                <div className="form-wrapper main-form-wrapper border-top settings-part">
+                <div className="main-form-wrapper border-top settings-part">
                   <Form.Item
                     label="Тип обслуговування"
                     rules={[
@@ -285,7 +296,7 @@ export default function CreateCompany() {
                     />
                   </Form.Item>
                 </div>
-                <div className="form-wrapper main-form-wrapper border-top recomendation-part">
+                <div className="main-form-wrapper border-top recomendation-part">
                   <p className="title">Рекомендувати послуги</p>
                   <Form.Item
                     rules={[
@@ -378,7 +389,7 @@ export default function CreateCompany() {
                     </Flex>
                   </Form.Item>
                 </div>
-                <div className="form-wrapper main-form-wrapper border-top padding-top-delete">
+                <div className="main-form-wrapper border-top padding-top-delete">
                   <p className="title">Реєстрація торгових знаків</p>
                   <Form.Item
                     name="traidingSelect"
@@ -437,7 +448,7 @@ export default function CreateCompany() {
           {currentStep === 1 && (
             <div>
               <Form layout="vertical" name="personalData">
-                <div className="form-wrapper main-form-wrapper border-top padding-top-delete">
+                <div className="main-form-wrapper border-top padding-top-delete personal-data">
                   <div className="border-bottom-block">
                   <p className="title left-align">Персональні дані</p>
                   <Flex
@@ -577,7 +588,7 @@ export default function CreateCompany() {
         <div>
           {(currentStep === 0 || currentStep === 2) && (
             <>
-              <div className="form-wrapper secondary-form-wrapper order-details">
+              <div className="secondary-form-wrapper order-details">
                 <p className="title border-top">Деталі замовлення</p>
                 <Flex vertical={true}>
                   <p className="form-label">Тип обслуговування</p>
@@ -628,7 +639,7 @@ export default function CreateCompany() {
                   />
                 </Flex>
               </div>
-              <div className="form-wrapper secondary-form-wrapper">
+              <div className="secondary-form-wrapper">
                 <p className="title border-top">Промокод</p>
                 <Flex className="promocode-wrapper">
                   <Input placeholder="Введіть промокод" />
@@ -642,9 +653,39 @@ export default function CreateCompany() {
               <Form
                 layout="vertical"
                 name="personalDataInfo"
-                className="form-wrapper secondary-form-wrapper border-top"
+                className="secondary-form-wrapper border-top padding-top-delete personal-info"
               >
                 <p className="title">Деталі даних</p>
+                <Form.Item
+                  label="Місто/Село"
+                  name="cityValue"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <Input
+                    className="full-input"
+                    placeholder="м. Київ"
+                    onChange={changeCity}
+                  />
+                </Form.Item>
+                <Form.Item
+                  label="Область"
+                  name="regionValue"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <Input
+                    className="full-input"
+                    placeholder="м. Київ"
+                    onChange={changeRegion}
+                  />
+                </Form.Item>
                 <Form.Item
                   label="Вулиця, будинок, квартира"
                   name="addressValue"
@@ -676,6 +717,23 @@ export default function CreateCompany() {
                   />
                 </Form.Item>
                 <Form.Item
+                  label="Телефон"
+                  name="phoneNumber"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <PhoneInput
+                    country={"us"}
+                    placeholder="Номер телефону"
+                    className="phone-number-input"
+                    value={phoneNumber}
+                    onChange={changePhoneNumber}
+                  />
+                </Form.Item>
+                <Form.Item
                   label="Електронна адрера"
                   name="emailValue"
                   rules={[
@@ -690,9 +748,14 @@ export default function CreateCompany() {
                     onChange={changeEmail}
                   />
                 </Form.Item>
+                <Form.Item
+                  name="consentValue"
+                >
+                  <Checkbox className="consent-checkbox">Згода на обробку персональних даних</Checkbox>
+                </Form.Item>
               </Form>
-              <div className="form-wrapper secondary-form-wrapper">
-                <p className="title border-top">Коменртар</p>
+              <div className="secondary-form-wrapper">
+                <p className="title border-top">Коментар</p>
                 <Flex className="promocode-wrapper">
                   <Input
                     placeholder="Введіть коментар"

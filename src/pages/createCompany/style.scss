@@ -31,6 +31,14 @@
       width: 48%;
     }
 
+    .ant-form-item {
+      margin-bottom: 40px;
+    }
+
+    .personal-data {
+      padding-bottom: 0 !important;
+    }
+
     .title {
       font-family: "Lato-bold";
       font-size: 42px;
@@ -148,7 +156,7 @@
     }
 
     .padding-top-delete {
-      padding-top: 0;
+      padding-top: 0 !important;
 
       .title {
         margin-bottom: 59px;
@@ -178,6 +186,11 @@
       box-sizing: border-box;
       position: relative;
 
+      &.personal-info {
+        padding-bottom: 6px;
+        margin-bottom: 50px;
+      }
+
       .title,
       .form-value {
         color: variables.$red-form-color;
@@ -185,6 +198,24 @@
 
       .form-value {
         text-align: right;
+      }
+
+      .consent-checkbox {
+        .ant-checkbox-label {
+          font-size: 18px;
+        }
+
+        .ant-checkbox-checked {
+          .ant-checkbox-inner {
+            background-color: #F44D42;
+          }
+        }
+
+        .ant-checkbox-inner {
+          width: 18px;
+          height: 18px;
+          border: 1px solid #F44D42;
+        }
       }
 
       .form-item-description {
@@ -266,6 +297,18 @@
 
     .left-align {
       text-align: left;
+    }
+
+    .phone-number-input {
+      .form-control {
+        font-size: 24px;
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid variables.$light-grey;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        height: auto;
+      }
     }
 
     .checkbox-wrapper {
