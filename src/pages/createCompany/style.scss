@@ -34,6 +34,7 @@
     .title {
       font-family: "Lato-bold";
       font-size: 42px;
+      text-transform: uppercase;
     }
 
     .step-label {
@@ -158,6 +159,17 @@
       border-top: 10px solid variables.$red-form-color;
     }
 
+    .red-text {
+      color: variables.$dark-red;
+    }
+
+    .border-bottom-block {
+      padding-bottom: 20px;
+      width: 100%;
+      border-bottom: 1px solid variables.$light-grey;
+      text-align: right;
+      margin-bottom: 23px;
+    }
     .secondary-form-wrapper {
       font-family: "Lato";
       font-size: 24px;
@@ -169,18 +181,6 @@
       .title,
       .form-value {
         color: variables.$red-form-color;
-      }
-
-      .border-bottom-block {
-        padding-bottom: 20px;
-        width: 100%;
-        border-bottom: 1px solid variables.$light-grey;
-        text-align: right;
-        margin-bottom: 23px;
-      }
-
-      .red-text {
-        color: variables.$dark-red;
       }
 
       .form-value {
@@ -222,7 +222,7 @@
         }
       }
     }
-    
+
     .order-details {
       margin-bottom: 107px;
     }
@@ -264,9 +264,63 @@
       }
     }
 
+    .left-align {
+      text-align: left;
+    }
+
+    .checkbox-wrapper {
+      font-size: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid variables.$light-grey;
+
+      &.not-bordered {
+        border: none;
+      }
+
+      button {
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+
+        .icon-component {
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      .ant-checkbox-wrapper {
+        
+        &:hover {
+          .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: variables.$dark-red;
+          }
+        }
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background-color: variables.$dark-red;
+
+          &::after {
+            width: 8px;
+            height: 16px;
+          }
+        }
+
+        .ant-checkbox .ant-checkbox-inner {
+          width: 33px;
+          height: 33px;
+          border: 1px solid #767676;
+          box-sizing: border-box;
+        }
+
+        .ant-checkbox-label {
+          font-size: 24px;
+        }
+      }
+    }
+
     .full-input {
       font-family: "Lora";
       padding: 16px 18px;
+      font-size: 24px;
       border: 1px solid variables.$light-grey;
       border-radius: 0;
 
@@ -378,5 +432,13 @@
         width: 47%;
       }
     }
+
+    .order-details .title {
+      margin-bottom: 43px;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 0;
   }
 }

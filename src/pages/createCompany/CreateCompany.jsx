@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./style.scss";
 import config from "../../config";
-import { Steps, Flex, Input, Form, Select, Button } from "antd";
+import { Steps, Flex, Input, Form, Select, Button, Checkbox } from "antd";
 import ReactFlagsSelect from "react-flags-select";
 import Icon from "../../components/iconComponent/Icon";
+import Faq from "../../components/faq/Faq";
 
 const items = [
   {
@@ -89,7 +90,9 @@ export default function CreateCompany() {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [bankCountry, setBankCountry] = useState("");
   const [jurisdictionCountry, setJurisdictionCountry] = useState("");
-  const [traidingJurisdiction, setTraidingJurisdiction] = useState(traidingOptions[0]);
+  const [traidingJurisdiction, setTraidingJurisdiction] = useState(
+    traidingOptions[0]
+  );
   const [serviceType, setServiceType] = useState("");
   const [registrationType, setRegistrationType] = useState("");
   const [directorsCount, setDirectorsCount] = useState(1);
@@ -188,6 +191,10 @@ export default function CreateCompany() {
     setDirectorsCount(value);
   };
 
+  const goToNextStep = () => {
+    setCurrentStep(currentStep + 1);
+  };
+
   return (
     <section className="create-company-page">
       <div className="create-company-page-header">
@@ -243,6 +250,7 @@ export default function CreateCompany() {
                   >
                     <ReactFlagsSelect
                       className="country-select"
+                      placeholder="Виберіть країну"
                       selected={selectedCountry}
                       onSelect={(code) => setSelectedCountry(code)}
                     />
@@ -287,14 +295,18 @@ export default function CreateCompany() {
                     ]}
                     name="recomendedService"
                   >
-                    <Flex align="center" justify="space-between" className="select-wrapper">
-                    <Select
-                      options={recomendedServicesOptions}
-                      className="border-bottom-input"
-                      onChange={changeRecomendedService}
-                      value={recomendedService}
-                    />
-                    <Icon name="ok-red" />
+                    <Flex
+                      align="center"
+                      justify="space-between"
+                      className="select-wrapper"
+                    >
+                      <Select
+                        options={recomendedServicesOptions}
+                        className="border-bottom-input"
+                        onChange={changeRecomendedService}
+                        value={recomendedService}
+                      />
+                      <Icon name="ok-red" />
                     </Flex>
                   </Form.Item>
                   <Form.Item
@@ -326,6 +338,45 @@ export default function CreateCompany() {
                       onSelect={(code) => setBankCountry(code)}
                     />
                   </Form.Item>
+                  <Form.Item name="officeServices">
+                    <Flex
+                      className="checkbox-wrapper"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Обслуговування офісів</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
+                  </Form.Item>
+                  <Form.Item name="tradeReport">
+                    <Flex
+                      className="checkbox-wrapper"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Торговий звіт</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
+                  </Form.Item>
+                  <Form.Item name="merchantAccounts">
+                    <Flex
+                      className="checkbox-wrapper"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Мерчант рахунки</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
+                  </Form.Item>
                 </div>
                 <div className="form-wrapper main-form-wrapper border-top padding-top-delete">
                   <p className="title">Реєстрація торгових знаків</p>
@@ -337,10 +388,17 @@ export default function CreateCompany() {
                       },
                     ]}
                   >
-                    <Flex align="center" justify="space-between" className="select-wrapper">
-
-                    <Select options={traidingOptions} onChange={changeTraidingJurisdiction} value={traidingJurisdiction}/>
-                    <Icon name="ok-red" />
+                    <Flex
+                      align="center"
+                      justify="space-between"
+                      className="select-wrapper"
+                    >
+                      <Select
+                        options={traidingOptions}
+                        onChange={changeTraidingJurisdiction}
+                        value={traidingJurisdiction}
+                      />
+                      <Icon name="ok-red" />
                     </Flex>
                   </Form.Item>
                   <Form.Item
@@ -378,10 +436,15 @@ export default function CreateCompany() {
           )}
           {currentStep === 1 && (
             <div>
-              <p className="title">Персональні дані</p>
               <Form layout="vertical" name="personalData">
-                <div className="form-wrapper main-form-wrapper border-top">
-                  <Flex className="sub-title-wrapper" justify="space-between">
+                <div className="form-wrapper main-form-wrapper border-top padding-top-delete">
+                  <div className="border-bottom-block">
+                  <p className="title left-align">Персональні дані</p>
+                  <Flex
+                    className="sub-title-wrapper"
+                    justify="space-between"
+                    align="center"
+                  >
                     <span>Контактна Інформація</span>
                     <Icon name="ok-red" />
                   </Flex>
@@ -449,6 +512,7 @@ export default function CreateCompany() {
                       />
                     </Form.Item>
                   </Flex>
+                  </div>
                   <Form.Item
                     label="Громадянство"
                     name="nationality"
@@ -461,8 +525,48 @@ export default function CreateCompany() {
                     <ReactFlagsSelect
                       className="country-select"
                       selected={nationality}
+                      placeholder="Виберіть країну"
                       onSelect={changeNationality}
                     />
+                  </Form.Item>
+                  <Form.Item name="officeServices">
+                    <Flex
+                      className="checkbox-wrapper"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Обслуговування офісів</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
+                  </Form.Item>
+                  <Form.Item name="tradeReport">
+                    <Flex
+                      className="checkbox-wrapper"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Торговий звіт</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
+                  </Form.Item>
+                  <Form.Item name="merchantAccounts">
+                    <Flex
+                      className="checkbox-wrapper not-bordered"
+                      align="center"
+                      justify="space-between"
+                    >
+                      <Checkbox>Мерчант рахунки</Checkbox>
+                      <Flex align="center" justify="space-between">
+                        <span className="red-text">0.00 USD</span>
+                        <Button icon={<Icon name="ask-red" />} />
+                      </Flex>
+                    </Flex>
                   </Form.Item>
                 </div>
               </Form>
@@ -477,11 +581,15 @@ export default function CreateCompany() {
                 <p className="title border-top">Деталі замовлення</p>
                 <Flex vertical={true}>
                   <p className="form-label">Тип обслуговування</p>
-                  <p className="form-value border-bottom-block">{serviceType}</p>
+                  <p className="form-value border-bottom-block">
+                    {serviceType}
+                  </p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Юрисдикція компанії</p>
-                  <p className="form-value border-bottom-block">{jurisdictionCountry}</p>
+                  <p className="form-value border-bottom-block">
+                    {jurisdictionCountry}
+                  </p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Тип реєстрації</p>
@@ -492,7 +600,9 @@ export default function CreateCompany() {
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Кількість директорів</p>
-                  <p className="form-value border-bottom-block">{directorsCount}</p>
+                  <p className="form-value border-bottom-block">
+                    {directorsCount}
+                  </p>
                 </Flex>
                 <Flex vertical={true}>
                   <p className="form-label">Кількість акціонерів</p>
@@ -507,7 +617,9 @@ export default function CreateCompany() {
                     <span>Час обробки</span>
                     <Button icon={<Icon name="ask-red" />} />
                   </Flex>
-                  <p className="red-text" style={{marginBottom: 10}}>Виберіть</p>
+                  <p className="red-text" style={{ marginBottom: 10 }}>
+                    Виберіть
+                  </p>
                   <Select
                     options={directorsOptions}
                     className="border-bottom-input right-alignet"
@@ -591,9 +703,12 @@ export default function CreateCompany() {
               </div>
             </>
           )}
-          <Button className="next-step-button">Далі</Button>
+          <Button className="next-step-button" onClick={goToNextStep}>
+            Далі
+          </Button>
         </div>
       </Flex>
+      <Faq />
     </section>
   );
 }
