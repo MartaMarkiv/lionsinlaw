@@ -116,6 +116,13 @@ export default function CreateCompany() {
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
 
+  //3
+  const [issuerBankCountry, setIssuerBankCountry] = useState("");
+
+  const changeIssuerBankCountry = (value) => {
+    setIssuerBankCountry(value);
+  }
+
   const changeComment = (event) => {
     setComment(event.target.value);
   };
@@ -446,87 +453,148 @@ export default function CreateCompany() {
             </div>
           )}
           {currentStep === 1 && (
-            <div>
-              <Form layout="vertical" name="personalData">
-                <div className="main-form-wrapper border-top padding-top-delete personal-data">
-                  <div className="border-bottom-block">
-                  <p className="title left-align">Персональні дані</p>
-                  <Flex
-                    className="sub-title-wrapper"
-                    justify="space-between"
-                    align="center"
-                  >
-                    <span>Контактна Інформація</span>
-                    <Icon name="ok-red" />
-                  </Flex>
-                  <Flex justify="space-between" className="form-values-divider">
-                    <Form.Item
-                      label="Ім'я власника"
-                      name="userNameValue"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Input
-                        className="full-input"
-                        placeholder="Іван"
-                        onChange={changeUserName}
-                      />
-                    </Form.Item>
-                    <Form.Item
-                      label="Прізвище"
-                      name="surnameValue"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Input
-                        className="full-input"
-                        placeholder="Харитонов"
-                        onChange={changeSurname}
-                      />
-                    </Form.Item>
-                  </Flex>
-                  <Flex justify="space-between" className="form-values-divider">
-                    <Form.Item
-                      label="По батькові"
-                      name="secondaryNameValue"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Input
-                        className="full-input"
-                        placeholder="Платонович"
-                        onChange={changeSecondaryName}
-                      />
-                    </Form.Item>
-                    <Form.Item
-                      label="Дата народження"
-                      name="birthdayValue"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Input
-                        type="date"
-                        className="full-input"
-                        onChange={changeBirthday}
-                      />
-                    </Form.Item>
-                  </Flex>
-                  </div>
+            <Form layout="vertical" name="personalData">
+              <div className="main-form-wrapper border-top padding-top-delete personal-data">
+                <div className="border-bottom-block">
+                <p className="title left-align">Персональні дані</p>
+                <Flex
+                  className="sub-title-wrapper"
+                  justify="space-between"
+                  align="center"
+                >
+                  <span>Контактна Інформація</span>
+                  <Icon name="ok-red" />
+                </Flex>
+                <Flex justify="space-between" className="form-values-divider">
                   <Form.Item
-                    label="Громадянство"
-                    name="nationality"
+                    label="Ім'я власника"
+                    name="userNameValue"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      className="full-input"
+                      placeholder="Іван"
+                      onChange={changeUserName}
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Прізвище"
+                    name="surnameValue"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      className="full-input"
+                      placeholder="Харитонов"
+                      onChange={changeSurname}
+                    />
+                  </Form.Item>
+                </Flex>
+                <Flex justify="space-between" className="form-values-divider">
+                  <Form.Item
+                    label="По батькові"
+                    name="secondaryNameValue"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      className="full-input"
+                      placeholder="Платонович"
+                      onChange={changeSecondaryName}
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    label="Дата народження"
+                    name="birthdayValue"
+                    rules={[
+                      {
+                        required: true,
+                      },
+                    ]}
+                  >
+                    <Input
+                      type="date"
+                      className="full-input"
+                      onChange={changeBirthday}
+                    />
+                  </Form.Item>
+                </Flex>
+                </div>
+                <Form.Item
+                  label="Громадянство"
+                  name="nationality"
+                  rules={[
+                    {
+                      required: true,
+                    },
+                  ]}
+                >
+                  <ReactFlagsSelect
+                    className="country-select"
+                    selected={nationality}
+                    placeholder="Виберіть країну"
+                    onSelect={changeNationality}
+                  />
+                </Form.Item>
+                <Form.Item name="officeServices">
+                  <Flex
+                    className="checkbox-wrapper"
+                    align="center"
+                    justify="space-between"
+                  >
+                    <Checkbox>Обслуговування офісів</Checkbox>
+                    <Flex align="center" justify="space-between">
+                      <span className="red-text">0.00 USD</span>
+                      <Button icon={<Icon name="ask-red" />} />
+                    </Flex>
+                  </Flex>
+                </Form.Item>
+                <Form.Item name="tradeReport">
+                  <Flex
+                    className="checkbox-wrapper"
+                    align="center"
+                    justify="space-between"
+                  >
+                    <Checkbox>Торговий звіт</Checkbox>
+                    <Flex align="center" justify="space-between">
+                      <span className="red-text">0.00 USD</span>
+                      <Button icon={<Icon name="ask-red" />} />
+                    </Flex>
+                  </Flex>
+                </Form.Item>
+                <Form.Item name="merchantAccounts">
+                  <Flex
+                    className="checkbox-wrapper not-bordered"
+                    align="center"
+                    justify="space-between"
+                  >
+                    <Checkbox>Мерчант рахунки</Checkbox>
+                    <Flex align="center" justify="space-between">
+                      <span className="red-text">0.00 USD</span>
+                      <Button icon={<Icon name="ask-red" />} />
+                    </Flex>
+                  </Flex>
+                </Form.Item>
+              </div>
+            </Form>
+          )}
+
+          { currentStep === 2 &&  <Form layout="vertical" name="bankDetails">
+                <div className="main-form-wrapper border-top padding-top-delete">
+                  <p className="title left-align">банківські реквізити</p>
+                  <Form.Item
+                    label="Країна банку емітенту"
+                    name="issuerBankCountry"
                     rules={[
                       {
                         required: true,
@@ -535,54 +603,14 @@ export default function CreateCompany() {
                   >
                     <ReactFlagsSelect
                       className="country-select"
-                      selected={nationality}
+                      selected={issuerBankCountry}
                       placeholder="Виберіть країну"
-                      onSelect={changeNationality}
+                      onSelect={changeIssuerBankCountry}
                     />
-                  </Form.Item>
-                  <Form.Item name="officeServices">
-                    <Flex
-                      className="checkbox-wrapper"
-                      align="center"
-                      justify="space-between"
-                    >
-                      <Checkbox>Обслуговування офісів</Checkbox>
-                      <Flex align="center" justify="space-between">
-                        <span className="red-text">0.00 USD</span>
-                        <Button icon={<Icon name="ask-red" />} />
-                      </Flex>
-                    </Flex>
-                  </Form.Item>
-                  <Form.Item name="tradeReport">
-                    <Flex
-                      className="checkbox-wrapper"
-                      align="center"
-                      justify="space-between"
-                    >
-                      <Checkbox>Торговий звіт</Checkbox>
-                      <Flex align="center" justify="space-between">
-                        <span className="red-text">0.00 USD</span>
-                        <Button icon={<Icon name="ask-red" />} />
-                      </Flex>
-                    </Flex>
-                  </Form.Item>
-                  <Form.Item name="merchantAccounts">
-                    <Flex
-                      className="checkbox-wrapper not-bordered"
-                      align="center"
-                      justify="space-between"
-                    >
-                      <Checkbox>Мерчант рахунки</Checkbox>
-                      <Flex align="center" justify="space-between">
-                        <span className="red-text">0.00 USD</span>
-                        <Button icon={<Icon name="ask-red" />} />
-                      </Flex>
-                    </Flex>
                   </Form.Item>
                 </div>
               </Form>
-            </div>
-          )}
+              }
         </div>
 
         <div>
