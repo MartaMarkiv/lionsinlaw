@@ -18,6 +18,7 @@ export const PANAMA_COMPANY_ROUTE = "/panama-company";
 export const CZECH_COMPANY_ROUTE = "/czech-company";
 export const BELGIUM_COMPANY_ROUTE = "/belgium-company";
 export const CANADA_COMPANY_ROUTE = "/canada-company";
+export const MAURITIUS_COMPANY_ROUTE = "/mauritius-company";
 export const MERCHANT_ACCOUNTS_ROUTE = "/merchant-accounts";
 export const TRADEMARK_REGISTRATION_ROUTE = "/trademark-registration";
 export const COMPANY_REGISTRATION_ROUTE = "/company-registration";

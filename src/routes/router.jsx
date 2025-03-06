@@ -24,6 +24,7 @@ import {
   TAX_PLANNING_ROUTE,
   CANADA_COMPANY_ROUTE,
   BELGIUM_COMPANY_ROUTE,
+  MAURITIUS_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -50,6 +51,7 @@ import CreateCompany from "../pages/createCompany/CreateCompany";
 import TaxPlanning from "../pages/taxPlanning/TaxPlanning";
 import CanadaCompany from "../pages/canadaCompany/CanadaCompany";
 import BelgiumCompany from "../pages/belgiumCompany/BelgiumCompany";
+import MauritiusCompany from "../pages/mauritiusCompany/MauritiusCompany";
 
 const router = createBrowserRouter([
   {
@@ -151,6 +153,10 @@ const router = createBrowserRouter([
       {
         path: BELGIUM_COMPANY_ROUTE,
         element: <BelgiumCompany />,
+      },
+      {
+        path: MAURITIUS_COMPANY_ROUTE,
+        element: <MauritiusCompany />
       },
     ],
   },
