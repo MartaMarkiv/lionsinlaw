@@ -9,7 +9,7 @@ import activesLicense from "../../assets/images/activesLicense.png";
 import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/ConsultingOffshoreComp";
 import Icon from "../../components/iconComponent/Icon";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
-import { CONTACTS_ROUTE } from "../../routes/routes";
+import { CANADA_COMPANY_ROUTE, CONTACTS_ROUTE } from "../../routes/routes";
 import LicenseLionsInLawChoose from "../../components/licenseLionsInLawChoose/LicenseLionsInLawChoose";
 
 export default function FinancialLicense() {
@@ -38,7 +38,7 @@ export default function FinancialLicense() {
         <LicenseBlock
           description="Lionsinlaw допомагає компаніям отримати ліцензії на платіжні послуги в таких юрисдикціях, як Канада та США, дозволяючи їм надавати рішення для обробки платежів і послуги електронних грошей відповідно до вимог."
           imgInst={paymentLicense}
-          linkRef={"/"}
+          linkRef={CANADA_COMPANY_ROUTE}
           title="Ліцензії на платіжні послуги:"
           isRevert={true}
         />

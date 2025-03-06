@@ -1,0 +1,188 @@
+@use "../../variables";
+
+$red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
+
+.canada-company-page {
+  .canada-company-header-wrapper,
+  .theory-practice-wrapper,
+  .consulting-offshore-comp-wrapper {
+    padding: 0 70px;
+  }
+
+  .canada-company-header {
+    font-family: "Lato-bold";
+    color: #ffffff;
+    background-image: url(../../assets/images/canadaBannerShadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 236px 130px;
+
+    .title {
+      font-size: 36px;
+      text-transform: uppercase;
+      width: 60%;
+    }
+
+    .description {
+      font-size: 24px;
+      text-transform: capitalize;
+      margin-top: 60px;
+      width: 50%;
+    }
+  }
+
+  .theory-practice-wrapper {
+    margin: 120px 0;
+    > div {
+      width: 47%;
+    }
+
+    .image-wrapper {
+      position: relative;
+
+      img {
+        max-width: 100%;
+      }
+
+      .shadow {
+        background-color: #e41616;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        z-index: -1;
+      }
+    }
+
+    .info-wrapper {
+      .title,
+      .description {
+        font-family: "Lora-bold";
+      }
+
+      .title {
+        text-transform: uppercase;
+        font-size: 42px;
+      }
+
+      .description {
+        font-size: 20px;
+        margin-top: 16px;
+        margin-bottom: 55px;
+      }
+
+      .theory-item {
+        font-family: "Lato-bold";
+        margin-bottom: 40px;
+
+        .item-title {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .knowledge-sharing-wrapper {
+    background: $red-gradient;
+    color: #ffffff;
+    position: relative;
+    padding: 50px 0;
+    margin-bottom: 120px;
+
+    .image-wrapper {
+      background-image: url(../../assets/images/libraCanada.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .title {
+      font-family: "Lato-black";
+      font-size: 40px;
+      margin-bottom: 19px;
+    }
+
+    .description {
+      font-family: "Lato";
+      font-size: 18px;
+      width: 40%;
+      text-align: center;
+    }
+
+    .counts-wrapper {
+      margin-top: 50px;
+      width: 70%;
+
+      .count-item {
+        width: 30%;
+
+        .count {
+          font-family: "Roboto-black";
+          font-size: 80px;
+          line-height: 88px;
+        }
+
+        .count-label {
+          font-family: "Roboto-bold";
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .business-coaching {
+    .title {
+      font-family: "Lato-black";
+      font-size: 40px;
+      margin-bottom: 22px;
+    }
+
+    .description {
+      font-family: "Lato";
+      font-size: 18px;
+      color: #434544;
+      margin-bottom: 90px;
+      width: 50%;
+      text-align: center;
+    }
+
+    .business-coaching-items-list {
+      width: 70%;
+
+      .coaching-item {
+        width: 23%;
+
+        .icon-component {
+          width: 87px;
+          height: 100px;
+          margin-bottom: 27px;
+        }
+
+        .item-title {
+          font-family: "Lato-bold";
+          font-size: 24px;
+          margin-bottom: 19px;
+          text-align: center;
+        }
+
+        .item-description {
+          font-family: "Roboto";
+          font-size: 16px;
+          color: #6a6c6b;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

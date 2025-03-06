@@ -10,7 +10,7 @@ export default function FlagsContainer() {
       {config.nameFlags.map((itemFlag, index) => (
         <div key={`${index}:${itemFlag}`} className={`flag-item ${itemFlag}`} />
       ))}
-      </Marquee>
+    </Marquee>
     // </Flex>
   );
 }

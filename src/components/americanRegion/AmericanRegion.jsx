@@ -3,6 +3,7 @@ import BlockElement from "../blockElement/BlockElement";
 import { Link } from "react-router-dom";
 import {
   BELIZE_COMPANY_ROUTE,
+  CANADA_COMPANY_ROUTE,
   CURACAO_COMPANY_ROUTE,
   PANAMA_COMPANY_ROUTE,
   USA_COMPANY_ROUTE,
@@ -50,13 +51,15 @@ export default function AmericanRegion() {
           blockClass="beliz"
         />
       </Link>
-      <BlockElement
-        description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у КАНАДІ що забезпечує глобальні перспективи та фінансові переваги."
-        linkValue={""}
-        title="ОФШОРНА КОМПАНІЯ В КанадІ"
-        isDark={false}
-        blockClass="canada"
-      />
+      <Link to={CANADA_COMPANY_ROUTE}>
+        <BlockElement
+          description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у КАНАДІ що забезпечує глобальні перспективи та фінансові переваги."
+          linkValue={""}
+          title="ОФШОРНА КОМПАНІЯ В КанадІ"
+          isDark={false}
+          blockClass="canada"
+        />
+      </Link>
     </div>
   );
 }

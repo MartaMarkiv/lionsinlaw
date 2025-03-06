@@ -22,6 +22,7 @@ import {
   TRADEMARK_REGISTRATION_ROUTE,
   COMPANY_REGISTRATION_ROUTE,
   TAX_PLANNING_ROUTE,
+  CANADA_COMPANY_ROUTE,
 } from "./routes";
 import Main from "../pages/main/Main";
 import App from "../App";
@@ -46,6 +47,7 @@ import MerchantAccounts from "../pages/merchantAccounts/MerchantAccounts";
 import TrademarkRegistration from "../pages/trademarkRegistration/TrademarkRegistration";
 import CreateCompany from "../pages/createCompany/CreateCompany";
 import TaxPlanning from "../pages/taxPlanning/TaxPlanning";
+import CanadaCompany from "../pages/canadaCompany/CanadaCompany";
 
 const router = createBrowserRouter([
   {
@@ -139,6 +141,10 @@ const router = createBrowserRouter([
       {
         path: TAX_PLANNING_ROUTE,
         element: <TaxPlanning />,
+      },
+      {
+        path: CANADA_COMPANY_ROUTE,
+        element: <CanadaCompany />,
       },
     ],
   },

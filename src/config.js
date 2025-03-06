@@ -13,7 +13,7 @@ export default {
     "mauritius",
     "seychelles",
     "belgium",
-    "scotland"
+    "scotland",
   ],
   tariffPlanOptions: {
     free: [
