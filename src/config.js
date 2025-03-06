@@ -8,6 +8,12 @@ export default {
     "hongKong",
     "canada",
     "singapore",
+    "panama",
+    "belize",
+    "mauritius",
+    "seychelles",
+    "belgium",
+    "scotland"
   ],
   tariffPlanOptions: {
     free: [

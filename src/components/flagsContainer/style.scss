@@ -15,11 +15,6 @@
     background-size: cover;
     margin-right: 30px;
     cursor: pointer;
-    // transition: all ease-in-out 0.2s;
-
-    // &:hover {
-    //   transform: scale(1.2);
-    // }
 
     &.spain {
       background-image: url(../../assets/images/spainFlag.png);
@@ -55,6 +50,30 @@
 
     &.canada {
       background-image: url(../../assets/images/canadaFlag.png);
+    }
+
+    &.belgium {
+      background-image: url(../../assets/images/belgium-flag.png);
+    }
+
+    &.mauritius {
+      background-image: url(../../assets/images/mauritius-flag.png);
+    }
+
+    &.seychelles {
+      background-image: url(../../assets/images/seychelles-flag.png);
+    }
+
+    &.panama {
+      background-image: url(../../assets/images/panama-flag.png);
+    }
+
+    &.belize {
+      background-image: url(../../assets/images/belize-flag.png);
+    }
+
+    &.scotland {
+      background-image: url(../../assets/images/scotland-flag.png);
     }
   }
 }
