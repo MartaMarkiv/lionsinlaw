@@ -1,19 +1,65 @@
 export default {
   nameFlags: [
-    "usa",
-    "spain",
-    "czech",
-    "curacao",
-    "uk",
-    "hongKong",
-    "canada",
-    "singapore",
-    "panama",
-    "belize",
-    "mauritius",
-    "seychelles",
-    "belgium",
-    "scotland",
+    {
+      name: "США",
+      flag: "usa",
+      link: "usa",
+    },
+    {
+      name: "Іспанія",
+      flag: "spain",
+      link: "spain",
+    },
+    {
+      name: "Кюракао",
+      flag: "curacao",
+      link: "curacao",
+    },
+    {
+      name: "Чехія",
+      flag: "czech",
+      link: "czechia",
+    },
+    {
+      name: "Канада",
+      flag: "canada",
+      link: "canada",
+    },
+    {
+      name: "Панама",
+      flag: "panama",
+      link: "panama",
+    },
+    {
+      name: "Беліз",
+      flag: "belize",
+      link: "belize",
+    },
+    {
+      name: "Мауріцій",
+      flag: "mauritius",
+      link: "mauritius",
+    },
+    {
+      name: "Сейшели",
+      flag: "seychelles",
+      link: "seychelles",
+    },
+    {
+      name: "Бельгія",
+      flag: "belgium",
+      link: "belgium",
+    },
+    {
+      name: "Щотландія",
+      flag: "scotland",
+      link: "scotland",
+    },
+    {
+      name: "Англія",
+      flag: "uk",
+      link: "england",
+    },
   ],
   tariffPlanOptions: {
     free: [

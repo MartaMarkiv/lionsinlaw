@@ -21,7 +21,7 @@ export default function SeychellesCompany() {
             міжнародних компаній
           </p>
         </div>
-        <div className="banner"/>
+        <div className="banner" />
         <p className="law-name">LionsInLaw</p>
       </Flex>
       <CompanySubDescriptionBlock

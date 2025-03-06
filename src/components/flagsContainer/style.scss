@@ -8,13 +8,17 @@
   transform: translateY(-2px);
   box-sizing: border-box;
 
+  a {
+    margin-right: 30px;
+    display: inline-block;
+  }
+
   .flag-item {
     width: 230px;
     min-width: 230px;
     height: 145px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 30px;
     cursor: pointer;
 
     &.spain {
