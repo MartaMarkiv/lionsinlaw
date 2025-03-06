@@ -1,0 +1,9 @@
+@import "./variables.module";
+
+@mixin responsive($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media (max-width: $size) {
+    @content;
+  }
+}
