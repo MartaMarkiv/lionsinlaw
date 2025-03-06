@@ -1,6 +1,7 @@
 import "./style.scss";
 import BlockElement from "../blockElement/BlockElement";
 import {
+  BELGIUM_COMPANY_ROUTE,
   CZECH_COMPANY_ROUTE,
   ENGLAND_COMPANY_ROUTE,
   GIBRALTAR_COMPANY_ROUTE,
@@ -96,7 +97,7 @@ export default function EuropeanRegion() {
       </Link>
       <BlockElement
         description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
-        linkValue={""}
+        linkValue={BELGIUM_COMPANY_ROUTE}
         title="Офшорна компанія в БЕЛЬГІЇ"
         isDark={true}
       />

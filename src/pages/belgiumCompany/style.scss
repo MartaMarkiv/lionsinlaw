@@ -1,0 +1,269 @@
+@use "../../variables";
+
+.belgium-company-page-wrapper {
+  .belgium-header {
+    position: relative;
+    padding-top: 80px;
+    box-sizing: border-box;
+    margin-bottom: 120px;
+
+    .header-info {
+      width: 40%;
+
+      .title {
+        font-family: "Lato-bold";
+        font-size: 55px;
+        line-height: 150%;
+      }
+
+      .description {
+        font-family: "Raleway-bold";
+        font-size: 24px;
+        line-height: 150%;
+        margin-top: 90px;
+      }
+    }
+
+    .image-wrapper {
+      position: absolute;
+      bottom: 0;
+      right: -70px;
+      width: 50%;
+      height: calc(100% + 180px);
+      z-index: -1;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .belgium-company-description {
+    margin-bottom: 120px;
+
+    .title {
+      font-family: "Lora-bold";
+      font-size: 42px;
+      text-transform: uppercase;
+      padding-right: 30px;
+      box-sizing: border-box;
+    }
+
+    .description {
+      font-family: "Lora";
+      font-size: 24px;
+    }
+
+    .main-info-wrapper {
+      margin-bottom: 50px;
+      p {
+        width: 50%;
+      }
+    }
+
+    .secondary-part {
+      > div {
+        width: 50%;
+        box-sizing: border-box;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .description-info {
+        padding: 20px 100px;
+        box-sizing: border-box;
+
+        .sub-title {
+          font-family: "Lora-bold";
+          font-size: 36px;
+          line-height: 66px;
+          margin-bottom: 30px;
+        }
+
+        .sub-description {
+          font-family: "Poppins-light";
+          font-size: 16px;
+          opacity: 0.6;
+        }
+
+        .tariffs-wrapper {
+          button {
+            font-family: "Lora-bold";
+            font-size: 24px;
+            background-color: variables.$dark-red;
+            color: #ffffff;
+            height: auto;
+            padding: 10px;
+            padding-left: 30px;
+            border-radius: 100px;
+
+            .icon-wrapper {
+              background-color: #ffffff;
+              border-radius: 50%;
+              width: 42px;
+              height: 42px;
+
+              .icon-component {
+                width: 22px;
+                height: 18px;
+                margin-left: 3px;
+              }
+            }
+          }
+
+          .tariffs-wrapper-info {
+            width: 50%;
+            .counts-wrapper {
+              font-family: "Poppins-medium";
+              font-size: 24px;
+              margin-bottom: 24px;
+
+              span {
+                margin-right: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .belgium-consultation-wrapper {
+    margin-top: 120px;
+
+    .main-title,
+    .secondary-title {
+      font-size: 62px;
+      text-transform: uppercase;
+    }
+
+    .main-title {
+      font-family: "Lora-bold";
+    }
+
+    .secondary-title {
+      font-family: "Lato-bold";
+      margin-top: 56px;
+      margin-bottom: 143px;
+    }
+
+    .info-wrapper {
+      font-family: "Lora";
+      width: 55%;
+      padding-right: 8%;
+      box-sizing: border-box;
+
+      .description {
+        font-size: 32px;
+        line-height: 150%;
+      }
+
+      .secondary-description {
+        font-size: 24px;
+        margin-top: 82px;
+        margin-bottom: 144px;
+      }
+    }
+
+    .image-wrapper {
+      width: 45%;
+      box-sizing: border-box;
+      position: relative;
+
+      img {
+        max-width: 100%;
+      }
+
+      .counts-block {
+        background-color: #ffffff;
+        border-radius: 102px;
+        padding: 19px 32px;
+        position: absolute;
+        bottom: 20%;
+        right: 5%;
+
+        .count-title {
+          font-family: "DM-Sans";
+          color: #0a0b5c;
+          font-size: 44px;
+        }
+
+        .count-description {
+          font-family: "Manrope-light";
+          font-size: 12px;
+          color: variables.$red-color;
+        }
+
+        .icon-component {
+          margin-right: 20px;
+          width: 79px;
+          height: 67px;
+        }
+      }
+
+      .start-block {
+        font-family: "Lato";
+        color: variables.$red-color;
+        font-size: 30px;
+        background-color: #ffffff;
+        padding: 19px;
+        padding-bottom: 60px;
+        border-radius: 32px;
+        position: absolute;
+        top: 5%;
+        left: -15%;
+
+        img {
+          max-width: 84px;
+        }
+
+        p {
+          margin-top: 20px;
+        }
+
+        .circle-img {
+          background-image: url(../../assets/images/circle.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: -20%;
+          right: 0;
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .time-block {
+      font-family: "Roboto-bold";
+      font-size: 50px;
+      background-color: #ffffff;
+      border: 1px solid #db1414;
+      padding: 24px;
+      position: absolute;
+      bottom: 5%;
+      left: -35%;
+
+      > div {
+        font-size: 67px;
+        margin-top: 50px;
+      }
+
+      .hours-value {
+        font-family: "Roboto";
+      }
+
+      .day-value {
+        display: inline-block;
+        color: variables.$dark-red;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .faq-wrapper {
+    padding: 0;
+  }
+}
