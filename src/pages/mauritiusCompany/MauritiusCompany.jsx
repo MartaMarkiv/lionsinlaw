@@ -17,16 +17,26 @@ export default function MauritiusCompany() {
     <section className="page-content-wrapper mauritius-page-wrapper">
       <Flex className="header-info-wrapper">
         <Flex vertical={true} className="data-info-wrapper">
-          <p className="title">Мауріцій: Лояльне оподаткування та стабільний бізнес-клімат для вашого успіху від</p>
+          <p className="title">
+            Мауріцій: Лояльне оподаткування та стабільний бізнес-клімат для
+            вашого успіху від
+          </p>
           <p className="law-name">LionsInLaw</p>
-          <p className="description">Вибір Мауріцію для вашого бізнесу — це шанс отримати вигідними податковими пільгами та стабільною економічною ситуацією з підтримкою професії</p>
+          <p className="description">
+            Вибір Мауріцію для вашого бізнесу — це шанс отримати вигідними
+            податковими пільгами та стабільною економічною ситуацією з
+            підтримкою професії
+          </p>
         </Flex>
         <div className="image-wrapper" />
       </Flex>
       <Flex className="tariff-header-wrapper">
         <img src={mauritiusNature} alt="" />
         <Flex vertical={true} className="tariff-info" justify="center">
-          <p className="title">Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з <span className="red-text">LionsInLaw</span></p>
+          <p className="title">
+            Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
+            <span className="red-text">LionsInLaw</span>
+          </p>
           <Flex className="tariff-btn" justify="space-between" align="center">
             <span>Тарифи</span>
             <Button icon={<Icon name="tariff" />} />
@@ -55,7 +65,12 @@ export default function MauritiusCompany() {
         title="основні переваги та практичні Аспекти реєстрації компанії"
         company="Мауріцію"
       />
-      <ConsultingOffshoreComp description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної компанії від наших експертів" linkLabel="Зареєструвати компанію" title="Отримайте експертну консультацію щодо створення офшорної компанії" linkRoute={`${COMPANY_REGISTRATION_ROUTE}/mauritius`}>
+      <ConsultingOffshoreComp
+        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної компанії від наших експертів"
+        linkLabel="Зареєструвати компанію"
+        title="Отримайте експертну консультацію щодо створення офшорної компанії"
+        linkRoute={`${COMPANY_REGISTRATION_ROUTE}/mauritius`}
+      >
         <CountryTarrifList />
       </ConsultingOffshoreComp>
       <Faq />

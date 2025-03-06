@@ -140,5 +140,9 @@ export default {
     gibraltar: "Гібралтарі",
     isleOfMan: "Острові Мен",
     czechia: "Чехії",
+    mauritius: "Мауріціо",
+    canada: "Канаді",
+    belgium: "Бельгії",
+    seychelles: "Сейшели",
   },
 };

@@ -20,6 +20,7 @@ export const BELGIUM_COMPANY_ROUTE = "/belgium-company";
 export const CANADA_COMPANY_ROUTE = "/canada-company";
 export const MAURITIUS_COMPANY_ROUTE = "/mauritius-company";
 export const MERCHANT_ACCOUNTS_ROUTE = "/merchant-accounts";
+export const SEYCHELLES_COMPANY_ROUTE = "/seychelles-company";
 export const TRADEMARK_REGISTRATION_ROUTE = "/trademark-registration";
 export const COMPANY_REGISTRATION_ROUTE = "/company-registration";
 export const TAX_PLANNING_ROUTE = "/tax-planning";
