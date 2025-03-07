@@ -10,8 +10,12 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function BelizeCompany() {
   return (
-    <section className="belize-company-page-wrapper">
-      <Flex align="center" justify="flex-end" className="belize-company-header">
+    <section className="page-content-wrapper belize-company-page-wrapper">
+      <Flex
+        align="cente r"
+        justify="flex-end"
+        className="belize-company-header"
+      >
         <Flex vertical={true} align="flex-start" className="header-wrapper">
           <p className="title">Перетніть межі: Відкрийте офшорну компанію в</p>
           <p className="title second">

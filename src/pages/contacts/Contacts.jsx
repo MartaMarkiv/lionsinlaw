@@ -19,7 +19,11 @@ export default function Contacts() {
   };
   return (
     <>
-      <Flex align="center" justify="center" className="contacts-header-wrapper">
+      <Flex
+        align="center"
+        justify="center"
+        className="page-content-wrapper contacts-header-wrapper"
+      >
         <Flex align="center" className="contacts-header">
           <div>
             <div className="extra-big">Зв'язатися з</div>

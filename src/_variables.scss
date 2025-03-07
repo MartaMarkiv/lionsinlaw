@@ -22,14 +22,15 @@ $mobile: 439px;
 $tablet: 768px;
 $desktop: 992px;
 
-$breakpoints: (
-  xxxs: 320px,
-  xxs: 408px,
-  xs: 440px,
-  sm: 600px,
-  m: 670px,
-  md: 768px,
-  l: 1024px,
-  lg: 1280px,
-  xl: 1920px,
-);
+
+// Screen sizes
+$point-xl: 1440px;
+$point-lg: 1280px;
+$point-l: 1024px;
+$point-md: 768px;
+$point-m: 670px;
+$point-sm: 600px;
+$point-s: 440px;
+$point-xs: 408px;
+$point-xxs: 320px;
+

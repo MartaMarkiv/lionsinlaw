@@ -11,7 +11,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CuracaoCompany() {
   return (
-    <section className="curacao-company-wrapper">
+    <section className="page-content-wrapper curacao-company-wrapper">
       <section className="curacao-company-header">
         <p className="title">
           Перетворіть мрію на реальність: відкрийте офшорну компанію з

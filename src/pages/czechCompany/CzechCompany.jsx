@@ -11,7 +11,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CzechCompany() {
   return (
-    <section className="czech-company-page-wrapper">
+    <section className="page-content-wrapper czech-company-page-wrapper">
       <Flex vertical={true} justify="flex-end" className="czech-company-header">
         <p className="title">
           Завдяки LionsInLaw: Відкрийте Офшорну Компанію в Чехії Легко та

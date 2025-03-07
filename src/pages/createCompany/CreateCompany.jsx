@@ -216,7 +216,7 @@ export default function CreateCompany() {
   };
 
   return (
-    <section className="create-company-page">
+    <section className="page-content-wrapper create-company-page">
       <div className="create-company-page-header">
         <p className="title">
           Реєстрація офшорної компанії {countryName !== "" && "в"} {countryName}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function GetConsultation() {
   return (
-    <div className="get-consultation-wrapper">
+    <div className="page-content-wrapper get-consultation-wrapper">
       <div className="banner-wrapper">
         <div className="banner-gradient" />
         <p className="title">

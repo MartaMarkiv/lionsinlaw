@@ -14,7 +14,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function IrelandCompany() {
   return (
-    <section className="ireland-company-wrapper">
+    <section className="page-content-wrapper ireland-company-wrapper">
       <section className="ireland-company-header">
         <Flex style={{ position: "relative" }}>
           <Flex vertical={true} className="title-wrapper">

@@ -17,7 +17,7 @@ import { CONTACTS_ROUTE } from "../../routes/routes";
 export default function CryptoLicense() {
   return (
     <>
-      <div className="crypto-license-page-wrapper">
+      <div className="page-content-wrapper crypto-license-page-wrapper">
         <div className="crypto-license-header">
           <div className="title">
             <span>LionsInLaw</span>

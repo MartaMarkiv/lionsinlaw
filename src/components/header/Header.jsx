@@ -15,12 +15,12 @@ export default function Header() {
   const location = useLocation();
 
   const deleteMargin =
-    [PANAMA_COMPANY_ROUTE, CZECH_COMPANY_ROUTE].indexOf(location.pathname) >= 0;
+    [PANAMA_COMPANY_ROUTE, CZECH_COMPANY_ROUTE, MAIN_ROUTE].indexOf(location.pathname) >= 0;
 
   const isRevert = location.pathname === MERCHANT_ACCOUNTS_ROUTE;
   return (
     <header
-      className={`header ${deleteMargin && "delete-mg"} ${isRevert && "revert"}`}
+      className={`page-content-wrapper header ${deleteMargin && "delete-mg"} ${isRevert && "revert"}`}
     >
       <Flex
         align="center"

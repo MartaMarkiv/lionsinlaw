@@ -19,15 +19,10 @@ import {
 export default function Main() {
   return (
     <>
-      <Flex className="main-section" justify="space-between">
+      <div className="main-section">
         <div className="main-background" />
-        <Flex
-          vertical={true}
-          align="center"
-          justify="space-between"
-          className="main-sub-part global"
-        >
-          <div>
+        <Flex justify="space-between" className="main-header-block">
+          <div className="info-wrapper main-sub-part">
             <div className="main-title" style={{ textTransform: "uppercase" }}>
               Глобальні корпоративні послуги
             </div>
@@ -37,7 +32,47 @@ export default function Main() {
               криптоліцензії та експертні податкові консультації
             </div>
           </div>
-          <Flex className="quality" justify="space-between" align="center">
+          <Flex
+            vertical={true}
+            align="center"
+            justify="start"
+            className="main-sub-part registration"
+          >
+            <Flex
+              align="center"
+              justify="center"
+              vertical={true}
+              className="count-company-wrapper"
+              style={{ maxWidth: 440 }}
+            >
+              <div className="count-company">50+</div>
+              <div className="main-title" style={{ textAlign: "center" }}>
+                Юрисдикцій для реєстрації компаній
+              </div>
+            </Flex>
+            <Flex
+              vertical={true}
+              align="center"
+              justify="center"
+              className="law-name-info"
+            >
+              <div className="name-law">LionsInLaw</div>
+              <span
+                className="description medium"
+                style={{ textAlign: "center" }}
+              >
+                Ваш надійний партнер у сфері глобальних корпоративних послуг і
+                офшорних рішень
+              </span>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex
+          align="center"
+          justify="space-between"
+          className="secondary-part"
+        >
+          <Flex className="quality main-sub-part" justify="space-between" align="center">
             <div>
               <div className="count">10+</div>
               <div className="quality-name">Років Досвіду</div>
@@ -47,45 +82,11 @@ export default function Main() {
               <div className="quality-name">Задоволених клієнтів</div>
             </div>
           </Flex>
-        </Flex>
-        <Flex
-          vertical={true}
-          align="center"
-          justify="start"
-          className="main-sub-part registration"
-        >
-          <Flex
-            align="center"
-            justify="center"
-            vertical={true}
-            style={{ maxWidth: 440 }}
-          >
-            <div className="count-company">50+</div>
-            <div className="main-title" style={{ textAlign: "center" }}>
-              Юрисдикцій для реєстрації компаній
-            </div>
-          </Flex>
-          <Flex
-            vertical={true}
-            align="center"
-            justify="center"
-            className="law-name-info"
-          >
-            <div className="name-law">LionsInLaw</div>
-            <span
-              className="description medium"
-              style={{ textAlign: "center" }}
-            >
-              Ваш надійний партнер у сфері глобальних корпоративних послуг і
-              офшорних рішень
-            </span>
-          </Flex>
-
           <Link to={CONTACTS_ROUTE} className="contact-us-link">
             Зв'язатися з нами
           </Link>
         </Flex>
-      </Flex>
+      </div>
       <FlagsContainer />
       <div className="our-services">
         <div className="title">Наші послуги включають</div>
@@ -127,10 +128,10 @@ export default function Main() {
         </Flex>
       </div>
       <div className="choose-us">
-        <div className="title">
+        <p className="title">
           Обирайте <span className="selected">LionsInLaw</span> для комплексних
           корпоративних рішень
-        </div>
+        </p>
         <Flex align="start" justify="space-between">
           <div className="image-wrapper">
             <img src={chooseUsImg} alt="LionsInLaw" />
@@ -231,6 +232,7 @@ export default function Main() {
           linkValue={""}
           title="Послуги продавця"
           isDark={true}
+          blockClass="sales-block"
         />
         <BlockElement
           description="Ми надаємо професійну консультацію та підтримку на кожному етапі процесу вибору юрисдикції та реєстраційної служби, забезпечуючи відповідність місцевим законодавчим вимогам."

@@ -15,7 +15,7 @@ import LicenseLionsInLawChoose from "../../components/licenseLionsInLawChoose/Li
 export default function FinancialLicense() {
   return (
     <>
-      <div className="financial-license-page-wrapper">
+      <div className="page-content-wrapper financial-license-page-wrapper">
         <Flex vertical={true} className="banner-wrapper">
           <p className="sub-description">
             Ваш Партнер у Міжнародному Бізнесі та Фінансовому Ліцензуванні

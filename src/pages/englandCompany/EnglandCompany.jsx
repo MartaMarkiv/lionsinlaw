@@ -12,7 +12,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 export default function EnglandCompany() {
   return (
     <>
-      <section className="england-company-wrapper">
+      <section className="page-content-wrapper england-company-wrapper">
         <Flex
           className="england-company-header"
           vertical={true}

@@ -11,7 +11,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 
 export default function GibraltarCompany() {
   return (
-    <section className="gibraltar-company-wrapper">
+    <section className="page-content-wrapper gibraltar-company-wrapper">
       <Flex
         vertical={true}
         align="flex-end"
