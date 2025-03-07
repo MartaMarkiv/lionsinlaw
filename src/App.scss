@@ -91,3 +91,9 @@
 .page-content-wrapper {
   padding: 0 70px;
 }
+
+@media (max-width: variables.$point-l) {
+  .page-content-wrapper {
+    padding: 0 35px;
+  }
+}

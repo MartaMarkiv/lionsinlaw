@@ -1,0 +1,29 @@
+@use "../../variables";
+
+.responsive-menu-wrapper {
+  padding: 20px;
+  min-width: 400px;
+
+  .menu-header-wrapper {
+    font-size: "Lato";
+    font-size: 48px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid variables.$border-color;
+  }
+
+  .menu-links-wrapper {
+    margin-top: 30px;
+  }
+
+  a {
+    font-family: "Raleway-bold";
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}

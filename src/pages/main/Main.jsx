@@ -1,4 +1,4 @@
-import { Flex, Switch, Button } from "antd";
+import { Flex, Switch, Button, Carousel } from "antd";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import FlagsContainer from "../../components/flagsContainer/FlagsContainer";
@@ -7,6 +7,7 @@ import chooseUsImg from "../../assets/images/chooseLionsInLaw.png";
 import lionsInLawTeam from "../../assets/images/team.png";
 import BlockElement from "../../components/blockElement/BlockElement";
 import config from "../../config";
+import useWindowWidth from "../../hooks/useWindowWidth";
 import {
   BANK_ACCOUNT_ROUTE,
   COMPANY_REGISTRATION_ROUTE,
@@ -17,12 +18,26 @@ import {
 } from "../../routes/routes";
 
 export default function Main() {
+  const windowWidth = useWindowWidth();
+
+  const getCountSlide = () => {
+    let countSlide = 4;
+    if (windowWidth < 1280) {
+      countSlide = 2;
+    }
+    if (windowWidth < 820) {
+      countSlide = 1;
+    }
+    console.log(windowWidth, "  ", countSlide);
+    return countSlide;
+  };
+
   return (
     <>
       <div className="main-section">
-        <div className="main-background" />
         <Flex justify="space-between" className="main-header-block">
           <div className="info-wrapper main-sub-part">
+            <div className="main-background" />
             <div className="main-title" style={{ textTransform: "uppercase" }}>
               Глобальні корпоративні послуги
             </div>
@@ -67,12 +82,12 @@ export default function Main() {
             </Flex>
           </Flex>
         </Flex>
-        <Flex
-          align="center"
-          justify="space-between"
-          className="secondary-part"
-        >
-          <Flex className="quality main-sub-part" justify="space-between" align="center">
+        <Flex align="center" justify="space-between" className="secondary-part">
+          <Flex
+            className="quality main-sub-part"
+            justify="space-between"
+            align="center"
+          >
             <div>
               <div className="count">10+</div>
               <div className="quality-name">Років Досвіду</div>
@@ -81,6 +96,14 @@ export default function Main() {
               <div className="count">1000+</div>
               <div className="quality-name">Задоволених клієнтів</div>
             </div>
+            {windowWidth <= 880 && (
+              <div>
+                <div className="count">50+</div>
+                <div className="quality-name">
+                  Юрисдикцій для реестрації компаній
+                </div>
+              </div>
+            )}
           </Flex>
           <Link to={CONTACTS_ROUTE} className="contact-us-link">
             Зв'язатися з нами
@@ -297,94 +320,100 @@ export default function Main() {
             <span>Знижка 25%</span>
           </Flex>
         </div>
-        <Flex
-          className="tarrif-plan-types"
-          align="start"
-          justify="space-between"
-        >
-          <div className="tarrif-plan-item">
-            <p className="title">Халява</p>
-            <p className="description">
-              Ідеально підходить для людей, яким потрібен швидкий доступ до
-              основних функцій.
-            </p>
-            <Flex className="price-wrapper" align="center">
-              <span className="price">$0</span>
-              <span>/ Місяць</span>
-            </Flex>
-            <div>
-              <Button className="start-plan-btn light">Починай зараз</Button>
-            </div>
-            {config.tariffPlanOptions.free.map((item, index) => (
-              <Flex
-                align="center"
-                key={`${item.name}:${index}`}
-                className="plan-option-item"
-              >
-                <Flex align="center" justify="center" className="icon-wrapper">
-                  <Icon name={item.isAvailable ? "ok" : "fail"} />
-                </Flex>
-                <span>{item.name}</span>
+        <div className="tarrif-plan-types">
+          <Carousel slidesPerRow={getCountSlide()}>
+            <div className="tarrif-plan-item">
+              <p className="title">Халява</p>
+              <p className="description">
+                Ідеально підходить для людей, яким потрібен швидкий доступ до
+                основних функцій.
+              </p>
+              <Flex className="price-wrapper" align="center">
+                <span className="price">$0</span>
+                <span>/ Місяць</span>
               </Flex>
-            ))}
-          </div>
-          <div className="tarrif-plan-item dark">
-            <p className="title">Професійний</p>
-            <p className="description">
-              Ідеально підходить для людей, яким потрібні розширені функції та
-              інструменти для роботи з клієнтами.
-            </p>
-            <Flex className="price-wrapper" align="center">
-              <span className="price">$0</span>
-              <span>/ Місяць</span>
-            </Flex>
-            <div>
-              <Button className="start-plan-btn dark">Починай зараз</Button>
-            </div>
-            {config.tariffPlanOptions.prof.map((item, index) => (
-              <Flex
-                align="center"
-                key={`${item.name}:${index}`}
-                className="plan-option-item"
-              >
+              <div>
+                <Button className="start-plan-btn light">Починай зараз</Button>
+              </div>
+              {config.tariffPlanOptions.free.map((item, index) => (
                 <Flex
                   align="center"
-                  justify="center"
-                  className="icon-wrapper dark"
+                  key={`${item.name}:${index}`}
+                  className="plan-option-item"
                 >
-                  <Icon name={item.isAvailable ? "ok" : "fail"} />
+                  <Flex
+                    align="center"
+                    justify="center"
+                    className="icon-wrapper"
+                  >
+                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                  </Flex>
+                  <span>{item.name}</span>
                 </Flex>
-                <span>{item.name}</span>
-              </Flex>
-            ))}
-          </div>
-          <div className="tarrif-plan-item">
-            <p className="title">Підприємство</p>
-            <p className="description">
-              Ідеально підходить для підприємств, яким потрібні персоналізовані
-              послуги та безпека для великих команд.
-            </p>
-            <Flex className="price-wrapper" align="center">
-              <span className="price">$0</span>
-              <span>/ Місяць</span>
-            </Flex>
-            <div>
-              <Button className="start-plan-btn light">Починай зараз</Button>
+              ))}
             </div>
-            {config.tariffPlanOptions.enterprise.map((item, index) => (
-              <Flex
-                align="center"
-                key={`${item.name}:${index}`}
-                className="plan-option-item"
-              >
-                <Flex align="center" justify="center" className="icon-wrapper">
-                  <Icon name={item.isAvailable ? "ok" : "fail"} />
-                </Flex>
-                <span>{item.name}</span>
+            <div className="tarrif-plan-item dark">
+              <p className="title">Професійний</p>
+              <p className="description">
+                Ідеально підходить для людей, яким потрібні розширені функції та
+                інструменти для роботи з клієнтами.
+              </p>
+              <Flex className="price-wrapper" align="center">
+                <span className="price">$0</span>
+                <span>/ Місяць</span>
               </Flex>
-            ))}
-          </div>
-        </Flex>
+              <div>
+                <Button className="start-plan-btn dark">Починай зараз</Button>
+              </div>
+              {config.tariffPlanOptions.prof.map((item, index) => (
+                <Flex
+                  align="center"
+                  key={`${item.name}:${index}`}
+                  className="plan-option-item"
+                >
+                  <Flex
+                    align="center"
+                    justify="center"
+                    className="icon-wrapper dark"
+                  >
+                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                  </Flex>
+                  <span>{item.name}</span>
+                </Flex>
+              ))}
+            </div>
+            <div className="tarrif-plan-item">
+              <p className="title">Підприємство</p>
+              <p className="description">
+                Ідеально підходить для підприємств, яким потрібні
+                персоналізовані послуги та безпека для великих команд.
+              </p>
+              <Flex className="price-wrapper" align="center">
+                <span className="price">$0</span>
+                <span>/ Місяць</span>
+              </Flex>
+              <div>
+                <Button className="start-plan-btn light">Починай зараз</Button>
+              </div>
+              {config.tariffPlanOptions.enterprise.map((item, index) => (
+                <Flex
+                  align="center"
+                  key={`${item.name}:${index}`}
+                  className="plan-option-item"
+                >
+                  <Flex
+                    align="center"
+                    justify="center"
+                    className="icon-wrapper"
+                  >
+                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                  </Flex>
+                  <span>{item.name}</span>
+                </Flex>
+              ))}
+            </div>
+          </Carousel>
+        </div>
       </div>
     </>
   );

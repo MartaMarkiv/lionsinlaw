@@ -33,3 +33,13 @@
     }
   }
 }
+
+@media (max-width: variables.$point-lg) {
+  .contact-phones-list {
+    .ant-row {
+      .ant-col {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
