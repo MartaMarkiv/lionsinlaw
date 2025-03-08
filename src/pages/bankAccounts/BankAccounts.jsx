@@ -71,9 +71,9 @@ export default function BankAccounts() {
           </p>
         </Flex>
         <div className="experts-image">
-          <img src={lawMember} alt="LionsInLaw member" />
+          <img src={lawMember} alt="LionsInLaw member" className="men-image"/>
+          <img src={lawLady} alt="Law lady" className="law-lady-image" />
         </div>
-        <img src={lawLady} alt="Law lady" className="law-lady-image" />
       </div>
       <div className="international-business">
         <Flex

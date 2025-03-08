@@ -141,6 +141,15 @@
 
 @media (max-width: variables.$point-xl) {
   .footer {
+    .logo-wrapper {
+      padding-left: 35px;
+      padding-right: 0;
+
+      .icon-component {
+        min-width: 84px;
+      }
+
+    }
     .footer-links-contacts {
       padding-left: 35px;
       padding-right: 35px;
@@ -186,6 +195,19 @@
           padding-left: 0;
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-sm) {
+  .footer {
+    .logo-wrapper {
+      padding-left: 20px;
+    }
+    .footer-links-contacts {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }

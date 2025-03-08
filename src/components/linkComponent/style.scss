@@ -13,3 +13,22 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: variables.$point-xl) {
+  .link {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .link {
+    font-size: 14px !important;
+  }
+}

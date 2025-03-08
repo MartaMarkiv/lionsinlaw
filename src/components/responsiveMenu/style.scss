@@ -2,7 +2,8 @@
 
 .responsive-menu-wrapper {
   padding: 20px;
-  min-width: 400px;
+  min-width: 408px;
+  box-sizing: border-box;
 
   .menu-header-wrapper {
     font-size: "Lato";
@@ -25,5 +26,11 @@
     &:hover {
       color: #000000;
     }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .responsive-menu-wrapper {
+    min-width: 100%;
   }
 }
