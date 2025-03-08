@@ -13,17 +13,19 @@
     padding-bottom: 190px;
     margin-bottom: 50px;
 
-    .title {
-      font-size: 45px;
+    .title-wrapper {
       width: 45%;
+    
+      .title {
+        font-size: 45px;
 
-      .selected-text {
-        font-size: 105px;
+        .selected-text {
+          font-size: 105px;
+        }
       }
     }
 
     .description {
-      font-size: 24px;
       margin-top: 65px;
       margin-bottom: 70px;
       width: 85%;
@@ -32,7 +34,7 @@
     .create-bank-banner {
       width: 50%;
       position: absolute;
-      right: 70px;
+      right: 0;
       bottom: 0;
       z-index: -1;
       height: calc(100% + 180px);
@@ -161,14 +163,6 @@
     }
   }
 
-  .why-lionsinlaw-wrapper,
-  .international-business,
-  .copmany-experts,
-  .bank-account-header,
-  .ask-bank-account-wrapper {
-    padding: 0 70px;
-  }
-
   .why-lionsinlaw-wrapper {
     margin-top: 120px;
 
@@ -292,6 +286,85 @@
       font-size: 32px;
       margin: 20px 0;
       width: 50%;
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .create-bank-account-page {
+    .why-lionsinlaw-wrapper .why-lionsinlaw {
+      .customer-oriented {
+        background-size: 50%;
+        background-position: right bottom;
+      }
+    }
+
+    .expert-guidance-wrapper {
+      .expert-guidance {
+        background-size: 40%;
+        background-position: left bottom;
+
+        .title {
+          font-size: 28px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+      }
+
+      .expert-guidance-item {
+        .title {
+          font-size: 28px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .copmany-experts {
+      .experts-image {
+        right: 0;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .create-bank-account-page {
+    font-size: 20px;
+
+    .bank-account-header {
+      padding-bottom: 40px;
+      .title-wrapper .title {
+        font-size: 38px;
+
+        .selected-text {
+          font-size: 80px;
+        }
+      }
+      .link {
+        font-size: 20px;
+      }
+    }
+
+    .copmany-experts {
+      .experts-image {
+        height: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .create-bank-account-page {
+    .bank-account-header {
+
     }
   }
 }

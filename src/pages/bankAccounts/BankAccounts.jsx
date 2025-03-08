@@ -11,15 +11,15 @@ import bankBuilding from "../../assets/images/bankKolons.png";
 
 export default function BankAccounts() {
   return (
-    <div className="create-bank-account-page">
+    <div className="page-content-wrapper create-bank-account-page">
       <Flex
         align="start"
         justify="space-between"
         className="bank-account-header"
       >
-        <div className="title">
-          <span className="selected-text">LionsInLaw</span> Ваш надійний партнер
-          у створенні міжнародної компанії
+        <div className="title-wrapper">
+          <p className="title"><span className="selected-text">LionsInLaw</span> Ваш надійний партнер
+          у створенні міжнародної компанії</p>
           <p className="description">
             Експертні послуги з реєстрації компаній та відкриття банківських
             рахунків по всьому світу

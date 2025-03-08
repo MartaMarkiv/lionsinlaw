@@ -28,7 +28,6 @@ export default function Main() {
     if (windowWidth < 820) {
       countSlide = 1;
     }
-    console.log(windowWidth, "  ", countSlide);
     return countSlide;
   };
 

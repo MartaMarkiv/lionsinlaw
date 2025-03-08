@@ -163,6 +163,14 @@
     .footer-links-contacts {
       flex-direction: column;
 
+      .page-links {
+        padding-left: 0;
+      }
+
+      .services-footer {
+        padding-right: 0;
+      }
+
       > div {
         width: 100%;
 
@@ -174,6 +182,9 @@
       .contacts-form {
         border-top: 1px solid variables.$light-border-color;
         border-left: none;
+        >div {
+          padding-left: 0;
+        }
       }
     }
   }

@@ -44,3 +44,9 @@ h1 {
     border: none;
   }
 }
+
+@media (max-width: 676px) {
+  body {
+    padding-top: 10px;
+  }
+}

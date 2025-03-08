@@ -745,3 +745,16 @@
     padding-top: 60px;
   }
 }
+
+@media (max-width: variables.$point-md) {
+  .law-business {
+    .business-types {
+      flex-direction: column;
+
+      .business-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
