@@ -19,7 +19,7 @@ export default function LicenseLionsInLawChoose({
         </p>
       </Flex>
       <p className="description">{description}</p>
-      <Flex justify="space-between">
+      <Flex justify="space-between" className="items-wrapper">
         <Flex
           vertical={true}
           className="license-advantages-item"

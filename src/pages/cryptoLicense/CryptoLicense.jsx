@@ -23,7 +23,7 @@ export default function CryptoLicense() {
             <span>LionsInLaw</span>
             <div className="monet-wrapper" />
           </div>
-          <Flex align="center" justify="space-between">
+          <Flex align="center" justify="space-between" className="description-wrapper">
             <Flex
               align="center"
               justify="space-between"
@@ -59,9 +59,9 @@ export default function CryptoLicense() {
                 </div>
                 <img src={cryptoLibrary} alt="Crypto library" />
               </Flex>
-              <div className="license-crypto-image-wrapper">
+              <Flex align="center" justify="center" className="license-crypto-image-wrapper">
                 <img src={libraMonet} alt="Crypto license" />
-              </div>
+              </Flex>
             </Flex>
           </Flex>
         </div>
@@ -94,7 +94,7 @@ export default function CryptoLicense() {
         <LicenseLionsInLawChoose description="Навігація в нормативному ландшафті, що оточує криптовалюти та технологію блокчейн, потребує спеціальних знань і досвіду. Lionsinlaw надає експертне керівництво та підтримку, щоб допомогти клієнтам отримати необхідні ліцензії для діяльності, пов’язаної з криптовалютою" />
         <div className="business-support-wrapper">
           <p className="title">
-            <span className="selected-text">LionsInLaw:</span>
+            <span className="selected-text">LionsInLaw: </span>
             Підтримка Вашого Криптовалютного Бізнесу
           </p>
           <Flex className="business-support-wrapper-info">

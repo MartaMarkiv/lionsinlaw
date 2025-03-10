@@ -47,6 +47,14 @@
       padding-right: 0;
       border-radius: 50px;
 
+      .license-crypto-image-wrapper {
+        max-width: 50%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
       .title {
         font-family: "Lato-bold";
         text-transform: uppercase;
@@ -181,5 +189,333 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      .description-block {
+        width: 35%;
+      }
+
+      .license-description {
+        >div {
+          width: 50%;
+        }
+      }
+    }
+
+    .crypto-partner-wrapper {
+      .wrapper {
+        margin-left: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      >.title {
+        font-size: 150px;
+
+        .monet-wrapper {
+          left: 80%;
+        }
+      }
+
+      .description-wrapper {
+        flex-direction: column;
+      }
+
+      .description-block {
+        width: 100%;
+        flex-direction: row;
+        padding: 20px;
+        border: none;
+
+        .cont-wrapper {
+          margin-bottom: 0;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .business-support-wrapper {
+      .business-support-wrapper-info {
+        .info-wrapper {
+          width: 50%;
+          box-sizing: border-box;
+        }
+
+        .contact-us-info-wrapper {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    .crypto-partner-wrapper {
+      .wrapper {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 100px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      >.title {
+        font-size: 120px;
+        .monet-wrapper {
+          width: 130px;
+          height: 130px;
+          right: 0;
+          left: auto;
+          top: -30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header,
+    .license-block-wrapper {
+      margin-bottom: 70px;
+    }
+
+    .business-support-wrapper {
+      margin: 70px 0;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .business-support-wrapper-info {
+        flex-direction: column;
+
+        .info-wrapper {
+          width: 100%;
+          border-radius: 30px;
+        }
+
+        .contact-us-info-wrapper {
+          padding: 25px 20px;
+        }
+      }
+    }
+
+    .crypto-partner-wrapper {
+      padding: 40px;
+
+      .wrapper {
+        padding-left: 0;
+      }
+
+      .title {
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      >.title {
+        font-size: 100px;
+
+        .monet-wrapper {
+          top: -50%;
+          z-index: -1;
+        }
+      }
+    }
+
+    .crypto-partner-wrapper {
+      padding: 40px;
+
+      .link {
+        padding: 30px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      >.title {
+        font-size: 74px;
+      }
+
+      .license-description {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+
+        img {
+          max-width: 100%;
+        }
+
+        >div {
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .license-crypto-image-wrapper {
+          display: none;
+        }
+      }
+    }
+
+    .business-support-wrapper {
+      margin: 45px 0;
+
+      .title .selected-text {
+        font-size: 74px;
+      }
+    }
+    
+    .crypto-partner-wrapper .title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header >.title {
+      font-size: 72px;
+    }
+
+    .business-support-wrapper {
+      .title .selected-text {
+        font-size: 68px;
+      }
+
+      .business-support-wrapper-info {
+        background: none;
+        .info-wrapper {
+          position: relative;
+          background: none;
+
+          >div {
+            box-sizing: border-box;
+          }
+
+          .image-wrapper {
+            position: absolute;
+            width: 25%;
+            top: 0;
+            right: 0;
+            z-index: -1;
+          }
+
+          .icon-component.logo {
+            width: 70px;
+            height: 70px;
+          }
+          .red-logo {
+            font-size: 36px;
+          }
+        }
+
+        .contact-us-info-wrapper {
+          background-color: #e42020;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      font-size: 18px;
+
+      >.title {
+        font-size: 64px;
+      }
+      .description-block {
+        .count {
+          font-size: 46px;
+        }
+      }
+    }
+
+    .business-support-wrapper {
+      .title {
+        font-size: 24px;
+
+        .selected-text {
+          font-size: 56px;
+        }
+      }
+
+      .business-support-wrapper-info {
+        .info-wrapper {
+          .description {
+            font-size: 18px;
+            margin-top: 30px;
+          }
+        }
+
+        .contact-us-info-wrapper {
+          .count {
+            font-size: 32px;
+          }
+
+          .countact-us {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+
+    .crypto-partner-wrapper {
+      .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .link {
+        padding: 20px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .crypto-license-page-wrapper {
+    .crypto-license-header {
+      >.title {
+        font-size: 54px;
+      }
+    }
+
+    .business-support-wrapper {
+      .title .selected-text {
+        font-size: 52px;
+      }
+
+      .business-support-wrapper-info .info-wrapper {
+        .icon-component.logo {
+          width: 50px;
+          height: 50px;
+        }
+
+        .red-logo {
+          font-size: 30px;
+        }
+      }
+    }
   }
 }

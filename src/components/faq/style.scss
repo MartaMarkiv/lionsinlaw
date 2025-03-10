@@ -44,6 +44,9 @@
 
 @media (max-width: variables.$point-md) {
   .faq-wrapper {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
     .title {
       font-size: 32px;
       margin-left: 0;
