@@ -1,7 +1,6 @@
 @use "../../variables";
 
 .trademark-registration-page {
-  padding: 0 70px;
 
   .trademark-registration-header {
     position: relative;
@@ -97,6 +96,7 @@
       }
 
       .clients-wapper {
+        background-color: #ffffff;
         padding: 20px;
         box-shadow: 0px 22px 26px 0px rgba(155, 155, 155, 25%);
         border-radius: 15px;
@@ -261,5 +261,464 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+
+@media (max-width: variables.$point-xl) {
+  .trademark-registration-page {
+    .choose-trademarks {
+      .image-wrapper-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .banner-image {
+        bottom: 15%;
+      }
+    }
+
+    .choose-trademarks {
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    .trademark-experiance {
+      position: relative;
+
+      .info-wrapper {
+        width: 100%;
+
+        .experiance-info-wrapper {
+          width: 60%;
+          margin-bottom: 50px;
+        }
+      }
+
+      .image-wrapper {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .info-wrapper {
+        .time-info-wrapper {
+          width: 80%;
+        }
+      }
+    }
+
+    .trademark-experiance {
+      .info-wrapper{
+        padding-right: 0;
+        .experiance-info-wrapper {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .trademark-registration-page {
+    .choose-trademarks {
+      grid-template-columns: 50% 50%;
+      grid-auto-rows: 0.5fr 1fr 1fr 1fr;
+    }
+
+    .trademark-registration-header {
+      .title-wrapper {
+        padding-top: 90px;
+      }
+
+      .info-wrapper {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .title-wrapper {
+        .title {
+          font-size: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .trademark-registration-page {
+    >div {
+      margin: 0 !important;
+      margin-bottom: 45px !important;
+    }
+
+    .trademark-registration-header {
+      flex-direction: column;
+      padding-bottom: 0;
+
+      >div {
+        width: 100%;
+      }
+
+      .title-wrapper {
+        padding-top: 0;
+
+        .title {
+          font-size: 82px;
+        }
+
+        .description {
+          font-size: 28px;
+          margin: 40px 0;
+          width: 80%;
+        }
+
+        .partners-wrapper {
+          margin-top: 40px;
+
+          >div {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      }
+
+      .banner-image {
+        transform: none;
+        right: 0;
+        top: 10%;
+      }
+
+      .info-wrapper {
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .sub-description {
+          margin-bottom: 40px;
+        }
+
+        .time-info-wrapper {
+          width: 40%;
+        }
+
+        .clients-wapper {
+          width: 45%;
+        }
+      }
+    }
+
+    .trademark-experiance {
+      .info-wrapper {
+        .experiance-info-wrapper {
+          width: 100%;
+
+          .title {
+            font-size: 32px;
+          }
+
+          .description {
+            font-size: 22px;
+            margin-top: 35px;
+          }
+        }
+
+        .experiance-items-wraper {
+          flex-direction: column;
+          width: 50%;
+
+          .experiance-item {
+            width: 100%;
+
+            .icon-component {
+              width: 80px;
+              height: 64px;
+            }
+
+            .title {
+              font-size: 22px;
+              margin: 20px 0;
+            }
+          }
+        }
+      }
+      .image-wrapper {
+        bottom: 10%;
+        top: auto;
+      }
+    }
+
+    .choose-trademarks {
+      .title-block {
+        .title {
+          font-size: 32px;
+        }
+
+        .description {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .brand-security-wrapper {
+      position: relative;
+
+      .title {
+        font-size: 32px;
+
+        .selected-text {
+          font-size: 52px;
+        }
+      }
+
+      .brand-security-wrapper-info {
+        position: static;
+      }
+
+      .info-description {
+        padding-bottom: 0;
+        width: 100% !important;
+
+        .description {
+          margin-bottom: 30px;
+        }
+      }
+
+      .image-wrapper {
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        min-height: 175px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .trademark-registration-page {
+    .choose-trademarks {
+      display: flex;
+      flex-direction: column;
+
+      .title-block {
+        margin-bottom: 20px;
+      }
+
+      .block-1 {
+        order: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .trademark-registration-page {
+    .trademark-experiance {
+      .info-wrapper {
+        .experiance-info-wrapper {
+          margin-bottom: 20px;
+        }
+
+        .experiance-items-wraper {
+          width: 100%;
+        }
+      }
+
+      .image-wrapper {
+        display: none;
+      }
+    }
+
+    .trademark-registration-header {
+      .title-wrapper {
+
+        .title {
+          font-size: 76px;
+        }
+
+        .description {
+          font-size: 26px;
+        }
+
+        .partners-wrapper {
+          width: 100%;
+
+          .partners-title {
+            font-size: 24px;
+          }
+
+          >div {
+            justify-content: flex-start;
+          }
+
+          .icon-component {
+            width: 100px;
+            height: 35px;
+            min-width: 100px;
+          }
+        }
+      }
+      .info-wrapper {
+        .time-info-wrapper {
+          .time-wrapper {
+            .count {
+              font-size: 42px;
+            }
+            .month {
+              font-size: 26px;
+            }
+          }
+        }
+
+        .clients-wapper {
+          .count {
+            font-size: 26px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 460px) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .title-wrapper {
+        .title {
+          font-size: 68px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .banner-image {
+        height: 210px;
+        top: 0;
+      }
+
+      .title-wrapper {
+        .title {
+          font-size: 58px;
+        }
+
+        .description {
+          font-size: 18px;
+          margin: 25px 0;
+        }
+
+        .partners-wrapper {
+          .partners-title {
+            font-size: 20px;
+          }
+        }
+      }
+      .info-wrapper {
+        .time-info-wrapper,
+        .clients-wapper {
+          width: 100%;
+        }
+
+        .time-info-wrapper {
+          .time-wrapper {
+            width: 50%;
+            margin: 0 auto;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+
+        .sub-description {
+          font-size: 18px;
+        }
+
+        .clients-wapper {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .trademark-experiance .info-wrapper .experiance-info-wrapper,
+    .choose-trademarks .title-block {
+      .title {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+
+    .brand-security-wrapper {
+      .title {
+        font-size: 24px;
+      }
+
+      .info-description {
+        padding-top: 20px;
+
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .trademark-registration-page {
+    .trademark-registration-header {
+      .title-wrapper {
+        .title {
+          font-size: 46px;
+        }
+      }
+    }
+
+    .brand-security-wrapper {
+      .title {
+        .selected-text {
+          font-size: 46px;
+        }
+      }
+    }
   }
 }

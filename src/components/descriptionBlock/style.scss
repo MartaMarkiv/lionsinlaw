@@ -23,6 +23,16 @@
   }
 }
 
+@media (max-width: variables.$point-l) {
+  .description-block {
+    min-height: auto;
+
+    .description {
+      margin: 20px;
+    }
+  }
+}
+
 @media (max-width: variables.$point-md) {
   .description-block {
     .title {
@@ -35,10 +45,18 @@
   }
 }
 
+@media (max-width: variables.$point-s) {
+  .description-block {
+    .description {
+      font-size: 18px;
+    }
+  }
+}
+
 @media (max-width: variables.$point-xs) {
   .description-block {
     padding: 20px;
-    
+
     .title {
       font-size: 20px;
     }

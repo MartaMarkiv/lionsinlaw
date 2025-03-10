@@ -14,7 +14,7 @@ import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function TrademarkRegistration() {
   return (
-    <section className="trademark-registration-page">
+    <section className="page-content-wrapper trademark-registration-page">
       <Flex justify="space-between" className="trademark-registration-header">
         <div className="title-wrapper">
           <p className="title">LionsInLaw</p>
@@ -79,7 +79,7 @@ export default function TrademarkRegistration() {
               ефективної реєстрації торгових марок у Європі, Канаді та США
             </p>
           </div>
-          <Flex justify="space-between">
+          <Flex justify="space-between" className="experiance-items-wraper">
             <Flex
               vertical={true}
               justify="space-between"
@@ -129,11 +129,13 @@ export default function TrademarkRegistration() {
           description="Lionsinlaw надає безперебійні послуги з реєстрації торгових марок на ключових ринках, включаючи Європу, Канаду та США, забезпечуючи захист вашого бренду за кордоном."
           title="Глобальне покриття:"
           isDark={true}
+          blockClass="block-1"
         />
         <DescriptionBlock
           description="Ми розуміємо важливість персоналізованого обслуговування та тісно співпрацюємо з кожним клієнтом, щоб адаптувати наші послуги з реєстрації торгових марок відповідно до їхніх конкретних потреб і цілей."
           title="Індивідуальне обслуговування:"
           isDark={true}
+          blockClass="block-2"
         />
         <DescriptionBlock
           description="Ми спрощуємо процес реєстрації, обробляємо всі документи та листування з місцевими органами влади, щоб забезпечити дотримання місцевих законів і правил щодо торговельних марок."

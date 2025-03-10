@@ -41,3 +41,20 @@
     }
   }
 }
+
+@media (max-width: variables.$point-md) {
+  .faq-wrapper {
+    .title {
+      font-size: 32px;
+      margin-left: 0;
+    }
+
+    .description {
+      margin-left: 0;
+    }
+
+    .faq-list {
+      margin-top: 35px;
+    }
+  }
+}

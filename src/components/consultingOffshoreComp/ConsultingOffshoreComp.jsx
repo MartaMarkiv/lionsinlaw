@@ -1,6 +1,5 @@
 import { Flex } from "antd";
 import "./style.scss";
-import Icon from "../iconComponent/Icon";
 import LinkComponent from "../linkComponent/LinkComponent";
 
 export default function ConsultingOffshoreComp({
@@ -15,7 +14,7 @@ export default function ConsultingOffshoreComp({
     <div className="consulting-offshore-comp-wrapper">
       <p className="header-block">{title}</p>
       <Flex justify="space-between">
-        <div>
+        <div className="time-block-wrapper">
           <Flex
             vertical={true}
             align="center"
