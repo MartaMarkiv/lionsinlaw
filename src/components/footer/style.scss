@@ -211,3 +211,63 @@
     }
   }
 }
+
+@media (max-width: variables.$point-s) {
+  .footer {
+    .logo-wrapper {
+      .icon-component {
+        margin-right: 20px;
+      }
+    }
+
+    .footer-links-contacts {
+      font-size: 16px;
+
+      .page-links {
+        padding-right: 10px;
+      }
+
+      .services-footer {
+        padding-left: 10px;
+      }
+
+      .contacts-form {
+        .title {
+          font-size: 18px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+
+        .send-email-form {
+          button {
+            font-size: 16px;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .footer {
+    .logo-wrapper {
+      font-size: 40px;
+      .icon-component {
+        min-width: 55px;
+        height: 55px;
+        width: 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xxs) {
+  .footer {
+    .logo-wrapper {
+      font-size: 36px;
+    }
+  }
+}

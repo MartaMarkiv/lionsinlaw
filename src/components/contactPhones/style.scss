@@ -43,3 +43,19 @@
     }
   }
 }
+
+@media (max-width: variables.$point-s) {
+  .contact-phones-list {
+    padding: 20px;
+
+    .phone-list-row {
+      flex-direction: column;
+      margin: 0 !important;
+
+      .ant-col {
+        max-width: 100%;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}

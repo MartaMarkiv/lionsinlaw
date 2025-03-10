@@ -23,3 +23,31 @@
     position: relative;
   }
 }
+
+@media (max-width: variables.$point-m) {
+  .block-element {
+    padding: 20px;
+
+    .title {
+      font-size: 18px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .block-element {
+    padding: 16px;
+
+    .title {
+      font-size: 14px;
+    }
+
+    .description {
+      font-size: 12px;
+    }
+  }
+}

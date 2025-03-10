@@ -33,3 +33,14 @@
     height: 20px;
   }
 }
+
+@media (max-width: variables.$point-m) {
+  .more-link {
+    font-size: 14px;
+
+    .icon-component {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

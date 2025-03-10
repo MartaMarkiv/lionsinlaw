@@ -82,3 +82,14 @@
     }
   }
 }
+
+@media (max-width: variables.$point-m) {
+  .flags-container {
+    padding: 25px;
+    .flag-item {
+      width: 180px;
+      min-width: 180px;
+      height: 95px;
+    }
+  }
+}

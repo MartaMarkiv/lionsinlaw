@@ -157,6 +157,7 @@
     max-width: 55%;
     margin-left: 15%;
     margin-bottom: 60px;
+    text-transform: uppercase;
 
     .selected {
       color: variables.$red-color;
@@ -310,6 +311,7 @@
       border: 1px solid #ffffff;
       border-radius: 6px;
       padding: 16px;
+      box-sizing: border-box;
 
       .title {
         font-family: "Roboto-medium";
@@ -754,6 +756,364 @@
       .business-item {
         width: 100%;
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .our-services {
+    >.title {
+      font-size: 32px;
+    }
+    >.description {
+      font-size: 18px;
+    }
+
+    .our-services-wrapper {
+      align-items: flex-start;
+      margin-top: 20px;
+
+      .our-services-item {
+        .icon-component {
+          width: 45px;
+          height: 45px;
+        }
+
+        .title {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .choose-us {
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    >div {
+      .image-wrapper {
+        margin-top: 0;
+      }
+    }
+
+    .advantages-wrapper {
+      .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .advantages-item {
+        .icon-component {
+          width: 45px;
+          height: 45px;
+          min-width: 45px;
+        }
+
+        .title {
+          font-size: 24px;
+        }
+
+        .advantages-item-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .services-list {
+    margin-top: 45px;
+
+    .services-list-title {
+      font-size: 32px;
+    }
+
+    .grid-item-2 {
+      font-size: 14px;
+      padding: 20px 0;
+
+      .item-2-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .law-business {
+    .title {
+      font-size: 32px;
+
+      .selected {
+        font-size: 56px;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      margin: 20px 0;
+    }
+
+    .business-types {
+      margin-top: 35px;
+    }
+  }
+
+  .contact-us-link {
+    font-size: 14px;
+  }
+
+  .our-functions {
+    .title {
+      font-size: 32px;
+    }
+
+    .description {
+      margin-bottom: 30px;
+    }
+
+    .tarrif-plan-types {
+      .slick-slider {
+        .tarrif-plan-item {
+          font-size: 16px;
+          padding: 20px;
+
+          .title {
+            font-size: 18px;
+          }
+
+          .description {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+          .price-wrapper {
+            .price {
+              font-size: 38px;
+            }
+          }
+
+          .start-plan-btn {
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .main-section {
+    padding: 0 20px;
+
+    .main-title {
+      font-size: 18px;
+    }
+
+    .main-header-block {
+      .info-wrapper {
+        .description {
+          font-size: 14px;
+        }
+
+        .main-background {
+          height: calc(100% + 158px);
+        }
+      }
+    }
+
+    .main-sub-part.registration {
+      .name-law {
+        font-size: 68px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .quality {
+      .count {
+        font-size: 32px;
+      }
+
+      .quality-name {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .our-services {
+    padding: 0 20px;
+
+    >.title {
+      font-size: 24px;
+    }
+
+    >.description {
+      font-size: 12px;
+    }
+
+    .our-services-wrapper {
+      .our-services-item {
+        .icon-component {
+          width: 40px;
+          height: 40px;
+        }
+
+        .title {
+          font-size: 16px;
+        }
+
+        .description {
+          font-size: 12px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .choose-us,
+  .services-list,
+  .law-business,
+  .our-functions {
+    padding: 0 20px;
+  }
+
+  .choose-us {
+    .title {
+      font-size: 28px;
+    }
+
+    .advantages-wrapper {
+      .description {
+        font-size: 12px;
+      }
+
+      .advantages-item {
+        padding-right: 0;
+
+        .icon-component {
+          width: 37px;
+          height: 37px;
+        }
+      }
+    }
+  }
+
+  .services-list {
+    grid-template-rows: 1fr;
+
+    .services-list-title {
+      font-size: 24px;
+    }
+  }
+
+  .law-business {
+    padding-top: 65px;
+
+    .title {
+      font-size: 22px;
+      line-height: 48px;
+
+      .selected {
+        font-size: inherit;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+    }
+
+    .business-types {
+      .business-item {
+        .title {
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .our-functions {
+    .our-functions-header {
+      .title {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .main-section {
+    .main-header-block {
+      padding-top: 20px;
+
+      .info-wrapper {
+        .main-background {
+          width: 80%;
+          right: -15px;
+          background-position-y: bottom;
+        }
+      }
+    }
+
+    .main-sub-part.registration {
+      .name-law {
+        font-size: 54px
+      }
+    }
+
+    .secondary-part {
+      .quality {
+        .count {
+          font-size: 28px;
+        }
+
+        .quality-name {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .our-services {
+    .our-services-wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .our-services-item {
+        width: 45%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .contact-us-link {
+    padding: 18px 50px;
+    box-sizing: border-box;
+  }
+
+  .law-business {
+    .contact-us-link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: variables.$point-xxs) {
+  .main-section {
+    .main-sub-part.registration {
+      .name-law {
+        font-size: 48px
       }
     }
   }
