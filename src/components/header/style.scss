@@ -70,6 +70,15 @@
   }
 }
 
+@media (max-width: variables.$point-xl) {
+  .header.merchant-accounts {
+    >div {
+      justify-content: space-between;
+    }
+  }
+}
+
+
 @media (max-width: variables.$point-md) {
   .header {
     margin-bottom: 20px;

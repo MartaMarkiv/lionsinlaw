@@ -22,3 +22,28 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: variables.$point-md) {
+  .description-block {
+    .title {
+      font-size: 22px;
+    }
+
+    .description {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .description-block {
+    padding: 20px;
+    
+    .title {
+      font-size: 20px;
+    }
+    .description {
+      font-size: 14px;
+    }
+  }
+}

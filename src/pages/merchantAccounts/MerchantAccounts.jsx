@@ -10,7 +10,7 @@ import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function MerchantAccounts() {
   return (
-    <section className="merchant-accounts-page">
+    <section className="page-content-wrapper merchant-accounts-page">
       <Flex
         justify="space-between"
         vertical={true}
@@ -86,6 +86,7 @@ export default function MerchantAccounts() {
           description="Забезпечення відповідності місцевим і міжнародним нормам має першочергове значення. Lionsinlaw гарантує, що налаштування вашого торгового облікового запису відповідають усім нормативним стандартам, забезпечуючи душевний спокій і безпеку для ваших транзакцій."
           title="Відповідність і безпека"
           isDark={true}
+          blockClass="security-block"
         />
         <DescriptionBlock
           description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція"

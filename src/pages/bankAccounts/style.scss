@@ -739,15 +739,111 @@
     font-size: 14px;
 
     .bank-account-header {
+      margin-bottom: 45px;
       .title-wrapper {
         .title {
           font-size: 24px;
+
+          .selected-text {
+            font-size: 54px;
+          }
         }
       }
 
       .create-bank-banner {
         height: 50%;
         bottom: 30px;
+      }
+    }
+
+    .copmany-experts,
+    .international-business,
+    .ask-bank-account-wrapper {
+      margin-top: 45px;
+    }
+
+    .copmany-experts,
+    .why-lionsinlaw-wrapper .why-lionsinlaw,
+    .ask-bank-account-wrapper {
+      .title {
+        font-size: 28px;
+        line-height: 110%;
+      }
+    }
+
+    .international-business {
+      .international-business-title {
+        font-size: 28px;
+      }
+    }
+
+    .why-lionsinlaw-wrapper .why-lionsinlaw {
+      .description {
+        font-size: 18px;
+      }
+
+      .customer-oriented {
+        .description {
+          width: 100%;
+        }
+      }
+    }
+
+    .ask-bank-account-wrapper {
+      .description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .create-bank-account-page {
+
+    .copmany-experts .title,
+    .international-business .international-business-title,
+    .why-lionsinlaw-wrapper .expert-guidance-wrapper,
+    .ask-bank-account-wrapper .title {
+        font-size: 24px;
+    }
+
+    .why-lionsinlaw-wrapper {
+      .why-lionsinlaw .customer-oriented,
+      .expert-guidance-wrapper .expert-guidance,
+      .expert-guidance-wrapper .expert-guidance-item {
+        .title {
+          font-size: 20px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ask-bank-account-wrapper,
+    .why-lionsinlaw-wrapper .why-lionsinlaw {
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xxs) {
+  .create-bank-account-page {
+    .bank-account-header {
+      .title-wrapper {
+        .title {
+          .selected-text {
+            font-size: 48px;
+          }
+        }
+      }
+
+      .create-bank-banner {
+        height: 40%;
+        bottom: 50px;
       }
     }
   }

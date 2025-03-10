@@ -34,7 +34,7 @@ export default function Header() {
   const isRevert = location.pathname === MERCHANT_ACCOUNTS_ROUTE;
   return (
     <header
-      className={`page-content-wrapper header ${deleteMargin && "delete-mg"} ${isRevert && "revert"}`}
+      className={`page-content-wrapper header ${deleteMargin && "delete-mg"} ${isRevert && "revert"} ${location.pathname.slice(1, location.pathname.length)}`}
     >
       <Flex
         align="center"

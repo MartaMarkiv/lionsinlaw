@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .merchant-accounts-page {
-  padding: 0 70px;
-
   .merchant-accounts-header {
     position: relative;
     padding-bottom: 57px;
@@ -13,6 +11,7 @@
 
     .banner-image {
       width: 53%;
+      height: calc(100% + 185px);
       position: absolute;
       z-index: -1;
       bottom: 0;
@@ -172,6 +171,309 @@
 
       .link {
         padding: 15px 49px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .merchant-accounts-page {
+    .choose-merchant-account {
+      grid-template-columns: 33% 33% 33%;
+      grid-auto-rows: 1fr 1fr 1fr 1fr;
+
+      .title-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .phone-block-wrapper {
+        background-size: contain;
+        grid-column-end: 3;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        padding: 0;
+        padding-bottom: 40px;
+      }
+
+      .experiance-block {
+        grid-column-start: auto;
+      }
+    }
+
+    .merchant-accounts-header {
+      position: relative;
+      .banner-image {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .title-wrapper {
+        width: 100%;
+        align-items: flex-start;
+
+        .description,
+        .sub-description {
+          width: 50%;
+        }
+      }
+    }
+
+    .spec-solutions {
+      padding-bottom: 0;
+
+      >div {
+        width: 70%;
+
+        &.image-wrapper {
+          width: 30%;
+        }
+      }
+    }
+
+    .empowerment-wrapper {
+      padding: 30px;
+
+      >div {
+        width: 70%;
+
+        .description {
+          margin: 40px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      .title-wrapper {
+        .description {
+          margin-top: 40px;
+        }
+
+        .sub-description {
+          margin: 40px 0;
+        }
+      }
+
+      .banner-image {
+        height: 75%;
+
+        img {
+          max-height: 100%;
+        }
+      }
+    }
+
+    .choose-merchant-account,
+    .spec-solutions {
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .merchant-accounts-page {
+    .choose-merchant-account {
+      grid-template-columns: 50% 50%;
+      grid-auto-rows: 1fr;
+
+      .phone-block-wrapper {
+        grid-column-end: auto;
+        grid-column-start: auto;
+        grid-row-end: auto;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      .title-wrapper {
+        .description {
+          width: 100%;
+        }
+      }
+
+      .banner-image {
+        box-sizing: border-box;
+        height: 55%;
+      }
+    }
+
+    .spec-solutions {
+      .info-wrapper {
+        width: 100%;
+        padding-right: 0;
+
+        .description {
+          margin-top: 20px;
+        }
+      }
+
+      >div.image-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .merchant-accounts-page {
+
+    .merchant-accounts-header {
+      .title {
+        font-size: 78px;
+      }
+    }
+
+    .choose-merchant-account {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 45px;
+
+      >div {
+        margin-bottom: 20px;
+
+        &.description-block {
+          min-height: auto;
+
+          .description {
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .phone-block-wrapper {
+        padding-top: 50px;
+        padding-right: 0;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      padding-bottom: 0;
+
+      .description {
+        font-size: 24px;
+      }
+
+      .sub-description {
+        font-size: 20px;
+      }
+    }
+
+    .spec-solutions {
+      .info-wrapper {
+        .title {
+          font-size: 32px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .choose-merchant-account .title-block,
+    .empowerment-wrapper >div {
+      .title {
+        font-size: 32px;
+      }
+    }
+    
+    .empowerment-wrapper >div {
+      width: 100%;
+
+      .description {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      .title {
+        font-size: 68px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      .title-wrapper {
+        .sub-description {
+          width: 100%;
+        }
+      }
+
+      .banner-image {
+        width: 180px;
+        height: 170px;
+        bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .merchant-accounts-page {
+    .merchant-accounts-header {
+      .title {
+        font-size: 56px;
+      }
+
+      .description {
+        font-size: 22px;
+        margin-top: 20px;
+      }
+
+      .sub-description {
+        font-size: 14px;
+      }
+    }
+
+    .spec-solutions {
+      .info-wrapper {
+        .title {
+          font-size: 24px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .choose-merchant-account .title-block,
+    .empowerment-wrapper >div {
+      .title {
+        font-size: 24px;
+      }
+    }
+    
+    .empowerment-wrapper >div {
+      width: 100%;
+
+      .description {
+        font-size: 16px;
       }
     }
   }
