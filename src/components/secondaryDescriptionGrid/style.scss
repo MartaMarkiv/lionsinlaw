@@ -67,6 +67,10 @@
 
       .title {
         font-size: 32px;
+
+        .company-name {
+          font-size: 70px;
+        }
       }
 
       .description {
@@ -97,6 +101,11 @@
 
 @media (max-width: 570px) {
   .secondary-description-grid {
+    .description-col {
+      .title .company-name {
+        font-size: 60px;
+      }
+    }
     .grid-wrapper {
       display: flex;
       flex-direction: column;
