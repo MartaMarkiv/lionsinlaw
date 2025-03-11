@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .panama-company-page-wrapper {
-  padding: 0 70px;
-
   .panama-company-header {
     background-image: url(../../assets/images/panamaBanner.png);
     background-repeat: no-repeat;
@@ -36,8 +34,10 @@
     .tariff-block {
       font-family: "Lora-bold";
       font-size: 24px;
-      width: 45%;
-      padding: 0 30px;
+      background-color: #ffffff;
+      border-radius: 30px;
+      width: 46%;
+      padding: 11px 30px;
       box-sizing: border-box;
 
       p {
@@ -61,5 +61,174 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: 1679px) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        .description {
+          margin-top: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        .description {
+          margin-top: 70px;
+        }
+      }
+
+      .tariff-block {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1153px) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        width: 80%;
+
+        .title {
+          background-color: #b4c3c98f;
+        }
+        .description {
+          margin-top: 30px;
+        }
+      }
+
+      .tariff-block {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1148px) {
+  .panama-company-page-wrapper {
+    .company-sub-description-block {
+      margin: 70px 0;
+    }
+
+    .secondary-description-grid {
+      .grid-wrapper .business-block {
+        order: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        margin-top: 9%;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+
+        .title {
+          font-size: 50px;
+        }
+
+        .description {
+          padding-left: 0;
+          width: 80%;
+        }
+      }
+
+      .tariff-block {
+        p {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      border-bottom-right-radius: 30px;
+
+      .header-wrapper {
+        padding-top: 5%;
+
+        .description {
+          width: 100%;
+        }
+      }
+
+      .tariff-block {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        .title {
+          font-size: 36px;
+        }
+
+        .description {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      height: 100%;
+
+      .header-wrapper {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        .title {
+          font-size: 28px;
+        }
+
+        .description {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      }
+
+      .tariff-block {
+        font-size: 18px;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .consulting-offshore-comp-wrapper {
+      margin-top: 70px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper .title {
+        font-size: 24px;
+      }
+    }
   }
 }

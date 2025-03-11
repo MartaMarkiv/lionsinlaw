@@ -11,7 +11,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PanamaCompany() {
   return (
-    <section className="panama-company-page-wrapper">
+    <section className="page-content-wrapper panama-company-page-wrapper">
       <Flex
         vertical={true}
         justify="space-between"

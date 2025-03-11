@@ -74,3 +74,15 @@
     }
   }
 }
+
+@media (max-width: variables.$point-s) {
+  .company-sub-description-block {
+    .title {
+      font-size: 24px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+}
