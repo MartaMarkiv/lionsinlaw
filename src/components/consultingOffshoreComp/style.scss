@@ -190,20 +190,6 @@
   }
 }
 
-@media (max-width: variables.$point-l) {
-  .consulting-offshore-comp-wrapper {
-    .header-block {
-      font-size: 48px;
-    }
-
-    .tariff-wrapper {
-      .count {
-        font-size: 70px;
-      }
-    }
-  }
-}
-
 @media (max-width: 1100px) {
   .consulting-offshore-comp-wrapper {
     .header-block {
@@ -238,6 +224,20 @@
         padding: 15px;
         width: 100%;
         box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .consulting-offshore-comp-wrapper {
+    .header-block {
+      font-size: 40px;
+    }
+
+    .tariff-wrapper {
+      .count {
+        font-size: 70px;
       }
     }
   }

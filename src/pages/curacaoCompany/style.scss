@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
-    padding: 37px 72px;
+    padding: 37px 72px; 
     padding-bottom: 112px;
 
     .title {
@@ -27,5 +27,78 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .curacao-company-wrapper {
+    .curacao-company-header {
+      background-size: cover;
+      background-position: center bottom;
+
+      .title,
+      .description {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .curacao-company-wrapper {
+    >div,
+    >section {
+      margin: 0;
+      margin-bottom: 45px;
+    }
+
+    .curacao-company-header {
+      background-size: cover;
+      background-position: center bottom;
+      padding: 25px 40px;
+
+      .title,
+      .description {
+        width: 100%;
+      }
+
+      .title {
+        font-size: 36px;
+      }
+
+      .description {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .curacao-company-wrapper {
+    .curacao-company-header {
+      padding: 15px 20px;
+
+      .title {
+        font-size: 28px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .curacao-company-wrapper {
+    .curacao-company-header {
+      .title {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
   }
 }
