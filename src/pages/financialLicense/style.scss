@@ -77,3 +77,246 @@
     padding: 0;
   }
 }
+
+@media (max-width: variables.$point-lg) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 170px;
+      }
+
+      .financical-info {
+        .image-wrapper {
+          background-position: center center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1154px) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+
+      .title {
+        font-size: 168px;
+      }
+
+      .description {
+        width: 100%;
+        z-index: 2;
+      }
+
+      .sub-description {
+        width: 60%;
+      }
+
+      .financical-info {
+        padding: 60px;
+        padding-bottom: 150px;
+        padding-top: 20px;
+
+        .image-wrapper {
+          background-position: right bottom;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 148px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 136px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .financial-license-page-wrapper {
+    >div {
+      margin: 0 !important;
+      margin-bottom: 70px !important;
+    }
+
+    .banner-wrapper {
+      .sub-description {
+        font-size: 26px;
+      }
+
+      .title {
+        font-size: 120px;
+      }
+
+      .description {
+        font-size: 36px;
+      }
+    }
+
+    .risk-management-wrapper {
+      background-position: right;
+      padding: 60px;
+
+      .wrapper .description {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 100px;
+      }
+
+      .financical-info {
+        padding: 40px;
+
+        .description {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 90px;
+      }
+
+      .sub-description {
+        font-size: 24px;
+      }
+
+      .financical-info {
+        .description {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .risk-management-wrapper {
+      padding: 30px;
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-m) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 72px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 100px;
+      }
+
+      .financical-info {
+        padding: 40px;
+
+        .description {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 60px;
+      }
+
+      .sub-description {
+        font-size: 20px;
+        width: 80%;
+      }
+
+      .financical-info {
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .risk-management-wrapper {
+      .wrapper {
+        .title {
+          font-size: 32px;
+        }
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 56px;
+      }
+
+      .sub-description {
+        font-size: 14px;
+      }
+
+      .financical-info {
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .risk-management-wrapper {
+      .wrapper {
+        .title {
+          font-size: 24px;
+        }
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .financial-license-page-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 46px;
+      }
+    }
+  }
+}

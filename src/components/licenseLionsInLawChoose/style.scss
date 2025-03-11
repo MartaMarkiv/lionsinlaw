@@ -48,6 +48,20 @@
   }
 }
 
+@media (max-width: variables.$point-l) {
+  .license-choose-wrapper {
+    .license-advantages-item {
+      .icon-component {
+        width: 180px;
+        height: 140px;
+      }
+
+      .title {
+        font-size: 36px;
+      }
+    }
+  }
+}
 
 @media (max-width: variables.$point-md) {
   .license-choose-wrapper {
