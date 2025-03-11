@@ -132,7 +132,7 @@
     .panama-company-header {
       .header-wrapper {
         margin-top: 9%;
-        width: 100%;
+        width: 80%;
         padding: 0 30px;
         box-sizing: border-box;
 
@@ -155,6 +155,16 @@
   }
 }
 
+@media (max-width: 900px) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: variables.$point-md) {
   .panama-company-page-wrapper {
     .panama-company-header {
@@ -170,6 +180,18 @@
 
       .tariff-block {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .panama-company-page-wrapper {
+    .panama-company-header {
+      .header-wrapper {
+        .title {
+          font-size: 44px;
+        }
       }
     }
   }
