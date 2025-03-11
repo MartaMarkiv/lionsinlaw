@@ -1,7 +1,14 @@
+@use "../../variables";
+
 .european-region-wrapper {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto auto;
+
+  .block-element {
+    box-sizing: border-box;
+    height: 100%;
+  }
 
   .england {
     background-image: url(../../assets/images/england.png);
@@ -125,6 +132,48 @@
 
     .description {
       margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .european-region-wrapper {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    .spain-link {
+      grid-column-start: 3;
+      grid-row-end: span 1;
+    }
+
+    .men-island {
+      grid-column-start: 1;
+    }
+
+    .poland-link {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .european-region-wrapper {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .spain-link {
+      grid-column-start: auto;
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .european-region-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .poland-link {
+      order: 0;
     }
   }
 }

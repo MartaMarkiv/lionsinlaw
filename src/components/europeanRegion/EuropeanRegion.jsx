@@ -76,7 +76,7 @@ export default function EuropeanRegion() {
           blockClass="usa"
         />
       </Link>
-      <Link to={POLAND_COMPANY_ROUTE}>
+      <Link to={POLAND_COMPANY_ROUTE} className="poland-link">
         <BlockElement
           description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
           linkValue={""}

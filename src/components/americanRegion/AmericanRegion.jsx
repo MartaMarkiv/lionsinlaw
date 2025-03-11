@@ -41,7 +41,7 @@ export default function AmericanRegion() {
           blockClass="curacao"
         />
       </Link>
-      <Link to={BELIZE_COMPANY_ROUTE}>
+      <Link to={BELIZE_COMPANY_ROUTE} className="beliz-link">
         <BlockElement
           description="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."
           linkValue={""}

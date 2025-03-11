@@ -1,3 +1,5 @@
+@use "../../variables";
+
 .asian-region-wrapper {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -29,5 +31,24 @@
     &.mauritius {
       background-image: url(../../assets/images/MauritiusCastle.png);
     }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .asian-region-wrapper {
+    grid-template-columns: 33% 33%;
+  }
+}
+
+@media (max-width: 905px) {
+  .asian-region-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .asian-region-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }

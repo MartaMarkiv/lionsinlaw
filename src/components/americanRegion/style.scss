@@ -5,6 +5,11 @@
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto auto;
 
+  .block-element {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
   .england {
     background-image: url(../../assets/images/england.png);
     background-repeat: no-repeat;
@@ -79,5 +84,93 @@
   .canada {
     background-image: url(../../assets/images/canadaCelebration.png);
     background-size: 90%;
+
+    .description {
+      background-color: #ffffff59;
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .american-region-wrapper {
+    .image-wrapper {
+      .american-region {
+        height: 100%;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .american-region-wrapper {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+
+    .image-wrapper {
+      grid-column-end: auto;
+
+      .american-region {
+        width: 100%;
+        bottom: 0;
+      }
+    }
+    
+    .curacao-link {
+      grid-column-start: auto;
+    }
+
+    .beliz-link {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .american-region-wrapper {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .image-wrapper {
+      .american-region {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .american-region-wrapper {
+    .image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .american-region {
+        position: static;
+        transform: none;
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-m) {
+  .american-region-wrapper {
+    .image-wrapper {
+      .american-region {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .american-region-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
