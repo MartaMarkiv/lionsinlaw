@@ -3,18 +3,13 @@
 $red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
 
 .canada-company-page {
-  .canada-company-header-wrapper,
-  .theory-practice-wrapper,
-  .consulting-offshore-comp-wrapper {
-    padding: 0 70px;
-  }
-
   .canada-company-header {
     font-family: "Lato-bold";
     color: #ffffff;
     background-image: url(../../assets/images/canadaBannerShadow.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     padding: 236px 130px;
 
     .title {
@@ -183,6 +178,306 @@ $red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
           text-align: justify;
           line-height: 25.6px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .canada-company-page {
+    .consulting-offshore-comp-wrapper {
+      padding: 0 70px;
+    }
+
+    .theory-practice-wrapper {
+      .image-wrapper {
+        width: 35%;
+      }
+
+      .info-wrapper {
+        width: 60%;
+
+        .description {
+          margin-bottom: 20px;
+        }
+
+        .theory-item {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .canada-company-page {
+    .canada-company-header {
+      padding: 100px;
+    }
+
+    .knowledge-sharing-wrapper {
+      position: relative;
+
+      .image-wrapper {
+        background-position: left bottom;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      .counts-wrapper {
+        width: 90%;
+        z-index: 2;
+
+        .count-item {
+          max-width: 30%;
+          width: auto;
+        }
+      }
+    }
+
+    .consulting-offshore-comp-wrapper {
+      padding: 0 35px;
+    }
+
+    .business-coaching {
+      .description {
+        margin-bottom: 60px;
+      }
+
+      .business-coaching-items-list {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .canada-company-page {
+    >div {
+      margin-top: 0 !important;
+      margin-bottom: 70px !important;
+    }
+
+    .canada-company-header {
+      padding: 100px 40px;
+
+      .title,
+      .description {
+        width: 100%;
+      }
+    }
+
+    .theory-practice-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .info-wrapper {
+        width: 100%;
+
+        .title {
+          font-size: 38px;
+        }
+      }
+
+      .image-wrapper {
+        width: 50%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .canada-company-page {
+    .knowledge-sharing-wrapper {
+      .description {
+        width: 70%;
+      }
+
+      .title {
+        padding: 0 20px;
+      }
+
+      .counts-wrapper {
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .count-item {
+          width: 50%;
+          max-width: 50%;
+          margin-bottom: 20px;
+
+          .count {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+
+    .business-coaching {
+      padding: 0 20px;
+
+      .description {
+        width: 80%;
+        margin-bottom: 30px;
+      }
+
+      .business-coaching-items-list {
+        flex-wrap: wrap;
+        width: 100%;
+
+        .coaching-item{
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .canada-company-page {
+    >div {
+      margin-bottom: 45px !important;
+    }
+
+    .canada-company-header {
+      padding: 60px 20px;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+
+    .theory-practice-wrapper {
+      .info-wrapper {
+        .title {
+          font-size: 32px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+
+        .theory-item {
+          .item-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .knowledge-sharing-wrapper {
+      .image-wrapper {
+        width: 40%;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        width: 90%;
+      }
+
+      .counts-wrapper .count-item {
+        .count {
+          font-size: 50px;
+        }
+      }
+    }
+
+    .business-coaching {
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .business-coaching-items-list .coaching-item {
+        margin-top: 20px;
+
+        .icon-component {
+          width: 60px;
+          height: 75px;
+        }
+
+        .item-title {
+          font-size: 20px;
+        }
+
+        .item-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .canada-company-page {
+    .canada-company-header {
+      .title {
+        font-size: 26px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .theory-practice-wrapper {
+      .info-wrapper {
+        .title {
+          font-size: 26px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+
+        .theory-item {
+          .item-title {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .knowledge-sharing-wrapper {
+      .image-wrapper {
+        width: 50%;
+      }
+
+      .title {
+        font-size: 26px;
+      }
+
+      .counts-wrapper .count-item {
+        .count {
+          font-size: 46px;
+        }
+      }
+    }
+
+    .business-coaching {
+      .title {
+        font-size: 26px;
+      }
+
+      .description {
+        margin-bottom: 10px;
+      }
+
+      .business-coaching-items-list .coaching-item {
+        width: 100%;
       }
     }
   }

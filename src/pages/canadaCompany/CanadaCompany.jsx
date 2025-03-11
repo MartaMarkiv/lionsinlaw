@@ -10,7 +10,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 export default function CanadaCompany() {
   return (
     <section className="canada-company-page">
-      <div className="canada-company-header-wrapper">
+      <div className="page-content-wrapper canada-company-header-wrapper">
         <div className="canada-company-header">
           <p className="title">
             Канада: Стабільна та вигідна юрисдикція для міжнародного бізнесу
@@ -22,7 +22,7 @@ export default function CanadaCompany() {
           </p>
         </div>
       </div>
-      <Flex className="theory-practice-wrapper" justify="space-between">
+      <Flex className="page-content-wrapper theory-practice-wrapper" justify="space-between" align="flex-start">
         <div className="image-wrapper">
           <img src={canadaCastle} alt="Canada castle" />
           <div className="shadow" />

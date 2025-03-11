@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   .menu-header-wrapper {
-    font-size: "Lato";
+    font-family: "Lato";
     font-size: 48px;
     padding-bottom: 30px;
     border-bottom: 1px solid variables.$border-color;
@@ -25,6 +25,22 @@
 
     &:hover {
       color: #000000;
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .responsive-menu-wrapper {
+    .menu-header-wrapper {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .responsive-menu-wrapper {
+    .menu-header-wrapper {
+      font-size: 34px;
     }
   }
 }

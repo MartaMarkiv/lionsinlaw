@@ -51,7 +51,7 @@ export default function Header() {
             open={openMenu}
             onOpenChange={handleOpenChange}
           >
-            <Button className="menu-button" icon={<Icon name="menu" />} />
+            <Button className="menu-button" icon={<Icon name="menu" />} style={{zIndex: 99}}/>
           </Popover>
         ) : (
           <Flex align="center" className="header-menu-wrapper">
@@ -66,7 +66,7 @@ export default function Header() {
               <Icon name="envelop" />
               <span>info@Lionsinlaw.com</span>
             </a>
-            <Button icon={<Icon name="language" />} />
+            <Button icon={<Icon name="language" />}/>
           </Flex>
         )}
       </Flex>

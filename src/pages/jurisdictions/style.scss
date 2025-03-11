@@ -238,6 +238,12 @@
   .jurisdictions-description {
     padding-left: 35px;
   }
+
+  .regions-list {
+    .ant-select-item {
+      font-size: 38px;
+    }
+  }
 }
 
 @media (max-width: variables.$point-md) {
@@ -246,8 +252,22 @@
     margin-top: 45px;
   }
 
-  .select-region-wrapper .ant-select .ant-select-selection-placeholder {
-    font-size: 42px;
+  .select-region-wrapper .ant-select {
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      font-size: 38px;
+    }
+  }
+
+  .select-region-wrapper {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .regions-list {
+    .ant-select-item {
+      font-size: 32px;
+    }
   }
 }
 
@@ -270,8 +290,17 @@
     font-size: 28px;
   }
 
-  .select-region-wrapper .ant-select .ant-select-selection-placeholder {
-    font-size: 32px;
+  .select-region-wrapper .ant-select {
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      font-size: 30px;
+    }
+  }
+
+  .regions-list {
+    .ant-select-item {
+      font-size: 26px;
+    }
   }
 }
 
@@ -289,6 +318,10 @@
       }
     }
   }
+
+  .jurisdictions-description {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: variables.$point-xs) {
@@ -302,5 +335,9 @@
         font-size: 24px;
       }
     }
+  }
+
+  .jurisdictions-description {
+    font-size: 24px;
   }
 }
