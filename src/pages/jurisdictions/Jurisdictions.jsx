@@ -29,7 +29,7 @@ export default function Jurisdictions() {
   };
   return (
     <>
-      <div className="jurisdictions-header-banner-wrapper">
+      <div className="page-content-wrapper jurisdictions-header-banner-wrapper">
         <Flex justify="center" align="end" className="banner" vertical={true}>
           <div className="banners-wrapper">
             <div className="lion-banner" />
@@ -54,7 +54,7 @@ export default function Jurisdictions() {
         відповідність місцевим законам та правилам, надаючи професійну підтримку
         на кожному етапі.
       </p>
-      <div className="select-region-wrapper">
+      <div className="page-content-wrapper select-region-wrapper">
         <Select
           placeholder="Виберіть Регіон"
           popupClassName="regions-list"
@@ -68,7 +68,7 @@ export default function Jurisdictions() {
           ))}
         </Select>
       </div>
-      <div className="regions-wrapper">{getRegionComponent()}</div>
+      <div className="page-content-wrapper regions-wrapper">{getRegionComponent()}</div>
       <ReasonsForChoice />
       <GetConsultation />
       <Faq />

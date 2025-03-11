@@ -51,3 +51,101 @@
     }
   }
 }
+
+@media (max-width: variables.$point-xl) {
+  .get-consultation-wrapper {
+    .banner-wrapper {
+      padding: 30px;
+
+      a {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .get-consultation-wrapper {
+    .banner-wrapper {
+      background-size: cover;
+      padding: 30px;
+
+      .title {
+        width: 100%;
+      }
+
+      a {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .get-consultation-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 32px;
+
+        .selected-text {
+          font-size: 68px;
+        }
+      }
+
+      .description {
+        font-size: 20px;
+      }
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-s) {
+  .get-consultation-wrapper {
+    .banner-wrapper {
+      .title {
+        font-size: 24px;
+
+        .selected-text {
+          font-size: 58px;
+        }
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .get-consultation-wrapper {
+    .banner-wrapper {
+      .title {
+        .selected-text {
+          font-size: 48px;
+        }
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 14px;
+        padding: 15px 50px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+  }
+}

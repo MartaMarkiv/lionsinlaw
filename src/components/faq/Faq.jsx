@@ -73,7 +73,7 @@ const faqList = [
 
 export default function Faq() {
   return (
-    <div className="faq-wrapper">
+    <div className="page-content-wrapper faq-wrapper">
       <p className="title">Питання що часто задаються</p>
       <p className="description">
         Запитайте все, що вам потрібно знати про наші продукти та послуги.

@@ -36,21 +36,23 @@
       .law-lady-banner {
         background-image: url(../../assets/images/lawLady.png);
         background-size: contain;
-        left: 40px;
+        background-position-y: bottom;
+        right: 40px;
         bottom: 0;
         height: 100%;
-        width: 526px;
+        width: 80%;
         z-index: 3;
       }
 
       .vector-banner {
         background-image: url(../../assets/images/VectorSmall.png);
-        background-size: contain;
+        background-size: cover;
         left: 0;
         bottom: 0;
         height: calc(100% - 70px);
         width: calc(100% + 40px);
         z-index: 1;
+        background-position-x: right;
       }
     }
 
@@ -80,11 +82,6 @@
     font-family: "Raleway-bold";
     color: variables.$red-color;
   }
-}
-
-.jurisdictions-header-banner-wrapper,
-.select-region-wrapper {
-  padding: 0 70px;
 }
 
 .select-region-wrapper {
@@ -155,8 +152,6 @@
 }
 
 .regions-wrapper {
-  padding: 0 70px;
-
   .block-element {
     padding-left: 15px;
     padding-right: 15px;
@@ -165,6 +160,146 @@
     .description {
       font-family: "Inter-medium-24";
       line-height: 120%;
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      padding: 100px 0;
+      .banners-wrapper {
+        .vector-banner {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-lg) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      padding: 100px 0;
+      .banners-wrapper {
+        .law-lady-banner {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1115px) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      .banner-title {
+        font-size: 64px;
+      }
+
+      .banners-wrapper {
+        .law-lady-banner {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      padding: 100px 60px;
+
+      .banner-title,
+      .banner-description {
+        background-color: #c3bcb152;
+        width: 100%;
+        margin-right: 0;
+        z-index: 3;
+      }
+
+      .banners-wrapper {
+        width: 100%;
+        z-index: 1;
+
+        .lion-banner {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .jurisdictions-description {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .jurisdictions-description {
+    font-size: 32px;
+    margin-top: 45px;
+  }
+
+  .select-region-wrapper .ant-select .ant-select-selection-placeholder {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      padding: 100px 20px;
+
+      .banner-title {
+        font-size: 56px;
+      }
+
+      .banner-description {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .jurisdictions-description {
+    font-size: 28px;
+  }
+
+  .select-region-wrapper .ant-select .ant-select-selection-placeholder {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 470px) {
+  .jurisdictions-header-banner-wrapper {
+    .banners-wrapper {
+      box-sizing: border-box;
+      height: 100% !important;
+
+      .law-lady-banner,
+      .lion-banner {
+        max-width: 100%;
+        width: 100% !important;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .jurisdictions-header-banner-wrapper {
+    .banner {
+      .banner-title {
+        font-size: 46px;
+      }
+
+      .banner-description {
+        font-size: 24px;
+      }
     }
   }
 }
