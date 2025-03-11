@@ -79,6 +79,24 @@
   }
 }
 
+@media (max-width: 1471px) {
+  .consulting-offshore-comp-wrapper {
+    .header-block {
+      font-size: 59px;
+    }
+
+    .tariff-wrapper {
+      padding: 40px 60px;
+    }
+
+    .register-company-wrapper {
+      .title {
+        font-size: 100px;
+      }
+    }
+  }
+}
+
 @media (max-width: variables.$point-xl) {
   .consulting-offshore-comp-wrapper {
     .time-block {
@@ -175,7 +193,25 @@
 @media (max-width: variables.$point-l) {
   .consulting-offshore-comp-wrapper {
     .header-block {
-      font-size: 54px;
+      font-size: 48px;
+    }
+
+    .tariff-wrapper {
+      .count {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .consulting-offshore-comp-wrapper {
+    p.header-block {
+      font-size: 28px;
+    }
+
+    .tariff-wrapper .count {
+      font-size: 60px;
     }
   }
 }
@@ -194,6 +230,14 @@
       .hours-value,
       .day-value {
         font-size: 38px;
+      }
+    }
+
+    .tariff-wrapper {
+      font-size: 18px;
+
+      .count {
+        font-size: 48px;
       }
     }
 

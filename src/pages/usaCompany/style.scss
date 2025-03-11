@@ -1,15 +1,22 @@
 @use "../../variables";
 
 .usa-company-wrapper {
-  padding: 0 70px;
-
   .usa-company-header {
     font-family: "Roboto";
     color: #ffffff;
     position: relative;
-    background-color: variables.$red-color;
     padding: 88px 52px;
     padding-bottom: 210px;
+
+    .bg-block {
+      background-color: variables.$red-color;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
 
     .title {
       font-size: 55px;
@@ -31,10 +38,67 @@
       right: 0;
       width: 40%;
       height: calc(100% + 80px);
+      z-index: -1;
     }
   }
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+
+@media (max-width: variables.$point-xl) {
+  .usa-company-wrapper {
+    .usa-company-header {
+      .usa-banner {
+        background-position: right bottom;
+        width: 480px;
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .usa-company-wrapper {
+    > div,
+    > section {
+      margin: 0;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .usa-company-wrapper {
+    .usa-company-header {
+      padding: 60px 20px;
+
+      .title {
+        font-size: 48px;
+      }
+
+      .description {
+        width: 80%;
+      }
+
+      .usa-banner {
+        height: calc(100% - 50px);
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .usa-company-wrapper {
+    .usa-company-header {
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 24px;
+      }
+    }
   }
 }

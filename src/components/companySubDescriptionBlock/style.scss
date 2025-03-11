@@ -46,3 +46,31 @@
     margin-top: 50px;
   }
 }
+
+@media (max-width: 920px) {
+  .company-sub-description-block {
+    flex-direction: column;
+    >div {
+      width: 100%;
+    }
+
+    .image-wrapper {
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .company-sub-description-block {
+    .title {
+      font-size: 32px;
+    }
+
+    .description {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+}

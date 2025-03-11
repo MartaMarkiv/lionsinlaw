@@ -30,3 +30,104 @@
     grid-column-end: span 2;
   }
 }
+
+@media (max-width: variables.$point-lg) {
+  .company-description-grid {
+    grid-template-columns: 30% 30% 40%;
+  }
+}
+
+@media (max-width: 1085px) {
+  .company-description-grid {
+    grid-template-columns: 33% 33% 33%;
+
+    .grid-main-col {
+      padding-left: 25px;
+      .title {
+        font-size: 36px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .company-description-grid {
+    .grid-main-col {
+      .title {
+        font-size: 32px !important;
+      }
+    }
+
+    .sub-description p {
+      font-size: 26px !important;
+    }
+
+    >div p {
+      font-size: 20px !important;
+    }
+  }
+}
+
+
+@media (max-width: 1085px) {
+  .company-description-grid {
+    grid-template-columns: 50% 50%;
+
+
+    .grid-main-col {
+      padding-top: 50px;
+      padding-right: 20px;
+    }
+
+    .sub-description {
+      grid-column-end: span 1;
+      padding: 50px 10px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .company-description-grid {
+    .grid-main-col .title {
+      font-size: 28px !important;
+    }
+
+    .sub-description {
+      p {
+        font-size: 24px !important;
+      }
+    }
+
+    >div p {
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .company-description-grid {
+    display: flex;
+    flex-direction: column;
+
+    .image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .company-description-grid {
+    .image-wrapper {
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+}

@@ -11,14 +11,15 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function UsaCompany() {
   return (
-    <section className="usa-company-wrapper">
-      <section className="usa-company-header">
+    <section className="page-content-wrapper usa-company-wrapper">
+      <div className="usa-company-header">
+        <div className="bg-block"></div>
         <p className="title">Відкрийте нові горизонти з LionsInLaw</p>
         <p className="description">
           Реєстрація офшорної компанії в США - ваш ключ до глобального успіху
         </p>
         <div className="usa-banner" />
-      </section>
+      </div>
       <CompanySubDescriptionBlock
         title={
           <p className="title">
