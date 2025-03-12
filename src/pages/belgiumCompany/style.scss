@@ -133,6 +133,10 @@
   .belgium-consultation-wrapper {
     margin-top: 120px;
 
+    >div {
+      justify-content: space-between;
+    }
+
     .main-title,
     .secondary-title {
       font-size: 62px;
@@ -265,5 +269,573 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: 1640px) {
+  .belgium-company-page-wrapper {
+    .belgium-consultation-wrapper {
+      .time-block {
+        font-size: 46px;
+        padding: 20px;
+        left: -26%;
+
+        >div {
+          font-size: 56px;
+          margin-top: 40px;
+        }
+      }
+
+      .image-wrapper {
+        .counts-block {
+          right: 10px;
+
+          .icon-component {
+            width: 60px;
+            height: 50px;
+          }
+
+          .count-title {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1570px) {
+  .belgium-company-page-wrapper {
+    .belgium-consultation-wrapper {
+      .time-block {
+        left: -120px;
+      }
+
+      .image-wrapper {
+        .counts-block {
+          width: 427px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1520px) {
+  .belgium-company-page-wrapper {
+    .belgium-header {
+      .header-info {
+        width: 55%;
+      }
+
+      .image-wrapper {
+        width: 45%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1480px) {
+  .belgium-company-page-wrapper {
+    .belgium-consultation-wrapper {
+
+      .image-wrapper {
+        width: 40%;
+
+        .start-block {
+          font-size: 26px;
+          padding-bottom: 19px;
+
+          .circle-img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        .time-block {
+          font-size: 38px;
+          left: 0;
+          bottom: 0;
+
+          >div {
+            font-size: 44px;
+          }
+        }
+
+        .counts-block {
+          bottom: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .belgium-company-page-wrapper {
+    .belgium-company-description {
+      .secondary-part {
+        .description-info {
+          padding: 20px 50px;
+
+          .sub-title {
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .belgium-company-page-wrapper {
+    .belgium-consultation-wrapper {
+
+      .info-wrapper {
+        padding-right: 30px;
+      }
+
+      .image-wrapper {
+
+        .start-block {
+          top: 30%;
+          right: 10px;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .belgium-company-page-wrapper {
+    .belgium-header {
+      .header-info {
+        width: auto;
+      }
+
+      .image-wrapper {
+        width: 500px;
+      }
+    }
+    .belgium-company-description {
+      .secondary-part {
+        .description-info {
+          padding: 15px 20px;
+
+          .tariffs-wrapper {
+            button {
+              font-size: 20px;
+              padding: 5px;
+              padding-left: 20px;
+            }
+
+            .tariffs-wrapper-info {
+              margin-top: 15px;
+
+              .counts-wrapper {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .belgium-consultation-wrapper {
+      .main-title {
+        font-size: 54px;
+      }
+
+      .secondary-title {
+        font-size: 52px;
+        margin-bottom: 80px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .belgium-company-page-wrapper {
+    >div {
+      margin-top: 0;
+      margin-bottom: 70px !important;
+    }
+
+    .belgium-header {
+      .image-wrapper {
+        width: 500px;
+        max-height: 100%;
+        right: 0;
+      }
+    }
+
+    .belgium-consultation-wrapper {
+      margin-top: 70px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .belgium-company-page-wrapper {
+    .belgium-company-description {
+      >div {
+        flex-direction: column;
+      } 
+
+      .main-info-wrapper {
+        .title,
+        .description {
+          width: 100%;
+          padding-right: 0;
+        }
+
+        .description {
+          margin-top: 30px;
+        }
+      }
+
+      .secondary-part {
+        .description-info {
+          width: 100%;
+        }
+
+        .image-wrapper {
+          width: 407px;
+        }
+      }
+    }
+
+    .belgium-consultation-wrapper {
+      .main-title {
+        font-size: 48px;
+      }
+  
+      .secondary-title {
+        font-size: 46px;
+      }
+
+      .info-wrapper {
+        .description {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .belgium-company-page-wrapper {
+
+    .belgium-header {
+      .header-info .title {
+        font-size: 50px;
+        line-height: 120%;
+      }
+    }
+
+    .belgium-company-description {
+      .title {
+        font-size: 36px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+
+    .belgium-consultation-wrapper {
+
+      .main-title {
+        font-size: 38px;
+      }
+
+      .secondary-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      >div {
+        flex-direction: column-reverse;
+      }
+
+      .info-wrapper {
+        width: 100%;
+        padding-right: 0;
+
+        .description {
+          font-size: 24px;
+        }
+
+        .secondary-description {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+
+        img {
+          max-width: 450px;
+        }
+
+        .start-block {
+          top: 0;
+          border: 1px solid gray;
+        }
+
+        .counts-block {
+          right: 0;
+          top: 35%;
+          bottom: auto;
+          border: 1px solid variables.$dark-red;
+          width: 380px;
+
+          .count-title {
+            font-size: 30px;
+          }
+        }
+
+        .time-block {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .belgium-company-page-wrapper {
+
+    .belgium-header {
+      .header-info .title {
+        font-size: 36px;
+      }
+    }
+
+    .belgium-company-description {
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+
+    .belgium-consultation-wrapper {
+
+      .main-title {
+        font-size: 32px;
+      }
+
+      .secondary-title {
+        font-size: 34px;
+      }
+
+      .info-wrapper {
+        .description {
+          font-size: 22px;
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+
+        img {
+          max-width: 450px;
+        }
+
+        .start-block {
+          top: 0;
+          border: 1px solid gray;
+        }
+
+        .counts-block {
+          right: 0;
+          top: 35%;
+          bottom: auto;
+          border: 1px solid variables.$dark-red;
+          width: 380px;
+
+          .count-title {
+            font-size: 30px;
+          }
+        }
+
+        .time-block {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .belgium-company-page-wrapper {
+
+    .belgium-header {
+      .header-info .title {
+        font-size: 34px;
+      }
+    }
+
+    .belgium-company-description {
+      .title {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .belgium-consultation-wrapper {
+
+      .main-title {
+        font-size: 30px;
+      }
+
+      .secondary-title {
+        font-size: 32px;
+      }
+
+      .info-wrapper {
+        .description {
+          font-size: 20px;
+        }
+      }
+
+      .image-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 100%
+        }
+
+        .start-block {
+          display: none;
+        }
+
+        .counts-block {
+          width: 360px;
+          top: 45%;
+
+          .count-title {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 539px) {
+  .belgium-company-page-wrapper {
+    .belgium-header {
+      padding-top: 40px;
+
+      .image-wrapper {
+        max-width: 100%;
+        max-height: 100%;
+
+        img {
+          max-height: 100%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .belgium-consultation-wrapper {
+      .image-wrapper {
+        div.counts-block {
+          top: 50%;
+
+          .count-title {
+            font-size: 24px;
+          }
+        }
+
+        div.time-block {
+          font-size: 24px;
+
+          >div {
+            font-size: 26px;
+            margin-top: 10px;
+
+            .day-value {
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .belgium-company-page-wrapper {
+    .belgium-header {
+      .header-info .title {
+        font-size: 32px;
+      }
+    }
+
+    .belgium-company-description {
+      .title {
+        font-size: 26px;
+      }
+
+      .tariffs-wrapper {
+        flex-direction: column;
+
+        button {
+          margin: 20px auto;
+        }
+
+        .tariffs-wrapper-info {
+          width: 100% !important;
+        }
+      }
+
+      .image-wrapper {
+        max-width: 100%;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+
+    .belgium-consultation-wrapper {
+
+      .main-title {
+        font-size: 28px;
+      }
+
+      .secondary-title {
+        font-size: 30px;
+      }
+
+      .info-wrapper {
+        .description {
+          font-size: 18px;
+        }
+      }
+
+      .image-wrapper {
+        .counts-block {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -43,7 +43,7 @@ export default function BelgiumCompany() {
           </p>
         </Flex>
         <Flex className="secondary-part">
-          <div>
+          <div className="image-wrapper">
             <img src={belgiumNature} alt="Belgium nature" />
           </div>
           <Flex
