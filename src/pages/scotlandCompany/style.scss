@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .scotland-company-page {
-  padding: 0 70px;
-
   .scotland-header {
     font-family: "Roboto-bold";
     position: relative;
@@ -45,12 +43,246 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position-x: 100%;
-      width: 60%;
+      width: 57%;
       height: calc(100% + 180px);
       position: absolute;
       bottom: 0;
       right: 0;
       z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 1620px) {
+  .scotland-company-page {
+    .scotland-header {
+      padding-top: 40px;
+    }
+  }
+}
+@media (max-width: variables.$point-xl) {
+  .scotland-company-page {
+    .scotland-header {
+      padding-bottom: 20px;
+
+      .title {
+        font-size: 48px;
+      }
+
+      .sub-title {
+        font-size: 34px;
+      }
+
+      .name {
+        font-size: 94px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+
+      .description {
+        font-size: 28px;
+      }
+
+      .scotland-image {
+        background-position: right bottom;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .scotland-company-page {
+    .scotland-header {
+      >div {
+        width: 60%;
+      }
+
+      .scotland-image {
+        max-height: 100%;
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .scotland-company-page {
+    .scotland-header {
+      >div {
+        width: 100%;
+      }
+
+      .name,
+      .description {
+        width: 60%;
+      }
+
+      .name {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .scotland-company-page {
+    >div,
+    >section {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+
+    .scotland-header {
+      padding-top: 0;
+      padding-bottom: 90px;
+
+      .scotland-image {
+        width: 600px;
+        opacity: 0.8;
+      }
+
+      .name,
+      .description {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .scotland-company-page {
+    >div,
+    >section {
+      margin-bottom: 45px;
+    }
+
+    .scotland-header {
+      padding-top: 40px;
+
+      .title {
+        font-size: 42px;
+      }
+
+      .sub-title {
+        font-size: 32px;
+      }
+
+      .name {
+        font-size: 80px;
+      }
+
+      .description {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .scotland-company-page {
+    .scotland-header {
+      >div {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      .title {
+        font-size: 36px;
+      }
+
+      .sub-title {
+        font-size: 28px;
+      }
+
+      .name {
+        font-size: 70px;
+      }
+
+      .description {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-sm) {
+  .scotland-company-page {
+    .scotland-header {
+      .scotland-image {
+        background-position: right bottom;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .sub-title {
+        font-size: 24px;
+      }
+
+      .name {
+        font-size: 60px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .scotland-company-page {
+    .scotland-header {
+      overflow: hidden;
+
+      .title {
+        font-size: 26px;
+      }
+
+      .sub-title {
+        font-size: 18px;
+      }
+
+      .name {
+        font-size: 52px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .scotland-company-page {
+    .scotland-header {
+
+      .scotland-image {
+        background-size: cover;
+      }
+      
+      .title {
+        font-size: 24px;
+      }
+
+      .sub-title {
+        font-size: 14px;
+      }
+
+      .name {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -12,7 +12,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ScotlandCompany() {
   return (
-    <section className="scotland-company-page">
+    <section className="page-content-wrapper scotland-company-page">
       <Flex
         className="scotland-header"
         justify="space-between"
