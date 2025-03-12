@@ -59,3 +59,173 @@
     }
   }
 }
+
+@media (max-width: variables.$point-xl) {
+  .england-company-wrapper {
+    .england-company-header {
+      background-position: left bottom;
+
+      .title-wrapper {
+        background-color: #e9c7c769;
+        padding: 30px;
+        border-radius: 30px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .england-consulting {
+    background-position: left bottom;
+    padding: 100px 0;
+    >div {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .england-company-wrapper {
+    >div {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+
+    &~.england-consulting {
+      margin-top: 70px;
+      padding: 100px 20px;
+
+      >div {
+        width: 100%;
+      }
+    }
+
+    .england-company-header {
+      background-position: left bottom;
+
+      .title-wrapper {
+        background-color: #e9c7c769;
+        padding: 30px;
+        border-radius: 30px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .england-company-wrapper {
+    >div,
+    &~.england-consulting {
+      margin-bottom: 45px;
+    }
+
+    .england-company-header {
+      padding: 40px 20px;
+
+      .title {
+        font-size: 50px;
+      }
+
+      .description {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .england-company-wrapper {
+    .england-company-header {
+      .title {
+        font-size: 44px;
+      }
+
+      .description {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-m) {
+  .england-company-wrapper {
+    .england-company-header {
+
+      .title-wrapper {
+        padding: 10px;
+      }
+
+      .title {
+        font-size: 40px;
+      }
+
+      .description {
+        font-size: 22px;
+        width: 100%;
+      }
+    }
+
+    &~.england-consulting {
+      padding: 40px 15px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .england-company-wrapper {
+    .england-company-header {
+      .title {
+        font-size: 34px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 520px) {
+  .england-company-wrapper {
+    .england-company-header {
+      .title {
+        font-size: 28px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+
+    &~.england-consulting {
+      .title {
+        font-size: 26px;
+
+        .selected-text {
+          font-size: 44px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .england-company-wrapper {
+    .england-company-header {
+      .title {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
