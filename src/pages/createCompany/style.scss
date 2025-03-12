@@ -517,3 +517,139 @@
     padding: 0;
   }
 }
+
+
+@media (max-width: variables.$point-l) {
+  .create-company-page {
+    .create-company-page-header {
+      margin-bottom: 70px;
+
+      .description {
+        width: 80%;
+      }
+    }
+
+    .create-company-forms {
+      flex-direction: column;
+
+      >div {
+        width: 100%;
+      }
+
+      .recomendation-part,
+      .traiding-mark-registration {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .create-company-page {
+    .create-company-page-header {
+      padding: 50px 20px;
+
+      .title {
+        font-size: 56px;
+      }
+
+      .description {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .create-company-page {
+    .create-company-page-header {
+      margin-bottom: 45px;
+
+      .title {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 26px;
+      }
+    }
+
+    .create-company-forms {
+      .title {
+        font-size: 36px;
+      }
+
+      .select-wrapper {
+        .ant-select {
+          max-width: 80%;
+        }
+      }
+
+      .step-label {
+        font-size: 28px;
+        margin: 40px 0;
+      }
+    }
+
+    .finish-payment-block {
+      div >p {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .create-company-page {
+    .create-company-page-header {
+      .title {
+        font-size: 42px;
+      }
+
+      .description {
+        font-size: 24px;
+      }
+    }
+
+    .create-company-forms {
+
+      .icon-component {
+        width: 30px !important;
+        height: 30px !important;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .ant-steps.ant-steps-vertical {
+        flex-direction: row;
+
+        .ant-steps-item .ant-steps-item-tail {
+          padding: 0;
+          left: 21px;
+        }
+
+        >.ant-steps-item>.ant-steps-item-container>.ant-steps-item-tail::after {
+          width: 90px;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 537px) {
+  .create-company-page {
+    .create-company-forms {
+      .checkbox-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+        >div {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

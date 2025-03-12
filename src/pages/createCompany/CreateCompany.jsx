@@ -398,7 +398,7 @@ export default function CreateCompany() {
                     </Flex>
                   </Form.Item>
                 </div>
-                <div className="main-form-wrapper border-top padding-top-delete">
+                <div className="main-form-wrapper border-top padding-top-delete traiding-mark-registration">
                   <p className="title">Реєстрація торгових знаків</p>
                   <Form.Item
                     name="traidingSelect"
