@@ -12,7 +12,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ManIslandCompany() {
   return (
-    <div className="isle-man-company">
+    <div className="page-content-wrapper isle-man-company">
       <Flex justify="space-between" className="banner-wrapper">
         <div className="man-company-wrapper">
           <Flex vertical={true}>

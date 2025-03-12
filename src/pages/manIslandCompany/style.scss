@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .isle-man-company {
-  padding: 0 70px;
-
   .banner-wrapper {
     position: relative;
     padding-bottom: 150px;
@@ -52,13 +50,12 @@
       }
     }
 
-    .vector-wrapper,
-    .man-team-image {
+    .vector-wrapper {
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../../assets/images/manIselBanner.png);
-      height: calc(100% + 190px);
-      width: 39%;
+      width: 620px;
+      height: 814px;
       position: absolute;
       bottom: 0;
       right: 50%;
@@ -69,5 +66,286 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: 1690px) {
+  .isle-man-company {
+    .banner-wrapper {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media (max-width: 1618px) {
+  .isle-man-company {
+    .banner-wrapper {
+      padding-top: 0;
+
+      .company-sub-header .title {
+        font-size: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .isle-man-company {
+    .banner-wrapper {
+      .company-sub-header {
+        .title {
+          font-size: 92px;
+        }
+
+        .count {
+          font-size: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .isle-man-company {
+    .banner-wrapper {
+      padding-top: 50px;
+
+      .vector-wrapper {
+        max-height: 100%;
+        background-size: contain;
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 50px;
+        }
+
+        .company-name {
+          font-size: 60px;
+        }
+      }
+      .company-sub-header {
+        .title {
+          font-size: 92px;
+          background-color: rgba(233, 199, 199, 0.4);
+        }
+
+        .count {
+          font-size: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .isle-man-company {
+    .banner-wrapper {
+      background-color: rgb(235 229 231 / 40%);
+      padding: 20px;
+      padding-bottom: 80px;
+      flex-direction: column-reverse;
+
+      .company-sub-header {
+        .title {
+          background: none;
+        }
+      }
+
+      .man-company-wrapper {
+        width: 100%;
+        margin-top: 30px;
+
+        .company-name {
+          margin-top: 0;
+        }
+
+        .description {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .isle-man-company {
+    >div, >section {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+
+    .banner-wrapper {
+      .company-sub-header {
+        .count {
+          font-size: 64px;
+        }
+      }
+
+      .vector-wrapper {
+        width: 100%;
+        transform: none;
+        right: 0;
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 42px;
+        }
+
+        .company-name {
+          font-size: 50px;
+        }
+
+        .description {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .isle-man-company {
+    >div, >section {
+      margin-bottom: 45px;
+    }
+
+    .banner-wrapper {
+      .company-sub-header {
+        .title {
+          font-size: 78px;
+        }
+
+        .count {
+          margin-top: 20px;
+          font-size: 54px;
+        }
+
+        .count-label {
+          font-size: 20px;
+        }
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 34px;
+        }
+
+        .company-name {
+          font-size: 44px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 534px) {
+  .isle-man-company {
+    .banner-wrapper {
+      .company-sub-header {
+        .title {
+          font-size: 68px;
+        }
+
+        .count {
+          margin-top: 20px;
+          font-size: 48px;
+        }
+
+        .count-label {
+          font-size: 18px;
+        }
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 32px;
+        }
+
+        .company-name {
+          font-size: 38px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .isle-man-company {
+    .banner-wrapper {
+      .company-sub-header {
+        .title {
+          font-size: 60px;
+        }
+
+        .count {
+          margin-top: 20px;
+          font-size: 40px;
+        }
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 28px;
+        }
+
+        .company-name {
+          font-size: 34px;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .isle-man-company {
+    .banner-wrapper {
+      .company-sub-header {
+        .title {
+          font-size: 54px;
+        }
+      }
+
+      .man-company-wrapper {
+        .sub-title {
+          font-size: 24px;
+        }
+
+        .company-name {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .isle-man-company {
+    .banner-wrapper {
+      padding-bottom: 20px;
+      
+      .company-sub-header {
+        .title {
+          font-size: 44px;
+        }
+      }
+
+      .vector-wrapper {
+        background-size: cover;
+      }
+    }
   }
 }

@@ -78,6 +78,12 @@
   }
 }
 
+@media (max-width: variables.$point-lg) {
+  .header.isla-of-man-company {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 800px) {
   .header.spain-company {
     margin-bottom: 10px;
