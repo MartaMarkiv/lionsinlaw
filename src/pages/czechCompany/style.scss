@@ -13,16 +13,18 @@
       font-size: 55px;
       font-family: "Lato-bold";
       color: #ffffff;
-      font-size: 55px;
       text-transform: uppercase;
       line-height: 150%;
       width: 65%;
       margin-bottom: 54px;
     }
 
+    .header-part {
+      font-size: 24px;
+    }
+
     .description {
       font-family: "Raleway-bold";
-      font-size: 24px;
       color: #ffffff;
       line-height: 150%;
       width: 55%;
@@ -32,7 +34,6 @@
 
     .tariff-block {
       font-family: "Lora-bold";
-      font-size: 24px;
       width: 45%;
       padding: 0 30px;
       box-sizing: border-box;
@@ -58,5 +59,210 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: 1560px) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      .title {
+        width: 75%;
+        margin-bottom: 10%;
+      }
+
+      .header-part {
+        align-items: center;
+      }
+
+      .tariff-block{
+        background-color: #ffffff;
+        padding: 27px 15px;
+        box-sizing: border-box;
+        width: 40%;
+        border-radius: 30px;
+        border-bottom-right-radius: 0;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      .title {
+        font-size: 50px;
+        width: 100%;
+      }
+
+      .tariff-block{
+        width: 50%;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .czech-company-page-wrapper {
+    >div {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+
+    .czech-company-header {
+      justify-content: space-between;
+      padding-top: 15%;
+      box-sizing: border-box;
+
+      .title {
+        font-size: 48px;
+        margin-bottom: 0;
+      }
+
+      .header-part {
+        font-size: 22px;
+
+        .description {
+          padding-right: 20px;
+        }
+
+        .tariff-block {
+          width: 50%;
+          p {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      padding-left: 0;
+
+      .title {
+        font-size: 44px;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+
+      .header-part {
+        font-size: 22px;
+        flex-direction: column;
+
+        .description {
+          padding: 0 20px;
+          box-sizing: border-box;
+          margin-bottom: 40px;
+        }
+
+        .tariff-block {
+          border-bottom-left-radius: 0;
+        }
+
+        .description,
+        .tariff-block {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .czech-company-page-wrapper {
+    >div {
+      margin-bottom: 45px;
+    }
+
+    .czech-company-header {
+      padding-top: 20%;
+
+      .title {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media (max-width: 655px) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      padding-top: 80px;
+      height: auto;
+      background-position-y: -60px;
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 70px;
+      }
+
+      .header-part {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      
+      .title {
+        font-size: 34px;
+      }
+
+      .header-part {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      
+      .title {
+        font-size: 32px;
+      }
+
+      .header-part {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .czech-company-page-wrapper {
+    .czech-company-header {
+      
+      .title {
+        font-size: 26px;
+      }
+
+      .header-part {
+        font-size: 14px;
+      }
+    }
   }
 }
