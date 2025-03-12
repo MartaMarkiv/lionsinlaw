@@ -80,3 +80,220 @@
     padding: 0;
   }
 }
+
+@media (max-width: variables.$point-lg) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        .sub-title {
+          font-size: 50px;
+        }
+
+        .title {
+          font-size: 98px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+
+      .secondary-banner {
+        width: 35%;
+      }
+      .title-wrapper {
+        width: 64%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .mountain-banner {
+        width: 40%;
+        min-width: 40%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+      
+      .tariff-info-wrapper {
+        padding-left: 20px;
+
+        .description {
+          font-size: 28px;
+        }
+
+        .show-rariff {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        background-color: rgba(233, 199, 199, 0.4);
+
+        width: 70%;
+      }
+      .secondary-banner {
+        width: 70%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        width: 100%;
+      }
+      .secondary-banner {
+        right: 0;
+      }
+
+      .mountain-banner {
+        display: none;
+      }
+
+      .tariff-info-wrapper {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .secondary-banner {
+        width: 460px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        .sub-title {
+          font-size: 44px;
+        }
+
+        .title {
+          font-size: 80px;
+          padding-right: 0;
+        }
+
+        .description {
+          font-size: 28px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .secondary-banner {
+        background-position: center;
+        width: 100%;
+      }
+      .title-wrapper {
+        .sub-title {
+          font-size: 32px;
+        }
+
+        .title {
+          font-size: 68px;
+        }
+
+        .description {
+          font-size: 22px;
+        }
+      }
+
+      .tariff-info-wrapper {
+        .description,
+        .show-rariff {
+          font-size: 22px;
+        }
+
+        .icon-component {
+          width: 35px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        .sub-title {
+          font-size: 28px;
+        }
+
+        .title {
+          font-size: 60px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+      }
+
+      .tariff-info-wrapper {
+        .description,
+        .show-rariff {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .ireland-company-wrapper {
+    .ireland-company-header {
+      .title-wrapper {
+        .sub-title {
+          font-size: 24px;
+        }
+
+        .title {
+          font-size: 48px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+
+      .tariff-info-wrapper {
+        .description,
+        .show-rariff {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
