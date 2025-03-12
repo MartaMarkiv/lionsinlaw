@@ -11,7 +11,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PolandCompany() {
   return (
-    <section className="poland-company-wrapper">
+    <section className="page-content-wrapper poland-company-wrapper">
       <section className="poland-company-header">
         <p className="title">
           Розпочніть вашу офшорну подорож з LionsInLaw в Польщі!

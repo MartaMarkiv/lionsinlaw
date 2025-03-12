@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .poland-company-wrapper {
-  padding: 0 70px;
-
   .poland-company-header {
     color: #ffffff;
     background-color: #e31c1c;
@@ -30,5 +28,145 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      background-size: 700px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      .title {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      background-size: 600px;
+      padding: 60px 40px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .poland-company-wrapper {
+    >div,
+    >section {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+    .poland-company-header {
+      box-sizing: border-box;
+
+      .title {
+        width: 100%;
+      }
+
+      .description {
+        background-color: rgb(139 74 74 / 40%);
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      background-size: 470px;
+
+      .title {
+        line-height: 100%;
+      }
+
+      .description {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      .title {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      padding-top: 30px;
+
+      .title {
+        font-size: 46px;
+      }
+
+      .description {
+        font-size: 22px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      background-size: 90%;
+
+      .title {
+        font-size: 34px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 508px) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      background-size: 100%;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-s) {
+  .poland-company-wrapper {
+    .poland-company-header {
+      padding-right: 20px;
+      padding-left: 20px;
+      .title {
+        font-size: 28px;
+      }
+    }
   }
 }
