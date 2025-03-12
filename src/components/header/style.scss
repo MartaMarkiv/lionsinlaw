@@ -79,8 +79,11 @@
 }
 
 @media (max-width: variables.$point-lg) {
-  .header.isla-of-man-company {
-    margin-bottom: 10px;
+  .header {
+    &.isla-of-man-company,
+    &.seychelles-company {
+      margin-bottom: 10px;
+    }
   }
 }
 
