@@ -43,3 +43,88 @@
     padding: 0;
   }
 }
+
+@media (max-width: variables.$point-lg) {
+  .gibraltar-company-wrapper {
+    .gibraltar-company-header {
+      .title,
+      .description {
+        background-color: #e9c7c769;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .gibraltar-company-wrapper {
+    >div {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+
+    .gibraltar-company-header {
+      padding: 50px 20px;
+      .title,
+      .description {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .gibraltar-company-wrapper {
+    .gibraltar-company-header {
+      .title {
+        font-size: 48px;
+
+        .selected-text {
+          font-size: 80px;
+        }
+      }
+
+      .description {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: variables.$point-sm) {
+  .gibraltar-company-wrapper {
+    .gibraltar-company-header {
+      .title {
+        font-size: 32px;
+
+        .selected-text {
+          font-size: 56px;
+        }
+      }
+
+      .description {
+        font-size: 22px;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .gibraltar-company-wrapper {
+    .gibraltar-company-header {
+      .title {
+        font-size: 26px;
+
+        .selected-text {
+          font-size: 48px;
+        }
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+  }
+}
