@@ -1,6 +1,6 @@
-.spain-company-page-wrapper {
-  padding: 0 70px;
+@use "../../variables";
 
+.spain-company-page-wrapper {
   .spain-company-header {
     font-family: "Inter-bold";
     background-image: url(../../assets/images/spainBanner.png);
@@ -43,5 +43,96 @@
 
   .faq-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .spain-company-page-wrapper {
+    .spain-company-header {
+      padding: 80px 60px;
+
+      .header-wrapper {
+        width: 85%;
+        z-index: 2;
+      }
+
+      .header-image {
+        background-position: center bottom;
+        width: 280px;
+        height: 480px;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .spain-company-page-wrapper {
+    .spain-company-header {
+      .header-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .spain-company-page-wrapper {
+    >div {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+    .spain-company-header {
+      padding: 60px 30px;
+      .header-wrapper {
+        .title {
+          font-size: 48px;
+        }
+
+        .description {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .spain-company-page-wrapper {
+    .spain-company-header {
+      .header-wrapper {
+        .title {
+          font-size: 34px;
+        }
+
+        .description {
+          font-size: 24px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .spain-company-page-wrapper {
+    .spain-company-header {
+      padding: 40px 15px;
+
+      .header-wrapper {
+        .title {
+          font-size: 26px;
+        }
+
+        .description {
+          font-size: 18px;
+        }
+      }
+
+      .header-image {
+        width: 170px;
+        height: 270px;
+      }
+    }
   }
 }

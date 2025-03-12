@@ -10,7 +10,7 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function SpainCompany() {
   return (
-    <section className="spain-company-page-wrapper">
+    <section className="page-content-wrapper spain-company-page-wrapper">
       <Flex align="center" justify="flex-end" className="spain-company-header">
         <div className="header-wrapper">
           <p className="title">
