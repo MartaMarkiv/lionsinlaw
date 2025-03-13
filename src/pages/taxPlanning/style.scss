@@ -1,8 +1,6 @@
 @use "../../variables";
 
 .tax-planning-page {
-  padding: 0 70px;
-
   .tax-planning-page-header {
     background-image: url(../../assets/images/taxesPlanBanner.png);
     background-repeat: no-repeat;
@@ -134,9 +132,9 @@
 
     .grid-wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       grid-auto-rows: 1fr;
-      gap: 30px;
+      gap: 15px;
       width: 50%;
 
       .cell-header {
@@ -216,6 +214,7 @@
     font-family: "Lato-bold";
     font-size: 42px;
     text-transform: uppercase;
+    padding: 0 20px;
   }
 
   .description {
@@ -234,5 +233,566 @@
 
   img {
     max-width: 100%;
+  }
+}
+
+
+@media (max-width: 1655px) {
+  .tax-planning-page {
+    .tax-planning-grid {
+      .grid-wrapper {
+        width: 55%;
+      }
+
+      .image-wrapper-block {
+        width: 43%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1518px) {
+  .tax-planning-page {
+    .tax-planning-grid {
+      .grid-wrapper {
+        .cell-header {
+          font-size: 28px;
+
+          .icon-component {
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+          }
+        }
+
+        >div p {
+          font-size: 22px;
+        }
+      }
+
+      .image-wrapper-block {
+        .main-title {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xl) {
+  .tax-planning-page {
+    .tax-planning-grid {
+      flex-direction: column;
+
+      .grid-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        >div {
+          position: static;
+          width: 45%;
+        }
+
+        .transaction-block,
+        .reporting-wrapper {
+          top: 0;
+        }
+      }
+
+      .image-wrapper-block {
+        width: 100%;
+
+        .description {
+          margin: 50px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-lg) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      position: relative;
+      .info-part {
+        width: 100%;
+      }
+      .description {
+        width: 80%;
+      }
+
+      .secondary-description {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+      }
+    }
+
+    .more-block {
+      flex-direction: column;
+
+      .info-block {
+        padding-right: 0;
+        width: 100%;
+
+        .title {
+          margin-bottom: 50px;
+        }
+      }
+
+      .image-wrapper {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .grow-business {
+
+    .description {
+      margin-top: 15px;
+    }
+
+    .items-wrapper {
+      width: 50%;
+      margin-top: 40px;
+
+      >div {
+        margin-right: 10px;
+
+        .icon-component {
+          margin-bottom: 5px;
+        }
+
+        p {
+          background-color: #6f363cc2;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1141px) {
+  .tax-planning-page {
+    .tax-planning-grid {
+      .grid-wrapper {
+        justify-content: space-between;
+        >div {
+          position: static;
+          width: calc(47% - 30px);
+        }
+      }
+    }
+  }
+}
+@media (max-width: variables.$point-l) {
+  .tax-planning-page {
+    >div {
+      margin-top: 0 !important;
+      margin-bottom: 70px !important;
+    }
+
+    .tax-planning-page-header {
+      .title {
+        font-size: 115px;
+      }
+      
+      .description {
+        font-size: 44px;
+        margin-top: 50px;
+      }
+
+      .secondary-description {
+        width: 30%;
+      }
+    }
+
+    .taxes-planning-why-block {
+      padding: 0;
+    }
+  }
+
+  .grow-business,
+  .partnering-block {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+
+  .grow-business {
+    .description {
+      width: 70%;
+    }
+
+    .items-wrapper {
+      width: 70%;
+    }
+  }
+
+  .partnering-block {
+    .description {
+      margin-top: 60px;
+      width: 60%;
+    }
+
+    .link {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+@media (max-width: 815px) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      padding-bottom: 0;
+
+      .title {
+        font-size: 98px;
+        line-height: 100%;
+      }
+
+      .description {
+        font-size: 42px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 120px;
+      }
+
+      .secondary-description {
+        font-size: 22px;
+        bottom: 0;
+      }
+    }
+
+    .taxes-planning-why-block {
+      >.title {
+        font-size: 38px;
+      }
+    }
+
+    .more-block .title {
+      font-size: 38px;
+    }
+
+    .taxes-planning-why-block {
+
+      .description {
+        margin-bottom: 40px;
+      }
+
+      .item-block {
+        .icon-component {
+          width: 55px;
+          height: 55px;
+        }
+
+        .title {
+          font-size: 22px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .grow-business {
+    padding: 30px;
+
+    .description,
+    .items-wrapper {
+      width: 100%;
+    }
+
+    .items-wrapper {
+      >div .icon-component {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .grow-business,
+  .partnering-block {
+    .title {
+      font-size: 38px;
+    }
+  }
+
+  .partnering-block {
+    .description {
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .tax-planning-page {
+    >div {
+      margin-bottom: 45px !important;
+    }
+
+    .tax-planning-grid {
+      .grid-wrapper >div {
+        width: 100%;
+      }
+    }
+
+    .taxes-planning-why-block {
+      >div {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .item-block {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  .grow-business,
+  .partnering-block {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      padding-bottom: 0;
+
+      .title {
+        font-size: 70px;
+      }
+
+      .description {
+        font-size: 34px;
+        line-height: 100%;
+      }
+
+      .secondary-description {
+        font-size: 20px;
+        width: 40%;
+      }
+    }
+
+    .taxes-planning-why-block {
+      >.title {
+        font-size: 32px;
+      }
+    }
+
+    .more-block .title {
+      font-size: 32px;
+    }
+
+    .taxes-planning-why-block {
+      .item-block {
+        .icon-component {
+          width: 50px;
+          height: 50px;
+        }
+
+        .title {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .grow-business {
+    padding: 20px;
+
+    .items-wrapper {
+      >div .icon-component {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .grow-business,
+  .partnering-block {
+    .title {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-sm) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      padding-bottom: 0;
+
+      .title {
+        font-size: 68px;
+      }
+
+      .description {
+        font-size: 26px;
+      }
+
+      .secondary-description {
+        font-size: 16px;
+        width: 50%;
+      }
+    }
+
+    .taxes-planning-why-block {
+      >.title {
+        font-size: 26px;
+      }
+    }
+
+    .taxes-planning-why-block {
+      .item-block {
+        .title {
+          font-size: 20px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .more-block .info-block {
+      .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .title {
+        font-size: 26px;
+      }
+    }
+
+    .tax-planning-grid {
+      .image-wrapper-block {
+        .main-title {
+          font-size: 26px;
+        }
+
+        .description {
+          font-size: 18px;
+          margin: 20px 0;
+        }
+      }
+
+      .grid-wrapper {
+
+        .cell-header {
+          font-size: 24px;
+
+          .icon-component {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+          }
+        }
+
+        >div p {
+          font-size: 16px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .grow-business,
+  .partnering-block {
+    .title {
+      font-size: 26px;
+    }
+  }
+
+  .grow-business .description {
+    font-size: 18px;
+  }
+
+  .partnering-block {
+    .description {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .link {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      flex-direction: column;
+
+      .info-part {
+        margin-bottom: 20px;
+
+        .description {
+          font-size: 24px;
+          margin-bottom: 50px;
+        }
+      }
+
+      .secondary-description {
+        position: static;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .tax-planning-page {
+    .tax-planning-page-header {
+      .title {
+        font-size: 56px;
+      }
+
+      .secondary-description {
+        width: 70%;
+      }
+    }
+
+    .taxes-planning-why-block {
+      .description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      >div .item-block {
+        width: 100%;
+
+        .description {
+          text-align: center;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .grow-business {
+    .items-wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      > div {
+        width: 45%;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }

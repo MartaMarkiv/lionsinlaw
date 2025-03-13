@@ -13,8 +13,6 @@ export default function Contacts() {
   const [form] = Form.useForm();
 
   const changePhoneNumber = (value, country) => {
-    console.log(value);
-    console.log(country);
     setPhone(value);
   };
   return (
@@ -24,21 +22,19 @@ export default function Contacts() {
         justify="center"
         className="page-content-wrapper contacts-header-wrapper"
       >
-        <Flex align="center" className="contacts-header">
-          <div>
+        <Flex align="flex-start" vertical={true} className="contacts-header">
             <div className="extra-big">Зв'язатися з</div>
+            <div className="company-name">LionsInLaw</div>
             <div className="contacts-description">
               Заплануйте консультацію або отримайте додаткову інформацію від
               наших експертів щодо корпоративних послуг і офшорних рішень.
             </div>
-          </div>
-          <div className="company-name">LionsInLaw</div>
         </Flex>
       </Flex>
       <Flex
         align="start"
         justify="space-between"
-        className="law-contacts-wrapper"
+        className="page-content-wrapper law-contacts-wrapper"
       >
         <div>
           <p className="title">

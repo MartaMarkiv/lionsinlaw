@@ -10,7 +10,7 @@ import Icon from "../../components/iconComponent/Icon";
 export default function TaxPlanning() {
   return (
     <>
-      <section className="tax-planning-page">
+      <section className="page-content-wrapper tax-planning-page">
         <Flex className="tax-planning-page-header">
           <div className="info-part">
             <p className="title">LionsInLaw</p>
@@ -143,7 +143,7 @@ export default function TaxPlanning() {
           </div>
           <Flex vertical={true} className="image-wrapper-block">
             <p className="main-title">
-              Рішення для стратегічного податкового плануванняі{" "}
+              Рішення для стратегічного податкового планування{" "}
               <span className="red-text">з LionsInLaw</span>
             </p>
             <p className="description">

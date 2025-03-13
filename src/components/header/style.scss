@@ -78,6 +78,12 @@
   }
 }
 
+@media (max-width: variables.$point-l) {
+  .header.tax-planning {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: variables.$point-lg) {
   .header {
     &.isla-of-man-company,

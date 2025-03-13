@@ -9,38 +9,32 @@
     padding: 0 27px;
     position: relative;
 
-    > div {
-      width: 50%;
-    }
-
     .extra-big {
       font-family: "Lato-bold";
       font-size: 112px;
       line-height: 120%;
       margin-top: 70px;
-      margin-bottom: 50px;
     }
 
     .contacts-description {
-      font-size: "Inter";
+      font-family: "Inter";
       font-size: 24px;
       line-height: 120%;
       margin-bottom: 250px;
-      width: 70%;
+      width: 40%;
     }
 
     .company-name {
       font-family: "Lora-bold";
       font-size: 105px;
       line-height: 150%;
-      margin: 155px 0 300px 70px;
+      align-self: flex-end;
     }
   }
 }
 
 .law-contacts-wrapper {
   margin-top: 120px;
-  padding: 0 70px;
 
   .title {
     font-family: "Lato";
@@ -196,6 +190,200 @@
           border-color: variables.$dark-red;
         }
       }
+    }
+  }
+}
+
+@media (max-width: variables.$point-l) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      .extra-big {
+        font-size: 98px;
+      }
+      .company-name {
+        font-size: 88px;
+      }
+      .contacts-description {
+        width: 70%;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    margin-top: 70px;
+    flex-direction: column;
+
+    >div {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-size: 78px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-md) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      .extra-big {
+        font-size: 72px;
+      }
+      .company-name {
+        font-size: 68px;
+      }
+      .contacts-description {
+        width: 100%;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    margin-top: 45px;
+
+    .title {
+      font-size: 64px;
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      // .extra-big {
+      //   font-size: 72px;
+      // }
+      // .company-name {
+      //   font-size: 68px;
+      // }
+      .contacts-description {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    .title {
+      font-size: 56px;
+    }
+    .phone-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      .extra-big {
+        font-size: 64px;
+      }
+      .company-name {
+        font-size: 60px;
+      }
+      .contacts-description {
+        font-size: 18px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    .title {
+      font-size: 48px;
+    }
+
+    .description {
+      font-size: 20px;
+    }
+
+    .phone-wrapper {
+      font-size: 18px;
+    }
+
+    .contact-us-form {
+      .form-item-wrapper {
+        flex-direction: column;
+
+        .ant-form-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-s) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      .extra-big {
+        font-size: 56px;
+      }
+      .company-name {
+        font-size: 52px;
+      }
+      .contacts-description {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    .title {
+      font-size: 32px;
+    }
+
+    .description {
+      font-size: 18px;
+    }
+
+    .phone-wrapper {
+      font-size: 16px;
+
+      .icon-component {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-xs) {
+  .contacts-header-wrapper {
+    .contacts-header {
+      padding: 0 15px;
+
+      .extra-big {
+        font-size: 52px;
+      }
+      .company-name {
+        font-size: 46px;
+      }
+      .contacts-description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .law-contacts-wrapper {
+    margin-top: 20px;
+
+    >div {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .phone-wrapper {
+      font-size: 14px;
     }
   }
 }
