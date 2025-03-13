@@ -25,10 +25,11 @@ export default function CardBlock({ typeBlock }) {
       <Flex
         align="center"
         justify="space-between"
-        className="card-block-info-wrapper"
+        className="card-block-info-wrapper owner-info-wrapper"
       >
         <Form.Item
           name="personalNumber"
+          className="owner-info"
           label={typeBlock === "idCard" ? "Ким видано" : "Ім'я власника"}
         >
           <Input
@@ -36,11 +37,12 @@ export default function CardBlock({ typeBlock }) {
             placeholder={typeBlock === "idCard" ? "6879" : "Іван Харітонович"}
           />
         </Form.Item>
-        <Form.Item name="blockDate" label="Дата">
+        <Form.Item name="blockDate" label="Дата" className="owner-sub-info">
           <Input type="date" className="full-input" placeholder="ММ/YYYY" />
         </Form.Item>
         <Form.Item
           name="csvSeries"
+          className="owner-sub-info"
           label={typeBlock === "idCard" ? "Серія" : "CSV"}
         >
           <Input

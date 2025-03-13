@@ -1,6 +1,9 @@
 @use "../../variables";
 
 .create-company-page {
+  .text-size {
+    font-size: 24px;
+  }
   .create-company-page-header {
     background-image: url(../../assets/images/companyRegistration.png);
     background-repeat: no-repeat;
@@ -102,7 +105,7 @@
 
           .ant-steps-icon {
             font-family: "Roboto-medium";
-            font-size: 24px;
+            @extend .text-size;
           }
         }
 
@@ -137,10 +140,10 @@
 
     .main-form-wrapper {
       font-family: "Lato";
-      font-size: 24px;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 25%);
       padding: 40px 20px;
       box-sizing: border-box;
+      @extend .text-size;
     }
 
     .settings-part {
@@ -182,11 +185,11 @@
     }
     .secondary-form-wrapper {
       font-family: "Lato";
-      font-size: 24px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
       padding: 40px 20px;
       box-sizing: border-box;
       position: relative;
+      @extend .text-size;
 
       &.personal-info {
         padding-bottom: 6px;
@@ -239,8 +242,8 @@
 
       input,
       button {
-        font-size: 24px;
         padding: 16px 18px;
+        @extend .text-size;
       }
 
       button {
@@ -262,13 +265,13 @@
 
     .next-step-button {
       background-color: variables.$button-bg;
-      font-size: 24px;
       color: #ffffff;
       border-radius: 16px;
       padding: 16px;
       width: 100%;
       height: auto;
       margin-top: 119px;
+      @extend .text-size;
 
       &:hover {
         background-color: variables.$button-bg;
@@ -279,10 +282,10 @@
     .form-label,
     .ant-form-item-label {
       font-family: "Lora-bold";
-      font-size: 24px;
-
+      @extend .text-size;
+      
       label {
-        font-size: 24px;
+        @extend .text-size;
       }
     }
 
@@ -303,20 +306,20 @@
 
     .phone-number-input {
       .form-control {
-        font-size: 24px;
         width: 100%;
         border-radius: 0;
         border: 1px solid variables.$light-grey;
         padding-top: 18px;
         padding-bottom: 18px;
         height: auto;
+        @extend .text-size;
       }
     }
 
     .checkbox-wrapper {
-      font-size: 24px;
       padding-bottom: 20px;
       border-bottom: 1px solid variables.$light-grey;
+      @extend .text-size;
 
       &.not-bordered {
         border: none;
@@ -356,7 +359,7 @@
         }
 
         .ant-checkbox-label {
-          font-size: 24px;
+          @extend .text-size;
         }
       }
     }
@@ -364,9 +367,9 @@
     .full-input {
       font-family: "Lora";
       padding: 16px 18px;
-      font-size: 24px;
       border: 1px solid variables.$light-grey;
       border-radius: 0;
+      @extend .text-size;
 
       &.red-input {
         color: variables.$red-color;
@@ -386,8 +389,8 @@
 
       &::placeholder {
         font-family: "Lora";
-        font-size: 24px;
         color: #000000;
+        @extend .text-size;
       }
     }
 
@@ -409,8 +412,8 @@
     }
 
     .ant-select {
-      font-size: 24px;
       height: auto;
+      @extend .text-size;
 
       &.border-bottom-input {
         .ant-select-selector {
@@ -446,7 +449,7 @@
           border: none;
 
           .ant-select-selection-item {
-            font-size: 24px;
+            @extend .text-size;
           }
         }
       }
@@ -487,15 +490,14 @@
       font-family: "Lora-medium";
       font-size: 48px;
       text-align: center;
-      // width: 50%;
 
       button {
         background-color: variables.$dark-red;
-        font-size: 24px;
         height: auto;
         color: #ffffff;
         padding: 16px 150px;
         margin-top: 40px;
+        @extend .text-size;
 
         &:hover {
           background-color: variables.$dark-red !important;
@@ -532,6 +534,24 @@
     .create-company-forms {
       flex-direction: column;
 
+      .bank-info-form {
+        margin-bottom: 50px;
+      }
+
+      .card-block-wrapper {
+        .owner-info-wrapper {
+          flex-wrap: wrap;
+
+          .owner-info {
+            width: 100%;
+          }
+
+          .owner-sub-info {
+            width: 45%;
+          }
+        }
+      }
+
       >div {
         width: 100%;
       }
@@ -560,13 +580,60 @@
   }
 }
 
+@media (max-width: 650px) {
+  .create-company-page {
+    .create-company-forms {
+
+      .recomendation-part .title,
+      .order-details .title,
+      .title {
+        font-size: 34px;
+        margin-bottom: 50px;
+      }
+
+      .text-size {
+        font-size: 22px;
+      }
+
+      .select-wrapper {
+        .ant-select {
+          max-width: 80%;
+        }
+      }
+
+      .country-select button {
+        font-size: 22px !important;
+      }
+
+      .icon-component {
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$point-m) {
+  .create-company-page {
+    .create-company-forms {
+      .personal-card-info {
+        flex-direction: column;
+
+        >div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: variables.$point-sm) {
   .create-company-page {
     .create-company-page-header {
       margin-bottom: 45px;
 
       .title {
-        font-size: 48px;
+        font-size: 32px;
       }
 
       .description {
@@ -576,18 +643,20 @@
 
     .create-company-forms {
       .title {
-        font-size: 36px;
-      }
-
-      .select-wrapper {
-        .ant-select {
-          max-width: 80%;
-        }
+        font-size: 34px;
       }
 
       .step-label {
         font-size: 28px;
         margin: 40px 0;
+      }
+
+      .text-size {
+        font-size: 20px;
+      }
+
+      .country-select button {
+        font-size: 20px !important;
       }
     }
 
@@ -603,7 +672,7 @@
   .create-company-page {
     .create-company-page-header {
       .title {
-        font-size: 42px;
+        font-size: 38px;
       }
 
       .description {
@@ -619,7 +688,7 @@
       }
 
       .title {
-        font-size: 32px;
+        font-size: 28px;
       }
 
       .ant-steps.ant-steps-vertical {
@@ -641,6 +710,19 @@
 
 @media (max-width: 537px) {
   .create-company-page {
+    .finish-payment-block div {
+      > p {
+        font-size: 32px;
+      }
+
+      button {
+        padding: 12px 50px;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+
     .create-company-forms {
       .checkbox-wrapper {
         flex-direction: column;
@@ -649,6 +731,22 @@
         >div {
           margin-top: 10px;
         }
+      }
+
+      .card-block-wrapper {
+        .owner-info-wrapper {
+          .owner-sub-info {
+            width: 100%;
+          }
+        }
+      }
+
+      .text-size {
+        font-size: 18px;
+      }
+
+      .country-select button {
+        font-size: 18px !important;
       }
     }
   }

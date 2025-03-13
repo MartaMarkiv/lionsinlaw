@@ -334,7 +334,7 @@ export default function CreateCompany() {
                     rules={[
                       {
                         required: true,
-                      },
+                      }
                     ]}
                   >
                     <Input
@@ -467,10 +467,11 @@ export default function CreateCompany() {
                     <span>Контактна Інформація</span>
                     <Icon name="ok-red" />
                   </Flex>
-                  <Flex justify="space-between" className="form-values-divider">
+                  <Flex justify="space-between" className="form-values-divider personal-card-info">
                     <Form.Item
                       label="Ім'я власника"
                       name="userNameValue"
+
                       rules={[
                         {
                           required: true,
@@ -499,7 +500,7 @@ export default function CreateCompany() {
                       />
                     </Form.Item>
                   </Flex>
-                  <Flex justify="space-between" className="form-values-divider">
+                  <Flex justify="space-between" className="form-values-divider personal-card-info">
                     <Form.Item
                       label="По батькові"
                       name="secondaryNameValue"
@@ -593,7 +594,7 @@ export default function CreateCompany() {
           )}
 
           {currentStep === 2 && (
-            <Form layout="vertical" name="bankDetails">
+            <Form layout="vertical" name="bankDetails" className="bank-info-form">
               <div className="main-form-wrapper border-top padding-top-delete">
                 <p className="title left-align">банківські реквізити</p>
                 <CardBlock typeBlock="creditCard" />
