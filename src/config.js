@@ -191,4 +191,38 @@ export default {
     belgium: "Бельгії",
     seychelles: "Сейшели",
   },
+  regionsList: [
+    {
+      name: "Canada",
+      flagName: "canada",
+    },
+    {
+      name: "Ukraine",
+      flagName: "ua",
+    },
+    {
+      name: "Brazil",
+      flagName: "brazil",
+    },
+    {
+      name: "United Kingdom",
+      flagName: "uk",
+    },
+    {
+      name: "Germany",
+      flagName: "germany",
+    },
+    {
+      name: "Mexico",
+      flagName: "mexico",
+    },
+    {
+      name: "Portugal",
+      flagName: "portugal",
+    },
+    {
+      name: "Spain",
+      flagName: "spain",
+    },
+  ]
 };

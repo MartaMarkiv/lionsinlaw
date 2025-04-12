@@ -13,6 +13,7 @@ import {
   PANAMA_COMPANY_ROUTE,
 } from "../../routes/routes";
 import ResponsiveMenu from "../responsiveMenu/ResponsiveMenu";
+import LanguagesList from "../languagesList/LanguagesList";
 
 export default function Header() {
   const location = useLocation();
@@ -66,7 +67,9 @@ export default function Header() {
               <Icon name="envelop" />
               <span>info@Lionsinlaw.com</span>
             </a>
-            <Button icon={<Icon name="language" />}/>
+            <Popover content={<LanguagesList />} trigger={"click"}>
+              <Button icon={<Icon name="language" />}/>
+            </Popover>
           </Flex>
         )}
       </Flex>

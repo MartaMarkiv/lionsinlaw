@@ -1,0 +1,37 @@
+@use "../../variables";
+
+.language-wrapper {
+  font-family: "Raleway";
+  border-radius: 4px;
+  min-width: 180px;
+  padding: 10px;
+}
+
+.language-btn {
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: #f7f8f9 !important;
+    color: #000000 !important;
+  }
+
+  .ant-btn-icon {
+    width: 24px;
+    height: 16px;
+  }
+
+  .icon-component {
+    margin-right: 5px;
+    height: 100%;
+  }
+}
+
+.item-title {
+  color: #616165ff;
+}
