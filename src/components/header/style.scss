@@ -72,7 +72,7 @@
 
 @media (max-width: variables.$point-xl) {
   .header.merchant-accounts {
-    >div {
+    > div {
       justify-content: space-between;
     }
   }
@@ -98,7 +98,6 @@
     margin-bottom: 10px;
   }
 }
-
 
 @media (max-width: variables.$point-md) {
   .header {

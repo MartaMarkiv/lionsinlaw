@@ -15,7 +15,7 @@
 
     .title-wrapper {
       width: 45%;
-    
+
       .title {
         font-size: 45px;
 
@@ -417,7 +417,7 @@
           left: -30%;
         }
       }
-      >div {
+      > div {
         align-items: center;
 
         .sub-description {
@@ -486,7 +486,7 @@
 @media (max-width: 843px) {
   .create-bank-account-page {
     font-size: 18px;
-    
+
     .copmany-experts {
       .title,
       .description {
@@ -514,7 +514,7 @@
         position: static;
         margin-top: 45px;
 
-        >p {
+        > p {
           width: 100%;
         }
 
@@ -542,7 +542,7 @@
       .why-lionsinlaw {
         flex-direction: column;
 
-        >div {
+        > div {
           width: 100%;
         }
 
@@ -601,7 +601,7 @@
     }
 
     .ask-bank-account-wrapper {
-      >div {
+      > div {
         padding: 35px;
       }
 
@@ -614,7 +614,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: variables.$point-md) {
@@ -718,7 +717,7 @@
 @media (max-width: variables.$point-sm) {
   .create-bank-account-page {
     .copmany-experts {
-      >div {
+      > div {
         flex-direction: column;
 
         .sub-description {
@@ -799,12 +798,11 @@
 
 @media (max-width: variables.$point-xs) {
   .create-bank-account-page {
-
     .copmany-experts .title,
     .international-business .international-business-title,
     .why-lionsinlaw-wrapper .expert-guidance-wrapper,
     .ask-bank-account-wrapper .title {
-        font-size: 24px;
+      font-size: 24px;
     }
 
     .why-lionsinlaw-wrapper {

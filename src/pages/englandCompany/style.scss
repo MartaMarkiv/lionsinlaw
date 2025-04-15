@@ -80,7 +80,7 @@
   .england-consulting {
     background-position: left bottom;
     padding: 100px 0;
-    >div {
+    > div {
       width: 80%;
     }
   }
@@ -88,16 +88,16 @@
 
 @media (max-width: variables.$point-l) {
   .england-company-wrapper {
-    >div {
+    > div {
       margin-top: 0;
       margin-bottom: 70px;
     }
 
-    &~.england-consulting {
+    & ~ .england-consulting {
       margin-top: 70px;
       padding: 100px 20px;
 
-      >div {
+      > div {
         width: 100%;
       }
     }
@@ -116,11 +116,10 @@
   }
 }
 
-
 @media (max-width: 900px) {
   .england-company-wrapper {
-    >div,
-    &~.england-consulting {
+    > div,
+    & ~ .england-consulting {
       margin-bottom: 45px;
     }
 
@@ -152,11 +151,9 @@
   }
 }
 
-
 @media (max-width: variables.$point-m) {
   .england-company-wrapper {
     .england-company-header {
-
       .title-wrapper {
         padding: 10px;
       }
@@ -171,7 +168,7 @@
       }
     }
 
-    &~.england-consulting {
+    & ~ .england-consulting {
       padding: 40px 15px;
     }
   }
@@ -191,7 +188,6 @@
   }
 }
 
-
 @media (max-width: 520px) {
   .england-company-wrapper {
     .england-company-header {
@@ -204,7 +200,7 @@
       }
     }
 
-    &~.england-consulting {
+    & ~ .england-consulting {
       .title {
         font-size: 26px;
 

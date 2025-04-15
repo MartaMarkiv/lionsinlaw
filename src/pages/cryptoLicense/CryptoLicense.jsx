@@ -23,7 +23,11 @@ export default function CryptoLicense() {
             <span>LionsInLaw</span>
             <div className="monet-wrapper" />
           </div>
-          <Flex align="center" justify="space-between" className="description-wrapper">
+          <Flex
+            align="center"
+            justify="space-between"
+            className="description-wrapper"
+          >
             <Flex
               align="center"
               justify="space-between"
@@ -59,7 +63,11 @@ export default function CryptoLicense() {
                 </div>
                 <img src={cryptoLibrary} alt="Crypto library" />
               </Flex>
-              <Flex align="center" justify="center" className="license-crypto-image-wrapper">
+              <Flex
+                align="center"
+                justify="center"
+                className="license-crypto-image-wrapper"
+              >
                 <img src={libraMonet} alt="Crypto license" />
               </Flex>
             </Flex>

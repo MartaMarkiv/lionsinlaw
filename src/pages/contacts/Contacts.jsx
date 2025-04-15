@@ -23,12 +23,12 @@ export default function Contacts() {
         className="page-content-wrapper contacts-header-wrapper"
       >
         <Flex align="flex-start" vertical={true} className="contacts-header">
-            <div className="extra-big">Зв'язатися з</div>
-            <div className="company-name">LionsInLaw</div>
-            <div className="contacts-description">
-              Заплануйте консультацію або отримайте додаткову інформацію від
-              наших експертів щодо корпоративних послуг і офшорних рішень.
-            </div>
+          <div className="extra-big">Зв'язатися з</div>
+          <div className="company-name">LionsInLaw</div>
+          <div className="contacts-description">
+            Заплануйте консультацію або отримайте додаткову інформацію від наших
+            експертів щодо корпоративних послуг і офшорних рішень.
+          </div>
         </Flex>
       </Flex>
       <Flex

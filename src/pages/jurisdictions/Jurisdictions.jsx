@@ -68,7 +68,9 @@ export default function Jurisdictions() {
           ))}
         </Select>
       </div>
-      <div className="page-content-wrapper regions-wrapper">{getRegionComponent()}</div>
+      <div className="page-content-wrapper regions-wrapper">
+        {getRegionComponent()}
+      </div>
       <ReasonsForChoice />
       <GetConsultation />
       <Faq />

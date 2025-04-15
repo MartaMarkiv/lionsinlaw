@@ -15,7 +15,11 @@ import Icon from "../iconComponent/Icon";
 export default function ResponsiveMenu({ closeClick }) {
   return (
     <div className="responsive-menu-wrapper">
-      <Flex className="menu-header-wrapper" justify="space-between" align="center">
+      <Flex
+        className="menu-header-wrapper"
+        justify="space-between"
+        align="center"
+      >
         <p>Послуги</p>
         <Button icon={<Icon name="close" />} onClick={closeClick} />
       </Flex>

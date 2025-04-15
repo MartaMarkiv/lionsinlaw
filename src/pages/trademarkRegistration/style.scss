@@ -1,7 +1,6 @@
 @use "../../variables";
 
 .trademark-registration-page {
-
   .trademark-registration-header {
     position: relative;
     padding-bottom: 57px;
@@ -264,7 +263,6 @@
   }
 }
 
-
 @media (max-width: variables.$point-xl) {
   .trademark-registration-page {
     .choose-trademarks {
@@ -329,7 +327,7 @@
     }
 
     .trademark-experiance {
-      .info-wrapper{
+      .info-wrapper {
         padding-right: 0;
         .experiance-info-wrapper {
           width: 50%;
@@ -372,7 +370,7 @@
 
 @media (max-width: variables.$point-md) {
   .trademark-registration-page {
-    >div {
+    > div {
       margin: 0 !important;
       margin-bottom: 45px !important;
     }
@@ -381,7 +379,7 @@
       flex-direction: column;
       padding-bottom: 0;
 
-      >div {
+      > div {
         width: 100%;
       }
 
@@ -401,7 +399,7 @@
         .partners-wrapper {
           margin-top: 40px;
 
-          >div {
+          > div {
             flex-wrap: wrap;
             justify-content: center;
           }
@@ -560,7 +558,6 @@
 
     .trademark-registration-header {
       .title-wrapper {
-
         .title {
           font-size: 76px;
         }
@@ -576,7 +573,7 @@
             font-size: 24px;
           }
 
-          >div {
+          > div {
             justify-content: flex-start;
           }
 
@@ -609,7 +606,7 @@
         }
       }
     }
-  } 
+  }
 }
 
 @media (max-width: 460px) {

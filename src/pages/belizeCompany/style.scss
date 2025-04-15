@@ -92,7 +92,6 @@
   }
 }
 
-
 @media (max-width: variables.$point-xl) {
   .belize-company-page-wrapper {
     .belize-company-header {
@@ -149,7 +148,7 @@
 
 @media (max-width: variables.$point-md) {
   .belize-company-page-wrapper {
-    >div {
+    > div {
       margin-top: 0;
       margin-bottom: 70px;
     }
@@ -175,7 +174,7 @@
 
 @media (max-width: variables.$point-sm) {
   .belize-company-page-wrapper {
-    >div {
+    > div {
       margin-bottom: 45px;
     }
 

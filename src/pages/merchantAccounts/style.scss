@@ -227,7 +227,7 @@
     .spec-solutions {
       padding-bottom: 0;
 
-      >div {
+      > div {
         width: 70%;
 
         &.image-wrapper {
@@ -239,7 +239,7 @@
     .empowerment-wrapper {
       padding: 30px;
 
-      >div {
+      > div {
         width: 70%;
 
         .description {
@@ -320,7 +320,7 @@
         }
       }
 
-      >div.image-wrapper {
+      > div.image-wrapper {
         display: none;
       }
     }
@@ -329,7 +329,6 @@
 
 @media (max-width: variables.$point-md) {
   .merchant-accounts-page {
-
     .merchant-accounts-header {
       .title {
         font-size: 78px;
@@ -341,7 +340,7 @@
       flex-direction: column;
       margin-bottom: 45px;
 
-      >div {
+      > div {
         margin-bottom: 20px;
 
         &.description-block {
@@ -389,13 +388,13 @@
     }
 
     .choose-merchant-account .title-block,
-    .empowerment-wrapper >div {
+    .empowerment-wrapper > div {
       .title {
         font-size: 32px;
       }
     }
-    
-    .empowerment-wrapper >div {
+
+    .empowerment-wrapper > div {
       width: 100%;
 
       .description {
@@ -463,13 +462,13 @@
     }
 
     .choose-merchant-account .title-block,
-    .empowerment-wrapper >div {
+    .empowerment-wrapper > div {
       .title {
         font-size: 24px;
       }
     }
-    
-    .empowerment-wrapper >div {
+
+    .empowerment-wrapper > div {
       width: 100%;
 
       .description {

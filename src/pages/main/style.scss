@@ -763,10 +763,10 @@
 
 @media (max-width: variables.$point-m) {
   .our-services {
-    >.title {
+    > .title {
       font-size: 32px;
     }
-    >.description {
+    > .description {
       font-size: 18px;
     }
 
@@ -799,7 +799,7 @@
       margin-bottom: 20px;
     }
 
-    >div {
+    > div {
       .image-wrapper {
         margin-top: 0;
       }
@@ -954,11 +954,11 @@
   .our-services {
     padding: 0 20px;
 
-    >.title {
+    > .title {
       font-size: 24px;
     }
 
-    >.description {
+    > .description {
       font-size: 12px;
     }
 
@@ -1067,7 +1067,7 @@
 
     .main-sub-part.registration {
       .name-law {
-        font-size: 54px
+        font-size: 54px;
       }
     }
 
@@ -1113,7 +1113,7 @@
   .main-section {
     .main-sub-part.registration {
       .name-law {
-        font-size: 48px
+        font-size: 48px;
       }
     }
   }

@@ -18,8 +18,10 @@ export default function BankAccounts() {
         className="bank-account-header"
       >
         <div className="title-wrapper">
-          <p className="title"><span className="selected-text">LionsInLaw</span> Ваш надійний партнер
-          у створенні міжнародної компанії</p>
+          <p className="title">
+            <span className="selected-text">LionsInLaw</span> Ваш надійний
+            партнер у створенні міжнародної компанії
+          </p>
           <p className="description">
             Експертні послуги з реєстрації компаній та відкриття банківських
             рахунків по всьому світу
@@ -71,7 +73,7 @@ export default function BankAccounts() {
           </p>
         </Flex>
         <div className="experts-image">
-          <img src={lawMember} alt="LionsInLaw member" className="men-image"/>
+          <img src={lawMember} alt="LionsInLaw member" className="men-image" />
           <img src={lawLady} alt="Law lady" className="law-lady-image" />
         </div>
       </div>

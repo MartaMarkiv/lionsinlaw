@@ -1,5 +1,6 @@
 import { Flex, Switch, Button, Carousel } from "antd";
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import FlagsContainer from "../../components/flagsContainer/FlagsContainer";
 import Icon from "../../components/iconComponent/Icon";
@@ -31,6 +32,8 @@ export default function Main() {
     return countSlide;
   };
 
+  const {t} = useTranslation();
+
   return (
     <>
       <div className="main-section">
@@ -38,7 +41,9 @@ export default function Main() {
           <div className="info-wrapper main-sub-part">
             <div className="main-background" />
             <div className="main-title" style={{ textTransform: "uppercase" }}>
-              Глобальні корпоративні послуги
+              {
+                t("global_corporate_services")
+              }
             </div>
             <div className="description">
               Комплексні корпоративні послуги по всьому світу: реєстрація

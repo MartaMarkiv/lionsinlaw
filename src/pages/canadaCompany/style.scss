@@ -254,7 +254,7 @@ $red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
 
 @media (max-width: 900px) {
   .canada-company-page {
-    >div {
+    > div {
       margin-top: 0 !important;
       margin-bottom: 70px !important;
     }
@@ -327,7 +327,7 @@ $red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
         flex-wrap: wrap;
         width: 100%;
 
-        .coaching-item{
+        .coaching-item {
           width: 48%;
         }
       }
@@ -337,7 +337,7 @@ $red-gradient: linear-gradient(90deg, #e41616 0%, #7e0c0c 100%);
 
 @media (max-width: 500px) {
   .canada-company-page {
-    >div {
+    > div {
       margin-bottom: 45px !important;
     }
 

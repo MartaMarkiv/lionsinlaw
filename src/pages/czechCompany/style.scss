@@ -74,7 +74,7 @@
         align-items: center;
       }
 
-      .tariff-block{
+      .tariff-block {
         background-color: #ffffff;
         padding: 27px 15px;
         box-sizing: border-box;
@@ -97,7 +97,7 @@
         width: 100%;
       }
 
-      .tariff-block{
+      .tariff-block {
         width: 50%;
         p {
           font-size: 24px;
@@ -109,7 +109,7 @@
 
 @media (max-width: variables.$point-l) {
   .czech-company-page-wrapper {
-    >div {
+    > div {
       margin-top: 0;
       margin-bottom: 70px;
     }
@@ -178,7 +178,7 @@
 
 @media (max-width: variables.$point-md) {
   .czech-company-page-wrapper {
-    >div {
+    > div {
       margin-bottom: 45px;
     }
 
@@ -214,7 +214,6 @@
 @media (max-width: variables.$point-sm) {
   .czech-company-page-wrapper {
     .czech-company-header {
-      
       .title {
         font-size: 34px;
       }
@@ -229,7 +228,6 @@
 @media (max-width: 550px) {
   .czech-company-page-wrapper {
     .czech-company-header {
-      
       .title {
         font-size: 32px;
       }
@@ -244,7 +242,6 @@
 @media (max-width: 470px) {
   .czech-company-page-wrapper {
     .czech-company-header {
-      
       .title {
         font-size: 28px;
       }
@@ -255,7 +252,6 @@
 @media (max-width: variables.$point-s) {
   .czech-company-page-wrapper {
     .czech-company-header {
-      
       .title {
         font-size: 26px;
       }

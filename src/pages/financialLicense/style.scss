@@ -97,7 +97,6 @@
 @media (max-width: 1154px) {
   .financial-license-page-wrapper {
     .banner-wrapper {
-
       .title {
         font-size: 168px;
       }
@@ -147,7 +146,7 @@
 
 @media (max-width: 850px) {
   .financial-license-page-wrapper {
-    >div {
+    > div {
       margin: 0 !important;
       margin-bottom: 70px !important;
     }
@@ -218,7 +217,6 @@
     }
   }
 }
-
 
 @media (max-width: variables.$point-m) {
   .financial-license-page-wrapper {

@@ -22,7 +22,11 @@ export default function CanadaCompany() {
           </p>
         </div>
       </div>
-      <Flex className="page-content-wrapper theory-practice-wrapper" justify="space-between" align="flex-start">
+      <Flex
+        className="page-content-wrapper theory-practice-wrapper"
+        justify="space-between"
+        align="flex-start"
+      >
         <div className="image-wrapper">
           <img src={canadaCastle} alt="Canada castle" />
           <div className="shadow" />

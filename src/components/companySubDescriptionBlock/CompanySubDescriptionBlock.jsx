@@ -8,7 +8,11 @@ export default function CompanySubDescriptionBlock({
   hasShadow = true,
 }) {
   return (
-    <Flex className="company-sub-description-block" justify="space-between" align="flex-start">
+    <Flex
+      className="company-sub-description-block"
+      justify="space-between"
+      align="flex-start"
+    >
       <Flex vertical={true}>
         {title}
         <p className="description">{description}</p>

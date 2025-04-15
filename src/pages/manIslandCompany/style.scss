@@ -170,7 +170,8 @@
 
 @media (max-width: variables.$point-md) {
   .isle-man-company {
-    >div, >section {
+    > div,
+    > section {
       margin-top: 0;
       margin-bottom: 70px;
     }
@@ -207,7 +208,8 @@
 
 @media (max-width: variables.$point-m) {
   .isle-man-company {
-    >div, >section {
+    > div,
+    > section {
       margin-bottom: 45px;
     }
 
@@ -336,7 +338,7 @@
   .isle-man-company {
     .banner-wrapper {
       padding-bottom: 20px;
-      
+
       .company-sub-header {
         .title {
           font-size: 44px;

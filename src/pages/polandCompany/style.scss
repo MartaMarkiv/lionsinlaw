@@ -61,8 +61,8 @@
 
 @media (max-width: variables.$point-l) {
   .poland-company-wrapper {
-    >div,
-    >section {
+    > div,
+    > section {
       margin-top: 0;
       margin-bottom: 70px;
     }
@@ -157,7 +157,6 @@
     }
   }
 }
-
 
 @media (max-width: variables.$point-s) {
   .poland-company-wrapper {

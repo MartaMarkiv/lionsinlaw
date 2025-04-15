@@ -102,7 +102,7 @@
     .time-block {
       font-size: 34px;
     }
-    
+
     .tariff-wrapper {
       padding: 20px;
       font-size: 24px;
@@ -121,7 +121,7 @@
 }
 
 @media (max-width: variables.$point-l) {
-  .consulting-offshore-comp-wrapper >div {
+  .consulting-offshore-comp-wrapper > div {
     flex-wrap: wrap;
 
     .tariff-wrapper {
@@ -141,7 +141,7 @@
 
 @media (max-width: variables.$point-md) {
   .consulting-offshore-comp-wrapper {
-    >div {
+    > div {
       .tariff-wrapper,
       .time-block-wrapper {
         width: 100%;
@@ -165,7 +165,7 @@
       font-size: 28px;
       padding: 15px;
 
-      >div {
+      > div {
         margin-top: 25px;
       }
 
@@ -175,7 +175,7 @@
       }
     }
 
-    >div {
+    > div {
       .register-company-wrapper {
         .title {
           font-size: 56px;
@@ -255,7 +255,6 @@
   }
 }
 
-
 @media (max-width: variables.$point-s) {
   .consulting-offshore-comp-wrapper {
     p.header-block {
@@ -284,7 +283,7 @@
       font-size: 14px;
     }
 
-    >div .register-company-wrapper {
+    > div .register-company-wrapper {
       .title {
         font-size: 48px;
       }

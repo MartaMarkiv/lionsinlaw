@@ -133,7 +133,7 @@
   .belgium-consultation-wrapper {
     margin-top: 120px;
 
-    >div {
+    > div {
       justify-content: space-between;
     }
 
@@ -280,7 +280,7 @@
         padding: 20px;
         left: -26%;
 
-        >div {
+        > div {
           font-size: 56px;
           margin-top: 40px;
         }
@@ -341,7 +341,6 @@
 @media (max-width: 1480px) {
   .belgium-company-page-wrapper {
     .belgium-consultation-wrapper {
-
       .image-wrapper {
         width: 40%;
 
@@ -360,7 +359,7 @@
           left: 0;
           bottom: 0;
 
-          >div {
+          > div {
             font-size: 44px;
           }
         }
@@ -392,13 +391,11 @@
 @media (max-width: 1180px) {
   .belgium-company-page-wrapper {
     .belgium-consultation-wrapper {
-
       .info-wrapper {
         padding-right: 30px;
       }
 
       .image-wrapper {
-
         .start-block {
           top: 30%;
           right: 10px;
@@ -460,7 +457,7 @@
 
 @media (max-width: variables.$point-l) {
   .belgium-company-page-wrapper {
-    >div {
+    > div {
       margin-top: 0;
       margin-bottom: 70px !important;
     }
@@ -482,9 +479,9 @@
 @media (max-width: 900px) {
   .belgium-company-page-wrapper {
     .belgium-company-description {
-      >div {
+      > div {
         flex-direction: column;
-      } 
+      }
 
       .main-info-wrapper {
         .title,
@@ -513,7 +510,7 @@
       .main-title {
         font-size: 48px;
       }
-  
+
       .secondary-title {
         font-size: 46px;
       }
@@ -529,7 +526,6 @@
 
 @media (max-width: variables.$point-md) {
   .belgium-company-page-wrapper {
-
     .belgium-header {
       .header-info .title {
         font-size: 50px;
@@ -548,7 +544,6 @@
     }
 
     .belgium-consultation-wrapper {
-
       .main-title {
         font-size: 38px;
       }
@@ -558,7 +553,7 @@
         margin-bottom: 40px;
       }
 
-      >div {
+      > div {
         flex-direction: column-reverse;
       }
 
@@ -611,7 +606,6 @@
 
 @media (max-width: variables.$point-m) {
   .belgium-company-page-wrapper {
-
     .belgium-header {
       .header-info .title {
         font-size: 36px;
@@ -629,7 +623,6 @@
     }
 
     .belgium-consultation-wrapper {
-
       .main-title {
         font-size: 32px;
       }
@@ -679,7 +672,6 @@
 
 @media (max-width: variables.$point-sm) {
   .belgium-company-page-wrapper {
-
     .belgium-header {
       .header-info .title {
         font-size: 34px;
@@ -697,7 +689,6 @@
     }
 
     .belgium-consultation-wrapper {
-
       .main-title {
         font-size: 30px;
       }
@@ -717,7 +708,7 @@
         margin-bottom: 20px;
 
         img {
-          max-width: 100%
+          max-width: 100%;
         }
 
         .start-block {
@@ -767,7 +758,7 @@
         div.time-block {
           font-size: 24px;
 
-          >div {
+          > div {
             font-size: 26px;
             margin-top: 10px;
 
@@ -816,7 +807,6 @@
     }
 
     .belgium-consultation-wrapper {
-
       .main-title {
         font-size: 28px;
       }

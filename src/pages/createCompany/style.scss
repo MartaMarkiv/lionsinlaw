@@ -283,7 +283,7 @@
     .ant-form-item-label {
       font-family: "Lora-bold";
       @extend .text-size;
-      
+
       label {
         @extend .text-size;
       }
@@ -520,7 +520,6 @@
   }
 }
 
-
 @media (max-width: variables.$point-l) {
   .create-company-page {
     .create-company-page-header {
@@ -552,7 +551,7 @@
         }
       }
 
-      >div {
+      > div {
         width: 100%;
       }
 
@@ -583,7 +582,6 @@
 @media (max-width: 650px) {
   .create-company-page {
     .create-company-forms {
-
       .recomendation-part .title,
       .order-details .title,
       .title {
@@ -619,7 +617,7 @@
       .personal-card-info {
         flex-direction: column;
 
-        >div {
+        > div {
           width: 100%;
         }
       }
@@ -661,7 +659,7 @@
     }
 
     .finish-payment-block {
-      div >p {
+      div > p {
         font-size: 36px;
       }
     }
@@ -681,7 +679,6 @@
     }
 
     .create-company-forms {
-
       .icon-component {
         width: 30px !important;
         height: 30px !important;
@@ -699,7 +696,9 @@
           left: 21px;
         }
 
-        >.ant-steps-item>.ant-steps-item-container>.ant-steps-item-tail::after {
+        > .ant-steps-item
+          > .ant-steps-item-container
+          > .ant-steps-item-tail::after {
           width: 90px;
           height: 1px;
         }
@@ -728,7 +727,7 @@
         flex-direction: column;
         align-items: flex-start;
 
-        >div {
+        > div {
           margin-top: 10px;
         }
       }

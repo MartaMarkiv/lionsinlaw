@@ -200,7 +200,7 @@
       }
 
       .license-description {
-        >div {
+        > div {
           width: 50%;
         }
       }
@@ -217,7 +217,7 @@
 @media (max-width: variables.$point-lg) {
   .crypto-license-page-wrapper {
     .crypto-license-header {
-      >.title {
+      > .title {
         font-size: 150px;
 
         .monet-wrapper {
@@ -269,7 +269,7 @@
 @media (max-width: variables.$point-l) {
   .crypto-license-page-wrapper {
     .crypto-license-header {
-      >.title {
+      > .title {
         font-size: 120px;
         .monet-wrapper {
           width: 130px;
@@ -328,7 +328,7 @@
 @media (max-width: 720px) {
   .crypto-license-page-wrapper {
     .crypto-license-header {
-      >.title {
+      > .title {
         font-size: 100px;
 
         .monet-wrapper {
@@ -351,7 +351,7 @@
 @media (max-width: variables.$point-sm) {
   .crypto-license-page-wrapper {
     .crypto-license-header {
-      >.title {
+      > .title {
         font-size: 74px;
       }
 
@@ -364,7 +364,7 @@
           max-width: 100%;
         }
 
-        >div {
+        > div {
           width: 100%;
           box-sizing: border-box;
         }
@@ -381,7 +381,7 @@
         font-size: 74px;
       }
     }
-    
+
     .crypto-partner-wrapper .title {
       font-size: 36px;
     }
@@ -390,7 +390,7 @@
 
 @media (max-width: 500px) {
   .crypto-license-page-wrapper {
-    .crypto-license-header >.title {
+    .crypto-license-header > .title {
       font-size: 72px;
     }
 
@@ -405,7 +405,7 @@
           position: relative;
           background: none;
 
-          >div {
+          > div {
             box-sizing: border-box;
           }
 
@@ -440,7 +440,7 @@
     .crypto-license-header {
       font-size: 18px;
 
-      >.title {
+      > .title {
         font-size: 64px;
       }
       .description-block {
@@ -479,7 +479,6 @@
       }
     }
 
-
     .crypto-partner-wrapper {
       .title {
         font-size: 28px;
@@ -496,7 +495,7 @@
 @media (max-width: variables.$point-s) {
   .crypto-license-page-wrapper {
     .crypto-license-header {
-      >.title {
+      > .title {
         font-size: 54px;
       }
     }

@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
-    padding: 37px 72px; 
+    padding: 37px 72px;
     padding-bottom: 112px;
 
     .title {
@@ -46,8 +46,8 @@
 
 @media (max-width: variables.$point-md) {
   .curacao-company-wrapper {
-    >div,
-    >section {
+    > div,
+    > section {
       margin: 0;
       margin-bottom: 45px;
     }

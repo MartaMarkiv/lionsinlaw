@@ -224,5 +224,5 @@ export default {
       name: "Spain",
       flagName: "spain",
     },
-  ]
+  ],
 };
