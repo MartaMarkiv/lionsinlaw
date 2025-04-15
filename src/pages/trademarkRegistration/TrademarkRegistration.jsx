@@ -1,5 +1,6 @@
 import "./style.scss";
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import Icon from "../../components/iconComponent/Icon";
 import clientsGroup from "../../assets/images/clientsGroup.png";
@@ -13,20 +14,19 @@ import ConsultingOffshoreComp from "../../components/consultingOffshoreComp/Cons
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function TrademarkRegistration() {
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper trademark-registration-page">
       <Flex justify="space-between" className="trademark-registration-header">
         <div className="title-wrapper">
           <p className="title">LionsInLaw</p>
-          <p className="description">
-            Ваш Партнер у Міжнародному Бізнесі та Реєстрації Торгових Марок
-          </p>
+          <p className="description">{t("trademark_registration_3")}</p>
           <LinkComponent
-            linkLabel="Зареєструвати торгову  марку"
+            linkLabel={t("trademark_registration_4")}
             linkValue="/"
           />
           <div className="partners-wrapper">
-            <p className="partners-title">довірені партнери</p>
+            <p className="partners-title">{t("trademark_registration_7")}</p>
             <Flex align="center" justify="space-between">
               <Icon name="hitech" />
               <Icon name="devwise" />
@@ -40,16 +40,13 @@ export default function TrademarkRegistration() {
           align="flex-end"
           justify="space-between"
         >
-          <p className="sub-description">
-            Експертні Рішення для Створення Компаній та Реєстрації Торгових
-            Марок у Європі, Канаді та США
-          </p>
+          <p className="sub-description">{t("trademark_registration_1")}</p>
           <div className="time-info-wrapper">
             <Flex align="flex-start" className="time-wrapper" vertical={true}>
               <span className="count">1.45 K</span>
               <span className="month">/ місяць</span>
             </Flex>
-            <p>Реєстрації Торгових Марок у Європі, Канаді та США</p>
+            <p>{t("trademark_registration_6")}</p>
           </div>
           <Flex className="clients-wapper" align="center">
             <div className="image-wrapper">
@@ -60,7 +57,7 @@ export default function TrademarkRegistration() {
                 <Icon name="smile" />
                 <span className="count">100+</span>
               </Flex>
-              <p>Задоволених клієнтів</p>
+              <p>{t("trademark_registration_8")}</p>
             </div>
           </Flex>
         </Flex>

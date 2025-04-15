@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Flex, Button, Popover } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 import ServicesMenu from "../servicesMenu/ServicesMenu";
@@ -18,6 +19,8 @@ import LanguagesList from "../languagesList/LanguagesList";
 export default function Header() {
   const location = useLocation();
   const windowWidth = useWindowWidth();
+
+  const { t } = useTranslation();
 
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -62,11 +65,11 @@ export default function Header() {
           <Flex align="center" className="header-menu-wrapper">
             <Popover content={<ServicesMenu />}>
               <Button className="menu-item" icon={<Icon name="drop" />}>
-                Послуги
+                {t("services")}
               </Button>
             </Popover>
-            <Link to={""}>Блог</Link>
-            <Link to={CONTACTS_ROUTE}>Контакти</Link>
+            <Link to={""}>{t("footer_blog")}</Link>
+            <Link to={CONTACTS_ROUTE}>{t("footer_contacts")}</Link>
             <a href="mailto: info@lionsinlaw.com" className="email-wrapper">
               <Icon name="envelop" />
               <span>info@Lionsinlaw.com</span>

@@ -200,37 +200,37 @@ export default {
     {
       name: "Ukraine",
       flagName: "ua",
-      language: "ua"
+      language: "ua",
     },
     {
       name: "Brazil",
       flagName: "brazil",
-      language: "en"
+      language: "en",
     },
     {
       name: "United Kingdom",
       flagName: "uk",
-      language: "en"
+      language: "en",
     },
     {
       name: "Germany",
       flagName: "germany",
-      language: "en"
+      language: "en",
     },
     {
       name: "Mexico",
       flagName: "mexico",
-      language: "en"
+      language: "en",
     },
     {
       name: "Portugal",
       flagName: "portugal",
-      language: "en"
+      language: "en",
     },
     {
       name: "Spain",
       flagName: "spain",
-      language: "es"
+      language: "es",
     },
   ],
 };

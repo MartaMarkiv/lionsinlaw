@@ -5,7 +5,7 @@ import config from "../../config";
 import Icon from "../iconComponent/Icon";
 
 export default function LanguagesList() {
-  const {i18n} = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (language) => {
     console.log("change language: ", language);
     i18n.changeLanguage(language);
@@ -18,7 +18,7 @@ export default function LanguagesList() {
           key={`${item.name}-${index}`}
           className="language-btn"
           icon={<Icon name={item.flagName} />}
-          onClick={()=>changeLanguage(item.language)}
+          onClick={() => changeLanguage(item.language)}
         >
           {item.name}
         </Button>

@@ -32,7 +32,7 @@ export default function Main() {
     return countSlide;
   };
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -41,14 +41,10 @@ export default function Main() {
           <div className="info-wrapper main-sub-part">
             <div className="main-background" />
             <div className="main-title" style={{ textTransform: "uppercase" }}>
-              {
-                t("global_corporate_services")
-              }
+              {t("global_corporate_services")}
             </div>
             <div className="description">
-              Комплексні корпоративні послуги по всьому світу: реєстрація
-              компаній, відкриття банківських рахунків, торгові послуги,
-              криптоліцензії та експертні податкові консультації
+              {t("global_corporate_services_text")}
             </div>
           </div>
           <Flex
@@ -66,7 +62,7 @@ export default function Main() {
             >
               <div className="count-company">50+</div>
               <div className="main-title" style={{ textAlign: "center" }}>
-                Юрисдикцій для реєстрації компаній
+                {t("jurisdiction_to_registr_company")}
               </div>
             </Flex>
             <Flex
@@ -80,8 +76,7 @@ export default function Main() {
                 className="description medium"
                 style={{ textAlign: "center" }}
               >
-                Ваш надійний партнер у сфері глобальних корпоративних послуг і
-                офшорних рішень
+                {t("lions_in_law_text")}
               </span>
             </Flex>
           </Flex>
@@ -90,15 +85,17 @@ export default function Main() {
           <Flex
             className="quality main-sub-part"
             justify="space-between"
-            align="center"
+            align="flex-start"
           >
             <div>
               <div className="count">10+</div>
-              <div className="quality-name">Років Досвіду</div>
+              <div className="quality-name">{t("10+_text")}</div>
             </div>
             <div>
               <div className="count">1000+</div>
-              <div className="quality-name">Задоволених клієнтів</div>
+              <div className="quality-name">
+                {t("trademark_registration_8")}
+              </div>
             </div>
             {windowWidth <= 880 && (
               <div>
@@ -110,17 +107,14 @@ export default function Main() {
             )}
           </Flex>
           <Link to={CONTACTS_ROUTE} className="contact-us-link">
-            Зв'язатися з нами
+            {t("button_main_page_contact_us")}
           </Link>
         </Flex>
       </div>
       <FlagsContainer />
       <div className="our-services">
-        <div className="title">Наші послуги включають</div>
-        <div className="description">
-          Ми працюємо пліч-о-пліч із керівниками вищої ланки, щоб прискорити
-          виконання за допомогою поєднання аналітичні та управлінські підходи.
-        </div>
+        <div className="title">{t("our_service_include")}</div>
+        <div className="description">{t("our_service_include_text")}</div>
         <Flex
           align="center"
           justify="space-around"
@@ -128,143 +122,107 @@ export default function Main() {
         >
           <Flex vertical={true} className="our-services-item" align="center">
             <Icon name="global-existing" />
-            <p className="title">Глобальна Присутність</p>
-            <p className="description">
-              Вибір з різних юрисдикцій по всьому світу, що найкраще відповідає
-              вашим потребам у збереженні конфіденційності та захисту активів.
-            </p>
+            <p className="title">{t("global_existense")}</p>
+            <p className="description">{t("main_1")}</p>
           </Flex>
 
           <Flex vertical={true} className="our-services-item" align="center">
             <Icon name="efficiency" />
-            <p className="title">Ефективність Та Надійність</p>
-            <p className="description">
-              Забезпечення швидкості та високої якості обслуговування під час
-              процесу реєстрації компаній.
-            </p>
+            <p className="title">{t("main_2")}</p>
+            <p className="description">{t("main_3")}</p>
           </Flex>
 
           <Flex vertical={true} className="our-services-item" align="center">
             <Icon name="individual" />
-            <p className="title">Індивідуальний Підхід</p>
-            <p className="description">
-              Підбір оптимальної юрисдикції з урахуванням вашого бізнес-профілю
-              та стратегічних цілей.
-            </p>
+            <p className="title">{t("main_4")}</p>
+            <p className="description">{t("main_5")}</p>
           </Flex>
         </Flex>
       </div>
       <div className="choose-us">
         <p className="title">
-          Обирайте <span className="selected">LionsInLaw</span> для комплексних
-          корпоративних рішень
+          {t("main_6_choose")}
+          <span className="selected">LionsInLaw</span> {t("main_6")}
         </p>
         <Flex align="start" justify="space-between">
           <div className="image-wrapper">
             <img src={chooseUsImg} alt="LionsInLaw" />
           </div>
           <Flex vertical={true} className="advantages-wrapper">
-            <p className="description">
-              Ми пропонуємо широкий спектр рішень для офшорних компаній,
-              забезпечуючи оптимальні варіанти для міжнародного розширення,
-              захисту активів та підвищення ефективності бізнесу, з комплексним
-              керівництвом та підтримкою від нашої команди експертів.
-            </p>
+            <p className="description">{t("main_7")}</p>
             <Flex className="advantages-item" align="center">
               <Icon name="expansion" />
               <Flex vertical={true}>
-                <p className="title">Міжнародна експансія</p>
-                <p className="advantages-item-description">
-                  Створення офшорної компанії спрощує вихід на нові ринки,
-                  сприяючи глобальній експансії зі зручними адміністративними
-                  процесами.
-                </p>
+                <p className="title">{t("main_8")}</p>
+                <p className="advantages-item-description">{t("main_9")}</p>
               </Flex>
             </Flex>
             <Flex className="advantages-item" align="center">
               <Icon name="actives" />
               <Flex vertical={true}>
-                <p className="title">Захист активів</p>
-                <p className="advantages-item-description">
-                  Офшорні організації захищають активи від юридичних ризиків та
-                  судових процесів, забезпечуючи підвищену конфіденційність і
-                  безпеку.
-                </p>
+                <p className="title">{t("main_10")}</p>
+                <p className="advantages-item-description">{t("main_11")}</p>
               </Flex>
             </Flex>
             <Flex className="advantages-item" align="center">
               <Icon name="optimization" />
               <Flex vertical={true}>
-                <p className="title">Оптимізація оподаткування</p>
-                <p className="advantages-item-description">
-                  Розташувавши бізнес у сприятливій податковій юрисдикції, ви
-                  зменшите податкові зобов'язання та підвищите фінансову
-                  ефективність
-                </p>
+                <p className="title">{t("main_12")}</p>
+                <p className="advantages-item-description">{t("main_13")}</p>
               </Flex>
             </Flex>
             <Flex className="advantages-item" align="center">
               <Icon name="global-traiding" />
               <Flex vertical={true}>
-                <p className="title">Глобальна торгівля та інвестиції</p>
-                <p className="advantages-item-description">
-                  Офшорні структури спрощують міжнародну торгівлю та інвестиції,
-                  забезпечуючи гнучкість у управлінні валютою та транскордонними
-                  транзакціями.
-                </p>
+                <p className="title">{t("main_14")}</p>
+                <p className="advantages-item-description">{t("main_15")}</p>
               </Flex>
             </Flex>
           </Flex>
         </Flex>
       </div>
       <div className="services-list">
-        <div className="services-list-title">послуги</div>
+        <div className="services-list-title">{t("main_16")}</div>
         <BlockElement
-          description="Ми забезпечуємо безперебійну реєстрацію компаній у різних юрисдикціях по всьому світу, забезпечуючи відповідність і ефективність відповідно до потреб вашого бізнесу"
+          description={t("main_18")}
           linkValue={`${COMPANY_REGISTRATION_ROUTE}/default`}
-          title="Реєстрація компаній"
+          title={t("main_17")}
           isDark={false}
         />
         <Flex className="image-container" align="center" justify="center">
           <img src={lionsInLawTeam} alt="LionsInLaw team" />
         </Flex>
         <BlockElement
-          description="Ознайомтеся з нашими спеціалізованими послугами для створення офшорних компаній, які забезпечують конфіденційність, захист активів і стратегічну глобальну присутність."
+          description={t("main_21")}
           linkValue={""}
-          title="Офшорні корпорації"
+          title={t("main_20")}
           isDark={false}
         />
         <BlockElement
-          description="Отримайте доступ до нашої розгалуженої мережі, щоб відкривати корпоративні банківські рахунки по всьому світу, оптимізуючи свої фінансові операції та полегшуючи міжнародні транзакції."
+          description={t("main_24")}
           linkValue={BANK_ACCOUNT_ROUTE}
-          title="Відкриття банківських рахунків"
+          title={t("main_23")}
           isDark={true}
         />
         <Flex className="grid-item-2" vertical={true}>
           <div className="item-2-title">
-            У <span className="selected">LionsInLaw</span> кожен клієнт отримує
-            індивідуальний підхід, адаптований до конкретних потреб їх бізнесу.
+            {t("main_32_in")}
+            <span className="selected">LionsInLaw </span>
+            {t("main_32")}
           </div>
-          <div>
-            Міжнародна поєднуємо великий досвід із орієнтованим на клієнта
-            підходом, щоб надавати індивідуальні рішення, які відповідають вашим
-            конкретним бізнес-цілям. Незалежно від того, чи збираєтеся ви
-            виходити на міжнародний рівень, шукаєте захист активів чи покращуєте
-            свої фінансові стратегії, LionsInLaw є вашим відданим партнером на
-            кожному кроці.
-          </div>
+          <div>{t("main_33")}</div>
         </Flex>
         <BlockElement
-          description="Скористайтеся послугами стратегічного податкового планування та дотримання законодавства, спрямованих на мінімізацію податкових зобов’язань і водночас максимальну фінансову ефективність."
+          description={t("main_27")}
           linkValue={""}
-          title="Послуги продавця"
+          title={t("main_26")}
           isDark={true}
           blockClass="sales-block"
         />
         <BlockElement
-          description="Ми надаємо професійну консультацію та підтримку на кожному етапі процесу вибору юрисдикції та реєстраційної служби, забезпечуючи відповідність місцевим законодавчим вимогам."
+          description={t("main_30")}
           linkValue={JURISDICTIONS_ROUTE}
-          title="Юрисдикції для Реєстрації Компанії"
+          title={t("main_29")}
           isDark={false}
         />
       </div>
@@ -272,16 +230,13 @@ export default function Main() {
         <div className="business-gradient" />
         <div>
           <div className="title">
-            Зробіть свій бізнес успішним з{" "}
-            <span className="selected">LionsInLaw</span>
+            {t("main_34")}
+            <span className="selected"> LionsInLaw</span>
           </div>
-          <div className="description">
-            Зв’яжіться з нами сьогодні, щоб дізнатися, як ми можемо допомогти
-            вашому бізнесу процвітати в динамічному глобальному середовищі
-          </div>
+          <div className="description">{t("main_36")}</div>
           <div>
             <Link className="contact-us-link" to={CONTACTS_ROUTE}>
-              Зв'язатися з нами
+              {t("main_37")}
             </Link>
           </div>
           <Flex
@@ -292,15 +247,15 @@ export default function Main() {
             <Link to={TAX_PLANNING_ROUTE} className="business-item">
               <Icon name="taxes-plan-img" />
               <div>
-                <p className="title">Податкове Планування</p>
-                <p>Мінімізація податків та максимізація ефективності</p>
+                <p className="title">{t("main_38")}</p>
+                <p>{t("main_39")}</p>
               </div>
             </Link>
             <Link to={CRYPTO_LICENSE_ROUTE} className="business-item">
               <Icon name="crypto-license-img" />
               <div>
-                <p className="title">Крипто-ліцензії</p>
-                <p>Регулювання криптовалют та дотримання нормативів</p>
+                <p className="title">{t("main_40")}</p>
+                <p>{t("main_41")}</p>
               </div>
             </Link>
           </Flex>
