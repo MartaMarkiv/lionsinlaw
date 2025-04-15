@@ -195,34 +195,42 @@ export default {
     {
       name: "Canada",
       flagName: "canada",
+      language: "en",
     },
     {
       name: "Ukraine",
       flagName: "ua",
+      language: "ua"
     },
     {
       name: "Brazil",
       flagName: "brazil",
+      language: "en"
     },
     {
       name: "United Kingdom",
       flagName: "uk",
+      language: "en"
     },
     {
       name: "Germany",
       flagName: "germany",
+      language: "en"
     },
     {
       name: "Mexico",
       flagName: "mexico",
+      language: "en"
     },
     {
       name: "Portugal",
       flagName: "portugal",
+      language: "en"
     },
     {
       name: "Spain",
       flagName: "spain",
+      language: "es"
     },
   ],
 };

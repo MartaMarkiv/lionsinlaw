@@ -1,10 +1,15 @@
 import "./style.scss";
 import { Button } from "antd";
+import { useTranslation } from "react-i18next";
 import config from "../../config";
 import Icon from "../iconComponent/Icon";
 
 export default function LanguagesList() {
-  const changeLanguage = () => {};
+  const {i18n} = useTranslation();
+  const changeLanguage = (language) => {
+    console.log("change language: ", language);
+    i18n.changeLanguage(language);
+  };
 
   return (
     <div className="language-wrapper">
@@ -13,7 +18,7 @@ export default function LanguagesList() {
           key={`${item.name}-${index}`}
           className="language-btn"
           icon={<Icon name={item.flagName} />}
-          onClick={changeLanguage}
+          onClick={()=>changeLanguage(item.language)}
         >
           {item.name}
         </Button>
