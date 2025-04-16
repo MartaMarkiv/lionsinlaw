@@ -163,14 +163,17 @@ export default {
     {
       value: "europe",
       label: "Європейський регіон",
+      translationValue: "jurisdictions_5"
     },
     {
       value: "america",
       label: "Американський регіон",
+      translationValue: "jurisdictions_6"
     },
     {
       value: "asia",
       label: "Азійській регіон",
+      translationValue: "jurisdictions_7"
     },
   ],
   countriesList: {

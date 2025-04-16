@@ -9,9 +9,12 @@ import Faq from "../../components/faq/Faq";
 import EuropeanRegion from "../../components/europeanRegion/EuropeanRegion";
 import AmericanRegion from "../../components/americanRegion/AmericanRegion";
 import AsianRegion from "../../components/asianRegion/AsianRegion";
+import { useTranslation } from "react-i18next";
 
 export default function Jurisdictions() {
   const [region, setRegion] = useState(null);
+
+  const {t}  =useTranslation();
 
   const changeRegion = (value) => {
     setRegion(value);
@@ -37,33 +40,28 @@ export default function Jurisdictions() {
             <div className="law-lady-banner" />
           </div>
           <div className="banner-title">
-            Оптимальні юрисдикції для вашого бізнесу
+            {t("jurisdictions_1")}
           </div>
           <div className="banner-description">
-            Професійна консультація та підтримка на кожному етапі реєстрації
-            компанії
+            {t("jurisdictions_2")}
           </div>
         </Flex>
       </div>
       <FlagsContainer />
       <p className="jurisdictions-description">
-        Незалежно від того, де ви ведете бізнес - в Європі, Азії, Африці, на
-        Близькому Сході чи Америці -{" "}
-        <span className="selected"> LionsInLaw</span> створить найкращу торгову
-        або холдингову структуру для вашого бізнесу. Ми забезпечуємо
-        відповідність місцевим законам та правилам, надаючи професійну підтримку
-        на кожному етапі.
+        {t("jurisdictions_3")}
+        <span className="selected"> LionsInLaw</span>{t("jurisdictions_3.1")}
       </p>
       <div className="page-content-wrapper select-region-wrapper">
         <Select
-          placeholder="Виберіть Регіон"
+          placeholder={t("jurisdictions_4")}
           popupClassName="regions-list"
           onChange={changeRegion}
           value={region}
         >
           {config.jurisdictionsRegions.map((item, index) => (
             <Select.Option key={`${item.value}:${index}`} value={item.value}>
-              {item.label}
+              {t(item.translationValue)}
             </Select.Option>
           ))}
         </Select>

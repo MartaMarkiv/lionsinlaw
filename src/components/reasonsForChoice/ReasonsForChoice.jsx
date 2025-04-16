@@ -1,14 +1,15 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 
 export default function ReasonsForChoice() {
+  const {t} = useTranslation();
   return (
     <div className="choice-reasons-wrapper">
-      <p className="title">Чому обрати LionsInLaw</p>
+      <p className="title">{t("jurisdictions_8")}</p>
       <p className="description">
-        Професійні послуги з реєстрації компаній та експертна підтримка на
-        кожному етапі
+        {t("jurisdictions_9")}
       </p>
       <Flex align="start" justify="space-between" className="reasons-list">
         <Flex
@@ -18,11 +19,9 @@ export default function ReasonsForChoice() {
           className="reason-item"
         >
           <Icon name="individual-choise" />
-          <p className="title">Індивідуальні рішення</p>
+          <p className="title">{t("jurisdictions_10")}</p>
           <p className="description">
-            ми налаштовуємо наші послуги відповідно до ваших конкретних
-            бізнес-цілей і вимог до відповідності, забезпечуючи ефективні та
-            дієві рішення.
+            {t("jurisdictions_11")}
           </p>
         </Flex>
         <Flex
@@ -32,11 +31,9 @@ export default function ReasonsForChoice() {
           className="reason-item"
         >
           <Icon name="komplex" />
-          <p className="title">Комплексна підтримка</p>
+          <p className="title">{t("jurisdictions_12")}</p>
           <p className="description">
-            від початкової консультації до постійного управління відповідністю
-            наша спеціальна команда надає постійну підтримку для задоволення
-            ваших потреб, що постійно змінюються.
+            {t("jurisdictions_13")}
           </p>
         </Flex>
         <Flex
@@ -46,10 +43,9 @@ export default function ReasonsForChoice() {
           className="reason-item"
         >
           <Icon name="expert" />
-          <p className="title">Експертне керівництво</p>
+          <p className="title">{t("jurisdictions_14")}</p>
           <p className="description">
-            скористайтеся нашим багатим досвідом і знаннями щодо створення
-            офшорних компаній і структурування міжнародного бізнесу.
+            {t("jurisdictions_15")}
           </p>
         </Flex>
       </Flex>
