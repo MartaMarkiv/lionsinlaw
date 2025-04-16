@@ -44,7 +44,7 @@ export default function TrademarkRegistration() {
           <div className="time-info-wrapper">
             <Flex align="flex-start" className="time-wrapper" vertical={true}>
               <span className="count">1.45 K</span>
-              <span className="month">/ місяць</span>
+              <span className="month">{t("trademark_registration_5")}</span>
             </Flex>
             <p>{t("trademark_registration_6")}</p>
           </div>
@@ -68,12 +68,9 @@ export default function TrademarkRegistration() {
       <Flex className="trademark-experiance">
         <Flex vertical={true} justify="space-between" className="info-wrapper">
           <div className="experiance-info-wrapper">
-            <p className="title">Досвід у Реєстрації Торгових Марок</p>
+            <p className="title">{t("trademark_registration_9")}</p>
             <p className="description">
-              Захист ваших прав інтелектуальної власності має вирішальне
-              значення на сучасному глобальному ринку. Lionsinlaw пропонує
-              експертне керівництво та комплексні послуги для швидкої та
-              ефективної реєстрації торгових марок у Європі, Канаді та США
+              {t("trademark_registration_10")}
             </p>
           </div>
           <Flex justify="space-between" className="experiance-items-wraper">
@@ -84,10 +81,9 @@ export default function TrademarkRegistration() {
               className="experiance-item"
             >
               <Icon name="global-security" />
-              <p className="title">Глобальний захист</p>
+              <p className="title">{t("trademark_registration_11")}</p>
               <p className="description">
-                Захист ваших прав інтелектуальної власності має вирішальне
-                значення на сучасному конкурентному глобальному ринку.
+                {t("trademark_registration_12")}
               </p>
             </Flex>
             <Flex
@@ -97,10 +93,9 @@ export default function TrademarkRegistration() {
               className="experiance-item"
             >
               <Icon name="effective-registration" />
-              <p className="title">Ефективна Реєстрація</p>
+              <p className="title">{t("trademark_registration_13")}</p>
               <p className="description">
-                Lionsinlaw пропонує експертне керівництво та комплексні послуги
-                для швидкої реєстрації торгових марок у Європі, Канаді та США.
+                {t("trademark_registration_14")}
               </p>
             </Flex>
           </Flex>
@@ -112,61 +107,59 @@ export default function TrademarkRegistration() {
       <div className="choose-trademarks">
         <div className="title-block">
           <p className="title">
-            чому Обрати Lionsinlaw для Реєстрації Торгової Марки?
+            {t("trademark_registration_15")}
           </p>
           <p className="description">
-            Експертний Підхід до Захисту Вашого Бренду
+            {t("trademark_registration_16")}
           </p>
         </div>
         <DescriptionBlock
-          description="Наша команда складається з кваліфікованих юридичних професіоналів із великим досвідом у законодавстві про торговельні марки в багатьох юрисдикціях."
-          title="Юридична експертиза:"
+          description={t("trademark_registration_18")}
+          title={`${t("trademark_registration_17")}:`}
         />
         <DescriptionBlock
-          description="Lionsinlaw надає безперебійні послуги з реєстрації торгових марок на ключових ринках, включаючи Європу, Канаду та США, забезпечуючи захист вашого бренду за кордоном."
-          title="Глобальне покриття:"
+          description={t("trademark_registration_20")}
+          title={`${t("trademark_registration_19")}:`}
           isDark={true}
           blockClass="block-1"
         />
         <DescriptionBlock
-          description="Ми розуміємо важливість персоналізованого обслуговування та тісно співпрацюємо з кожним клієнтом, щоб адаптувати наші послуги з реєстрації торгових марок відповідно до їхніх конкретних потреб і цілей."
-          title="Індивідуальне обслуговування:"
+          description={t("trademark_registration_22")}
+          title={`${t("trademark_registration_21")}:`}
           isDark={true}
           blockClass="block-2"
         />
         <DescriptionBlock
-          description="Ми спрощуємо процес реєстрації, обробляємо всі документи та листування з місцевими органами влади, щоб забезпечити дотримання місцевих законів і правил щодо торговельних марок."
-          title="Ефективність і відповідність"
+          description={t("trademark_registration_24")}
+          title={`${t("trademark_registration_23")}:`}
         />
         <div className="image-wrapper-block">
           <img src={lawSignet} alt="Law signet" />
         </div>
       </div>
       <ConsultingOffshoreComp
-        title="Підтримка Вашого Бренду з :"
+        title={t("trademark_registration_25")}
         showPrice={false}
-        description="Незалежно від вашого бізнесу, ми забезпечимо ефективний захист ваших торгових марок. Зв’яжіться з нами, щоб дізнатися більше про наші послуги в Європі, Канаді та США"
-        linkLabel="Звязатися з нами"
+        description={t("trademark_registration_32")}
+        linkLabel={t("trademark_registration_33")}
         linkRoute={CONTACTS_ROUTE}
       >
         <Flex align="center" className="tariff-item">
           <Icon name="ok-rounded-white" />
           <p>
-            <span className="selected-text">Для Стартапів:</span> Захистіть свій
-            новий бренд з самого початку.
+            <span className="selected-text">{t("trademark_registration_27")}</span> {t("trademark_registration_28")}
           </p>
         </Flex>
         <Flex className="tariff-item">
           <Icon name="ok-rounded-white" />
           <p>
-            <span className="selected-text">Для Корпорацій:</span> Розширте
-            охоплення та захистіть свою продукцію на нових ринках.
+            <span className="selected-text">{t("trademark_registration_29")}</span> {t("trademark_registration_30")}
           </p>
         </Flex>
       </ConsultingOffshoreComp>
       <div className="brand-security-wrapper">
         <p className="title">
-          Захистіть Свій Бренд з{" "}
+          {t("trademark_registration_34")}{" "}
           <span className="selected-text">LionsInLaw</span>
         </p>
         <Flex className="brand-security-wrapper-info">
@@ -177,12 +170,10 @@ export default function TrademarkRegistration() {
             align="flex-start"
           >
             <p className="description">
-              Ми ваш надійний партнер у міжнародній реєстрації торгових марок.
-              Довірте нам захист вашої інтелектуальної власності на глобальному
-              рівні.
+              {t("trademark_registration_35")}
             </p>
             <LinkComponent
-              linkLabel="Зв'язатися з нами"
+              linkLabel={t("trademark_registration_36")}
               linkValue={CONTACTS_ROUTE}
             />
           </Flex>

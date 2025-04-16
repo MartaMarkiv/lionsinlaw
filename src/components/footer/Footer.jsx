@@ -2,6 +2,7 @@ import { Button, Flex, Input } from "antd";
 import Icon from "../iconComponent/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   BANK_ACCOUNT_ROUTE,
   COMPANY_REGISTRATION_ROUTE,
@@ -13,6 +14,7 @@ import {
 } from "../../routes/routes";
 
 export default function Footer() {
+  const {t} = useTranslation();
   return (
     <footer className="footer">
       <Flex className="logo-wrapper" align="center">
@@ -22,38 +24,36 @@ export default function Footer() {
       <Flex className="footer-links-contacts">
         <Flex align="start" justify="space-between">
           <Flex vertical={true} className="page-links">
-            <p>Про нас</p>
-            <Link>Консультації</Link>
-            <Link>Блог</Link>
-            <Link>Статті</Link>
-            <Link>Питання та відповіді</Link>
-            <Link to={CONTACTS_ROUTE}>Контакти</Link>
+            <p>{t("footer_about_us")}</p>
+            <Link>{t("footer_consultation")}</Link>
+            <Link>{t("footer_blog")}</Link>
+            <Link>{t("footer_articles")}</Link>
+            <Link>{t("footer_faq")}</Link>
+            <Link to={CONTACTS_ROUTE}>{t("footer_contacts")}</Link>
           </Flex>
           <Flex vertical={true} className="services-footer">
-            <p>Послуги</p>
+            <p>{t("footer_services")}</p>
             <Link to={`${COMPANY_REGISTRATION_ROUTE}/default`}>
-              Реєстрація Компаній
+              {t("footer_1")}
             </Link>
-            <Link to={BANK_ACCOUNT_ROUTE}>відкриття банківських рахунків</Link>
-            <Link to={MERCHANT_ACCOUNTS_ROUTE}>відкриття мерчант рахунків</Link>
+            <Link to={BANK_ACCOUNT_ROUTE}>{t("footer_2")}</Link>
+            <Link to={MERCHANT_ACCOUNTS_ROUTE}>{t("footer_3")}</Link>
             <Link to={TRADEMARK_REGISTRATION_ROUTE}>
-              реєстрація товарних знаків
+              {t("footer_4")}
             </Link>
-            <Link to={CRYPTO_LICENSE_ROUTE}>криптоконсалтинг</Link>
+            <Link to={CRYPTO_LICENSE_ROUTE}>{t("footer_5")}</Link>
             <Link to={FINANCIAL_LICENSE_ROUTE}>
-              відкриття фінансових ліцензій
+              {t("footer_1")}
             </Link>
           </Flex>
         </Flex>
         <Flex className="contacts-form" justify="flex-end">
           <div>
             <p className="title">
-              Зв'яжіться з нами для отримання додаткової інформації або
-              заплануйте консультацію"
+              {t("footer_7")}
             </p>
             <p className="description">
-              Наші експерти готові допомогти вам з будь-якими питаннями щодо
-              корпоративних послуг і офшорних рішень.
+              {t("footer_8")}
             </p>
             <Flex
               align="center"
@@ -61,9 +61,9 @@ export default function Footer() {
               className="send-email-form"
             >
               <Input type="email" placeholder="Enter your email address" />
-              <Button>Зв'язатися </Button>
+              <Button>{t("footer_10")}</Button>
             </Flex>
-            <p className="secondary-title">Слідкуйте в соц. мережах</p>
+            <p className="secondary-title">{t("footer_11")}</p>
             <Flex align="center">
               <Link
                 to="https://facebook.com/lionsinlawpro"

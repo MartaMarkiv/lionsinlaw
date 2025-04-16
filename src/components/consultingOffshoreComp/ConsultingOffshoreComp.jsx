@@ -1,5 +1,6 @@
 import { Flex } from "antd";
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import LinkComponent from "../linkComponent/LinkComponent";
 
 export default function ConsultingOffshoreComp({
@@ -10,6 +11,9 @@ export default function ConsultingOffshoreComp({
   showPrice = true,
   children,
 }) {
+
+  const {t} = useTranslation();
+
   return (
     <div className="consulting-offshore-comp-wrapper">
       <p className="header-block">{title}</p>
@@ -21,7 +25,7 @@ export default function ConsultingOffshoreComp({
             justify="center"
             className="time-block"
           >
-            <p>Підтримка</p>
+            <p>{t("trademark_registration_26")}</p>
             <Flex>
               <span className="hours-value">24/</span>
               <span className="day-value">7</span>
