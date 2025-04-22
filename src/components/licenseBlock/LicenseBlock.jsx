@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import LinkComponent from "../linkComponent/LinkComponent";
 
@@ -9,6 +10,7 @@ export default function LicenseBlock({
   linkRef,
   isRevert = false,
 }) {
+  const {t} = useTranslation();
   return (
     <Flex
       justify="space-between"
@@ -26,7 +28,7 @@ export default function LicenseBlock({
       >
         <p className="title">{title}</p>
         <p className="description">{description}</p>
-        <LinkComponent linkLabel="Детально" linkValue={linkRef} />
+        <LinkComponent linkLabel={t("cryptoconsulting_20")} linkValue={linkRef} />
       </Flex>
     </Flex>
   );

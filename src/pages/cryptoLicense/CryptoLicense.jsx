@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import Icon from "../../components/iconComponent/Icon";
 import Faq from "../../components/faq/Faq";
@@ -15,6 +16,7 @@ import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function CryptoLicense() {
+  const {t} = useTranslation();
   return (
     <>
       <div className="page-content-wrapper crypto-license-page-wrapper">
@@ -36,28 +38,26 @@ export default function CryptoLicense() {
             >
               <div className="cont-wrapper">
                 <p className="count">50+</p>
-                <p>Ліцензовані фахівці, яким довіряють</p>
+                <p>{t("cryptoconsulting_3")}</p>
               </div>
               <p style={{ textAlign: "left" }}>
-                Ваш експерт у міжнародному бізнесі та криптовалютному
-                ліцензуванні. Професійні рішення для створення компаній та
-                отримання ліцензій у будь-якій юрисдикції.
+                {t("cryptoconsulting_4")}
               </p>
             </Flex>
             <Flex justify="space-between" className="license-description">
               <Flex vertical={true} justify="space-between">
                 <div>
-                  <p className="title">Ліцензування Криптовалют</p>
+                  <p className="title">{t("cryptoconsulting_5")}</p>
                   <Flex align="center" className="crypto-license-item">
-                    <span>Дотримання вимог AML/KYC.</span>
+                    <span>{t("cryptoconsulting_6")}</span>
                     <Icon name="ok-white" />
                   </Flex>
                   <Flex align="center" className="crypto-license-item">
-                    <span>Ліцензії на обмін криптовалютами</span>
+                    <span>{t("cryptoconsulting_7")}</span>
                     <Icon name="ok-white" />
                   </Flex>
                   <Flex align="center" className="crypto-license-item">
-                    <span>Послуги зберігання цифровими активами</span>
+                    <span>{t("cryptoconsulting_8")}</span>
                     <Icon name="ok-white" />
                   </Flex>
                 </div>
@@ -74,36 +74,36 @@ export default function CryptoLicense() {
           </Flex>
         </div>
         <LicenseBlock
-          description="Ми допомагаємо в отриманні ліцензій на обмін криптовалютами, забезпечуючи дотримання місцевих норм і операційних вимог. Наша команда допомагає зорієнтуватися в складному процесі подання заявки та нормативно-правовій базі, щоб полегшити затвердження ліцензій."
+          description={t("cryptoconsulting_10")}
           imgInst={cryptoLicense}
           linkRef={"/"}
-          title="Ліцензії на обмін криптовалютами"
+          title={t("cryptoconsulting_9")}
         />
         <LicenseBlock
-          description="Lionsinlaw підтримує клієнтів в отриманні ліцензій на послуги гаманця та зберігання криптовалюти, забезпечуючи безпечне керування цифровими активами, дотримуючись нормативних стандартів."
+          description={t("cryptoconsulting_13")}
           imgInst={cryptoWallet}
           linkRef={"/"}
-          title="Послуги гаманця та зберігання"
+          title={t("cryptoconsulting_12")}
           isRevert={true}
         />
         <LicenseBlock
-          description="Для клієнтів, які запускають початкові пропозиції монет (ICO) або пропозиції токенів безпеки (STO), ми надаємо вказівки щодо дотримання нормативних вимог і допомагаємо отримати необхідні ліцензії для законного продажу токенів"
+          description={t("cryptoconsulting_16")}
           imgInst={icoSto}
           linkRef={"/"}
-          title="Відповідність ICO/STO:"
+          title={t("cryptoconsulting_15")}
         />
         <LicenseBlock
-          description="Забезпечення відповідності нормам щодо боротьби з відмиванням грошей (AML) і «Знай свого клієнта» (KYC) має вирішальне значення в індустрії криптовалют. Lionsinlaw допомагає впроваджувати надійні рамки відповідності, щоб відповідати нормативним вимогам і зменшувати ризики."
+          description={t("cryptoconsulting_19")}
           imgInst={amlKyc}
           linkRef={"/"}
-          title="Відповідність AML/KYC:"
+          title={t("cryptoconsulting_18")}
           isRevert={true}
         />
-        <LicenseLionsInLawChoose description="Навігація в нормативному ландшафті, що оточує криптовалюти та технологію блокчейн, потребує спеціальних знань і досвіду. Lionsinlaw надає експертне керівництво та підтримку, щоб допомогти клієнтам отримати необхідні ліцензії для діяльності, пов’язаної з криптовалютою" />
+        <LicenseLionsInLawChoose description={t("cryptoconsulting_22")} />
         <div className="business-support-wrapper">
           <p className="title">
             <span className="selected-text">LionsInLaw: </span>
-            Підтримка Вашого Криптовалютного Бізнесу
+            {t("cryptoconsulting_29")}
           </p>
           <Flex className="business-support-wrapper-info">
             <Flex className="info-wrapper">
@@ -113,12 +113,7 @@ export default function CryptoLicense() {
                   <span className="red-logo">LionsInLaw</span>
                 </Flex>
                 <p className="description">
-                  Незалежно від того, запускаєте ви криптобіржу, послугу гаманця
-                  чи продаж токенів, Lionsinlaw забезпечить ваш бізнес
-                  експертними рішеннями з ліцензування. Зв’яжіться з нами
-                  сьогодні, щоб обговорити, як ми допоможемо вам подолати
-                  регуляторні складності та досягти успіху в динамічному світі
-                  блокчейн-технологій
+                  {t("cryptoconsulting_31")}
                 </p>
               </Flex>
               <div className="image-wrapper">
@@ -132,12 +127,12 @@ export default function CryptoLicense() {
               align="flex-start"
             >
               <p className="count">1005+</p>
-              <p className="count-label">які довіряют нам</p>
+              <p className="count-label">{t("cryptoconsulting_33")}</p>
               <p className="countact-us">
-                Зв’яжіться з Нами для Успіху у Світi Блокчейн-Технологій
+                {t("cryptoconsulting_34")}
               </p>
               <LinkComponent
-                linkLabel="Зв'язатися з нами"
+                linkLabel={t("cryptoconsulting_36")}
                 linkValue={CONTACTS_ROUTE}
               />
             </Flex>
@@ -146,11 +141,10 @@ export default function CryptoLicense() {
         <div className="crypto-partner-wrapper">
           <div className="wrapper">
             <p className="title">
-              Надійне Партнерство для Ліцензування Криптовалют і Нормативної
-              Відповідності
+              {t("cryptoconsulting_35")}
             </p>
             <LinkComponent
-              linkLabel="Зв'язатися з нами"
+              linkLabel={t("cryptoconsulting_36")}
               linkValue={CONTACTS_ROUTE}
             />
           </div>

@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
 
@@ -6,16 +7,17 @@ export default function LicenseLionsInLawChoose({
   blockType = "crypto",
   description,
 }) {
+  const {t} = useTranslation();
   return (
     <div className="license-choose-wrapper">
       <Flex vertical={true} align="flex-end">
         <p className="main-title in-end">
-          Чому Обрати <span className="selected-text">LinonsInLaw</span>
+          {t("cryptoconsulting_21")}<span className="selected-text">LinonsInLaw</span>
         </p>
         <p className="main-title centered">
           {blockType === "crypto"
-            ? "для Ліцензування Криптовалюти?"
-            : "для Фінансового Ліцензування?"}
+            ? t("cryptoconsulting_21.1")
+            : t("finance_license_16")}
         </p>
       </Flex>
       <p className="description">{description}</p>
@@ -26,10 +28,9 @@ export default function LicenseLionsInLawChoose({
           align="center"
         >
           <Icon name="legal-expertise" />
-          <p className="title">Юридична експертиза:</p>
+          <p className="title">{t("trademark_registration_17")}</p>
           <p className="description">
-            Наша команда – це досвідчені юристи з експертизою у сфері
-            блокчейн-технологій та регулювання криптовалют у різних юрисдикціях
+            {t("cryptoconsulting_24")}
           </p>
         </Flex>
         <Flex
@@ -38,10 +39,9 @@ export default function LicenseLionsInLawChoose({
           align="center"
         >
           <Icon name="global-network" />
-          <p className="title">Глобальна мережа</p>
+          <p className="title">{t("cryptoconsulting_25")}</p>
           <p className="description">
-            Lionsinlaw використовує свою мережу та партнерські зв'язки для
-            ефективного отримання криптовалютних ліцензій по всьому світу.
+            {t("cryptoconsulting_26")}
           </p>
         </Flex>
         <Flex
@@ -50,11 +50,9 @@ export default function LicenseLionsInLawChoose({
           align="center"
         >
           <Icon name="ind-solutions" />
-          <p className="title">Індивідуальні рішення</p>
+          <p className="title">{t("cryptoconsulting_27")}</p>
           <p className="description">
-            Ми розуміємо унікальні виклики сектору криптовалют і пропонуємо
-            індивідуальні рішення, які відповідають вашим конкретним
-            бізнес-цілям і нормативним вимогам.
+            {t("cryptoconsulting_28")}
           </p>
         </Flex>
       </Flex>
