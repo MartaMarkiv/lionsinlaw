@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 import "./style.scss";
@@ -10,6 +11,7 @@ import contactGirl from "../../assets/images/contactGirl.png";
 import bankBuilding from "../../assets/images/bankKolons.png";
 
 export default function BankAccounts() {
+  const {t} = useTranslation();
   return (
     <div className="page-content-wrapper create-bank-account-page">
       <Flex
@@ -19,15 +21,13 @@ export default function BankAccounts() {
       >
         <div className="title-wrapper">
           <p className="title">
-            <span className="selected-text">LionsInLaw</span> Ваш надійний
-            партнер у створенні міжнародної компанії
+            <span className="selected-text">LionsInLaw </span>{t("open_bank_acount_2")}
           </p>
           <p className="description">
-            Експертні послуги з реєстрації компаній та відкриття банківських
-            рахунків по всьому світу
+            {t("open_bank_acount_3")}
           </p>
           <LinkComponent
-            linkLabel="Зв'язатися з нами"
+            linkLabel={t("open_bank_acount_4")}
             linkValue={CONTACTS_ROUTE}
           />
         </div>
@@ -39,17 +39,11 @@ export default function BankAccounts() {
         <p className="title">
           LionsInLaw -{" "}
           <span className="uppercase">
-            {" "}
-            Експерти зі створення міжнародних компаній
+            {t("open_bank_acount_5")}
           </span>
         </p>
         <p className="description">
-          Ми спеціалізуємося на сприянні створенню міжнародних компаній та
-          забезпеченні безперебійних рішень для відкриття банківських рахунків.
-          Наші послуги охоплюють клієнтів у всьому світі, надаючи професійну
-          підтримку на кожному етапі. Ми сприяємо плавному та швидкому відкриттю
-          банківських рахунків відповідно до потреб вашого бізнесу, забезпечуючи
-          доступ до основних фінансових послуг без зайвих затримок і ускладнень.
+          {t("open_bank_acount_6")}
         </p>
         <Flex align="start" justify="space-between">
           <Flex
@@ -59,17 +53,16 @@ export default function BankAccounts() {
           >
             <Flex vertical={true} align="center" className="experts-type-item">
               <Icon name="agreement" />
-              <p>Досвід створення міжнародної компанії</p>
+              <p>{t("open_bank_acount_7")}</p>
             </Flex>
             <Flex vertical={true} align="center" className="experts-type-item">
               <Icon name="bank-account" />
-              <p>Безперешкодне відкриття банківських рахунків</p>
+              <p>{t("open_bank_acount_8")}</p>
             </Flex>
           </Flex>
           <p className="sub-description">
-            Відкриття банківського рахунку з{" "}
-            <span className="selected-text"> Lionsinlaw</span> стає простим
-            завдяки нашій глобальній мережі банківських партнерів
+            {t("open_bank_acount_9")}
+            <span className="selected-text">Lionsinlaw</span>{t("open_bank_acount_9.1")}
           </p>
         </Flex>
         <div className="experts-image">
@@ -83,13 +76,13 @@ export default function BankAccounts() {
           align="center"
           vertical={true}
         >
-          <span>Започаткуйте свій міжнародний бізнес з </span>
+          <span>{t("open_bank_acount_10")}</span>
           <div>
-            <span className="selected-text">LionsInLaw : </span>
-            <span>надійна підтримка стартапів та </span>
+            <span className="selected-text">LionsInLaw :</span>
+            <span>{t("open_bank_acount_10.1")}</span>
           </div>
 
-          <span>корпорацій у глобальному зростанні.</span>
+          <span>{t("open_bank_acount_10.2")}</span>
         </Flex>
         <Flex
           className="startaps-wrapper"
@@ -97,20 +90,17 @@ export default function BankAccounts() {
           align="start"
         >
           <p>
-            Від стартапів до корпорацій - ми підтримуємо ваші глобальні амбіції
-            з експертними послугами зі створення компанії та відкриття
-            банківського рахунку.
+            {t("open_bank_acount_11")}
           </p>
           <Flex className="contact-experts" vertical={true}>
             <Flex align="start" justify="space-between">
               <p>
-                Експерти в створенні компаній та відкритті банківських рахунків,
-                готові допомогти вам сьогодні!
+                {t("open_bank_acount_12")}
               </p>
               <img src={contactGirl} alt="Contact us" />
             </Flex>
             <LinkComponent
-              linkLabel="Зв'язатися з нами"
+              linkLabel={t("open_bank_acount_4")}
               linkValue={CONTACTS_ROUTE}
             />
           </Flex>
@@ -121,18 +111,17 @@ export default function BankAccounts() {
         <Flex align="start" justify="space-between" className="why-lionsinlaw">
           <div>
             <p className="title">
-              Чому обирають <span className="selected-text">Lionsinlaw</span>?
+              {t("open_bank_acount_14")}<span className="selected-text">Lionsinlaw</span>{t("open_bank_acount_14.1")}
             </p>
             <p className="description">
-              Професійні консультації та глобальне охоплення для вашого успіху з
+              {t("open_bank_acount_15")}
               <span className="selected-text"> LionsInLaw</span>
             </p>
           </div>
           <div className="selected-block customer-oriented">
-            <p className="title">Клієнтоорієнтований підхід</p>
+            <p className="title">{t("open_bank_acount_16")}</p>
             <p className="description">
-              Ми розуміємо унікальні потреби наших клієнтів і прагнемо надавати
-              виняткові послуги та цінності
+              {t("open_bank_acount_17")}
             </p>
           </div>
         </Flex>
@@ -146,27 +135,21 @@ export default function BankAccounts() {
             align="flex-end"
             className="selected-block expert-guidance"
           >
-            <p className="title">Експертне керівництво</p>
+            <p className="title">{t("open_bank_acount_18")}</p>
             <p className="description">
-              Наша команда складається з юридичних і фінансових експертів, які
-              надають індивідуальні консультації та підтримку під час створення
-              компанії та банківського процесу.
+              {t("open_bank_acount_19")}
             </p>
           </Flex>
           <div className="expert-guidance-item">
-            <p className="title">надійність</p>
+            <p className="title">{t("open_bank_acount_20")}</p>
             <p className="description">
-              Ми віддаємо пріоритет ефективності та надійності, забезпечуючи
-              точне та вчасне створення вашої компанії та відкриття банківського
-              рахунку.
+              {t("open_bank_acount_21")}
             </p>
           </div>
           <div className="expert-guidance-item">
-            <p className="title">Глобальне охоплення:</p>
+            <p className="title">{t("open_bank_acount_22")}:</p>
             <p className="description">
-              Маючи присутність у ключових юрисдикціях по всьому світу, ми
-              пропонуємо комплексні рішення, які відповідають місцевим
-              нормативним вимогам і міжнародним стандартам.
+              {t("open_bank_acount_23")}
             </p>
           </div>
         </Flex>
@@ -174,14 +157,12 @@ export default function BankAccounts() {
       <div className="ask-bank-account-wrapper">
         <div>
           <p className="title">
-            Забезпечте свої глобальні амбіції з Lionsinlaw - вашим надійним
-            партнером у міжнародних бізнес-рішеннях
+            {t("open_bank_acount_24")}
           </p>
           <p className="description">
-            Замовлення банківського рахунку: Простіше, швидше, надійніше з нашою
-            експертною підтримкою.
+            {t("open_bank_acount_25")}
           </p>
-          <LinkComponent linkLabel="Замовити" linkValue={CONTACTS_ROUTE} />
+          <LinkComponent linkLabel={t("open_bank_acount_26")} linkValue={CONTACTS_ROUTE} />
         </div>
       </div>
     </div>
