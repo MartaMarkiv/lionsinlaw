@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import libraImage from "../../assets/images/seychellesLinbra.png";
 import { Flex } from "antd";
 import CompanySubDescriptionBlock from "../../components/companySubDescriptionBlock/CompanySubDescriptionBlock";
@@ -9,47 +10,47 @@ import Faq from "../../components/faq/Faq";
 import SecondaryDescriptionGrid from "../../components/secondaryDescriptionGrid/SecondaryDescriptionGrid";
 
 export default function SeychellesCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper seychelles-company-page-wrapper">
       <Flex className="seychelles-company-header" justify="space-between">
         <div>
           <p className="title">
-            Сейшели – ідеальна офшорна юрисдикція для бізнесу без кордонів{" "}
+            {t("seyshelles_1")}
           </p>
           <p className="description">
-            Мінімальні дані, повна конфіденційність і просте регулювання для
-            міжнародних компаній
+            {t("seyshelles_3")}
           </p>
         </div>
         <div className="banner" />
         <p className="law-name">LionsInLaw</p>
       </Flex>
       <CompanySubDescriptionBlock
-        description="Сейшелі — популярна офшорна юрисдикція в Індійському океані, знає свою політичну стабільність та вигідні умови для міжнародних інвестицій"
+        description={t("seyshelles_5")}
         imageRef={libraImage}
         title={
           <p className="title">
-            Сейшелі – ваш шлях до вигідного та конфіденційного бізнесу
+            {t("seyshelles_4")}
           </p>
         }
       />
       <SecondaryDescriptionGrid
-        businessDescr="Реєстрація компанії на Сейшелах є швидким процесом і може бути завершена за кілька днів з мінімальними вимогами до документів."
-        financialDescr="Сейшели мають добре розвинену фінансову інфраструктуру, що регулюється Сейшельською фінасовою службою, яка дотримується міжнародних стандартів."
-        riskDescr="Хоча Сейшели є привабливою юрисдикцією для офшорних компаній, важливо дотримуватись міжнародних стандартів фінансової прозорості та боротися з відмиванням грошей"
-        taxesDescr="Сейшели пропонують низькі податкові ставки, зокрема відсутність корпоративного податку на прибуток для компаній, що ведуть бізнес за межами архіпелагу."
-        subDescr="Сейшелі пропонують швидку та просту процедуру реєстрації компаній з мінімальними вимогами до звітності. Відсутність податку на прибуток для міжнародного бізнесу робить цю юрисдикцію привабливою для підприємців у всьому світі. Крім того, законодавство забезпечує високий рівень конфіденційності власників компаній, що сприяє збереженню фінансової інформації в таємниці"
+        businessDescr={t("seyshelles_12")}
+        financialDescr={t("seyshelles_10")}
+        riskDescr={t("seyshelles_14")}
+        taxesDescr={t("seyshelles_8")}
+        subDescr={t("seyshelles_15")}
         title={
           <p className="title">
-            Переваги Офшорної Компанії{" "}
-            <span className="selected-text">в сейшилах з LionsInLaw</span>
+            {t("seyshelles_6")}
+            <span className="selected-text">{t("seyshelles_6.1")}</span>
           </p>
         }
       />
       <ConsultingOffshoreComp
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
+        description={t("england_company_16")}
+        linkLabel={t("england_company_17")}
+        title={t("mpcexoc_1")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/seychelles`}
       >
         <CountryTarrifList />

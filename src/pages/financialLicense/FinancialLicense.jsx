@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import Faq from "../../components/faq/Faq";
 import LicenseBlock from "../../components/licenseBlock/LicenseBlock";
@@ -13,86 +14,82 @@ import { CANADA_COMPANY_ROUTE, CONTACTS_ROUTE } from "../../routes/routes";
 import LicenseLionsInLawChoose from "../../components/licenseLionsInLawChoose/LicenseLionsInLawChoose";
 
 export default function FinancialLicense() {
+  const {t} = useTranslation();
   return (
     <>
       <div className="page-content-wrapper financial-license-page-wrapper">
         <Flex vertical={true} className="banner-wrapper">
           <p className="sub-description">
-            Ваш Партнер у Міжнародному Бізнесі та Фінансовому Ліцензуванні
+            {t("finance_license_1")}
           </p>
           <p className="title">LionsInLaw</p>
           <Flex align="center" justify="flex-start" className="financical-info">
             <p className="description">
-              Комплексні Послуги з Реєстрації Компаній та Отримання Фінансових
-              Ліцензій у Ключових Юрисдикціях
+              {t("finance_license_3")}
             </p>
             <div className="image-wrapper" />
           </Flex>
         </Flex>
         <LicenseBlock
-          description="Ми допомагаємо клієнтам отримати банківські ліцензії в таких юрисдикціях, як Англія та Маврикій, що дозволяє їм працювати як повноцінні банки та пропонувати банківські послуги клієнтам у всьому світі."
+          description={t("finance_license_5")}
           imgInst={bankLicense}
           linkRef={"/"}
-          title="Банківські ліцензії"
+          title={t("finance_license_4")}
         />
         <LicenseBlock
-          description="Lionsinlaw допомагає компаніям отримати ліцензії на платіжні послуги в таких юрисдикціях, як Канада та США, дозволяючи їм надавати рішення для обробки платежів і послуги електронних грошей відповідно до вимог."
+          description={t("finance_license_8")}
           imgInst={paymentLicense}
           linkRef={CANADA_COMPANY_ROUTE}
-          title="Ліцензії на платіжні послуги:"
+          title={t("finance_license_7")}
           isRevert={true}
         />
         <LicenseBlock
-          description="Для клієнтів, які займаються управлінням активами та консультуванням з інвестицій, ми сприяємо придбанню ліцензій, які дозволяють їм управляти активами та надавати інвестиційні консультації на законних підставах."
+          description={t("finance_license_11")}
           imgInst={activesLicense}
           linkRef={"/"}
-          title="Ліцензії на управління активами"
+          title={t("finance_license_10")}
         />
         <LicenseBlock
-          description="Незалежно від того, чи йдеться про отримання ліцензій на брокерську діяльність для торгівлі цінними паперами чи ліцензій на біржі криптовалют, Lionsinlaw веде клієнтів через нормативні вимоги для законної торгівлі."
+          description={t("finance_license_14")}
           imgInst={brokerLicense}
           linkRef={"/"}
-          title="Ліцензії на брокерську діяльність і торгівлю."
+          title={t("finance_license_13")}
           isRevert={true}
         />
         <LicenseLionsInLawChoose
-          description="Професійний Підхід та Ефективні Рішення для Ліцензування у Ключових Юрисдикціях"
+          description={t("finance_license_17")}
           blockType="financial"
         />
         <div className="risk-management-wrapper">
           <div className="wrapper">
-            <p className="title">Управління Ризиками з Lionsinlaw</p>
+            <p className="title">{t("finance_license_24")}</p>
             <p className="description">
-              Зменшення регуляторних ризиків має першорядне значення. Lionsinlaw
-              гарантує, що заявки клієнтів на ліцензії ретельно підготовлені та
-              відповідають місцевим нормативним стандартам, мінімізуючи затримки
-              та відмови.
+              {t("finance_license_25")}
             </p>
             <LinkComponent
-              linkLabel="Зв'язатися з нами"
+              linkLabel={t("finance_license_26")}
               linkValue={CONTACTS_ROUTE}
             />
           </div>
         </div>
         <ConsultingOffshoreComp
-          title="Довіртеся надійному партеру для Експертизи у Фінансовому Ліцензуванні"
-          description="Партнерство для отримання довіреної експертизи у сфері фінансового ліцензування та дотримання нормативних вимог в Англії, Маврикії, Канаді та США.*"
-          linkLabel="Долучитися"
+          title={t("finance_license_27")}
+          description={t("finance_license_33")}
+          linkLabel={t("finance_license_34")}
           showPrice={false}
         >
           <Flex align="center" className="tariff-item">
             <Icon name="ok-rounded-white" />
-            <p>Фінансове Ліцензування:</p>
+            <p>{t("finance_license_29")}</p>
           </Flex>
           <Flex className="tariff-item">
             <Icon name="ok-rounded-white" />
-            <p>Юрисдикційна Спеціалізація</p>
+            <p>{t("finance_license_30")}</p>
           </Flex>
           <Flex className="tariff-item">
             <Icon name="ok-rounded-white" />
             <p>
-              Розробка індивідуальних стратегій для досягнення бізнес-цілей і
-              відповідності регуляторним вимогам.
+              {t("finance_license_31")}
             </p>
           </Flex>
         </ConsultingOffshoreComp>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   MAURITIUS_COMPANY_ROUTE,
   SEYCHELLES_COMPANY_ROUTE,
@@ -7,22 +8,23 @@ import BlockElement from "../blockElement/BlockElement";
 import "./style.scss";
 
 export default function AsianRegion() {
+  const {t} = useTranslation();
   return (
     <div className="asian-region-wrapper">
       <Link to={SEYCHELLES_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_55")}
           linkValue={""}
-          title="Офшорна компанія в Сейшели"
+          title={t("jurisdictions_54")}
           isDark={false}
           blockClass="seychelles"
         />
       </Link>
       <Link to={MAURITIUS_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_55")}
           linkValue={""}
-          title="Офшорна компанія в Мауріцій"
+          title={t("jurisdictions_56")}
           isDark={false}
           blockClass="mauritius"
         />

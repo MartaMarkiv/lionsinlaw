@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import BlockElement from "../blockElement/BlockElement";
 import { Link } from "react-router-dom";
 import {
@@ -10,22 +11,23 @@ import {
 } from "../../routes/routes";
 
 export default function AmericanRegion() {
+  const {t} = useTranslation();
   return (
     <div className="american-region-wrapper">
       <Link to={USA_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_44")}
           linkValue={""}
-          title="Офшорна компанія в USA"
+          title={t("jurisdictions_43")}
           isDark={false}
           hasLink={false}
           blockClass="usa"
         />
       </Link>
       <BlockElement
-        description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у Панамі, що забезпечує глобальні перспективи та фінансові переваги."
+        description={t("jurisdictions_46")}
         linkValue={PANAMA_COMPANY_ROUTE}
-        title="Офшорна компанія в Панамі"
+        title={t("jurisdictions_45")}
         isDark={true}
       />
       <div className="image-wrapper">
@@ -33,9 +35,9 @@ export default function AmericanRegion() {
       </div>
       <Link to={CURACAO_COMPANY_ROUTE} className="curacao-link">
         <BlockElement
-          description="Маючи багаторічний досвід роботи в міжнародному бізнесі та фінансових послугах, Lionsinlaw розуміє тонкощі вимог до облікових записів торговців у різних юрисдикція."
+          description={t("jurisdictions_49")}
           linkValue={""}
-          title="ОФШОРНА КОМПАНІЯ Кюрасао"
+          title={t("jurisdictions_48")}
           isDark={false}
           hasLink={false}
           blockClass="curacao"
@@ -43,19 +45,19 @@ export default function AmericanRegion() {
       </Link>
       <Link to={BELIZE_COMPANY_ROUTE} className="beliz-link">
         <BlockElement
-          description="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."
+          description={t("jurisdictions_51")}
           linkValue={""}
           hasLink={false}
-          title="Офшорна компанія в БЕЛІЗ"
+          title={t("jurisdictions_50")}
           isDark={true}
           blockClass="beliz"
         />
       </Link>
       <Link to={CANADA_COMPANY_ROUTE}>
         <BlockElement
-          description="Відкрийте нові можливості разом з LionsInLaw: швидка та надійна реєстрація компаній у КАНАДІ що забезпечує глобальні перспективи та фінансові переваги."
+          description={t("jurisdictions_53")}
           linkValue={""}
-          title="ОФШОРНА КОМПАНІЯ В КанадІ"
+          title={t("jurisdictions_52")}
           isDark={false}
           blockClass="canada"
         />

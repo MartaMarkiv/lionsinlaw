@@ -1,4 +1,5 @@
 import Faq from "../../components/faq/Faq";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import { Flex } from "antd";
 import Icon from "../../components/iconComponent/Icon";
@@ -8,17 +9,16 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CanadaCompany() {
+  const {t} = useTranslation();
   return (
     <section className="canada-company-page">
       <div className="page-content-wrapper canada-company-header-wrapper">
         <div className="canada-company-header">
           <p className="title">
-            Канада: Стабільна та вигідна юрисдикція для міжнародного бізнесу
+            {t("canada_company_1")}
           </p>
           <p className="description">
-            Канада пропонує високий рівень життя, стабільну правову систему та
-            вигідні умови для ведення бізнесу з поміркованими податковими
-            ставками та доступом до великих ринків
+            {t("canada_company_2")}
           </p>
         </div>
       </div>
@@ -32,21 +32,18 @@ export default function CanadaCompany() {
           <div className="shadow" />
         </div>
         <div className="info-wrapper">
-          <p className="title">Теорія і практика на Розвиток вашого бізнесу</p>
+          <p className="title">{t("canada_company_3")}</p>
           <p className="description">
-            Якщо ви тільки починаєте будувати свій бізнес або хочете його
-            масштабувати, наш фахівці допоможуть уникнути помилок
+            {t("canada_company_4")}
           </p>
           <Flex className="grid-wrapper theory-item" align="center">
             <div className="icon-wrapper">
               <Icon name="bank-dollar" />
             </div>
             <div>
-              <p className="item-title">Оподаткування</p>
+              <p className="item-title">{t("canada_company_5")}</p>
               <p className="item-description">
-                Канада має помірковані податкові ставки, з корпоративним
-                податком на прибуток близько 15%, а також надає різні податкові
-                пільги для малого та середнього бізнесу.
+                {t("canada_company_6")}
               </p>
             </div>
           </Flex>
@@ -55,11 +52,9 @@ export default function CanadaCompany() {
               <Icon name="libra" />
             </div>
             <div>
-              <p className="item-title">Регулювання фінансового сектору</p>
+              <p className="item-title">{t("canada_company_7")}</p>
               <p className="item-decription">
-                Фінансовий сектор Канади суворо регулюється Федеральною комісією
-                з цінних паперів та іншими органами, що забезпечують
-                стабільність і безпеку фінансових послуг.
+                {t("canada_company_8")}
               </p>
             </div>
           </Flex>
@@ -68,10 +63,9 @@ export default function CanadaCompany() {
               <Icon name="business" />
             </div>
             <div>
-              <p className="item-title">Преференції для бізнесу</p>
+              <p className="item-title">{t("canada_company_9")}</p>
               <p className="item-description">
-                Канада є привабливою для міжнародних компаній завдяки розвиненій
-                інфраструктурі, доступу до Північної Америки та торгових угод.
+                {t("canada_company_10")}
               </p>
             </div>
           </Flex>
@@ -80,11 +74,9 @@ export default function CanadaCompany() {
               <Icon name="attention" />
             </div>
             <div>
-              <p className="item-title">Ризики і обмеження.</p>
+              <p className="item-title">{t("canada_company_11")}</p>
               <p className="item-description">
-                Більшість компаній повинні дотримуватись строгих екологічних та
-                корпоративних стандартів, а також виконувати звітність по
-                податках.
+                {t("canada_company_12")}
               </p>
             </div>
           </Flex>
@@ -96,79 +88,69 @@ export default function CanadaCompany() {
         align="center"
       >
         <div className="image-wrapper" />
-        <p className="title">Від бізнесменів до бізнесменів</p>
+        <p className="title">{t("canada_company_13")}</p>
         <p className="description">
-          Ми ділимося тільки реальними знаннями, які ви можете застосувати на
-          практиці. Тому тисячі підприємці обирають нас
+          {t("canada_company_14")}
         </p>
         <Flex className="counts-wrapper" justify="space-between">
           <Flex className="count-item" vertical={true} align="center">
             <p className="count">24</p>
-            <p className="count-label">Кваліфіковані спеціалісти</p>
+            <p className="count-label">{t("canada_company_15")}</p>
           </Flex>
           <Flex className="count-item" vertical={true} align="center">
             <p className="count">35</p>
-            <p className="count-label">Сфери діяльності</p>
+            <p className="count-label">{t("canada_company_16")}</p>
           </Flex>
           <Flex className="count-item" vertical={true} align="center">
             <p className="count">805</p>
-            <p className="count-label">Клієнтів в 2025 році</p>
+            <p className="count-label">{t("canada_company_17")}</p>
           </Flex>
           <Flex className="count-item" vertical={true} align="center">
             <p className="count">3,946</p>
-            <p className="count-label">Години особистих консультацій</p>
+            <p className="count-label">{t("canada_company_18")}</p>
           </Flex>
         </Flex>
       </Flex>
       <Flex className="business-coaching" vertical={true} align="center">
-        <p className="title">Як працює коучинг для бізнесу?</p>
+        <p className="title">{t("canada_company_19")}</p>
         <p className="description">
-          Наші фахівці розвіюють міфи про марність коучингу і пропонують тільки
-          реальні знання, які виможна застосувати на практиці. Ось як ми
-          працюємо:
+          {t("canada_company_20")}
         </p>
         <Flex className="business-coaching-items-list" justify="space-between">
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-analysis" />
-            <p className="item-title">Аналіз бізнесу та цілей</p>
+            <p className="item-title">{t("canada_company_21")}</p>
             <p className="item-description">
-              Коуч проводити детальний аналіз поточного стану бізнесу, вибирати
-              ключові виклики та на основі формувати стратегічні цілі.
+              {t("canada_company_22")}
             </p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-optimisation" />
-            <p className="item-title">Оптимізація бізнес-процесів</p>
+            <p className="item-title">{t("canada_company_23")}</p>
             <p className="item-description">
-              Впроваджуються ефективні методи управління командою, фінансами,
-              маркетингом та операційною діяльністю
+              {t("canada_company_24")}
             </p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-motivation" />
-            <p className="item-title">Мотивація та підтримка</p>
+            <p className="item-title">{t("canada_company_25")}</p>
             <p className="item-description">
-              Коуч підтримує підприємця на всіх етапах розвитку, допомагаючи
-              подолати кризу, страхи та бар'єри, що захоплюють зростання
-              бізнесу.
+              {t("canada_company_26")}
             </p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-results" />
-            <p className="item-title">Досягнення запланованих результатів</p>
+            <p className="item-title">{t("canada_company_27")}</p>
             <p className="item-description">
-              Власник бізнесу отримує чіткі інструменти та рішення для
-              масштабування компанії, підвищення прибутковості та виходу на нові
-              ринки.
+              {t("canada_company_28")}
             </p>
           </Flex>
         </Flex>
       </Flex>
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/canada`}
       >
         <CountryTarrifList />

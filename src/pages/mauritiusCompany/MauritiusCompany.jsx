@@ -1,4 +1,5 @@
 import Icon from "../../components/iconComponent/Icon";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import mauritiusNature from "../../assets/images/mauritiusNature.png";
 import mauritiusLibra from "../../assets/images/mauritiusLibra.png";
@@ -13,19 +14,17 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 import Faq from "../../components/faq/Faq";
 
 export default function MauritiusCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper mauritius-page-wrapper">
       <Flex className="header-info-wrapper">
         <Flex vertical={true} className="data-info-wrapper">
           <p className="title">
-            Мауріцій: Лояльне оподаткування та стабільний бізнес-клімат для
-            вашого успіху від
+            {t("mauricius_1")}
           </p>
           <p className="law-name">LionsInLaw</p>
           <p className="description">
-            Вибір Мауріцію для вашого бізнесу — це шанс отримати вигідними
-            податковими пільгами та стабільною економічною ситуацією з
-            підтримкою професії
+            {t("mauricius_2")}
           </p>
         </Flex>
         <div className="image-wrapper" />
@@ -34,41 +33,40 @@ export default function MauritiusCompany() {
         <img src={mauritiusNature} alt="" />
         <Flex vertical={true} className="tariff-info" justify="center">
           <p className="title">
-            Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
+            {t("mauricius_3")}
             <span className="red-text">LionsInLaw</span>
           </p>
           <Flex className="tariff-btn" justify="space-between" align="center">
-            <span>Тарифи</span>
+            <span>{t("mauricius_4")}</span>
             <Button icon={<Icon name="tariff" />} />
           </Flex>
         </Flex>
       </Flex>
       <CompanySubDescriptionBlock
-        description="Мауріцій — острівна країна в Індійському океані, яка є популярною юрисдикцією для реєстрації офшорних компаній завдяки низьким податкам та лояльному законодавств"
+        description={t("mauricius_6")}
         imageRef={mauritiusLibra}
         hasShadow={false}
         title={
           <p className="title">
-            <span className="selected-text">Юридична система Мауріціусу:</span>{" "}
-            синтез англійського загального та французького цивільного права.
+            <span className="selected-text">{t("mauricius_5")}</span>{t("mauricius_5.1")}
           </p>
         }
       />
       <CompanyDescriptionGrid
-        businessDescr="Реєстрація компанії на Мауріції є простою та може бути завершена в короткий термін за допомогою місцевих юристів або агентів."
+        businessDescr={t("mauricius_16")}
         businessImage={mauritiusBusiness}
         imageRef={mauritiusTaxes}
-        financialDescr="Фінансовий сектор Мауріцію регулюється Центральним банком та Національною фінансовою комісією, що забезпечує високий рівень прозорості та відповідності міжнародним стандартам"
-        subDescr="Мауріцій є популярною юрисдикцією для міжнародних компаній завдяки стабільній економіці, сприятливим умовам для іноземних інвестицій і бізнесу."
-        riskDescr="Хоча Мауріцій пропонує сприятливі умови для бізнесу, існують міжнародні вимоги до фінансової прозорості, яких необхідно дотримуватись."
-        taxesDescr="Мауріцій пропонує одну з найнижчих податкових ставок на прибуток (15%), а також низькі ставки ПДВ та інші вигідні податкові пільги для інвесторів."
-        title="основні переваги та практичні Аспекти реєстрації компанії"
-        company="Мауріцію"
+        financialDescr={t("mauricius_12")}
+        subDescr={t("mauricius_10")}
+        riskDescr={t("mauricius_14")}
+        taxesDescr={t("mauricius_9")}
+        title={t("mauricius_7")}
+        company={t("mauricius_7.1")}
       />
       <ConsultingOffshoreComp
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
+        title={t("mpcexoc_1")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/mauritius`}
       >
         <CountryTarrifList />

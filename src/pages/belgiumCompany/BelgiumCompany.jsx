@@ -11,18 +11,19 @@ import Icon from "../../components/iconComponent/Icon";
 import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 import Faq from "../../components/faq/Faq";
+import { useTranslation } from "react-i18next";
 
 export default function BelgiumCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper belgium-company-page-wrapper">
       <Flex className="belgium-header">
         <div className="header-info">
           <p className="title">
-            Відкрийте Бізнес у Бельгії: Ваш Шлях до Європейського Ринку{" "}
+            {t("belgium_company_1")}
           </p>
           <p className="description">
-            Простий та надійний старт вашого бізнесу в Бельгії – мінімум
-            бюрократії, максимум можливостей!
+            {t("belgium_company_2")}
           </p>
         </div>
         <div className="image-wrapper">
@@ -32,14 +33,10 @@ export default function BelgiumCompany() {
       <div className="belgium-company-description">
         <Flex justify="space-between" className="main-info-wrapper">
           <p className="title">
-            Бельгія: ідеальне місце для бізнесу в самому серці Європи
+            {t("belgium_company_3")}
           </p>
           <p className="description">
-            Бельгія — країна, розташована в центрі Європи, з розвинутою
-            економікою і стабільною політичною ситуацією. Вона є членом
-            Європейського Союзу та пропонує вигідні умови для бізнесу.З
-            привабливими податковими пільгами та високим рівнем фінансової
-            стабільності Бельгія надає численні переваги для підприємців.
+            {t("belgium_company_4")}
           </p>
         </Flex>
         <Flex className="secondary-part">
@@ -51,11 +48,9 @@ export default function BelgiumCompany() {
             justify="space-around"
             className="description-info"
           >
-            <p className="sub-title">Захист ваших прав та інтересів</p>
+            <p className="sub-title">{t("belgium_company_5")}</p>
             <p className="sub-description">
-              Юридична система країни гарантує дотримання контрактів, прав
-              власності та інтелектуальної власності, а також захищає від
-              несанкціонованих дій з боку державних органів.
+              {t("belgium_company_6")}
             </p>
             <Flex
               align="flex-end"
@@ -63,7 +58,7 @@ export default function BelgiumCompany() {
               justify="space-between"
             >
               <Button>
-                <span>Тарифи</span>
+                <span>{t("belgium_company_7")}</span>
                 <Flex align="center" justify="center" className="icon-wrapper">
                   <Icon name="tariff" />
                 </Flex>
@@ -78,8 +73,7 @@ export default function BelgiumCompany() {
                   <span>70%</span>
                 </Flex>
                 <p className="sub-description">
-                  LionsInLaw гордитися високим рівнем задоволення наших
-                  клієнтів.
+                  {t("belgium_company_8")}
                 </p>
               </div>
             </Flex>
@@ -87,32 +81,28 @@ export default function BelgiumCompany() {
         </Flex>
       </div>
       <CompanyDescriptionGrid
-        businessDescr="Бельгія є важливим фінансовим центром Європи, з низьким рівнем бюрократії, що робить її привабливою для компаній, які шукають доступ до європейських ринків."
+        businessDescr={t("belgium_company_12")}
         businessImage={belgiumBusiness}
-        financialDescr=" Фінансовий сектор у Бельгії строго регулюється Національною комісією з фінансових послуг та ринків, що забезпечує високий рівень стабільності та прозорості."
+        financialDescr={t("belgium_company_14")}
         imageRef={belgiumTaxes}
-        riskDescr="Потрібно дотримуватися європейських стандартів фінансової прозорості та дотримуватися вимог щодо звітності та оподаткування."
-        subDescr="Бельгія є важливим фінансовим центром Європи, з низьким рівнем бюрократії, що робить її привабливою для компаній, які шукають доступ до європейських ринків."
-        title="Особливості Бельгії для вашої офшорної компанії"
-        taxesDescr="Бельгія має конкурентоспроможні податкові ставки, включаючи корпоративний податок на прибуток. Існує система податкових пільг для інвесторів у дослідження та розвиток."
+        riskDescr={t("belgium_company_16")}
+        subDescr={t("belgium_company_12")}
+        title={t("belgium_company_9")}
+        taxesDescr={t("belgium_company_11")}
       />
       <div className="belgium-consultation-wrapper">
-        <p className="main-title">Отримайте експертну консультацію щодо </p>
-        <p className="secondary-title">створення офшорної компанії </p>
+        <p className="main-title">{t("belgium_company_19")}</p>
+        <p className="secondary-title">{t("belgium_company_19.1")}</p>
         <Flex>
           <div className="info-wrapper">
             <p className="description">
-              Як експерт в області офшорних реєстрацій, ми надаємо професійну
-              підтримку на кожному етапі відкриття компанії в Бельгії. Наш
-              досвід та глибоке розуміння місцевих норм і вимоги вам безпечно та
-              ефективно почати бізнес у цій привабливій юрисдикції.
+              {t("belgium_company_20")}
             </p>
             <p className="secondary-description">
-              Дізнайтеся про вартість і умови реєстрації вашої майбутньої
-              офшорної компанії від наших експертів
+              {t("belgium_company_22")}
             </p>
             <LinkComponent
-              linkLabel="Зареєструвати Компанію"
+              linkLabel={t("belgium_company_24")}
               linkValue={`${COMPANY_REGISTRATION_ROUTE}/belgium`}
             />
           </div>
@@ -120,7 +110,7 @@ export default function BelgiumCompany() {
             <img src={belgiumGirl} alt="Belgium team member" />
             <Flex className="start-block" align="center" vertical={true}>
               <img src={userImage} alt="" />
-              <p>100% успішність</p>
+              <p>{t("belgium_company_21")}</p>
               <div className="circle-img" />
             </Flex>
             <Flex
@@ -129,7 +119,7 @@ export default function BelgiumCompany() {
               justify="center"
               className="time-block"
             >
-              <p>Підтримка</p>
+              <p>{t("belgium_company_23")}</p>
               <Flex>
                 <span className="hours-value">24/</span>
                 <span className="day-value">7</span>
@@ -140,7 +130,7 @@ export default function BelgiumCompany() {
               <div>
                 <p className="count-title">+ 6.202.203,00 €</p>
                 <p className="count-description">
-                  Швидко, легко та з max конфіденційністю через захищені системи
+                  {t("mpcexoc_7")}
                 </p>
               </div>
             </Flex>

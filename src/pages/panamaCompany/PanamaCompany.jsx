@@ -1,4 +1,5 @@
 import { Button, Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import panamaNature from "../../assets/images/panamaNature.png";
 import Faq from "../../components/faq/Faq";
@@ -10,6 +11,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PanamaCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper panama-company-page-wrapper">
       <Flex
@@ -20,17 +22,15 @@ export default function PanamaCompany() {
       >
         <Flex vertical={true} align="flex-start" className="header-wrapper">
           <p className="title">
-            Розпочніть нову пригоду з офшорною компанією в Панамі
+            {t("panama_company_1")}
           </p>
           <p className="description">
-            Відкрийте нові можливості разом з LionsInLaw: швидка та надійна
-            реєстрація компаній у Панамі, що забезпечує глобальні перспективи та
-            фінансові переваги
+            {t("panama_company_2")}
           </p>
         </Flex>
         <div className="tariff-block">
           <p>
-            Ефективне обслуговування вашої офшорної компанії на 1 або 2 роки з{" "}
+            {t("panama_company_3")}
             <span className="selected-text">LionsInLaw</span>
           </p>
           <Flex
@@ -38,44 +38,38 @@ export default function PanamaCompany() {
             justify="space-between"
             align="center"
           >
-            <span>Тарифи</span>
+            <span>{t("belgium_company_7")}</span>
             <Button icon={<Icon name="tariff" />} />
           </Flex>
         </div>
       </Flex>
       <CompanySubDescriptionBlock
-        description="Панама, центральноамериканська країна з привабливою офшорною юрисдикцією, має унікальну правову систему, яка поєднує елементи цивільного та романського права з елементами загального права. Ця комбінація робить Панаму привабливим місцем для ведення бізнесу та реєстрації офшорних компаній"
+        description={t("panama_company_5")}
         imageRef={panamaNature}
         title={
           <p className="title">
-            Панама: Ваш ключ до успіху в привабливій офшорній юрисдикції
-            Центральної Америки
+            {t("panama_company_4")}
           </p>
         }
         hasShadow={true}
       />
       <SecondaryDescriptionGrid
-        businessDescr="Панама приваблива для міжнародних бізнесів з низькими
-витратами на адміністративні послуги та доступом до латиноамериканських ринків."
-        financialDescr="Фінансовий сектор Панами регулюється
-Національними банком Панами та іншими регуляторами."
-        riskDescr="Панама зобов'язана дотримуватися міжнародних стандартів у сфері
-фінансової прозорості та боротьби з відмиванням грошей."
-        subDescr="Відкриття бізнесу в Панамі забезпечує стратегічне розташування для міжнародної торгівлі завдяки Панамському каналу, що сполучає Атлантичний і Тихий океани. Стабільна економіка і політична ситуація в країні створюють сприятливе середовище для інвесторів. Панама також пропонує сучасну інфраструктуру та висококваліфіковану робочу силу, що сприяє ефективному веденню бізнесу."
-        taxesDescr="Офшорна компанія в Панамі може скористатися низькими податковими
-ставками та конфіденційністю."
+        businessDescr={t("panama_company_12")}
+        financialDescr={t("panama_company_10")}
+        riskDescr={t("panama_company_14")}
+        subDescr={t("panama_company_15")}
+        taxesDescr={t("panama_company_8")}
         title={
           <p className="title">
-            Переваги Офшорної Компанії{" "}
-            <span className="selected-text">в Панамі з LionsInLaw</span>
+            {t("panama_company_6")}
+            <span className="selected-text">{t("panama_company_6.1")}</span>
           </p>
         }
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/panama`}
       >
         <CountryTarrifList />

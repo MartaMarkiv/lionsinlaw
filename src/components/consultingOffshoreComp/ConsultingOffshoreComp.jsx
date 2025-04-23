@@ -36,7 +36,7 @@ export default function ConsultingOffshoreComp({
           {showPrice && (
             <Flex align="center">
               <span className="count">$0</span>
-              <span>/ Місяць</span>
+              <span>{t("mpcexoc_4")}</span>
             </Flex>
           )}
           <div className="tariff-items-wrapper">{children}</div>

@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import CompanySubDescriptionBlock from "../../components/companySubDescriptionBlock/CompanySubDescriptionBlock";
 import manIslandNature from "../../assets/images/men-island.png";
@@ -11,18 +12,17 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ManIslandCompany() {
+  const {t} = useTranslation();
   return (
     <div className="page-content-wrapper isle-man-company">
       <Flex justify="space-between" className="banner-wrapper">
         <div className="man-company-wrapper">
           <Flex vertical={true}>
-            <p className="sub-title">Створіть вашу офшорну компанію на </p>
-            <p className="company-name">острові Мен</p>
+            <p className="sub-title">{t("isla_of_man_1")}</p>
+            <p className="company-name">{t("isla_of_man_2")}</p>
           </Flex>
           <p className="description">
-            Оптимізуйте свій бізнес з нашими експертними послугами реєстрації
-            компаній на Острові Мен. Глобальні можливості, податкові переваги та
-            надійний партнер
+            {t("isla_of_man_3")}
           </p>
         </div>
         <Flex
@@ -33,7 +33,7 @@ export default function ManIslandCompany() {
           <p className="title">LionsInLaw</p>
           <div>
             <p className="count">1000+</p>
-            <p className="count-label">задоволених клієнтів</p>
+            <p className="count-label">{t("isla_of_man_4")}</p>
           </div>
         </Flex>
         <div className="vector-wrapper" />
@@ -41,28 +41,27 @@ export default function ManIslandCompany() {
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            Відкрийте нові горизонти з офшорною компанією на острові Мен
+            {t("isla_of_man_5")}
           </p>
         }
-        description="Острів Мен є коронною залежністю Британії зі своєю юридичною системою, що базується на англійському загальному праві. Ця система використовує прецедентне право, забезпечуючи стабільність і передбачуваність. Це створює сприятливі умови для розвитку бізнесу."
+        description={t("isla_of_man_6")}
         imageRef={manIslandNature}
       />
       <CompanyDescriptionGrid
-        businessDescr="Острів Мен відомий своїми привабливими умовами для офшорних компаній, з низькими податковими ставками та конфіденційністю."
+        businessDescr={t("isla_of_man_17")}
         businessImage={manEarth}
-        financialDescr="Фінансовий сектор на Острові Мен строго регулюється відповідно до нормативних вимог, що встановлюються урядом Гібралтару."
+        financialDescr={t("isla_of_man_13")}
         imageRef={manIslandPeople}
-        riskDescr="Існують міжнародні стандарти в області фінансової та фіскальної прозорості, які потрібно дотримуватися при діяльності на Острові Мен"
-        subDescr="Острів Мен забезпечує стабільну юридичну систему на основі англійського права та суворе регулювання фінансового сектора, ідеальне середовище для успішного розвитку бізнесу."
-        taxesDescr="Острів Мен пропонує адміністративні послуги і ставки податків, які дуже низькі і в адміністративній зон"
-        title="Переваги та Виклики Відкриття Офшорної Компанії на"
-        company="Острові Мен"
+        riskDescr={t("isla_of_man_15")}
+        subDescr={t("isla_of_man_11")}
+        taxesDescr={t("isla_of_man_10")}
+        title={t("isla_of_man_7")}
+        company={t("isla_of_man_8")}
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/isleOfMan`}
       >
         <CountryTarrifList />

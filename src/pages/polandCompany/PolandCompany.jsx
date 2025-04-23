@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import polandNature from "../../assets/images/polandNature.png";
 import polandTaxes from "../../assets/images/polandTaxes.png";
 import polandBuilding from "../../assets/images/polandBuilding.png";
@@ -10,42 +11,40 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PolandCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper poland-company-wrapper">
       <section className="poland-company-header">
         <p className="title">
-          Розпочніть вашу офшорну подорож з LionsInLaw в Польщі!
+          {t("poland_company_1")}
         </p>
         <p className="description">
-          Офшорні Можливості Без Меж: Реєстрація Компанії з Надійним Партнером
+          {t("poland_company_2")}
         </p>
       </section>
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            Офшорні Можливості в Серці Європи: Реєстрація Компанії в Польщі
+            {t("poland_company_3")}
           </p>
         }
-        description="Польща - країна в Центральній Європі з розвиненою економікою та членством в Європейському Союзі. Вона має цивільну правову систему, що базується на законодавстві та конституції країни"
+        description={t("poland_company_4")}
         imageRef={polandNature}
       />
       <CompanyDescriptionGrid
-        businessDescr="Польща є важливим ринком у Центральній Європі з доступом
-до європейського ринку та розвиненою інфраструктурою."
+        businessDescr={t("poland_company_12")}
         businessImage={polandBuilding}
-        financialDescr="Фінансовий сектор Польщі регулюється Національним банком Польщі та іншими фінансовими органами."
+        financialDescr={t("poland_company_10")}
         imageRef={polandTaxes}
-        riskDescr="Польща є важливим ринком у Центральній Європі з доступом
-до європейського ринку та розвиненою інфраструктурою.."
-        subDescr="Відкриття компанії в Польщі привабливе через її зручне географічне положення у центрі Європи та стабільну економіку. Країна має сучасну цивільну правову систему, що забезпечує стабільність та прозорість у бізнес-операціях"
-        title="Особливості Польші для вашої офшорної компанії"
-        taxesDescr="Податкова система в Польщі включає корпоративний податок та ряд інших податкових ставок для різних типів доходів."
+        riskDescr={t("poland_company_12")}
+        subDescr={t("poland_company_8")}
+        title={t("poland_company_7")}
+        taxesDescr={t("poland_company_6")}
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_9")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/poland`}
       >
         <CountryTarrifList />

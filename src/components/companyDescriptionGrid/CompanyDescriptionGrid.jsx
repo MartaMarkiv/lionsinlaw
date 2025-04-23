@@ -1,6 +1,7 @@
 import { Flex } from "antd";
 import "./style.scss";
 import Icon from "../iconComponent/Icon";
+import { useTranslation } from "react-i18next";
 
 export default function CompanyDescriptionGrid({
   taxesDescr,
@@ -13,6 +14,7 @@ export default function CompanyDescriptionGrid({
   businessDescr,
   businessImage,
 }) {
+  const {t} = useTranslation();
   return (
     <section className="company-description-grid grid-wrapper">
       <Flex vertical={true} className="taxes-wrapper">
@@ -20,7 +22,7 @@ export default function CompanyDescriptionGrid({
           <div className="icon-wrapper">
             <Icon name="bank-dollar" />
           </div>
-          <span>Оподаткування</span>
+          <span>{t("england_company_5")}</span>
         </Flex>
         <p>{taxesDescr}</p>
       </Flex>
@@ -39,7 +41,7 @@ export default function CompanyDescriptionGrid({
           <div className="icon-wrapper">
             <Icon name="libra" />
           </div>
-          <span>Регулювання фінансового сектору</span>
+          <span>{t("england_company_9")}</span>
         </Flex>
         <p>{financialDescr}</p>
       </Flex>
@@ -48,7 +50,7 @@ export default function CompanyDescriptionGrid({
           <div className="icon-wrapper">
             <Icon name="attention" />
           </div>
-          <span>Ризики і обмеження.</span>
+          <span>{t("england_company_11")}</span>
         </Flex>
         <p>{riskDescr}</p>
       </Flex>
@@ -57,7 +59,7 @@ export default function CompanyDescriptionGrid({
           <div className="icon-wrapper">
             <Icon name="business" />
           </div>
-          <span>Преференції для бізнесу</span>
+          <span>{t("england_company_13")}</span>
         </Flex>
         <p>{businessDescr}</p>
       </Flex>

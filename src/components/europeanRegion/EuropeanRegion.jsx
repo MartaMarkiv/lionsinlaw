@@ -13,92 +13,94 @@ import {
   USA_COMPANY_ROUTE,
 } from "../../routes/routes";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function EuropeanRegion() {
+  const {t} = useTranslation();
   return (
     <div className="european-region-wrapper">
       <Link to={ENGLAND_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={""}
-          title="Офшорна компанія в Англії"
+          title={t("jurisdictions_20")}
           isDark={false}
           hasLink={false}
           blockClass="england"
         />
       </Link>
       <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+        description={t("jurisdictions_21")}
         linkValue={GIBRALTAR_COMPANY_ROUTE}
-        title="Офшорна компанія в Гібралтарі"
+        title={t("jurisdictions_22")}
         isDark={false}
       />
       <Link className="spain-link" to={SPAIN_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={""}
-          title="Офшорна компанія в ІСПАНІї"
+          title={t("jurisdictions_25")}
           isDark={true}
           hasLink={false}
           blockClass="spain"
         />
       </Link>
       <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+        description={t("jurisdictions_21")}
         linkValue={ISLA_MAN_COMPANY_ROUTE}
-        title="Офшорна компанія в Острів Мен"
+        title={t("jurisdictions_27")}
         isDark={false}
         blockClass="men-island"
       />
       <Link to={IRELAND_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={IRELAND_COMPANY_ROUTE}
           hasLink={false}
-          title="Офшорна компанія в Ірландії"
+          title={t("jurisdictions_30")}
           isDark={false}
           blockClass="ireland"
         />
       </Link>
       <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+        description={t("jurisdictions_21")}
         linkValue={SCOTLAND_COMPANY_ROUTE}
-        title="Офшорна компанія в Шотландії"
+        title={t("jurisdictions_32")}
         isDark={true}
       />
       <Link to={USA_COMPANY_ROUTE} className="usa-link">
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={""}
           hasLink={false}
-          title="Офшорна компанія в USA"
+          title={t("jurisdictions_35")}
           isDark={false}
           blockClass="usa"
         />
       </Link>
       <Link to={POLAND_COMPANY_ROUTE} className="poland-link">
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={""}
-          title="Офшорна компанія в ПОЛЬШІ"
+          title={t("jurisdictions_37")}
           isDark={true}
           blockClass="poland"
         />
       </Link>
       <Link className="czech-link" to={CZECH_COMPANY_ROUTE}>
         <BlockElement
-          description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+          description={t("jurisdictions_21")}
           linkValue={""}
-          title="Офшорна компанія в ЧЕХІЇ"
+          title={t("jurisdictions_39")}
           isDark={false}
           hasLink={false}
           blockClass="czech"
         />
       </Link>
       <BlockElement
-        description="Міжнародний фінансовий центр з простою податковою системою. Ідеальне місце для оптимізації вашого бізнесу та зростання на глобальному рівні."
+        description={t("jurisdictions_21")}
         linkValue={BELGIUM_COMPANY_ROUTE}
-        title="Офшорна компанія в БЕЛЬГІЇ"
+        title={t("jurisdictions_40")}
         isDark={true}
       />
     </div>

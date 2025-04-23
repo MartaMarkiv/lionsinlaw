@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import gibraltarNature from "../../assets/images/GibraltarNature.png";
 import gibraltarTaxes from "../../assets/images/GibraltarTaxes.png";
 import gibraltarBuildings from "../../assets/images/GibraltarBuildings.png";
@@ -10,6 +11,7 @@ import { Flex } from "antd";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function GibraltarCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper gibraltar-company-wrapper">
       <Flex
@@ -18,41 +20,36 @@ export default function GibraltarCompany() {
         className="gibraltar-company-header"
       >
         <p className="title">
-          <span>Заснуйте ваш бізнес у Гібралтарі разом із </span>
+          <span>{t("gibraltar_1")}</span>
           <span className="selected-text">LionsInLaw</span>
         </p>
         <p className="description">
-          професійна допомога у відкритті офшорних компаній, банківських
-          рахунків та юридичних консультаціях у Гібралтар
+          {t("gibraltar_2")}
         </p>
       </Flex>
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            Особливості гібралтар для вашої офшорної компанії
+            {t("gibraltar_3")}
           </p>
         }
-        description="Гібралтар - британська територія з власною системою права та спеціальним статусом для бізнесу. Його правова система ґрунтується на англійському загальному праві з впливами місцевих законів."
+        description={t("gibraltar_4")}
         imageRef={gibraltarNature}
       />
       <CompanyDescriptionGrid
-        businessDescr="Гібралтар має розвинені фінансові послуги та сприятливі умови для міжнародних інвестицій та фінансових технологій."
+        businessDescr={t("gibraltar_14")}
         businessImage={gibraltarBuildings}
-        financialDescr="Фінансовий сектор Гібралтару регулюється Financial
-Services Commission, що забезпечує стабільність та прозорість."
+        financialDescr={t("gibraltar_9")}
         imageRef={gibraltarTaxes}
-        riskDescr="Гібралтар дотримується міжнародних стандартів у сфері фінансової
-прозорості та має правила щодо дотримання регуляторних вимог."
-        subDescr="Відкриття компанії в США відкриває безліч можливостей доступу до глобальних ринків, інноваційних технологій та економічного потенціалу."
-        title="Особливості гібралтар для вашої офшорної компанії"
-        taxesDescr="Податкова система в Гібралтарі приваблива для бізнесу з низькими
-ставками корпоративного податку та податковими пільгами."
+        riskDescr={t("gibraltar_12")}
+        subDescr={t("gibraltar_10")}
+        title={t("gibraltar_5")}
+        taxesDescr={t("gibraltar_7")}
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
       >
         <CountryTarrifList />
       </ConsultingOffshoreComp>

@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import curacaoNature from "../../assets/images/curacaoNature.png";
 import curacaoTaxes from "../../assets/images/curacaoTaxes.png";
 import curacaoBuildings from "../../assets/images/curacaoBuildings.png";
@@ -10,45 +11,40 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CuracaoCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper curacao-company-wrapper">
       <section className="curacao-company-header">
         <p className="title">
-          Перетворіть мрію на реальність: відкрийте офшорну компанію з
-          LionsInLaw у Кюракао!
+          {t("curacao_company_1")}
         </p>
         <p className="description">
-          Експертиза, яка змінює ваш бізнес у глобальний успіх. Довіртеся
-          професіоналам в LionsInLaw
+          {t("curacao_company_2")}
         </p>
       </section>
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            Кюракао: Карибський Офшор із Нідерландським Правом
+            {t("curacao_company_3")}
           </p>
         }
-        description="Кюракао - це карибський острів, що входить до складу Нідерландського королівства. Юридична система острова ґрунтується на нідерландському цивільному праві з деякими місцевими варіаціями."
+        description={t("curacao_company_4")}
         imageRef={curacaoNature}
       />
       <CompanyDescriptionGrid
-        businessDescr="Кюрасао є привабливим місцем для офшорних інвестицій з
-високим рівнем конфіденційності та доступом до міжнародних ринків."
+        businessDescr={t("curacao_company_14")}
         businessImage={curacaoBuildings}
-        financialDescr="Фінансовий сектор Кюрасао регулюється
-Центральним банком Кюрасао та іншими регуляторами."
+        financialDescr={t("curacao_company_10")}
         imageRef={curacaoTaxes}
-        riskDescr="Кюрасао має строгі вимоги до дотримання міжнародних стандартів
-        у сфері фінансової прозорості та правил щодо іноземних інвестицій."
-        subDescr="Податкова система на Кюрасао включає корпоративний податок та інші податкові ставки, які регулюються місцевим законодавством."
-        title="Особливості kuracao для вашої офшорної компанії"
-        taxesDescr="Податкова система на Кюрасао включає корпоративний податок та інші податкові ставки, які регулюються місцевим законодавством."
+        riskDescr={t("curacao_company_12")}
+        subDescr={t("curacao_company_8")}
+        title={t("curacao_company_7")}
+        taxesDescr={t("curacao_company_8")}
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-            компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/kuracao`}
       >
         <CountryTarrifList />

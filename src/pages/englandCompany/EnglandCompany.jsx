@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import englandNature from "../../assets/images/englandNature.png";
 import englandTaxes from "../../assets/images/englandTaxes.png";
 import englandBuilding from "../../assets/images/englandBuilding.png";
@@ -10,6 +11,7 @@ import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function EnglandCompany() {
+  const {t} = useTranslation();
   return (
     <>
       <section className="page-content-wrapper england-company-wrapper">
@@ -20,43 +22,41 @@ export default function EnglandCompany() {
         >
           <Flex className="title-wrapper" vertical={true}>
             <p className="title">
-              Створення офшорної компанії в Англії: Переваги та можливості
+              {t("england_company_1")}
             </p>
             <p className="description">
-              Юридична захищеність та глобальні можливості для вашого бізнесу
+              {t("england_company_2")}
             </p>
           </Flex>
         </Flex>
         <CompanySubDescriptionBlock
-          title={<p className="title">Відкрийте свій бізнес у Англії</p>}
-          description="Англія є частиною Об'єднаного Королівства Великої Британії та Північної Ірландії. Вона має багату історію і впливову правову систему, яка включає елементи загального права та прецедентного права. /n
-        Англія має загальну правову систему, яка базується на прецедентному праві. Корпоративне законодавство в Англії добре розвинене, з детальними правилами щодо утворення та управління компаніями"
+          title={<p className="title">{t("england_company_3")}</p>}
+          description={t("england_company_4")}
           imageRef={englandNature}
         />
         <CompanyDescriptionGrid
-          businessDescr="Англія має розвинені фінансові ринки та доступ до міжнародних ринків капіталу. Існує можливість створення різних типів компаній, включаючи публічні та приватні."
+          businessDescr={t("england_company_14")}
           businessImage={englandBuilding}
-          financialDescr="Фінансовий сектор Англії суворо регулюється урядом та Фінансовою повноважною службою Великої Британії (FCA), що забезпечує стабільність і прозорість в фінансових операціях"
+          financialDescr={t("england_company_10")}
           imageRef={englandTaxes}
-          riskDescr="Англія дотримується міжнародних стандартів у сфері протидії відмиванню грошей і боротьби з фінансуванням тероризму. Крім того, можуть існувати певні адміністративні обмеження для іноземних інвесторів у певних секторах."
-          subDescr="Детальний огляд процесу реєстрації компанії в Англії через онлайн-систему Companies House та переваги корпоративного податку на рівні 19%, що забезпечує конкурентоспроможність і привабливість для бізнесу."
-          title="Створення компанії в Англії: Податкові переваги та практичні аспекти"
-          taxesDescr="Корпоративний податок в Англії становить 19% (станом на 2024 рік). Існує система податкових льгот для малих компаній та інвестиційних проектів."
+          riskDescr={t("england_company_12")}
+          subDescr={t("england_company_8")}
+          title={t("england_company_7")}
+          taxesDescr={t("england_company_6")}
         />
       </section>
 
       <Flex className="england-consulting" align="center" justify="flex-end">
         <div>
           <p className="title">
-            Отримайте експертну консультацію щодо створення офшорної компанії{" "}
+            {t("england_company_15")}
             <span className="selected-text">LionsInLaw</span>
           </p>
           <p className="description">
-            Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-            компанії від наших експертів
+            {t("england_company_16")}
           </p>
           <LinkComponent
-            linkLabel="Зареєструвати компанію"
+            linkLabel={t("england_company_17")}
             linkValue={`${COMPANY_REGISTRATION_ROUTE}/england`}
           />
         </div>

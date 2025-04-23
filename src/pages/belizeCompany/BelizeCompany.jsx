@@ -1,4 +1,5 @@
 import { Flex } from "antd";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import belizNature from "../../assets/images/belizNature.png";
 import Faq from "../../components/faq/Faq";
@@ -9,6 +10,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function BelizeCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper belize-company-page-wrapper">
       <Flex
@@ -17,49 +19,43 @@ export default function BelizeCompany() {
         className="belize-company-header"
       >
         <Flex vertical={true} align="flex-start" className="header-wrapper">
-          <p className="title">Перетніть межі: Відкрийте офшорну компанію в</p>
+          <p className="title">{t("belize_company_1")}</p>
           <p className="title second">
-            Беліз з <span className="selected-text">LionsInLaw</span>
+            {t("belize_company_2")}<span className="selected-text">LionsInLaw</span>
           </p>
           <p className="description">
-            Юридична захищеність та глобальні можливості для вашого бізнесу
+            {t("belize_company_3")}
           </p>
         </Flex>
       </Flex>
       <CompanySubDescriptionBlock
-        description="Беліз, країна в Центральній Америці, відома своєю привабливою офшорною юрисдикцією. Тут поєднується суміш правових традицій, включаючи вплив англійського загального права та місцевих законів."
+        description={t("belize_company_5")}
         imageRef={belizNature}
         title={
           <p className="title">
-            Беліз: Ваша Глобальна Офшорна Юрисдикція з Перевагами Англійського
-            та Локального Права
+            {t("belize_company_4")}
           </p>
         }
         hasShadow={true}
       />
       <SecondaryDescriptionGrid
-        businessDescr="Беліз привабливий для офшорних бізнесів з низькими
-витратами на адміністративні послуги та доступом до американських ринків."
-        financialDescr="Офшорна компанія в Белізі може скористатися низькими податковими
-ставками та відсутністю податку на прибуток для міжнародних доходів."
-        riskDescr="Беліз зобов'язаний дотримуватися міжнародних стандартів у сфері
-фінансової прозорості та боротьби з відмиванням грошей."
-        subDescr="Відкриття компанії в Белізі — це шлях до низьких податкових ставок, стабільного фінансового регулювання та доступу до міжнародних ринків, ідеальний для міжнародного бізнесу."
-        taxesDescr="Офшорна компанія в Белізі може скористатися низькими податковими
-ставками та відсутністю податку на прибуток для міжнародних доходів."
+        businessDescr={t("belize_company_13")}
+        financialDescr={t("belize_company_11")}
+        riskDescr={t("belize_company_15")}
+        subDescr={t("belize_company_7")}
+        taxesDescr={t("belize_company_11")}
         title={
           <Flex className="title" vertical={true}>
-            <p>Вигідна юрисдикція для вашого бізнесу: Створення компаній </p>
-            <p className="selected-text">Беліз з </p>
+            <p>{t("belize_company_6")}</p>
+            <p className="selected-text">{t("belize_company_6.1")}</p>
             <p className="company-name">LionsInLaw</p>
           </Flex>
         }
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/belize`}
       >
         <CountryTarrifList />
