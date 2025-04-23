@@ -5,6 +5,7 @@ import translationEn from "./en.json";
 import translationIt from "./it.json";
 import translationEs from "./es.json";
 import translationUa from "./ua.json";
+import translationRu from "./ru.json";
 
 const resources = {
   en: {
@@ -19,6 +20,9 @@ const resources = {
   ua: {
     translation: translationUa,
   },
+  ru: {
+    translation: translationRu
+  }
 };
 
 i18n
