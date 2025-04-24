@@ -1,4 +1,5 @@
 import "./style.scss";
+import { useTranslation } from "react-i18next";
 import usaNature from "../../assets/images/usaNature.png";
 import usaTaxes from "../../assets/images/usaTaxes.png";
 import usaWhiteHouse from "../../assets/images/usaWhiteHouse.png";
@@ -10,45 +11,40 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function UsaCompany() {
+  const {t} = useTranslation();
   return (
     <section className="page-content-wrapper usa-company-wrapper">
       <div className="usa-company-header">
         <div className="bg-block"></div>
-        <p className="title">Відкрийте нові горизонти з LionsInLaw</p>
+        <p className="title">{t("usa_company_1")}</p>
         <p className="description">
-          Реєстрація офшорної компанії в США - ваш ключ до глобального успіху
+          {t("usa_company_2")}
         </p>
         <div className="usa-banner" />
       </div>
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            Американські Правові Системи: Різноманіття та Унікальність
+            {t("usa_company_3")}
           </p>
         }
-        description="Сполучені Штати Америки - федеральна держава з різними юридичними системами в кожному штаті. Вона має унікальну суміш правових традицій, включаючи загальне, прецедентне та конституційне право."
+        description={t("usa_company_4")}
         imageRef={usaNature}
       />
       <CompanyDescriptionGrid
-        businessDescr="США є великим ринком з високим рівнем інновацій та доступом
-до капіталу для підприємств."
+        businessDescr={t("usa_company_14")}
         businessImage={usaWhiteHouse}
-        financialDescr="Фінансовий сектор США регулюється Федеральною
-резервною системою (Fed), Securities and Exchange Commission (SEC) та іншими
-агентствами."
+        financialDescr={t("usa_company_10")}
         imageRef={usaTaxes}
-        riskDescr="США мають строгі вимоги до фінансової звітності та регуляції, що
-може становити виклик для деяких компаній."
-        subDescr="Відкриття компанії в США відкриває безліч можливостей доступу до глобальних ринків, інноваційних технологій та економічного потенціалу."
-        taxesDescr="Податкова система в США складна і включає федеральний
-корпоративний податок та податки на рівні штатів."
-        title="Особливості США для вашої офшорної компанії"
+        riskDescr={t("usa_company_12")}
+        subDescr={t("usa_company_8")}
+        taxesDescr={t("usa_company_6")}
+        title={t("usa_company_7")}
       />
       <ConsultingOffshoreComp
-        title="Отримайте експертну консультацію щодо створення офшорної компанії"
-        description="Дізнайтеся про вартість і умови реєстрації вашої майбутньої офшорної
-      компанії від наших експертів"
-        linkLabel="Зареєструвати компанію"
+        title={t("mpcexoc_1")}
+        description={t("mpcexoc_8")}
+        linkLabel={t("mpcexoc_9")}
         linkRoute={`${COMPANY_REGISTRATION_ROUTE}/usa`}
       >
         <CountryTarrifList />
