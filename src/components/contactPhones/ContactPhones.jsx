@@ -15,7 +15,6 @@ export default function ContactPhones() {
           <Col key={`${item.flag}:${index}`} span={8}>
             <Flex
               align="center"
-              justify="space-between"
               className="phone-info-item"
             >
               <Flex align="center">
@@ -33,10 +32,10 @@ export default function ContactPhones() {
             className="phone-info-item call-number"
           >
             <Icon name="whatsapp" />
-            <span>+65 8641 5350</span>
+            <span>+48 453 193 540 </span>
           </Flex>
         </Col>
-        <Col className="gutter-row" span={8}>
+        {/* <Col className="gutter-row" span={8}>
           <Flex
             align="center"
             justify="flex-end"
@@ -45,7 +44,7 @@ export default function ContactPhones() {
             <Icon name="viber" />
             <span>+65 932 66888</span>
           </Flex>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

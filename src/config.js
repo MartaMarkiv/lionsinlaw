@@ -122,39 +122,14 @@ export default {
   },
   contactPhones: [
     {
-      phone: "+852 5804 3919",
-      name: "Hong Kong",
-      flag: "hongKong",
-    },
-    {
-      phone: "+61 390 185 385",
-      name: "Australia",
-      flag: "australia",
-    },
-    {
-      phone: "+44 207 193 1138",
-      name: "United Kingdom",
-      flag: "uk",
-    },
-    {
-      phone: "+65 6591 9991",
-      name: "Singapore",
-      flag: "singapore",
-    },
-    {
-      phone: "+1 949 524 4399",
+      phone: "+1 406 800 6228",
       name: "United States",
       flag: "usa",
     },
     {
-      phone: "+1 949 864 6011",
-      name: "British Virgin Islands",
-      flag: "bvi",
-    },
-    {
-      phone: "+370 5266 4444",
-      name: "Lithuania",
-      flag: "lithuania",
+      phone: "+48 453 193 540 ",
+      name: "Poland",
+      flag: "poland",
     },
   ],
   emailRegex:
