@@ -1,4 +1,4 @@
-import { Button, Flex, Input } from "antd";
+import { Button, Flex, Input, Form } from "antd";
 import Icon from "../iconComponent/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
@@ -15,6 +15,11 @@ import {
 
 export default function Footer() {
   const {t} = useTranslation();
+
+  const sendEmail = ({email}) => {
+    console.log("send emsil ", email);
+  }
+
   return (
     <footer className="footer">
       <Flex className="logo-wrapper" align="center">
@@ -55,14 +60,23 @@ export default function Footer() {
             <p className="description">
               {t("footer_8")}
             </p>
-            <Flex
-              align="center"
-              justify="space-between"
+            <Form
               className="send-email-form"
+              name="sendEmailForm"
+              autoComplete="off"
+              onFinish={sendEmail}
             >
-              <Input type="email" placeholder="Enter your email address" />
-              <Button>{t("footer_10")}</Button>
-            </Flex>
+              <Form.Item
+                name="email"
+                rules={[{ required: true, message: "Please input your email!" }]}
+              >
+                <Input type="email" placeholder="Enter your email address" />
+              </Form.Item>
+              
+              <Form.Item label={null}>
+                <Button htmlType="submit">{t("footer_10")}</Button>
+              </Form.Item>
+            </Form>
             <p className="secondary-title">{t("footer_11")}</p>
             <Flex align="center">
               <Link

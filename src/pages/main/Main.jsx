@@ -263,9 +263,8 @@ export default function Main() {
       </div>
       <div className="our-functions">
         <div className="our-functions-header">
-          <p className="title">Потужні функції для потужних творців</p>
-          <p className="description">Виберіть план, який підходить саме вам</p>
-          <Flex align="center" justify="center">
+          <p className="title">From Startup to Enterprise: Legal Plans that Scale with You</p>
+          {/* <Flex align="center" justify="center">
             <span>Оплата щомісяця</span>
             <Switch
               className="plann-switcher"
@@ -273,24 +272,23 @@ export default function Main() {
               onChange={() => {}}
             />
             <span>Оплата щорічно</span>
-          </Flex>
-          <Flex align="center" justify="center" className="discount-wrapper">
+          </Flex> */}
+          {/* <Flex align="center" justify="center" className="discount-wrapper">
             <Icon name="wavy-arrow" />
             <span>Знижка 25%</span>
-          </Flex>
+          </Flex> */}
         </div>
         <div className="tarrif-plan-types">
           <Carousel slidesPerRow={getCountSlide()}>
             <div className="tarrif-plan-item">
-              <p className="title">Халява</p>
+              <p className="title">{t("plan_start_header")}</p>
               <p className="description">
-                Ідеально підходить для людей, яким потрібен швидкий доступ до
-                основних функцій.
+                {t("plan_start_target_audience")}
               </p>
-              <Flex className="price-wrapper" align="center">
+              {/* <Flex className="price-wrapper" align="center">
                 <span className="price">$0</span>
                 <span>/ Місяць</span>
-              </Flex>
+              </Flex> */}
               <div>
                 <Button className="start-plan-btn light">Починай зараз</Button>
               </div>
@@ -305,22 +303,21 @@ export default function Main() {
                     justify="center"
                     className="icon-wrapper"
                   >
-                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                    <Icon name="ok"/>
                   </Flex>
-                  <span>{item.name}</span>
+                  <span>{t(item)}</span>
                 </Flex>
               ))}
             </div>
             <div className="tarrif-plan-item dark">
-              <p className="title">Професійний</p>
+              <p className="title">{t("plan_business_header")}</p>
               <p className="description">
-                Ідеально підходить для людей, яким потрібні розширені функції та
-                інструменти для роботи з клієнтами.
+                {t("plan_business_target_audience")}
               </p>
-              <Flex className="price-wrapper" align="center">
+              {/* <Flex className="price-wrapper" align="center">
                 <span className="price">$0</span>
                 <span>/ Місяць</span>
-              </Flex>
+              </Flex> */}
               <div>
                 <Button className="start-plan-btn dark">Починай зараз</Button>
               </div>
@@ -335,22 +332,17 @@ export default function Main() {
                     justify="center"
                     className="icon-wrapper dark"
                   >
-                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                    <Icon name="ok" />
                   </Flex>
-                  <span>{item.name}</span>
+                  <span>{t(item)}</span>
                 </Flex>
               ))}
             </div>
             <div className="tarrif-plan-item">
-              <p className="title">Підприємство</p>
+              <p className="title">{t("plan_vip_header")}</p>
               <p className="description">
-                Ідеально підходить для підприємств, яким потрібні
-                персоналізовані послуги та безпека для великих команд.
+                {t("plan_vip_target_audience")}
               </p>
-              <Flex className="price-wrapper" align="center">
-                <span className="price">$0</span>
-                <span>/ Місяць</span>
-              </Flex>
               <div>
                 <Button className="start-plan-btn light">Починай зараз</Button>
               </div>
@@ -365,9 +357,9 @@ export default function Main() {
                     justify="center"
                     className="icon-wrapper"
                   >
-                    <Icon name={item.isAvailable ? "ok" : "fail"} />
+                    <Icon name="ok" />
                   </Flex>
-                  <span>{item.name}</span>
+                  <span>{t(item)}</span>
                 </Flex>
               ))}
             </div>
