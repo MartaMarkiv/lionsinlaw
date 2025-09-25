@@ -1,8 +1,9 @@
-import { Button, Flex, Input, Form } from "antd";
+import { Button, Flex, Input, Form, notification } from "antd";
 import Icon from "../iconComponent/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 import {
   BANK_ACCOUNT_ROUTE,
   COMPANY_REGISTRATION_ROUTE,
@@ -14,14 +15,41 @@ import {
 } from "../../routes/routes";
 
 export default function Footer() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
-  const sendEmail = ({email}) => {
-    console.log("send emsil ", email);
-  }
+  const [form] = Form.useForm();
+
+  const [api, contextHolder] = notification.useNotification();
+  const openNotificationWithIcon = (type) => {
+    api[type]({
+      message: type === "success" ? "Success" : "Error",
+      description:
+        type === "success"
+          ? "Your message has been sent successfully. Our representative will contact you shortly"
+          : "An error occurred. Please try again later.",
+    });
+  };
+
+  const sendEmail = ({ email }) => {
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        { email },
+        { publicKey: import.meta.env.VITE_SERVICE_PUBLIC_KEY }
+      )
+      .then((_response) => {
+        openNotificationWithIcon("success");
+      })
+      .catch((_error) => {
+        openNotificationWithIcon("error");
+      })
+      .finally(() => form.resetFields());
+  };
 
   return (
     <footer className="footer">
+      {contextHolder}
       <Flex className="logo-wrapper" align="center">
         <Icon name="logo" />
         <span>LionsInLaw</span>
@@ -43,36 +71,31 @@ export default function Footer() {
             </Link>
             <Link to={BANK_ACCOUNT_ROUTE}>{t("footer_2")}</Link>
             <Link to={MERCHANT_ACCOUNTS_ROUTE}>{t("footer_3")}</Link>
-            <Link to={TRADEMARK_REGISTRATION_ROUTE}>
-              {t("footer_4")}
-            </Link>
+            <Link to={TRADEMARK_REGISTRATION_ROUTE}>{t("footer_4")}</Link>
             <Link to={CRYPTO_LICENSE_ROUTE}>{t("footer_5")}</Link>
-            <Link to={FINANCIAL_LICENSE_ROUTE}>
-              {t("footer_1")}
-            </Link>
+            <Link to={FINANCIAL_LICENSE_ROUTE}>{t("footer_1")}</Link>
           </Flex>
         </Flex>
         <Flex className="contacts-form" justify="flex-end">
           <div>
-            <p className="title">
-              {t("footer_7")}
-            </p>
-            <p className="description">
-              {t("footer_8")}
-            </p>
+            <p className="title">{t("footer_7")}</p>
+            <p className="description">{t("footer_8")}</p>
             <Form
               className="send-email-form"
               name="sendEmailForm"
+              form={form}
               autoComplete="off"
               onFinish={sendEmail}
             >
               <Form.Item
                 name="email"
-                rules={[{ required: true, message: "Please input your email!" }]}
+                rules={[
+                  { required: true, message: "Please input your email!" },
+                ]}
               >
                 <Input type="email" placeholder="Enter your email address" />
               </Form.Item>
-              
+
               <Form.Item label={null}>
                 <Button htmlType="submit">{t("footer_10")}</Button>
               </Form.Item>

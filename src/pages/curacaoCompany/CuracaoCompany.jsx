@@ -11,23 +11,15 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CuracaoCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper curacao-company-wrapper">
       <section className="curacao-company-header">
-        <p className="title">
-          {t("curacao_company_1")}
-        </p>
-        <p className="description">
-          {t("curacao_company_2")}
-        </p>
+        <p className="title">{t("curacao_company_1")}</p>
+        <p className="description">{t("curacao_company_2")}</p>
       </section>
       <CompanySubDescriptionBlock
-        title={
-          <p className="title">
-            {t("curacao_company_3")}
-          </p>
-        }
+        title={<p className="title">{t("curacao_company_3")}</p>}
         description={t("curacao_company_4")}
         imageRef={curacaoNature}
       />

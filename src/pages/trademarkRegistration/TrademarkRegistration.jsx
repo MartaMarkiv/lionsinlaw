@@ -69,9 +69,7 @@ export default function TrademarkRegistration() {
         <Flex vertical={true} justify="space-between" className="info-wrapper">
           <div className="experiance-info-wrapper">
             <p className="title">{t("trademark_registration_9")}</p>
-            <p className="description">
-              {t("trademark_registration_10")}
-            </p>
+            <p className="description">{t("trademark_registration_10")}</p>
           </div>
           <Flex justify="space-between" className="experiance-items-wraper">
             <Flex
@@ -82,9 +80,7 @@ export default function TrademarkRegistration() {
             >
               <Icon name="global-security" />
               <p className="title">{t("trademark_registration_11")}</p>
-              <p className="description">
-                {t("trademark_registration_12")}
-              </p>
+              <p className="description">{t("trademark_registration_12")}</p>
             </Flex>
             <Flex
               vertical={true}
@@ -94,9 +90,7 @@ export default function TrademarkRegistration() {
             >
               <Icon name="effective-registration" />
               <p className="title">{t("trademark_registration_13")}</p>
-              <p className="description">
-                {t("trademark_registration_14")}
-              </p>
+              <p className="description">{t("trademark_registration_14")}</p>
             </Flex>
           </Flex>
         </Flex>
@@ -106,12 +100,8 @@ export default function TrademarkRegistration() {
       </Flex>
       <div className="choose-trademarks">
         <div className="title-block">
-          <p className="title">
-            {t("trademark_registration_15")}
-          </p>
-          <p className="description">
-            {t("trademark_registration_16")}
-          </p>
+          <p className="title">{t("trademark_registration_15")}</p>
+          <p className="description">{t("trademark_registration_16")}</p>
         </div>
         <DescriptionBlock
           description={t("trademark_registration_18")}
@@ -147,13 +137,19 @@ export default function TrademarkRegistration() {
         <Flex align="center" className="tariff-item">
           <Icon name="ok-rounded-white" />
           <p>
-            <span className="selected-text">{t("trademark_registration_27")}</span> {t("trademark_registration_28")}
+            <span className="selected-text">
+              {t("trademark_registration_27")}
+            </span>{" "}
+            {t("trademark_registration_28")}
           </p>
         </Flex>
         <Flex className="tariff-item">
           <Icon name="ok-rounded-white" />
           <p>
-            <span className="selected-text">{t("trademark_registration_29")}</span> {t("trademark_registration_30")}
+            <span className="selected-text">
+              {t("trademark_registration_29")}
+            </span>{" "}
+            {t("trademark_registration_30")}
           </p>
         </Flex>
       </ConsultingOffshoreComp>
@@ -169,9 +165,7 @@ export default function TrademarkRegistration() {
             className="info-description"
             align="flex-start"
           >
-            <p className="description">
-              {t("trademark_registration_35")}
-            </p>
+            <p className="description">{t("trademark_registration_35")}</p>
             <LinkComponent
               linkLabel={t("trademark_registration_36")}
               linkValue={CONTACTS_ROUTE}

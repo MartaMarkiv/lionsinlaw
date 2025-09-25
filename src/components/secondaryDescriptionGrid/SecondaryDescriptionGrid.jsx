@@ -11,7 +11,7 @@ export default function SecondaryDescriptionGrid({
   riskDescr,
   businessDescr,
 }) {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <Flex justify="space-between" className="secondary-description-grid">
       <div className="grid-container grid-wrapper">

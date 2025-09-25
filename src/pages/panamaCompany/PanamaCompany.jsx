@@ -11,7 +11,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PanamaCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper panama-company-page-wrapper">
       <Flex
@@ -21,12 +21,8 @@ export default function PanamaCompany() {
         className="panama-company-header"
       >
         <Flex vertical={true} align="flex-start" className="header-wrapper">
-          <p className="title">
-            {t("panama_company_1")}
-          </p>
-          <p className="description">
-            {t("panama_company_2")}
-          </p>
+          <p className="title">{t("panama_company_1")}</p>
+          <p className="description">{t("panama_company_2")}</p>
         </Flex>
         <div className="tariff-block">
           <p>
@@ -46,11 +42,7 @@ export default function PanamaCompany() {
       <CompanySubDescriptionBlock
         description={t("panama_company_5")}
         imageRef={panamaNature}
-        title={
-          <p className="title">
-            {t("panama_company_4")}
-          </p>
-        }
+        title={<p className="title">{t("panama_company_4")}</p>}
         hasShadow={true}
       />
       <SecondaryDescriptionGrid

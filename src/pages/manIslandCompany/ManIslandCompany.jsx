@@ -12,7 +12,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ManIslandCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="page-content-wrapper isle-man-company">
       <Flex justify="space-between" className="banner-wrapper">
@@ -21,9 +21,7 @@ export default function ManIslandCompany() {
             <p className="sub-title">{t("isla_of_man_1")}</p>
             <p className="company-name">{t("isla_of_man_2")}</p>
           </Flex>
-          <p className="description">
-            {t("isla_of_man_3")}
-          </p>
+          <p className="description">{t("isla_of_man_3")}</p>
         </div>
         <Flex
           className="company-sub-header"
@@ -39,11 +37,7 @@ export default function ManIslandCompany() {
         <div className="vector-wrapper" />
       </Flex>
       <CompanySubDescriptionBlock
-        title={
-          <p className="title">
-            {t("isla_of_man_5")}
-          </p>
-        }
+        title={<p className="title">{t("isla_of_man_5")}</p>}
         description={t("isla_of_man_6")}
         imageRef={manIslandNature}
       />

@@ -11,7 +11,7 @@ import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function EnglandCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <section className="page-content-wrapper england-company-wrapper">
@@ -21,12 +21,8 @@ export default function EnglandCompany() {
           align="flex-end"
         >
           <Flex className="title-wrapper" vertical={true}>
-            <p className="title">
-              {t("england_company_1")}
-            </p>
-            <p className="description">
-              {t("england_company_2")}
-            </p>
+            <p className="title">{t("england_company_1")}</p>
+            <p className="description">{t("england_company_2")}</p>
           </Flex>
         </Flex>
         <CompanySubDescriptionBlock
@@ -52,9 +48,7 @@ export default function EnglandCompany() {
             {t("england_company_15")}
             <span className="selected-text">LionsInLaw</span>
           </p>
-          <p className="description">
-            {t("england_company_16")}
-          </p>
+          <p className="description">{t("england_company_16")}</p>
           <LinkComponent
             linkLabel={t("england_company_17")}
             linkValue={`${COMPANY_REGISTRATION_ROUTE}/england`}

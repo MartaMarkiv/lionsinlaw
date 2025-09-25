@@ -11,7 +11,7 @@ import { Flex } from "antd";
 import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifList";
 
 export default function GibraltarCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper gibraltar-company-wrapper">
       <Flex
@@ -23,16 +23,10 @@ export default function GibraltarCompany() {
           <span>{t("gibraltar_1")}</span>
           <span className="selected-text">LionsInLaw</span>
         </p>
-        <p className="description">
-          {t("gibraltar_2")}
-        </p>
+        <p className="description">{t("gibraltar_2")}</p>
       </Flex>
       <CompanySubDescriptionBlock
-        title={
-          <p className="title">
-            {t("gibraltar_3")}
-          </p>
-        }
+        title={<p className="title">{t("gibraltar_3")}</p>}
         description={t("gibraltar_4")}
         imageRef={gibraltarNature}
       />

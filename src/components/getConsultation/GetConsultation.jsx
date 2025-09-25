@@ -3,7 +3,7 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 
 export default function GetConsultation() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="page-content-wrapper get-consultation-wrapper">
       <div className="banner-wrapper">
@@ -12,9 +12,7 @@ export default function GetConsultation() {
           {t("jurisdictions_16")}
           <span className="selected-text"> LionsInLaw</span>
         </p>
-        <p className="description">
-          {t("jurisdictions_18")}
-        </p>
+        <p className="description">{t("jurisdictions_18")}</p>
         <Link>{t("jurisdictions_19")}</Link>
       </div>
     </div>

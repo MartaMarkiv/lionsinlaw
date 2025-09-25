@@ -12,7 +12,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function ScotlandCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper scotland-company-page">
       <Flex
@@ -24,9 +24,7 @@ export default function ScotlandCompany() {
           <p className="title">{t("scotland_company_1")}</p>
           <p className="sub-title">{t("scotland_company_1.1")}</p>
           <p className="name">LionsInLaw</p>
-          <p className="description">
-            "{t("scotland_company_3")}"
-          </p>
+          <p className="description">"{t("scotland_company_3")}"</p>
         </Flex>
         <div className="scotland-image" />
       </Flex>
@@ -34,7 +32,9 @@ export default function ScotlandCompany() {
         title={
           <p className="title">
             {t("scotland_company_4")}
-            <span className="selected-text">{t("scotland_company_2")}</span>{t("scotland_company_4.1")}<span className="selected-text"> LionsInLaw</span>
+            <span className="selected-text">{t("scotland_company_2")}</span>
+            {t("scotland_company_4.1")}
+            <span className="selected-text"> LionsInLaw</span>
           </p>
         }
         description={t("scotland_company_5")}

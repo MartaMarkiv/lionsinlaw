@@ -8,7 +8,7 @@ import BlockElement from "../blockElement/BlockElement";
 import "./style.scss";
 
 export default function AsianRegion() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="asian-region-wrapper">
       <Link to={SEYCHELLES_COMPANY_ROUTE}>

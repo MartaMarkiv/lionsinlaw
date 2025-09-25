@@ -14,17 +14,13 @@ import Faq from "../../components/faq/Faq";
 import { useTranslation } from "react-i18next";
 
 export default function BelgiumCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper belgium-company-page-wrapper">
       <Flex className="belgium-header">
         <div className="header-info">
-          <p className="title">
-            {t("belgium_company_1")}
-          </p>
-          <p className="description">
-            {t("belgium_company_2")}
-          </p>
+          <p className="title">{t("belgium_company_1")}</p>
+          <p className="description">{t("belgium_company_2")}</p>
         </div>
         <div className="image-wrapper">
           <img src={belgiumBanner} alt="Law company member" />
@@ -32,12 +28,8 @@ export default function BelgiumCompany() {
       </Flex>
       <div className="belgium-company-description">
         <Flex justify="space-between" className="main-info-wrapper">
-          <p className="title">
-            {t("belgium_company_3")}
-          </p>
-          <p className="description">
-            {t("belgium_company_4")}
-          </p>
+          <p className="title">{t("belgium_company_3")}</p>
+          <p className="description">{t("belgium_company_4")}</p>
         </Flex>
         <Flex className="secondary-part">
           <div className="image-wrapper">
@@ -49,9 +41,7 @@ export default function BelgiumCompany() {
             className="description-info"
           >
             <p className="sub-title">{t("belgium_company_5")}</p>
-            <p className="sub-description">
-              {t("belgium_company_6")}
-            </p>
+            <p className="sub-description">{t("belgium_company_6")}</p>
             <Flex
               align="flex-end"
               className="tariffs-wrapper"
@@ -72,9 +62,7 @@ export default function BelgiumCompany() {
                   <span>310K</span>
                   <span>70%</span>
                 </Flex>
-                <p className="sub-description">
-                  {t("belgium_company_8")}
-                </p>
+                <p className="sub-description">{t("belgium_company_8")}</p>
               </div>
             </Flex>
           </Flex>
@@ -95,12 +83,8 @@ export default function BelgiumCompany() {
         <p className="secondary-title">{t("belgium_company_19.1")}</p>
         <Flex>
           <div className="info-wrapper">
-            <p className="description">
-              {t("belgium_company_20")}
-            </p>
-            <p className="secondary-description">
-              {t("belgium_company_22")}
-            </p>
+            <p className="description">{t("belgium_company_20")}</p>
+            <p className="secondary-description">{t("belgium_company_22")}</p>
             <LinkComponent
               linkLabel={t("belgium_company_24")}
               linkValue={`${COMPANY_REGISTRATION_ROUTE}/belgium`}
@@ -129,9 +113,7 @@ export default function BelgiumCompany() {
               <Icon name="count-circle" />
               <div>
                 <p className="count-title">+ 6.202.203,00 €</p>
-                <p className="count-description">
-                  {t("mpcexoc_7")}
-                </p>
+                <p className="count-description">{t("mpcexoc_7")}</p>
               </div>
             </Flex>
           </div>

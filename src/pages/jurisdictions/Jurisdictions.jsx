@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 export default function Jurisdictions() {
   const [region, setRegion] = useState(null);
 
-  const {t}  =useTranslation();
+  const { t } = useTranslation();
 
   const changeRegion = (value) => {
     setRegion(value);
@@ -39,18 +39,15 @@ export default function Jurisdictions() {
             <div className="vector-banner" />
             <div className="law-lady-banner" />
           </div>
-          <div className="banner-title">
-            {t("jurisdictions_1")}
-          </div>
-          <div className="banner-description">
-            {t("jurisdictions_2")}
-          </div>
+          <div className="banner-title">{t("jurisdictions_1")}</div>
+          <div className="banner-description">{t("jurisdictions_2")}</div>
         </Flex>
       </div>
       <FlagsContainer />
       <p className="jurisdictions-description">
         {t("jurisdictions_3")}
-        <span className="selected"> LionsInLaw</span>{t("jurisdictions_3.1")}
+        <span className="selected"> LionsInLaw</span>
+        {t("jurisdictions_3.1")}
       </p>
       <div className="page-content-wrapper select-region-wrapper">
         <Select

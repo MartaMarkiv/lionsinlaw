@@ -11,23 +11,17 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function UsaCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper usa-company-wrapper">
       <div className="usa-company-header">
         <div className="bg-block"></div>
         <p className="title">{t("usa_company_1")}</p>
-        <p className="description">
-          {t("usa_company_2")}
-        </p>
+        <p className="description">{t("usa_company_2")}</p>
         <div className="usa-banner" />
       </div>
       <CompanySubDescriptionBlock
-        title={
-          <p className="title">
-            {t("usa_company_3")}
-          </p>
-        }
+        title={<p className="title">{t("usa_company_3")}</p>}
         description={t("usa_company_4")}
         imageRef={usaNature}
       />

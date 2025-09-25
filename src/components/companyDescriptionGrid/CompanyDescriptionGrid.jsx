@@ -14,7 +14,7 @@ export default function CompanyDescriptionGrid({
   businessDescr,
   businessImage,
 }) {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="company-description-grid grid-wrapper">
       <Flex vertical={true} className="taxes-wrapper">

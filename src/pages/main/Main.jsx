@@ -263,7 +263,9 @@ export default function Main() {
       </div>
       <div className="our-functions">
         <div className="our-functions-header">
-          <p className="title">From Startup to Enterprise: Legal Plans that Scale with You</p>
+          <p className="title">
+            From Startup to Enterprise: Legal Plans that Scale with You
+          </p>
           {/* <Flex align="center" justify="center">
             <span>Оплата щомісяця</span>
             <Switch
@@ -282,9 +284,7 @@ export default function Main() {
           <Carousel slidesPerRow={getCountSlide()}>
             <div className="tarrif-plan-item">
               <p className="title">{t("plan_start_header")}</p>
-              <p className="description">
-                {t("plan_start_target_audience")}
-              </p>
+              <p className="description">{t("plan_start_target_audience")}</p>
               {/* <Flex className="price-wrapper" align="center">
                 <span className="price">$0</span>
                 <span>/ Місяць</span>
@@ -303,7 +303,7 @@ export default function Main() {
                     justify="center"
                     className="icon-wrapper"
                   >
-                    <Icon name="ok"/>
+                    <Icon name="ok" />
                   </Flex>
                   <span>{t(item)}</span>
                 </Flex>
@@ -340,9 +340,7 @@ export default function Main() {
             </div>
             <div className="tarrif-plan-item">
               <p className="title">{t("plan_vip_header")}</p>
-              <p className="description">
-                {t("plan_vip_target_audience")}
-              </p>
+              <p className="description">{t("plan_vip_target_audience")}</p>
               <div>
                 <Button className="start-plan-btn light">Починай зараз</Button>
               </div>

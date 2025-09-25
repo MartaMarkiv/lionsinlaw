@@ -62,11 +62,41 @@ export default {
     },
   ],
   tariffPlanOptions: {
-    free: ["plan_start_item_1","plan_start_item_2","plan_start_item_3","plan_start_item_4","plan_start_item_5"],
-    prof: ["plan_business_item_1","plan_business_item_2","plan_business_item_3","plan_business_item_4","plan_business_item_5","plan_business_item_6"
+    free: [
+      "plan_start_item_1",
+      "plan_start_item_2",
+      "plan_start_item_3",
+      "plan_start_item_4",
+      "plan_start_item_5",
     ],
-    enterprise: ["plan_vip_item_1","plan_vip_item_2","plan_vip_item_3","plan_vip_item_4","plan_vip_item_5","plan_vip_item_6","plan_vip_item_7"],
-    options:["additional_options_item_1","additional_options_item_2","additional_options_item_3","additional_options_item_4","additional_options_item_5","additional_options_item_6","additional_options_item_7","additional_options_item_8","additional_options_item_9"]
+    prof: [
+      "plan_business_item_1",
+      "plan_business_item_2",
+      "plan_business_item_3",
+      "plan_business_item_4",
+      "plan_business_item_5",
+      "plan_business_item_6",
+    ],
+    enterprise: [
+      "plan_vip_item_1",
+      "plan_vip_item_2",
+      "plan_vip_item_3",
+      "plan_vip_item_4",
+      "plan_vip_item_5",
+      "plan_vip_item_6",
+      "plan_vip_item_7",
+    ],
+    options: [
+      "additional_options_item_1",
+      "additional_options_item_2",
+      "additional_options_item_3",
+      "additional_options_item_4",
+      "additional_options_item_5",
+      "additional_options_item_6",
+      "additional_options_item_7",
+      "additional_options_item_8",
+      "additional_options_item_9",
+    ],
   },
   contactPhones: [
     {
@@ -86,17 +116,17 @@ export default {
     {
       value: "europe",
       label: "Європейський регіон",
-      translationValue: "jurisdictions_5"
+      translationValue: "jurisdictions_5",
     },
     {
       value: "america",
       label: "Американський регіон",
-      translationValue: "jurisdictions_6"
+      translationValue: "jurisdictions_6",
     },
     {
       value: "asia",
       label: "Азійській регіон",
-      translationValue: "jurisdictions_7"
+      translationValue: "jurisdictions_7",
     },
   ],
   countriesList: {

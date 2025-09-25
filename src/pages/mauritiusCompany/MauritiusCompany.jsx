@@ -14,18 +14,14 @@ import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 import Faq from "../../components/faq/Faq";
 
 export default function MauritiusCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper mauritius-page-wrapper">
       <Flex className="header-info-wrapper">
         <Flex vertical={true} className="data-info-wrapper">
-          <p className="title">
-            {t("mauricius_1")}
-          </p>
+          <p className="title">{t("mauricius_1")}</p>
           <p className="law-name">LionsInLaw</p>
-          <p className="description">
-            {t("mauricius_2")}
-          </p>
+          <p className="description">{t("mauricius_2")}</p>
         </Flex>
         <div className="image-wrapper" />
       </Flex>
@@ -48,7 +44,8 @@ export default function MauritiusCompany() {
         hasShadow={false}
         title={
           <p className="title">
-            <span className="selected-text">{t("mauricius_5")}</span>{t("mauricius_5.1")}
+            <span className="selected-text">{t("mauricius_5")}</span>
+            {t("mauricius_5.1")}
           </p>
         }
       />

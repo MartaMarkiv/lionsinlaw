@@ -9,17 +9,13 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CanadaCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="canada-company-page">
       <div className="page-content-wrapper canada-company-header-wrapper">
         <div className="canada-company-header">
-          <p className="title">
-            {t("canada_company_1")}
-          </p>
-          <p className="description">
-            {t("canada_company_2")}
-          </p>
+          <p className="title">{t("canada_company_1")}</p>
+          <p className="description">{t("canada_company_2")}</p>
         </div>
       </div>
       <Flex
@@ -33,18 +29,14 @@ export default function CanadaCompany() {
         </div>
         <div className="info-wrapper">
           <p className="title">{t("canada_company_3")}</p>
-          <p className="description">
-            {t("canada_company_4")}
-          </p>
+          <p className="description">{t("canada_company_4")}</p>
           <Flex className="grid-wrapper theory-item" align="center">
             <div className="icon-wrapper">
               <Icon name="bank-dollar" />
             </div>
             <div>
               <p className="item-title">{t("canada_company_5")}</p>
-              <p className="item-description">
-                {t("canada_company_6")}
-              </p>
+              <p className="item-description">{t("canada_company_6")}</p>
             </div>
           </Flex>
           <Flex className="grid-wrapper theory-item" align="center">
@@ -53,9 +45,7 @@ export default function CanadaCompany() {
             </div>
             <div>
               <p className="item-title">{t("canada_company_7")}</p>
-              <p className="item-decription">
-                {t("canada_company_8")}
-              </p>
+              <p className="item-decription">{t("canada_company_8")}</p>
             </div>
           </Flex>
           <Flex className="grid-wrapper theory-item" align="center">
@@ -64,9 +54,7 @@ export default function CanadaCompany() {
             </div>
             <div>
               <p className="item-title">{t("canada_company_9")}</p>
-              <p className="item-description">
-                {t("canada_company_10")}
-              </p>
+              <p className="item-description">{t("canada_company_10")}</p>
             </div>
           </Flex>
           <Flex className="grid-wrapper theory-item" align="center">
@@ -75,9 +63,7 @@ export default function CanadaCompany() {
             </div>
             <div>
               <p className="item-title">{t("canada_company_11")}</p>
-              <p className="item-description">
-                {t("canada_company_12")}
-              </p>
+              <p className="item-description">{t("canada_company_12")}</p>
             </div>
           </Flex>
         </div>
@@ -89,9 +75,7 @@ export default function CanadaCompany() {
       >
         <div className="image-wrapper" />
         <p className="title">{t("canada_company_13")}</p>
-        <p className="description">
-          {t("canada_company_14")}
-        </p>
+        <p className="description">{t("canada_company_14")}</p>
         <Flex className="counts-wrapper" justify="space-between">
           <Flex className="count-item" vertical={true} align="center">
             <p className="count">24</p>
@@ -113,37 +97,27 @@ export default function CanadaCompany() {
       </Flex>
       <Flex className="business-coaching" vertical={true} align="center">
         <p className="title">{t("canada_company_19")}</p>
-        <p className="description">
-          {t("canada_company_20")}
-        </p>
+        <p className="description">{t("canada_company_20")}</p>
         <Flex className="business-coaching-items-list" justify="space-between">
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-analysis" />
             <p className="item-title">{t("canada_company_21")}</p>
-            <p className="item-description">
-              {t("canada_company_22")}
-            </p>
+            <p className="item-description">{t("canada_company_22")}</p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-optimisation" />
             <p className="item-title">{t("canada_company_23")}</p>
-            <p className="item-description">
-              {t("canada_company_24")}
-            </p>
+            <p className="item-description">{t("canada_company_24")}</p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-motivation" />
             <p className="item-title">{t("canada_company_25")}</p>
-            <p className="item-description">
-              {t("canada_company_26")}
-            </p>
+            <p className="item-description">{t("canada_company_26")}</p>
           </Flex>
           <Flex className="coaching-item" vertical={true} align="center">
             <Icon name="business-results" />
             <p className="item-title">{t("canada_company_27")}</p>
-            <p className="item-description">
-              {t("canada_company_28")}
-            </p>
+            <p className="item-description">{t("canada_company_28")}</p>
           </Flex>
         </Flex>
       </Flex>

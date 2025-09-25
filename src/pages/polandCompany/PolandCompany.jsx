@@ -11,23 +11,15 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function PolandCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper poland-company-wrapper">
       <section className="poland-company-header">
-        <p className="title">
-          {t("poland_company_1")}
-        </p>
-        <p className="description">
-          {t("poland_company_2")}
-        </p>
+        <p className="title">{t("poland_company_1")}</p>
+        <p className="description">{t("poland_company_2")}</p>
       </section>
       <CompanySubDescriptionBlock
-        title={
-          <p className="title">
-            {t("poland_company_3")}
-          </p>
-        }
+        title={<p className="title">{t("poland_company_3")}</p>}
         description={t("poland_company_4")}
         imageRef={polandNature}
       />

@@ -21,8 +21,8 @@ const resources = {
     translation: translationUa,
   },
   ru: {
-    translation: translationRu
-  }
+    translation: translationRu,
+  },
 };
 
 i18n

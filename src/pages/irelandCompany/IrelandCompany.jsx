@@ -14,19 +14,18 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function IrelandCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper ireland-company-wrapper">
       <section className="ireland-company-header">
         <Flex style={{ position: "relative" }}>
           <Flex vertical={true} className="title-wrapper">
             <p className="sub-title">
-              <span className="selected-text">{t("ireland_company_1")}</span>{t("ireland_company_1.1")}
+              <span className="selected-text">{t("ireland_company_1")}</span>
+              {t("ireland_company_1.1")}
             </p>
             <p className="title"> LionsInLaw</p>
-            <p className="description">
-              {t("ireland_company_2")}
-            </p>
+            <p className="description">{t("ireland_company_2")}</p>
           </Flex>
           <div className="secondary-banner"></div>
         </Flex>
@@ -57,7 +56,8 @@ export default function IrelandCompany() {
       <CompanySubDescriptionBlock
         title={
           <p className="title">
-            <span className="selected-text">{t("ireland_company_4")}</span>{t("ireland_company_4.1")}
+            <span className="selected-text">{t("ireland_company_4")}</span>
+            {t("ireland_company_4.1")}
           </p>
         }
         description={t("ireland_company_5")}

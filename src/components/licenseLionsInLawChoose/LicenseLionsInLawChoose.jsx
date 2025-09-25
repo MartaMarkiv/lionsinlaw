@@ -7,12 +7,13 @@ export default function LicenseLionsInLawChoose({
   blockType = "crypto",
   description,
 }) {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="license-choose-wrapper">
       <Flex vertical={true} align="flex-end">
         <p className="main-title in-end">
-          {t("cryptoconsulting_21")}<span className="selected-text">LinonsInLaw</span>
+          {t("cryptoconsulting_21")}
+          <span className="selected-text">LinonsInLaw</span>
         </p>
         <p className="main-title centered">
           {blockType === "crypto"
@@ -29,9 +30,7 @@ export default function LicenseLionsInLawChoose({
         >
           <Icon name="legal-expertise" />
           <p className="title">{t("trademark_registration_17")}</p>
-          <p className="description">
-            {t("cryptoconsulting_24")}
-          </p>
+          <p className="description">{t("cryptoconsulting_24")}</p>
         </Flex>
         <Flex
           vertical={true}
@@ -40,9 +39,7 @@ export default function LicenseLionsInLawChoose({
         >
           <Icon name="global-network" />
           <p className="title">{t("cryptoconsulting_25")}</p>
-          <p className="description">
-            {t("cryptoconsulting_26")}
-          </p>
+          <p className="description">{t("cryptoconsulting_26")}</p>
         </Flex>
         <Flex
           vertical={true}
@@ -51,9 +48,7 @@ export default function LicenseLionsInLawChoose({
         >
           <Icon name="ind-solutions" />
           <p className="title">{t("cryptoconsulting_27")}</p>
-          <p className="description">
-            {t("cryptoconsulting_28")}
-          </p>
+          <p className="description">{t("cryptoconsulting_28")}</p>
         </Flex>
       </Flex>
     </div>

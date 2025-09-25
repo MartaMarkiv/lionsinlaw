@@ -10,17 +10,13 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function SpainCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper spain-company-page-wrapper">
       <Flex align="center" justify="flex-end" className="spain-company-header">
         <div className="header-wrapper">
-          <p className="title">
-            {t("spain_company_1")}
-          </p>
-          <p className="description">
-            {t("spain_company_2")}
-          </p>
+          <p className="title">{t("spain_company_1")}</p>
+          <p className="description">{t("spain_company_2")}</p>
         </div>
         <div className="header-image" />
       </Flex>

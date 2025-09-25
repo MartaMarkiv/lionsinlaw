@@ -13,10 +13,7 @@ export default function ContactPhones() {
       <Row gutter={[60, 24]} className="phone-list-row">
         {config.contactPhones.map((item, index) => (
           <Col key={`${item.flag}:${index}`} span={8}>
-            <Flex
-              align="center"
-              className="phone-info-item"
-            >
+            <Flex align="center" className="phone-info-item">
               <Flex align="center">
                 <Icon name={`${item.flag}-icon`} />
                 <span>{item.name}:</span>

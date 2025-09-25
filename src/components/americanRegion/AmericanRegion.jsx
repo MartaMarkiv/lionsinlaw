@@ -11,7 +11,7 @@ import {
 } from "../../routes/routes";
 
 export default function AmericanRegion() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="american-region-wrapper">
       <Link to={USA_COMPANY_ROUTE}>

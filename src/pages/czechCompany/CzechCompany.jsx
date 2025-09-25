@@ -11,17 +11,13 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function CzechCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper czech-company-page-wrapper">
       <Flex vertical={true} justify="flex-end" className="czech-company-header">
-        <p className="title">
-          {t("czech_company_1")}
-        </p>
+        <p className="title">{t("czech_company_1")}</p>
         <Flex className="header-part" justify="space-between" align="start">
-          <p className="description">
-            {t("czech_company_2")}
-          </p>
+          <p className="description">{t("czech_company_2")}</p>
           <div className="tariff-block">
             <p>
               {t("czech_company_3")}
@@ -41,11 +37,7 @@ export default function CzechCompany() {
       <CompanySubDescriptionBlock
         description={t("czech_company_6")}
         imageRef={czechNature}
-        title={
-          <p className="title">
-            {t("czech_company_5")}
-          </p>
-        }
+        title={<p className="title">{t("czech_company_5")}</p>}
         hasShadow={true}
       />
       <SecondaryDescriptionGrid

@@ -11,7 +11,7 @@ import contactGirl from "../../assets/images/contactGirl.png";
 import bankBuilding from "../../assets/images/bankKolons.png";
 
 export default function BankAccounts() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="page-content-wrapper create-bank-account-page">
       <Flex
@@ -21,11 +21,10 @@ export default function BankAccounts() {
       >
         <div className="title-wrapper">
           <p className="title">
-            <span className="selected-text">LionsInLaw </span>{t("open_bank_acount_2")}
+            <span className="selected-text">LionsInLaw </span>
+            {t("open_bank_acount_2")}
           </p>
-          <p className="description">
-            {t("open_bank_acount_3")}
-          </p>
+          <p className="description">{t("open_bank_acount_3")}</p>
           <LinkComponent
             linkLabel={t("open_bank_acount_4")}
             linkValue={CONTACTS_ROUTE}
@@ -38,13 +37,9 @@ export default function BankAccounts() {
       <div className="copmany-experts">
         <p className="title">
           LionsInLaw -{" "}
-          <span className="uppercase">
-            {t("open_bank_acount_5")}
-          </span>
+          <span className="uppercase">{t("open_bank_acount_5")}</span>
         </p>
-        <p className="description">
-          {t("open_bank_acount_6")}
-        </p>
+        <p className="description">{t("open_bank_acount_6")}</p>
         <Flex align="start" justify="space-between">
           <Flex
             align="center"
@@ -62,7 +57,8 @@ export default function BankAccounts() {
           </Flex>
           <p className="sub-description">
             {t("open_bank_acount_9")}
-            <span className="selected-text">Lionsinlaw</span>{t("open_bank_acount_9.1")}
+            <span className="selected-text">Lionsinlaw</span>
+            {t("open_bank_acount_9.1")}
           </p>
         </Flex>
         <div className="experts-image">
@@ -89,14 +85,10 @@ export default function BankAccounts() {
           justify="space-between"
           align="start"
         >
-          <p>
-            {t("open_bank_acount_11")}
-          </p>
+          <p>{t("open_bank_acount_11")}</p>
           <Flex className="contact-experts" vertical={true}>
             <Flex align="start" justify="space-between">
-              <p>
-                {t("open_bank_acount_12")}
-              </p>
+              <p>{t("open_bank_acount_12")}</p>
               <img src={contactGirl} alt="Contact us" />
             </Flex>
             <LinkComponent
@@ -111,7 +103,9 @@ export default function BankAccounts() {
         <Flex align="start" justify="space-between" className="why-lionsinlaw">
           <div>
             <p className="title">
-              {t("open_bank_acount_14")}<span className="selected-text">Lionsinlaw</span>{t("open_bank_acount_14.1")}
+              {t("open_bank_acount_14")}
+              <span className="selected-text">Lionsinlaw</span>
+              {t("open_bank_acount_14.1")}
             </p>
             <p className="description">
               {t("open_bank_acount_15")}
@@ -120,9 +114,7 @@ export default function BankAccounts() {
           </div>
           <div className="selected-block customer-oriented">
             <p className="title">{t("open_bank_acount_16")}</p>
-            <p className="description">
-              {t("open_bank_acount_17")}
-            </p>
+            <p className="description">{t("open_bank_acount_17")}</p>
           </div>
         </Flex>
         <Flex
@@ -136,33 +128,26 @@ export default function BankAccounts() {
             className="selected-block expert-guidance"
           >
             <p className="title">{t("open_bank_acount_18")}</p>
-            <p className="description">
-              {t("open_bank_acount_19")}
-            </p>
+            <p className="description">{t("open_bank_acount_19")}</p>
           </Flex>
           <div className="expert-guidance-item">
             <p className="title">{t("open_bank_acount_20")}</p>
-            <p className="description">
-              {t("open_bank_acount_21")}
-            </p>
+            <p className="description">{t("open_bank_acount_21")}</p>
           </div>
           <div className="expert-guidance-item">
             <p className="title">{t("open_bank_acount_22")}:</p>
-            <p className="description">
-              {t("open_bank_acount_23")}
-            </p>
+            <p className="description">{t("open_bank_acount_23")}</p>
           </div>
         </Flex>
       </div>
       <div className="ask-bank-account-wrapper">
         <div>
-          <p className="title">
-            {t("open_bank_acount_24")}
-          </p>
-          <p className="description">
-            {t("open_bank_acount_25")}
-          </p>
-          <LinkComponent linkLabel={t("open_bank_acount_26")} linkValue={CONTACTS_ROUTE} />
+          <p className="title">{t("open_bank_acount_24")}</p>
+          <p className="description">{t("open_bank_acount_25")}</p>
+          <LinkComponent
+            linkLabel={t("open_bank_acount_26")}
+            linkValue={CONTACTS_ROUTE}
+          />
         </div>
       </div>
     </div>

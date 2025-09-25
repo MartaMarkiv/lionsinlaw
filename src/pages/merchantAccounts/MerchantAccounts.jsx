@@ -10,7 +10,7 @@ import DescriptionBlock from "../../components/descriptionBlock/DescriptionBlock
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function MerchantAccounts() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper merchant-accounts-page">
       <Flex
@@ -20,12 +20,8 @@ export default function MerchantAccounts() {
       >
         <Flex vertical={true} className="title-wrapper" align="flex-start">
           <p className="title">LionsInLaw</p>
-          <p className="description">
-            {t("merchant_account_2")}
-          </p>
-          <p className="sub-description">
-            {t("merchant_account_3")}
-          </p>
+          <p className="description">{t("merchant_account_2")}</p>
+          <p className="sub-description">{t("merchant_account_3")}</p>
           <LinkComponent
             linkLabel={t("merchant_account_4")}
             linkValue={CONTACTS_ROUTE}
@@ -37,12 +33,11 @@ export default function MerchantAccounts() {
       </Flex>
       <Flex className="spec-solutions">
         <Flex vertical={true} justify="space-between" className="info-wrapper">
-          <p className="title">
-            {t("merchant_account_5")}
-          </p>
+          <p className="title">{t("merchant_account_5")}</p>
           <p className="description">
             {t("merchant_account_6")}
-            <span className="selected-text">Lionsinlaw</span>{t("merchant_account_6.1")}
+            <span className="selected-text">Lionsinlaw</span>
+            {t("merchant_account_6.1")}
           </p>
         </Flex>
         <div className="image-wrapper">
@@ -51,9 +46,7 @@ export default function MerchantAccounts() {
       </Flex>
       <div className="choose-merchant-account">
         <div className="title-block">
-          <p className="title">
-            {t("merchant_account_7")}
-          </p>
+          <p className="title">{t("merchant_account_7")}</p>
         </div>
         <Flex
           className="phone-block-wrapper"
@@ -98,12 +91,8 @@ export default function MerchantAccounts() {
       </div>
       <div className="empowerment-wrapper">
         <div>
-          <p className="title">
-            {t("merchant_account_20")}
-          </p>
-          <p className="description">
-            {t("merchant_account_21")}
-          </p>
+          <p className="title">{t("merchant_account_20")}</p>
+          <p className="description">{t("merchant_account_21")}</p>
           <LinkComponent
             linkLabel={t("merchant_account_22")}
             linkValue={CONTACTS_ROUTE}

@@ -11,8 +11,7 @@ export default function ConsultingOffshoreComp({
   showPrice = true,
   children,
 }) {
-
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="consulting-offshore-comp-wrapper">

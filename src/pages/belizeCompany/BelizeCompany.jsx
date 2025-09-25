@@ -10,7 +10,7 @@ import CountryTarrifList from "../../components/countryTarrifList/CountryTarrifL
 import { COMPANY_REGISTRATION_ROUTE } from "../../routes/routes";
 
 export default function BelizeCompany() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="page-content-wrapper belize-company-page-wrapper">
       <Flex
@@ -21,21 +21,16 @@ export default function BelizeCompany() {
         <Flex vertical={true} align="flex-start" className="header-wrapper">
           <p className="title">{t("belize_company_1")}</p>
           <p className="title second">
-            {t("belize_company_2")}<span className="selected-text">LionsInLaw</span>
+            {t("belize_company_2")}
+            <span className="selected-text">LionsInLaw</span>
           </p>
-          <p className="description">
-            {t("belize_company_3")}
-          </p>
+          <p className="description">{t("belize_company_3")}</p>
         </Flex>
       </Flex>
       <CompanySubDescriptionBlock
         description={t("belize_company_5")}
         imageRef={belizNature}
-        title={
-          <p className="title">
-            {t("belize_company_4")}
-          </p>
-        }
+        title={<p className="title">{t("belize_company_4")}</p>}
         hasShadow={true}
       />
       <SecondaryDescriptionGrid

@@ -16,7 +16,7 @@ import LinkComponent from "../../components/linkComponent/LinkComponent";
 import { CONTACTS_ROUTE } from "../../routes/routes";
 
 export default function CryptoLicense() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <div className="page-content-wrapper crypto-license-page-wrapper">
@@ -40,9 +40,7 @@ export default function CryptoLicense() {
                 <p className="count">50+</p>
                 <p>{t("cryptoconsulting_3")}</p>
               </div>
-              <p style={{ textAlign: "left" }}>
-                {t("cryptoconsulting_4")}
-              </p>
+              <p style={{ textAlign: "left" }}>{t("cryptoconsulting_4")}</p>
             </Flex>
             <Flex justify="space-between" className="license-description">
               <Flex vertical={true} justify="space-between">
@@ -112,9 +110,7 @@ export default function CryptoLicense() {
                   <Icon name="logo" />
                   <span className="red-logo">LionsInLaw</span>
                 </Flex>
-                <p className="description">
-                  {t("cryptoconsulting_31")}
-                </p>
+                <p className="description">{t("cryptoconsulting_31")}</p>
               </Flex>
               <div className="image-wrapper">
                 <img src={libraBtcMonet} alt="Business support LionsInLaw" />
@@ -128,9 +124,7 @@ export default function CryptoLicense() {
             >
               <p className="count">1005+</p>
               <p className="count-label">{t("cryptoconsulting_33")}</p>
-              <p className="countact-us">
-                {t("cryptoconsulting_34")}
-              </p>
+              <p className="countact-us">{t("cryptoconsulting_34")}</p>
               <LinkComponent
                 linkLabel={t("cryptoconsulting_36")}
                 linkValue={CONTACTS_ROUTE}
@@ -140,9 +134,7 @@ export default function CryptoLicense() {
         </div>
         <div className="crypto-partner-wrapper">
           <div className="wrapper">
-            <p className="title">
-              {t("cryptoconsulting_35")}
-            </p>
+            <p className="title">{t("cryptoconsulting_35")}</p>
             <LinkComponent
               linkLabel={t("cryptoconsulting_36")}
               linkValue={CONTACTS_ROUTE}

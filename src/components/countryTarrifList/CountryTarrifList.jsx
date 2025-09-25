@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Icon from "../iconComponent/Icon";
 
 export default function CountryTarrifList() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <Flex align="center" className="tariff-item">
