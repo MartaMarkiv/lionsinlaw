@@ -1,20 +1,44 @@
 import { useState } from "react";
-
-import { Flex, Form, Input, Select, Checkbox, Button } from "antd";
+import { Flex, Form, Input, Select, Checkbox, Button,notification } from "antd";
 import "./style.scss";
 const { TextArea } = Input;
 import config from "../../config";
 import Icon from "../../components/iconComponent/Icon";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import emailjs from "@emailjs/browser";
+import {openNotification} from "../../hooks/useNotification";
 
 export default function Contacts() {
   const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
   const changePhoneNumber = (value, country) => {
     setPhone(value);
   };
+
+   const sendEmail = ({ email, theme, name, skypeId, phoneNumber, message, country }) => {
+    setLoading(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_CONTACTS_TEMPLATE_ID,
+        { email, theme, name, skypeId, phoneNumber, message, country },
+        { publicKey: import.meta.env.VITE_SERVICE_PUBLIC_KEY }
+      )
+      .then((_response) => {
+        openNotification("success");
+      })
+      .catch((_error) => {
+        openNotification("error");
+      })
+      .finally(() => {
+        form.resetFields();
+        setLoading(false);
+   });
+  };
+
   return (
     <>
       <Flex
@@ -63,6 +87,7 @@ export default function Contacts() {
             name="contactUsForm"
             form={form}
             layout="vertical"
+            onFinish={sendEmail}
             className="contact-us-form"
           >
             <p className="form-title">Будемо на зв'язку</p>
@@ -85,7 +110,7 @@ export default function Contacts() {
               </Form.Item>
 
               <Form.Item
-                name="username"
+                name="name"
                 label="Повне ім'я"
                 rules={[{ required: true, message: "Please input your name!" }]}
               >
@@ -137,13 +162,14 @@ export default function Contacts() {
                 <Input placeholder="Країна" />
               </Form.Item>
             </Flex>
-            <Form.Item label="Повідомлення" required={true}>
+            <Form.Item label="Повідомлення" required={true} name="message">
               <TextArea rows={4} />
             </Form.Item>
             <Form.Item
               label="Прикріпити файли"
               layout="horizontal"
               className="file-form-item"
+              name="file"
             >
               <Input type="file" placeholder="Виберіть Файли" />
             </Form.Item>
@@ -163,8 +189,8 @@ export default function Contacts() {
                 type="primary"
                 htmlType="submit"
                 name="submitButton"
+                disabled={loading}
                 className="submit-button"
-                onClick={() => {}}
               >
                 Зв'язатися з нами
               </Button>

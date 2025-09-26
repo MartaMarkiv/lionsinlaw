@@ -1,4 +1,4 @@
-import { Button, Flex, Input, Form, notification } from "antd";
+import { Button, Flex, Input, Form } from "antd";
 import Icon from "../iconComponent/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
@@ -13,24 +13,17 @@ import {
   MERCHANT_ACCOUNTS_ROUTE,
   TRADEMARK_REGISTRATION_ROUTE,
 } from "../../routes/routes";
+import { openNotification } from "../../hooks/useNotification";
+import { useState } from "react";
 
 export default function Footer() {
+  const [loading, setLoading] = useState(false);
   const { t } = useTranslation();
 
   const [form] = Form.useForm();
 
-  const [api, contextHolder] = notification.useNotification();
-  const openNotificationWithIcon = (type) => {
-    api[type]({
-      message: type === "success" ? "Success" : "Error",
-      description:
-        type === "success"
-          ? "Your message has been sent successfully. Our representative will contact you shortly"
-          : "An error occurred. Please try again later.",
-    });
-  };
-
   const sendEmail = ({ email }) => {
+    setLoading(true);
     emailjs
       .send(
         import.meta.env.VITE_SERVICE_ID,
@@ -39,17 +32,19 @@ export default function Footer() {
         { publicKey: import.meta.env.VITE_SERVICE_PUBLIC_KEY }
       )
       .then((_response) => {
-        openNotificationWithIcon("success");
+        openNotification("success");
       })
       .catch((_error) => {
-        openNotificationWithIcon("error");
+        openNotification("error");
       })
-      .finally(() => form.resetFields());
+      .finally(() => {
+        form.resetFields();
+        setLoading(false);
+      });
   };
 
   return (
     <footer className="footer">
-      {contextHolder}
       <Flex className="logo-wrapper" align="center">
         <Icon name="logo" />
         <span>LionsInLaw</span>
@@ -97,7 +92,7 @@ export default function Footer() {
               </Form.Item>
 
               <Form.Item label={null}>
-                <Button htmlType="submit">{t("footer_10")}</Button>
+                <Button htmlType="submit" disabled={loading}>{t("footer_10")}</Button>
               </Form.Item>
             </Form>
             <p className="secondary-title">{t("footer_11")}</p>
