@@ -15,6 +15,7 @@ import {
 } from "../../routes/routes";
 import { openNotification } from "../../hooks/useNotification";
 import { useState } from "react";
+import { sendEmail } from "../../services/emailService";
 
 export default function Footer() {
   const [loading, setLoading] = useState(false);
@@ -22,25 +23,18 @@ export default function Footer() {
 
   const [form] = Form.useForm();
 
-  const sendEmail = ({ email }) => {
+  const sendEmailMessage = ({ email }) => {
     setLoading(true);
-    emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        { email },
-        { publicKey: import.meta.env.VITE_SERVICE_PUBLIC_KEY }
-      )
-      .then((_response) => {
-        openNotification("success");
-      })
-      .catch((_error) => {
-        openNotification("error");
-      })
-      .finally(() => {
+    sendEmail(
+      import.meta.env.VITE_TEMPLATE_ID,
+      { email },
+      () => openNotification("success"),
+      () => openNotification("error"),
+      () => {
         form.resetFields();
         setLoading(false);
-      });
+      }
+    );
   };
 
   return (
@@ -80,7 +74,7 @@ export default function Footer() {
               name="sendEmailForm"
               form={form}
               autoComplete="off"
-              onFinish={sendEmail}
+              onFinish={sendEmailMessage}
             >
               <Form.Item
                 name="email"
@@ -92,7 +86,9 @@ export default function Footer() {
               </Form.Item>
 
               <Form.Item label={null}>
-                <Button htmlType="submit" disabled={loading}>{t("footer_10")}</Button>
+                <Button htmlType="submit" disabled={loading}>
+                  {t("footer_10")}
+                </Button>
               </Form.Item>
             </Form>
             <p className="secondary-title">{t("footer_11")}</p>

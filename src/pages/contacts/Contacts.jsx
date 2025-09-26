@@ -1,13 +1,21 @@
 import { useState } from "react";
-import { Flex, Form, Input, Select, Checkbox, Button,notification } from "antd";
+import {
+  Flex,
+  Form,
+  Input,
+  Select,
+  Checkbox,
+  Button,
+  notification,
+} from "antd";
 import "./style.scss";
 const { TextArea } = Input;
 import config from "../../config";
 import Icon from "../../components/iconComponent/Icon";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import emailjs from "@emailjs/browser";
-import {openNotification} from "../../hooks/useNotification";
+import { openNotification } from "../../hooks/useNotification";
+import { sendEmail } from "../../services/emailService";
 
 export default function Contacts() {
   const [phone, setPhone] = useState("");
@@ -18,25 +26,26 @@ export default function Contacts() {
     setPhone(value);
   };
 
-   const sendEmail = ({ email, theme, name, skypeId, phoneNumber, message, country }) => {
+  const sendMessage = ({
+    email,
+    theme,
+    name,
+    skypeId,
+    phoneNumber,
+    message,
+    country,
+  }) => {
     setLoading(true);
-    emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_CONTACTS_TEMPLATE_ID,
-        { email, theme, name, skypeId, phoneNumber, message, country },
-        { publicKey: import.meta.env.VITE_SERVICE_PUBLIC_KEY }
-      )
-      .then((_response) => {
-        openNotification("success");
-      })
-      .catch((_error) => {
-        openNotification("error");
-      })
-      .finally(() => {
+    sendEmail(
+      import.meta.env.VITE_CONTACTS_TEMPLATE_ID,
+      { email, theme, name, skypeId, phoneNumber, message, country },
+      () => openNotification("success"),
+      () => openNotification("error"),
+      () => {
         form.resetFields();
         setLoading(false);
-   });
+      }
+    );
   };
 
   return (
@@ -87,7 +96,7 @@ export default function Contacts() {
             name="contactUsForm"
             form={form}
             layout="vertical"
-            onFinish={sendEmail}
+            onFinish={sendMessage}
             className="contact-us-form"
           >
             <p className="form-title">Будемо на зв'язку</p>

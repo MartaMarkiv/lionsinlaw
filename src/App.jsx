@@ -9,14 +9,14 @@ import { initNotification } from "./hooks/useNotification";
 
 function App() {
   const location = useLocation();
-   const [api, contextHolder] = notification.useNotification();
-   initNotification(api);
+  const [api, contextHolder] = notification.useNotification();
+  initNotification(api);
 
   const showPhonesBlock =
     [ENGLAND_COMPANY_ROUTE, CONTACTS_ROUTE].indexOf(location.pathname) < 0;
   return (
     <>
-    {contextHolder}
+      {contextHolder}
       <Header />
       <main>
         <Outlet />
